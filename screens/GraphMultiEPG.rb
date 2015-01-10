@@ -40,7 +40,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
     end
 
     widget do
-      position 0, 180
+      position 0, 54
       size 62, 24
       nowrap 1
       transparent 1
@@ -54,7 +54,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
     end
 
     progressbar do
-      position 67, 189
+      position 67, 63
       size 220, 5
       transparent 1
       source "Event"
@@ -63,7 +63,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
     end
 
     widget do
-      position -62, 180
+      position -62, 54
       size 62, 24
       nowrap 1
       transparent 1
@@ -77,8 +77,21 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
     end
 
     widget do
-      position 0, 222
-      size nil, 255
+      position 0, 96
+      size 356, 24
+      nowrap 1
+      transparent 1
+      font "Bold", TraxanosHD.default_right_font_size
+      render "Label"
+      source "Event"
+      accent
+      orientation :left, :center
+      convert "Name", type: "EventName"
+    end
+
+    widget do
+      position 0, 120 + TraxanosHD.spacer
+      size nil, 330
       transparent 1
       font "Regular", TraxanosHD.default_right_font_size
       render "VRunningText"

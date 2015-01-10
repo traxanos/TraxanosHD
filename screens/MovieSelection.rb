@@ -31,7 +31,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
 
   main_accent do
     widget do
-      position 67, 30
+      position 67, 0
       size 220, 132
       render "Picon"
       source "Service"
@@ -42,7 +42,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
     end
 
     widget do
-      position 0, 180
+      position 0, 150
       size nil, 24
       nowrap 1
       transparent 1
@@ -56,7 +56,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
     end
 
     widget do
-      position 0, 180
+      position 0, 150
       size nil, 24
       nowrap 1
       transparent 1
@@ -69,7 +69,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
     end
 
     widget do
-      position 0, 180
+      position 0, 150
       size nil, 24
       nowrap 1
       transparent 1
@@ -82,8 +82,8 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
     end
 
     widget do
-      position 0, 222
-      size nil, 255
+      position 0, 192
+      size nil, 279
       transparent 1
       font "Regular", TraxanosHD.default_right_font_size
       render "VRunningText"
@@ -110,8 +110,8 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
     end
 
     label do
-      position -(72+TraxanosHD.spacer+72)
-      size 72, 30
+      position -(72+TraxanosHD.spacer+66)
+      size 66, 30
       text "EPG"
       font "SegoeUI", 20
       nowrap 1

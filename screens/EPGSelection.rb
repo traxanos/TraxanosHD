@@ -20,7 +20,7 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
 
   main_accent do
     widget do
-      position 67, 30
+      position 67, 0
       size 220, 132
       render "Picon"
       source "Service"
@@ -31,22 +31,21 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
     end
 
     widget do
-      position 0, 180
+      position 0, 150
       size nil, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Bold", TraxanosHD.default_right_font_size
       render "Label"
       source "Service"
       accent
       orientation :left, :center
-      convert "Name", type: "ServiceName"
+      convert "Name", type: "EventName"
     end
 
     widget do
-      position 0, 222
-      size nil, 276
-      nowrap 1
+      position 0, 192
+      size nil, 279
       transparent 1
       font "Regular", TraxanosHD.default_right_font_size
       render "VRunningText"
@@ -56,6 +55,44 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
       convert "ExtendedDescription", type: "EventName"
     end
 
+  end
+
+  box do
+    position TraxanosHD.border+TraxanosHD.left_width+TraxanosHD.spacer, 645
+    size TraxanosHD.right_width-(TraxanosHD.spacer*2), 30
+
+    label do
+      position -66
+      size 66, 30
+      text "EPG"
+      font "SegoeUI", 20
+      nowrap 1
+      orientation :center, :center
+      background :foregroundAccent
+      foreground :backgroundAccent
+    end
+
+    label do
+      position -(66 + 30 + TraxanosHD.spacer)
+      size 30, 30
+      text ">"
+      font "SegoeUI", 20
+      nowrap 1
+      orientation :center, :center
+      background :foregroundAccent
+      foreground :backgroundAccent
+    end
+
+    label do
+      position -(66 + 30 + TraxanosHD.spacer + 30 + TraxanosHD.spacer)
+      size 30, 30
+      text "<"
+      font "SegoeUI", 20
+      nowrap 1
+      orientation :center, :center
+      background :foregroundAccent
+      foreground :backgroundAccent
+    end
   end
 
 end
