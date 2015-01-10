@@ -919,10 +919,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel position="849,141" zPosition="-993" size="392,534" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
     <widget position="968,159" zPosition="10" size="154,500" backgroundColor="background" name="rc" alphatest="blend" pixmaps="skin_default/rc_vu_1.png,skin_default/rc_vu_2.png,skin_default/rc_vu_3.png"/>
     <widget position="867,651" zPosition="11" size="356,24" backgroundColor="background" foregroundColor="foreground" name="long_key" font="Regular; 18" halign="center" valign="center" transparent="1"/>
-    <widget position="-100, -100" zPosition="11" size="37,70" backgroundColor="background" pixmap="skin_default/arrowdown.png" alphatest="on" name="arrowdown"/>
-    <widget position="-100, -100" zPosition="11" size="37,70" backgroundColor="background" pixmap="skin_default/arrowdown.png" alphatest="on" name="arrowdown2"/>
-    <widget position="-100, -100" zPosition="11" size="37,70" backgroundColor="background" pixmap="skin_default/arrowup.png" alphatest="on" name="arrowup"/>
-    <widget position="-100, -100" zPosition="11" size="37,70" backgroundColor="background" pixmap="skin_default/arrowup.png" alphatest="on" name="arrowup2"/>
+    <widget position="-100, -100" zPosition="11" size="37,70" backgroundColor="background" pixmap="TraxanosHD/icons/arrowdown.png" alphatest="on" name="arrowdown"/>
+    <widget position="-100, -100" zPosition="11" size="37,70" backgroundColor="background" pixmap="TraxanosHD/icons/arrowdown.png" alphatest="on" name="arrowdown2"/>
+    <widget position="-100, -100" zPosition="11" size="37,70" backgroundColor="background" pixmap="TraxanosHD/icons/arrowup.png" alphatest="on" name="arrowup"/>
+    <widget position="-100, -100" zPosition="11" size="37,70" backgroundColor="background" pixmap="TraxanosHD/icons/arrowup.png" alphatest="on" name="arrowup2"/>
   </screen>
   <screen name="InfoBar" title="InfoBar" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="1">
     <widget position="1082,39" zPosition="-992" size="159,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1">
@@ -1125,8 +1125,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <screen name="MessageBox" title="Message" position="center,center" size="900,260" flags="wfNoBorder" backgroundColor="background" zPosition="100">
     <widget position="90,12" zPosition="-997" size="798,300" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 20" name="text" valign="center"/>
-    <eLabel position="12,12" zPosition="-995" size="66,66" backgroundColor="background" foregroundColor="foreground" text="&#61738;" font="FontAwesome; 51" halign="center" valign="center" noWrap="1" transparent="1"/>
-    <widget position="12,0" zPosition="-993" size="876,60" backgroundColor="background" foregroundColor="foreground" transparent="1" name="list" itemHeight="30"/>
+    <widget position="12,12" zPosition="-995" size="66,66" backgroundColor="background" pixmap="TraxanosHD/icons/input_error.png" transparent="1" name="ErrorPixmap" alphatest="blend"/>
+    <widget position="12,12" zPosition="-993" size="66,66" backgroundColor="background" pixmap="TraxanosHD/icons/input_question.png" transparent="1" name="QuestionPixmap" alphatest="blend"/>
+    <widget position="12,12" zPosition="-991" size="66,66" backgroundColor="background" pixmap="TraxanosHD/icons/input_info.png" transparent="1" name="InfoPixmap" alphatest="blend"/>
+    <widget position="12,0" zPosition="-989" size="876,60" backgroundColor="background" foregroundColor="foreground" transparent="1" name="list" itemHeight="30"/>
     <applet type="onLayoutFinish">
 
 from enigma import eSize, ePoint
@@ -1175,11 +1177,6 @@ else:
 list_size = (inner_size_x, list_height)
 self["list"].instance.move(ePoint(12,list_y))
 self["list"].instance.resize(eSize(*list_size))
-
-# todo update icon, but i didnt know how
-question = "&#61529;"
-error = "&#61546;"
-info = "&#61530;"
 
 # resize window
 window_size = (outer_size_x, outer_size_y)
