@@ -5,8 +5,7 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
 
     widget do
       position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
-      itemheight 30
+      size nil, -(48 + 3 + TraxanosHD.spacer*2)
       name "timerlist"
       transparent 1
       enablewraparound 1

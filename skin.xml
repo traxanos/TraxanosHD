@@ -1980,7 +1980,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel position="255,42" zPosition="-987" size="108,63" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
     <eLabel position="57,153" zPosition="-992" size="774,48" backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Timer Editor"/>
-    <widget position="57,219" zPosition="-990" size="774,420" backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground"/>
+    <widget position="57,219" zPosition="-990" size="774,423" backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground"/>
     <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
     <eLabel position="57,645" zPosition="-991" size="180,3" backgroundColor="red" foregroundColor="foreground"/>
     <eLabel position="255,645" zPosition="-989" size="180,3" backgroundColor="green" foregroundColor="foreground"/>
@@ -2043,7 +2043,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget position="246,648" zPosition="-979" size="198,30" backgroundColor="background" foregroundColor="foreground" name="oktext" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <eLabel position="39,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
   </screen>
-  <screen name="TimerSelect" title="Timer selection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="TimerSelection" title="Timer selection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <widget position="1082,39" zPosition="-992" size="159,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -2084,17 +2084,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel position="255,42" zPosition="-987" size="108,63" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
     <eLabel position="57,153" zPosition="-992" size="774,48" backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Timer Editor"/>
-    <widget position="57,219" zPosition="-990" size="774,420" backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground"/>
+    <widget position="57,219" zPosition="-990" size="774,444" backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground"/>
     <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
-    <eLabel position="57,645" zPosition="-991" size="180,3" backgroundColor="red" foregroundColor="foreground"/>
-    <eLabel position="255,645" zPosition="-989" size="180,3" backgroundColor="green" foregroundColor="foreground"/>
-    <eLabel position="453,645" zPosition="-987" size="180,3" backgroundColor="yellow" foregroundColor="foreground"/>
-    <eLabel position="651,645" zPosition="-985" size="180,3" backgroundColor="blue" foregroundColor="foreground"/>
-    <widget position="48,648" zPosition="-981" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
-    <widget position="246,648" zPosition="-979" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
-    <widget position="444,648" zPosition="-977" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
-    <widget position="642,648" zPosition="-975" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
-    <eLabel position="39,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
   </screen>
   <screen name="TimeshiftState" title="TimeshiftState" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="2">
     <widget position="1082,39" zPosition="-992" size="159,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1">
