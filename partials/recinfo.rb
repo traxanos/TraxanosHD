@@ -2,26 +2,24 @@ class TraxanosHD::Element
   def recinfo
     widget do
       position TraxanosHD.border, 135
-      size 75, 30
+      size 74, 23
       source "session.RecordState"
-      text "REC"
-      font "Regular", 24
-      background nil
-      foreground :red
-      render "FixedLabel"
-      convert type: "ConditionalShowHide"
+      foreground nil
       transparent 1
+      render "Pixmap"
+      image "TraxanosHD/icons/rec.png"
+      convert "config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean", type: "ConfigEntryTest"
+      convert type: "ConditionalShowHide"
     end
 
     widget do
       position TraxanosHD.border, 135
-      size 75, 30
+      size 74, 23
       source "session.RecordState"
-      text " "
-      font "Regular", 24
       foreground nil
-      background :transparent
-      render "FixedLabel"
+      transparent 1
+      render "Pixmap"
+      image "TraxanosHD/icons/rec.png"
       convert "config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean", type: "ConfigEntryTest"
       convert "Blink", type: "ConditionalShowHide"
     end

@@ -964,10 +964,11 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="VWeather">forecastTomorrowTempMin</convert>
     </widget>
     <eLabel position="255,42" zPosition="-987" size="108,63" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
-    <widget position="39,135" zPosition="-995" size="75,30" foregroundColor="red" source="session.RecordState" text="REC" font="Regular; 24" render="FixedLabel" transparent="1">
+    <widget position="39,135" zPosition="-995" size="74,23" backgroundColor="background" source="session.RecordState" transparent="1" render="Pixmap" pixmap="TraxanosHD/icons/rec.png">
+      <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget position="39,135" zPosition="-993" size="75,30" backgroundColor="transparent" source="session.RecordState" font="Regular; 24" render="FixedLabel">
+    <widget position="39,135" zPosition="-993" size="74,23" backgroundColor="background" source="session.RecordState" transparent="1" render="Pixmap" pixmap="TraxanosHD/icons/rec.png">
       <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
@@ -1269,10 +1270,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="VWeather">forecastTomorrowTempMin</convert>
     </widget>
     <eLabel position="255,42" zPosition="-987" size="108,63" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
-    <widget position="39,135" zPosition="-995" size="75,30" foregroundColor="red" source="session.RecordState" text="REC" font="Regular; 24" render="FixedLabel" transparent="1">
+    <widget position="39,135" zPosition="-995" size="74,23" backgroundColor="background" source="session.RecordState" transparent="1" render="Pixmap" pixmap="TraxanosHD/icons/rec.png">
+      <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget position="39,135" zPosition="-993" size="75,30" backgroundColor="transparent" source="session.RecordState" font="Regular; 24" render="FixedLabel">
+    <widget position="39,135" zPosition="-993" size="74,23" backgroundColor="background" source="session.RecordState" transparent="1" render="Pixmap" pixmap="TraxanosHD/icons/rec.png">
       <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
@@ -2139,10 +2141,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="VWeather">forecastTomorrowTempMin</convert>
     </widget>
     <eLabel position="255,42" zPosition="-987" size="108,63" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
-    <widget position="39,135" zPosition="-995" size="75,30" foregroundColor="red" source="session.RecordState" text="REC" font="Regular; 24" render="FixedLabel" transparent="1">
+    <widget position="39,135" zPosition="-995" size="74,23" backgroundColor="background" source="session.RecordState" transparent="1" render="Pixmap" pixmap="TraxanosHD/icons/rec.png">
+      <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget position="39,135" zPosition="-993" size="75,30" backgroundColor="transparent" source="session.RecordState" font="Regular; 24" render="FixedLabel">
+    <widget position="39,135" zPosition="-993" size="74,23" backgroundColor="background" source="session.RecordState" transparent="1" render="Pixmap" pixmap="TraxanosHD/icons/rec.png">
       <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
