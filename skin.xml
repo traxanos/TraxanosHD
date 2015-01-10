@@ -2068,6 +2068,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget position="444,648" zPosition="-975" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <widget position="642,648" zPosition="-973" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <eLabel position="39,648" zPosition="-981" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+    <eLabel position="1151,645" zPosition="-987" size="72,30" backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="SegoeUI; 20" noWrap="1" halign="center" valign="center"/>
   </screen>
   <!-- TimerEntry -->
   <screen name="TimerEntry" title="Timer entry" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
