@@ -137,5 +137,5 @@ end
 File.open("skin.xml", "w") do |file|
   skin = xml.target!
   file << skin
-  puts skin
+  #puts skin
 end

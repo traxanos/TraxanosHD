@@ -190,7 +190,6 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
 
         x = 120
         tuner_list.each do |tuner|
-          p tuner
           widget do
             position x, y
             size 15, 24

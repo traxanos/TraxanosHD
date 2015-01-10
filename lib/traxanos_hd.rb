@@ -12,7 +12,7 @@ module TraxanosHD
   class << self
 
     def debug
-      true
+      false
     end
 
     def width
