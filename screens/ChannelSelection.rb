@@ -103,6 +103,17 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       background :foregroundAccent
       foreground :backgroundAccent
     end
+
+    label do
+      position -(72+TraxanosHD.spacer+72)
+      size 72, 30
+      text "EPG"
+      font "SegoeUI", 20
+      nowrap 1
+      orientation :center, :center
+      background :foregroundAccent
+      foreground :backgroundAccent
+    end
   end
 
 end

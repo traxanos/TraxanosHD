@@ -26,9 +26,9 @@ TraxanosHD.colors[:red]               = "\#00f23d21"
 TraxanosHD.colors[:blue]              = "\#000064c7"
 TraxanosHD.colors[:orange]            = "\#00f47d19"
 if dark
-  TraxanosHD.colors[:background]        = "\#10222222"
+  TraxanosHD.colors[:background]        = "\#10101010"
   TraxanosHD.colors[:foreground]        = "\#00bbbbbb"
-  TraxanosHD.colors[:shadow]            = "\#10101010"
+  TraxanosHD.colors[:shadow]            = "\#10202020"
 else
   TraxanosHD.colors[:background]        = "\#10bbbbbb"
   TraxanosHD.colors[:foreground]        = "\#00000000"

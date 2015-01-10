@@ -18,9 +18,9 @@
     <color value="#00f23d21" name="red"/>
     <color value="#000064c7" name="blue"/>
     <color value="#00f47d19" name="orange"/>
-    <color value="#10222222" name="background"/>
+    <color value="#10101010" name="background"/>
     <color value="#00bbbbbb" name="foreground"/>
-    <color value="#10101010" name="shadow"/>
+    <color value="#10202020" name="shadow"/>
     <color value="#00bbbbbb" name="foregroundAccent"/>
     <color value="#106c0aab" name="backgroundAccent"/>
     <color value="#10888888" name="graphepgBGNormal"/>
@@ -367,6 +367,7 @@
     </widget>
     <eLabel position="849,141" zPosition="-991" size="392,534" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
     <eLabel position="1151,645" zPosition="-987" size="72,30" backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="SegoeUI; 20" noWrap="1" halign="center" valign="center"/>
+    <eLabel position="1061,645" zPosition="-985" size="72,30" backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="SegoeUI; 20" noWrap="1" halign="center" valign="center"/>
   </screen>
   <!-- ChoiceBox -->
   <screen name="ChoiceBox" title="Input" position="center,center" size="780,260" flags="wfNoBorder" backgroundColor="background" zPosition="99">
