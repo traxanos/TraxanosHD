@@ -36,6 +36,7 @@ module TraxanosHD
     end
 
     def render!
+      xml.comment! name.to_s
       xml.screen(options.reject { |k, v| v.blank? }) do |xml|
         elements.each do |element|
           element.render!(xml)
