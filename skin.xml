@@ -1368,7 +1368,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel position="255,42" zPosition="-987" size="108,63" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
     <eLabel position="57,153" zPosition="-992" size="774,48" backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Select a movie"/>
-    <widget position="57,219" zPosition="-990" size="774,420" backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground"/>
+    <widget position="57,219" zPosition="-990" size="774,390" backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground"/>
+    <widget position="57,609" zPosition="-988" size="774,30" backgroundColor="background" foregroundColor="foreground" name="freeDiskSpace" transparent="1" noWrap="1" font="Regular; 16" halign="left" valign="center"/>
     <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
     <eLabel position="57,645" zPosition="-991" size="180,3" backgroundColor="red" foregroundColor="foreground"/>
     <eLabel position="255,645" zPosition="-989" size="180,3" backgroundColor="green" foregroundColor="foreground"/>

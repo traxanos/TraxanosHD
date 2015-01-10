@@ -6,12 +6,22 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
 
     widget do
       position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 30*13
       itemheight 30
       name "list"
       transparent 1
       enablewraparound 1
       scrollbars
+    end
+
+    widget do
+      position 0, 48 + TraxanosHD.spacer + (30*13)
+      size nil, 30
+      name "freeDiskSpace"
+      transparent 1
+      nowrap 1
+      font "Regular", 16
+      orientation :left, :center
     end
   end
 
