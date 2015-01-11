@@ -69,8 +69,8 @@ TraxanosHD.fonts[:FontAwesome] = { scale: 100, filename: 'TraxanosHD/fonts/FontA
 
 # Generate images
 TraxanosHD::Images::Scrollbar.new
-TraxanosHD::Images::ProgressbarAccent.new
-TraxanosHD::Images::ProgressbarForeground.new
+TraxanosHD::Images::Progressbar.new(name: :accent, color: :backgroundAccent)
+TraxanosHD::Images::Progressbar.new(name: :foreground, color: :foreground)
 
 # Gernerate screens
 xml = Builder::XmlMarkup.new indent: 2

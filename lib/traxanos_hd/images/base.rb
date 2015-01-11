@@ -1,8 +1,11 @@
 module TraxanosHD::Images
   class Base
-
     attr_reader :image
-    def initialize
+    attr_reader :options
+
+    def initialize(*args)
+      @options = args.extract_options!
+
       @image = Magick::Image.new(width, height) do |i|
         i.background_color = "Transparent"
       end

@@ -1,9 +1,9 @@
 module TraxanosHD::Images
-  class ProgressbarAccent < Base
+  class Progressbar < Base
     def render
       line = Magick::Draw.new
-      line.fill(color_by_colorname(:backgroundAccent))
-      line.fill_opacity(opacity_by_colorname(:backgroundAccent))
+      line.fill(color_by_colorname(options[:color]))
+      line.fill_opacity(opacity_by_colorname(options[:color]))
       line.rectangle(0, 0, width, height)
       line.draw(image)
     end
@@ -17,7 +17,7 @@ module TraxanosHD::Images
     end
 
     def filename
-      "images/progressbar_accent.png"
+      "images/progressbar_#{options[:name]}.png"
     end
   end
 end
