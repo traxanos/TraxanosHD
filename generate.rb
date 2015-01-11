@@ -92,6 +92,12 @@ TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_defa
 TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_pre.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
 TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_post.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
 
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/ico_mp_forward.png", height: 16, width: 16, size: 17, background: :background, x: 0, y: 0, antialias: true
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/ico_mp_rewind.png", height: 16, width: 16, size: 17, background: :background, x: 0, y: 0, antialias: true
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/ico_mp_stop.png", height: 16, width: 16, size: 17, background: :background, x: 0, y: 0, antialias: true
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/ico_mp_play.png", height: 16, width: 16, size: 17, background: :background, x: 2, y: 0, antialias: true
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/ico_mp_pause.png", height: 16, width: 16, size: 17, background: :background, x: 0, y: 0, antialias: true
+
 TraxanosHD::Images::Scrollbar.new
 TraxanosHD::Images::Progressbar.new(name: :accent, color: :backgroundAccent)
 TraxanosHD::Images::Progressbar.new(name: :foreground, color: :foreground)
