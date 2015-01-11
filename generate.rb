@@ -85,6 +85,13 @@ TraxanosHD::Images::Icon.new code: '', foreground: :orange, filename: "skin_d
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "skin_default/icons/movie_select.png", height: 20, width: 20, size: 18, background: :background, x: 1, y: 2
 TraxanosHD::Images::Icon.new code: '', foreground: :green, filename: "skin_default/icons/movie_seen.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 2
 TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/movie_rec.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 2
+
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_add.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_prepost.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_pre.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_post.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+
 TraxanosHD::Images::Scrollbar.new
 TraxanosHD::Images::Progressbar.new(name: :accent, color: :backgroundAccent)
 TraxanosHD::Images::Progressbar.new(name: :foreground, color: :foreground)
