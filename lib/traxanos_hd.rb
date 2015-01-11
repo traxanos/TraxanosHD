@@ -31,6 +31,10 @@ module TraxanosHD
       @colors ||= {}
     end
 
+    def fonts
+      @fonts ||= {}
+    end
+
     def border
       @border ||= grid * 13
     end

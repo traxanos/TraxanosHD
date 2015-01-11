@@ -190,6 +190,11 @@ module TraxanosHD
       foreground :foregroundAccent
     end
 
+    def accent2
+      background :backgroundAccent2
+      foreground :foregroundAccent2
+    end
+
     def orientation(halign, valign = nil)
       @options["halign"] = halign
       @options["valign"] = valign
@@ -263,9 +268,9 @@ module TraxanosHD
       options["scrollbarMode"] = mode
       options["scrollbarWidth"] = 5
       options["scrollbarSliderBorderWidth"] = 0
-      # options["scrollbarSliderForegroundColor"] = :foreground
-      # options["scrollbarSliderBorderColor"] = :foreground
-      # options["scrollbarSliderBackgroundPicture"] = "TraxanosHD/scrollbar_bg.png"
+      options["scrollbarSliderForegroundColor"] = :foreground
+      options["scrollbarSliderBorderColor"] = :foreground
+      options["scrollbarBackgroundPicture"] = "TraxanosHD/images/scrollbar_bg.png"
       # options["scrollbarSliderPicture"] = "TraxanosHD/scrollbar.png"
     end
 

@@ -34,12 +34,18 @@ else
   TraxanosHD.colors[:foreground]        = "\#00000000"
   TraxanosHD.colors[:shadow]            = "\#10A0A0A0"
 end
-TraxanosHD.colors[:foregroundAccent]  = "\#00bbbbbb"
-TraxanosHD.colors[:backgroundAccent]  = "\#106c0aab"
-TraxanosHD.colors[:graphepgBGNormal]  = "\#10888888"
-TraxanosHD.colors[:graphepgFGNormal]  = "\#00222222"
-TraxanosHD.colors[:graphepgBGNow]     = "\#10bbbbbb"
-TraxanosHD.colors[:graphepgFGNow]     = "\#00222222"
+TraxanosHD.colors[:foregroundAccent]    = "\#00bbbbbb"
+TraxanosHD.colors[:backgroundAccent]    = "\#106c0aab"
+
+# TraxanosHD.colors[:foregroundAccent]    = "\#00303030"
+# TraxanosHD.colors[:backgroundAccent]    = "\#10747474"
+
+TraxanosHD.colors[:graphepgBGNormal]    = "\#10888888"
+TraxanosHD.colors[:graphepgFGNormal]    = "\#00222222"
+TraxanosHD.colors[:graphepgBGNow]       = "\#10bbbbbb"
+TraxanosHD.colors[:graphepgFGNow]       = "\#00222222"
+TraxanosHD.colors[:foregroundAccent2]   = "\#10bbbbbb"
+TraxanosHD.colors[:backgroundAccent2]   = "\#006c0aab"
 if dark
   TraxanosHD.colors[:channelSelection2]       = TraxanosHD.colors[:white]
   TraxanosHD.colors[:channelSelection2Select] = TraxanosHD.colors[:white]
@@ -48,18 +54,16 @@ else
   TraxanosHD.colors[:channelSelection2Select] = TraxanosHD.colors[:background]
 end
 
-colors = TraxanosHD.colors
 
-fonts = {}
-fonts[:LCD]       = { scale: 100, filename: 'lcd.ttf' }
-fonts[:Console]   = { scale: 100, filename: 'nmsbd.ttf' }
-fonts[:Bold]      = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Bold.ttf' }
-fonts[:Regular]   = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Regular.ttf' }
-fonts[:Light]     = { scale:  80, filename: 'TraxanosHD/fonts/OpenSans-Light.ttf' }
-fonts[:Italic]    = { scale:  80, filename: 'TraxanosHD/fonts/OpenSans-Italic.ttf' }
-fonts[:SegoeUI]   = { scale: 100, filename: 'TraxanosHD/fonts/SegoeUI.ttf' }
-fonts[:Meteocons] = { scale: 100, filename: 'TraxanosHD/fonts/Meteocons.ttf' }
-fonts[:FontAwesome]   = { scale: 100, filename: 'TraxanosHD/fonts/FontAwesome.ttf' }
+TraxanosHD.fonts[:LCD]         = { scale: 100, filename: 'lcd.ttf' }
+TraxanosHD.fonts[:Console]     = { scale: 100, filename: 'nmsbd.ttf' }
+TraxanosHD.fonts[:Bold]        = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Bold.ttf' }
+TraxanosHD.fonts[:Regular]     = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Regular.ttf' }
+TraxanosHD.fonts[:Light]       = { scale:  80, filename: 'TraxanosHD/fonts/OpenSans-Light.ttf' }
+TraxanosHD.fonts[:Italic]      = { scale:  80, filename: 'TraxanosHD/fonts/OpenSans-Italic.ttf' }
+TraxanosHD.fonts[:SegoeUI]     = { scale: 100, filename: 'TraxanosHD/fonts/SegoeUI.ttf' }
+TraxanosHD.fonts[:Meteocons]   = { scale: 100, filename: 'TraxanosHD/fonts/Meteocons.ttf' }
+TraxanosHD.fonts[:FontAwesome] = { scale: 100, filename: 'TraxanosHD/fonts/FontAwesome.ttf' }
 
 
 xml = Builder::XmlMarkup.new indent: 2
@@ -81,7 +85,7 @@ xml.skin do
   end
 
   xml.fonts do
-    fonts.each do |name, options|
+    TraxanosHD.fonts.each do |name, options|
       xml.font name: name, filename: options[:filename], scale: options[:scale]
     end
   end
@@ -98,12 +102,12 @@ xml.skin do
     xml.color name: :LabelForeground, color: :foreground
     xml.color name: :ListboxBackground, color: :background
     xml.color name: :ListboxForeground, color: :foreground
-    xml.color name: :ListboxSelectedBackground, color: :backgroundAccent
-    xml.color name: :ListboxSelectedForeground, color: :foregroundAccent
-    xml.color name: :ListboxMarkedBackground, color: :backgroundAccent
-    xml.color name: :ListboxMarkedForeground, color: :foregroundAccent
-    xml.color name: :ListboxMarkedAndSelectedBackground, color: :backgroundAccent
-    xml.color name: :ListboxMarkedAndSelectedForeground, color: :foregroundAccent
+    xml.color name: :ListboxSelectedBackground, color: :backgroundAccent2
+    xml.color name: :ListboxSelectedForeground, color: :foregroundAccent2
+    xml.color name: :ListboxMarkedBackground, color: :backgroundAccent2
+    xml.color name: :ListboxMarkedForeground, color: :foregroundAccent2
+    xml.color name: :ListboxMarkedAndSelectedBackground, color: :backgroundAccent2
+    xml.color name: :ListboxMarkedAndSelectedForeground, color: :foregroundAccent2
     xml.color name: :WindowTitleForeground, color: :foreground
   end
 
@@ -112,21 +116,20 @@ xml.skin do
     xml.color name: :LabelForeground, color: :foreground
     xml.color name: :ListboxBackground, color: :background
     xml.color name: :ListboxForeground, color: :foreground
-    xml.color name: :ListboxSelectedBackground, color: :backgroundAccent
-    xml.color name: :ListboxSelectedForeground, color: :foregroundAccent
-    xml.color name: :ListboxMarkedBackground, color: :backgroundAccent
-    xml.color name: :ListboxMarkedForeground, color: :foregroundAccent
-    xml.color name: :ListboxMarkedAndSelectedBackground, color: :backgroundAccent
-    xml.color name: :ListboxMarkedAndSelectedForeground, color: :foregroundAccent
+    xml.color name: :ListboxSelectedBackground, color: :backgroundAccent2
+    xml.color name: :ListboxSelectedForeground, color: :foregroundAccent2
+    xml.color name: :ListboxMarkedBackground, color: :backgroundAccent2
+    xml.color name: :ListboxMarkedForeground, color: :foregroundAccent2
+    xml.color name: :ListboxMarkedAndSelectedBackground, color: :backgroundAccent2
+    xml.color name: :ListboxMarkedAndSelectedForeground, color: :foregroundAccent2
     xml.color name: :WindowTitleForeground, color: :foreground
   end
 
   xml.windowstylescrollbar do
     xml.value name: "ScrollbarWidth", value: "5"
     xml.value name: "ScrollbarBorderWidth", value: "0"
-    xml.value name: "ScrollbarWidth", value: "5"
-    # xml.pixmap name: "BackgroundPixmap", filename: "TraxanosHD/scrollbar_bg.png"
-    # xml.pixmap name: "ValuePixmap", filename: "TraxanosHD/scrollbar.png"
+    #xml.pixmap name: "BackgroundPixmap", filename: "TraxanosHD/scrollbar_bg.png"
+    #xml.pixmap name: "ValuePixmap", filename: "TraxanosHD/scrollbar.png"
   end
 
   # load screens
@@ -137,7 +140,7 @@ xml.skin do
   end
 
   # specials
-  # xml.screen position: "200,200", size: "720,576", backgroundColor: :orange, flags: :wfNoBorder, name: "SubtitleDisplay", zPosition: -10
+  xml.screen position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :transparent, flags: :wfNoBorder, name: "SubtitleDisplay", zPosition: -10
   xml.screen position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, name: "Standby", title: "Standby", zPosition: -90
   xml.screen position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, name: "Scart", title: "Scart", zPosition: -90
 

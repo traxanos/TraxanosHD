@@ -22,7 +22,7 @@ class TraxanosHD::Element
           position 0, 71
           size 943, 5
           source "session.Event_Now"
-          foreground :backgroundAccent
+          foreground :backgroundAccent2
           transparent 1
           convert "Progress", type: "EventTime"
         end
