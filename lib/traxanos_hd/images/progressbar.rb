@@ -17,7 +17,7 @@ module TraxanosHD::Images
     end
 
     def filename
-      "PNG32:images/progressbar_#{options[:name]}.png"
+      "images/progressbar_#{options[:name]}.png"
     end
   end
 end

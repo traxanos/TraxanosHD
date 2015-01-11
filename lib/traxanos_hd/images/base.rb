@@ -12,7 +12,7 @@ module TraxanosHD::Images
 
       render
 
-      @image.write("#{filename}")
+      @image.write("PNG32:#{filename}")
     end
 
     def opacity_by_colorname(name)

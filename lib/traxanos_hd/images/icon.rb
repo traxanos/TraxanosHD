@@ -6,14 +6,6 @@ module TraxanosHD::Images
       options[:x] ||= 0
       options[:y] ||= 0
 
-      if options[:antialias]
-        line = Magick::Draw.new
-        line.fill color_by_colorname(options[:background])
-        line.fill_opacity opacity_by_colorname(options[:background])
-        line.rectangle 0, 0, width, height
-        line.draw image
-      end
-
       text = Magick::Draw.new
       text.font = "fonts/FontAwesome.ttf"
       text.fill = color_by_colorname(options[:foreground])
@@ -33,7 +25,7 @@ module TraxanosHD::Images
     end
 
     def filename
-      "PNG8:#{options[:filename]}"
+      "#{options[:filename]}"
     end
   end
 end

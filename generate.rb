@@ -68,6 +68,9 @@ TraxanosHD.fonts[:FontAwesome] = { scale: 100, filename: 'TraxanosHD/fonts/FontA
 
 
 # Generate images
+TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "images/input_error.png", height: 66, width: 66, size: 50, background: :background, x: 12, y: 8, antialias: true
+TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "images/input_info.png", height: 66, width: 66, size: 50, background: :background, x: 12, y: 8, antialias: true
+TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "images/input_question.png", height: 66, width: 66, size: 50, background: :background, x: 12, y: 8, antialias: true
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "extensions/directory.png", height: 20, width: 20, size: 18, background: :background, x: 1, y: 4
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "extensions/movie.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 2
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "extensions/music.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 1
