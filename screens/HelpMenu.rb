@@ -39,7 +39,7 @@ TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
   widget do
     position 0, 0, 11
     size 37, 70
-    image "TraxanosHD/icons/arrowdown.png"
+    image "TraxanosHD/images/arrowdown.png"
     alphatest "on"
     custom "position", "-100, -100"
     name "arrowdown"
@@ -49,7 +49,7 @@ TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
   widget do
     position 0, 0, 11
     size 37, 70
-    image "TraxanosHD/icons/arrowdown.png"
+    image "TraxanosHD/images/arrowdown.png"
     alphatest "on"
     custom "position", "-100, -100"
     name "arrowdown2"
@@ -59,7 +59,7 @@ TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
   widget do
     position 0, 0, 11
     size 37, 70
-    image "TraxanosHD/icons/arrowup.png"
+    image "TraxanosHD/images/arrowup.png"
     alphatest "on"
     custom "position", "-100, -100"
     name "arrowup"
@@ -69,7 +69,7 @@ TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
   widget do
     position 0, 0, 11
     size 37, 70
-    image "TraxanosHD/icons/arrowup.png"
+    image "TraxanosHD/images/arrowup.png"
     alphatest "on"
     custom "position", "-100, -100"
     name "arrowup2"

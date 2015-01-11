@@ -15,7 +15,7 @@ TraxanosHD::Screen.new(xml, :MessageBox, "Message") do
   widget do
     position 12, 12
     size 66, 66
-    image "TraxanosHD/icons/input_error.png"
+    image "TraxanosHD/images/input_error.png"
     transparent 1
     foreground nil
     name "ErrorPixmap"
@@ -25,7 +25,7 @@ TraxanosHD::Screen.new(xml, :MessageBox, "Message") do
   widget do
     position 12, 12
     size 66, 66
-    image "TraxanosHD/icons/input_question.png"
+    image "TraxanosHD/images/input_question.png"
     transparent 1
     foreground nil
     name "QuestionPixmap"
@@ -35,7 +35,7 @@ TraxanosHD::Screen.new(xml, :MessageBox, "Message") do
   widget do
     position 12, 12
     size 66, 66
-    image "TraxanosHD/icons/input_info.png"
+    image "TraxanosHD/images/input_info.png"
     transparent 1
     foreground nil
     name "InfoPixmap"

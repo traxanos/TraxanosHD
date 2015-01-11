@@ -7,7 +7,7 @@ class TraxanosHD::Element
       foreground nil
       transparent 1
       render "Pixmap"
-      image "TraxanosHD/icons/rec.png"
+      image "TraxanosHD/images/rec.png"
       convert "config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean", type: "ConfigEntryTest"
       convert type: "ConditionalShowHide"
     end
@@ -19,7 +19,7 @@ class TraxanosHD::Element
       foreground nil
       transparent 1
       render "Pixmap"
-      image "TraxanosHD/icons/rec.png"
+      image "TraxanosHD/images/rec.png"
       convert "config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean", type: "ConfigEntryTest"
       convert "Blink", type: "ConditionalShowHide"
     end
