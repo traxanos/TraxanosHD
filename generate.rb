@@ -93,7 +93,7 @@ xml.skin do
     xml.sub name: "Subtitle_Italic",  font: "Italic;30",  foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "3,3"
   end
 
-  xml.windowstyle(id: 0, type: :skinned) do |xml|
+  xml.windowstyle(id: 0, type: :skinned) do
     xml.color name: :Background, color: :background
     xml.color name: :LabelForeground, color: :foreground
     xml.color name: :ListboxBackground, color: :background
@@ -107,7 +107,7 @@ xml.skin do
     xml.color name: :WindowTitleForeground, color: :foreground
   end
 
-  xml.windowstyle(id: 1, type: :skinned) do |xml|
+  xml.windowstyle(id: 1, type: :skinned) do
     xml.color name: :Background, color: :background
     xml.color name: :LabelForeground, color: :foreground
     xml.color name: :ListboxBackground, color: :background
@@ -119,6 +119,14 @@ xml.skin do
     xml.color name: :ListboxMarkedAndSelectedBackground, color: :backgroundAccent
     xml.color name: :ListboxMarkedAndSelectedForeground, color: :foregroundAccent
     xml.color name: :WindowTitleForeground, color: :foreground
+  end
+
+  xml.windowstylescrollbar do
+    xml.value name: "ScrollbarWidth", value: "5"
+    xml.value name: "ScrollbarBorderWidth", value: "0"
+    xml.value name: "ScrollbarWidth", value: "5"
+    # xml.pixmap name: "BackgroundPixmap", filename: "TraxanosHD/scrollbar_bg.png"
+    # xml.pixmap name: "ValuePixmap", filename: "TraxanosHD/scrollbar.png"
   end
 
   # load screens
