@@ -136,6 +136,8 @@ xml.skin do
     instance_eval File.read(file), file
   end
 
+  # specials
+  # xml.screen position: "200,200", size: "720,576", backgroundColor: :orange, flags: :wfNoBorder, name: "SubtitleDisplay", zPosition: -10
   xml.screen position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, name: "Standby", title: "Standby", zPosition: -90
   xml.screen position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, name: "Scart", title: "Scart", zPosition: -90
 

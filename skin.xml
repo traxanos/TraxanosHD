@@ -1678,7 +1678,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel position="0,0" zPosition="-998" size="810,69" backgroundColor="transparent" foregroundColor="foreground"/>
   </screen>
   <!-- RdsInfoDisplay -->
-  <screen name="RdsInfoDisplay" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="-2">
+  <screen name="RdsInfoDisplay" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="-10">
     <widget position="39,639" zPosition="-997" size="1202,42" backgroundColor="background" foregroundColor="foreground" name="RtpText" font="SegoeUI; 30" halign="left" valign="center" noWrap="1" shadowColor="shadow" shadowOffset="-2,-2"/>
     <widget position="39,639" zPosition="-995" size="1202,42" backgroundColor="background" foregroundColor="foreground" name="RadioText" font="SegoeUI; 30" halign="left" valign="center" noWrap="1" shadowColor="shadow" shadowOffset="-2,-2"/>
   </screen>

@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :RdsInfoDisplay) do
-  position 0, 0, -2
+  position 0, 0, -10
 
   widget do
     position 39, 639
