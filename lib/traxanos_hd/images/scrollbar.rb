@@ -22,7 +22,7 @@ module TraxanosHD::Images
     end
 
     def filename
-      "images/scrollbar_bg.png"
+      "PNG32:images/scrollbar_bg.png"
     end
   end
 end
