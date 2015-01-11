@@ -2021,6 +2021,60 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget position="246,648" zPosition="-979" size="198,30" backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <eLabel position="39,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
   </screen>
+  <!-- SimpleChannelSelection -->
+  <screen name="SimpleChannelSelection" title="Channel selection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <widget position="1082,39" zPosition="-992" size="159,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel position="1082,39" zPosition="-993" size="159,69" backgroundColor="background" foregroundColor="foreground"/>
+    <widget position="965,48" zPosition="-989" size="108,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 16" render="Label" halign="right" valign="top" noWrap="1" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget position="965,75" zPosition="-987" size="108,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 16" render="Label" halign="right" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel position="956,42" zPosition="-991" size="126,63" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
+    <eLabel position="849,39" zPosition="-995" size="392,69" backgroundColor="transparent" foregroundColor="foreground"/>
+    <widget position="39,39" zPosition="-993" size="0,0" backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime"/>
+    <widget position="39,39" zPosition="-987" size="75,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">currentWeatherTemp</convert>
+    </widget>
+    <widget position="111,45" zPosition="-985" size="24,24" backgroundColor="background" foregroundColor="foreground" font="Regular; 17" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">CF</convert>
+    </widget>
+    <widget position="147,45" zPosition="-983" size="57,57" backgroundColor="background" foregroundColor="foreground" font="Meteocons; 48" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTodayCode</convert>
+    </widget>
+    <widget position="210,48" zPosition="-981" size="39,24" backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTodayTempMax</convert>
+    </widget>
+    <widget position="210,75" zPosition="-979" size="39,24" backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTodayTempMin</convert>
+    </widget>
+    <eLabel position="39,39" zPosition="-989" size="216,69" backgroundColor="background" foregroundColor="foreground"/>
+    <widget position="261,48" zPosition="-985" size="51,51" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Meteocons; 45" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTomorrowCode</convert>
+    </widget>
+    <widget position="318,48" zPosition="-983" size="39,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTomorrowTempMax</convert>
+    </widget>
+    <widget position="318,75" zPosition="-981" size="39,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTomorrowTempMin</convert>
+    </widget>
+    <eLabel position="255,42" zPosition="-987" size="108,63" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
+    <widget position="57,153" zPosition="-992" size="774,48" backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label"/>
+    <widget position="57,219" zPosition="-990" size="774,420" backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red"/>
+    <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
+    <eLabel position="57,645" zPosition="-991" size="180,3" backgroundColor="red" foregroundColor="foreground"/>
+    <eLabel position="255,645" zPosition="-989" size="180,3" backgroundColor="green" foregroundColor="foreground"/>
+    <eLabel position="453,645" zPosition="-987" size="180,3" backgroundColor="yellow" foregroundColor="foreground"/>
+    <eLabel position="651,645" zPosition="-985" size="180,3" backgroundColor="blue" foregroundColor="foreground"/>
+    <widget position="48,648" zPosition="-981" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
+    <widget position="246,648" zPosition="-979" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
+    <widget position="444,648" zPosition="-977" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
+    <widget position="642,648" zPosition="-975" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
+    <eLabel position="39,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+  </screen>
   <!-- SkinSelector -->
   <screen name="SkinSelector" title="Skin Selector" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <widget position="1082,39" zPosition="-992" size="159,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1">
