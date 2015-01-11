@@ -8,6 +8,7 @@ module TraxanosHD
   autoload :Box, 'traxanos_hd/box'
   autoload :Reference, 'traxanos_hd/reference'
   autoload :Progressbar, 'traxanos_hd/progressbar'
+  autoload :Images, 'traxanos_hd/images'
 
   class << self
 

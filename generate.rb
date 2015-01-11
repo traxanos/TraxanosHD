@@ -2,6 +2,7 @@
 $:.unshift File.expand_path(File.join(File.dirname(__FILE__), 'lib'))
 
 require 'builder'
+require 'rmagick'
 require 'active_support/all'
 require 'traxanos_hd'
 
@@ -66,6 +67,12 @@ TraxanosHD.fonts[:Meteocons]   = { scale: 100, filename: 'TraxanosHD/fonts/Meteo
 TraxanosHD.fonts[:FontAwesome] = { scale: 100, filename: 'TraxanosHD/fonts/FontAwesome.ttf' }
 
 
+# Generate images
+TraxanosHD::Images::Scrollbar.new
+TraxanosHD::Images::ProgressbarAccent.new
+TraxanosHD::Images::ProgressbarForeground.new
+
+# Gernerate screens
 xml = Builder::XmlMarkup.new indent: 2
 xml.instruct! :xml, encoding: "ASCII"
 xml.comment! "TraxanosHD by traxanos | optimized for VTI"
@@ -151,3 +158,8 @@ File.open("skin.xml", "w") do |file|
   file << skin
   #puts skin
 end
+
+
+
+
+
