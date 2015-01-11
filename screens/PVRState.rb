@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :PVRState) do
-  position TraxanosHD.border, TraxanosHD.border, 3
+  position TraxanosHD.border, TraxanosHD.border, 4
   size TraxanosHD.left_width, TraxanosHD.header_height
   width = 138
   label do

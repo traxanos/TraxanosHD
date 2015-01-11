@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
-  position 0, 0, 3
+  position 0, 0, 2
 
   header
 
