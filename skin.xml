@@ -353,22 +353,23 @@
     <widget position="444,648" zPosition="-977" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <widget position="642,648" zPosition="-975" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <eLabel position="39,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
-    <widget position="934,159" zPosition="-987" size="220,132" backgroundColor="backgroundAccent" render="Picon" source="ServiceEvent" alphatest="blend">
+    <eLabel position="867,159" zPosition="-987" size="354,156" backgroundColor="shadow" foregroundColor="foreground"/>
+    <widget position="934,171" zPosition="-985" size="220,132" backgroundColor="backgroundAccent" render="Picon" source="ServiceEvent" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget position="867,309" zPosition="-985" size="62,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="ServiceEvent" halign="left" valign="center">
+    <widget position="867,333" zPosition="-983" size="62,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="ServiceEvent" halign="left" valign="center">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <eLabel position="934,320" zPosition="-984" size="220,1" backgroundColor="foreground" foregroundColor="foreground"/>
-    <widget position="934,318" zPosition="-983" size="220,5" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" source="ServiceEvent" render="Progress">
+    <eLabel position="934,344" zPosition="-982" size="220,1" backgroundColor="foreground" foregroundColor="foreground"/>
+    <widget position="934,342" zPosition="-981" size="220,5" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" source="ServiceEvent" render="Progress">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget position="1161,309" zPosition="-981" size="62,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="ServiceEvent" halign="left" valign="center">
+    <widget position="1161,333" zPosition="-979" size="62,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="ServiceEvent" halign="right" valign="center">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget position="867,351" zPosition="-979" size="356,279" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="ServiceEvent">
+    <widget position="867,375" zPosition="-977" size="356,255" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="ServiceEvent">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel position="849,141" zPosition="-991" size="392,534" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
