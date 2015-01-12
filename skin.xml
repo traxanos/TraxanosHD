@@ -1595,6 +1595,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget position="444,648" zPosition="-977" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <eLabel position="39,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
   </screen>
+  <!-- NumberZap -->
+  <screen name="NumberZap" title="Channel" position="center,center" size="616,180" flags="wfNoBorder" backgroundColor="transparent">
+    <widget position="18,81" zPosition="-996" size="324,81" backgroundColor="background" foregroundColor="foreground" halign="right" valign="bottom" name="servicenumber" font="SegoeUI; 66" transparent="1" noWrap="1"/>
+    <widget position="18,18" zPosition="-994" size="324,42" backgroundColor="background" foregroundColor="foreground" halign="left" valign="top" name="servicename" font="SegoeUI; 36" transparent="1" noWrap="1"/>
+    <eLabel position="0,0" zPosition="-998" size="360,180" backgroundColor="background" foregroundColor="foreground"/>
+  </screen>
   <!-- NumberZapExt -->
   <screen name="NumberZapExt" title="Channel" position="center,center" size="596,180" flags="wfNoBorder" backgroundColor="transparent">
     <widget position="18,81" zPosition="-996" size="304,81" backgroundColor="background" foregroundColor="foreground" halign="right" valign="bottom" name="chNum" font="SegoeUI; 66" transparent="1" noWrap="1"/>
