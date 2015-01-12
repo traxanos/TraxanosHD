@@ -1,7 +1,10 @@
 class TraxanosHD::Element
-  def colorbar(&block)
+  def colorbar(x = nil, y = nil, &block)
+    x ||= TraxanosHD.border
+    y ||= 645
+
     box do
-      position TraxanosHD.border, 645
+      position x, y
       size TraxanosHD.left_width, 6 + 30
 
       label do

@@ -47,7 +47,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionEPGBar_HD, "EPG selection") do
 
   end
 
-  colorbar do
+  colorbar(21) do
     colorbar_buttons1(true, true, true, true)
   end
 end
