@@ -2719,6 +2719,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
   </screen>
   <screen position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" name="SubtitleDisplay" zPosition="-10"/>
+  <screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="black" zPosition="999">
+    <widget source="Canvas" render="Canvas" position="280,70" size="720,576"/>
+  </screen>
   <screen position="0,0" size="0,0" backgroundColor="transparent" flags="wfNoBorder" name="Standby" title="Standby" zPosition="-90"/>
   <screen position="0,0" size="0,0" backgroundColor="transparent" flags="wfNoBorder" name="Scart" title="Scart" zPosition="-90"/>
 </skin>

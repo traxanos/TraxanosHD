@@ -190,6 +190,9 @@ xml.skin do
 
   # specials
   xml.screen position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :transparent, flags: :wfNoBorder, name: "SubtitleDisplay", zPosition: -10
+  xml.screen name: "VideoFinetune", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :black, zPosition: 999 do
+    xml.widget source: "Canvas", render: "Canvas", position: "280,70", size: "720,576"
+  end
   xml.screen position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, name: "Standby", title: "Standby", zPosition: -90
   xml.screen position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, name: "Scart", title: "Scart", zPosition: -90
 
