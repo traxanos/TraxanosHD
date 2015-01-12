@@ -2417,6 +2417,56 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel position="0,0" zPosition="-997" size="69,69" backgroundColor="background" foregroundColor="foreground"/>
     <eLabel position="0,0" zPosition="-998" size="810,69" backgroundColor="transparent" foregroundColor="foreground"/>
   </screen>
+  <!-- VirtualKeyBoard -->
+  <screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+    <widget position="1082,39" zPosition="-992" size="159,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel position="1082,39" zPosition="-993" size="159,69" backgroundColor="background" foregroundColor="foreground"/>
+    <widget position="965,48" zPosition="-989" size="108,24" backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="top" noWrap="1" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget position="965,75" zPosition="-987" size="108,24" backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel position="956,42" zPosition="-991" size="126,63" backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2"/>
+    <eLabel position="849,39" zPosition="-995" size="392,69" backgroundColor="transparent" foregroundColor="foreground"/>
+    <widget position="39,39" zPosition="-993" size="0,0" backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime"/>
+    <widget position="39,39" zPosition="-987" size="75,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">currentWeatherTemp</convert>
+    </widget>
+    <widget position="111,45" zPosition="-985" size="24,24" backgroundColor="background" foregroundColor="foreground" font="Regular; 17" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">CF</convert>
+    </widget>
+    <widget position="147,45" zPosition="-983" size="57,57" backgroundColor="background" foregroundColor="foreground" font="Meteocons; 48" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTodayCode</convert>
+    </widget>
+    <widget position="210,48" zPosition="-981" size="39,24" backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTodayTempMax</convert>
+    </widget>
+    <widget position="210,75" zPosition="-979" size="39,24" backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTodayTempMin</convert>
+    </widget>
+    <eLabel position="39,39" zPosition="-989" size="216,69" backgroundColor="background" foregroundColor="foreground"/>
+    <widget position="261,48" zPosition="-985" size="51,51" backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Meteocons; 45" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTomorrowCode</convert>
+    </widget>
+    <widget position="318,48" zPosition="-983" size="39,24" backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTomorrowTempMax</convert>
+    </widget>
+    <widget position="318,75" zPosition="-981" size="39,24" backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService">
+      <convert type="VWeather">forecastTomorrowTempMin</convert>
+    </widget>
+    <eLabel position="255,42" zPosition="-987" size="108,63" backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2"/>
+    <eLabel position="57,153" zPosition="-992" size="774,48" backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Virtual KeyBoard"/>
+    <widget position="57,219" zPosition="-990" size="774,36" backgroundColor="background" foregroundColor="foreground" name="header" font="Bold; 22" transparent="1" noWrap="1"/>
+    <eLabel position="57,273" zPosition="-988" size="698,38" backgroundColor="foreground" foregroundColor="foreground"/>
+    <eLabel position="58,274" zPosition="-986" size="696,36" backgroundColor="background" foregroundColor="foreground"/>
+    <eLabel position="59,275" zPosition="-984" size="30,34" backgroundColor="background" foregroundColor="foreground" font="FontAwesome; 20" halign="center" valign="center" text="&#61701;" transparent="1"/>
+    <widget position="90,277" zPosition="-982" size="664,30" backgroundColor="background" foregroundColor="foreground" name="text" font="Regular; 20" transparent="1" noWrap="1"/>
+    <widget position="57,327" zPosition="-980" size="696,300" backgroundColor="background" foregroundColor="foreground" name="list" transparent="1" selectionDisabled="1"/>
+    <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
+  </screen>
   <!-- Volume -->
   <screen name="Volume" title="Volume" position="39,39" size="810,69" flags="wfNoBorder" backgroundColor="transparent" zPosition="20">
     <eLabel position="0,0" zPosition="-996" size="69,69" backgroundColor="background" foregroundColor="foreground" text="&#61480;" font="FontAwesome; 39" noWrap="1" halign="center" valign="center" transparent="1"/>

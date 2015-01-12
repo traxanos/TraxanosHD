@@ -98,6 +98,18 @@ TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_defa
 TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/ico_mp_play.png", height: 16, width: 16, size: 17, background: :background, x: 2, y: 0, antialias: true
 TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/ico_mp_pause.png", height: 16, width: 16, size: 17, background: :background, x: 0, y: 0, antialias: true
 
+TraxanosHD::Images::VKey.new name: 'bg'
+TraxanosHD::Images::VKey.new name: 'space'
+TraxanosHD::Images::VKey.new name: 'sel'
+TraxanosHD::Images::VKey.new name: 'esc'
+TraxanosHD::Images::VKey.new name: 'clr'
+TraxanosHD::Images::VKey.new name: 'ok'
+TraxanosHD::Images::VKey.new name: 'left'
+TraxanosHD::Images::VKey.new name: 'right'
+TraxanosHD::Images::VKey.new name: 'backspace'
+TraxanosHD::Images::VKey.new name: 'shift'
+TraxanosHD::Images::VKey.new name: 'shift_sel'
+
 TraxanosHD::Images::Scrollbar.new
 TraxanosHD::Images::Progressbar.new(name: :accent, color: :backgroundAccent)
 TraxanosHD::Images::Progressbar.new(name: :foreground, color: :foreground)
