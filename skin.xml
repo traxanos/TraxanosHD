@@ -2197,6 +2197,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget position="57,219" zPosition="-990" size="774,420" backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground"/>
     <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
   </screen>
+  <!-- TimeDateInput -->
+  <screen name="TimeDateInput" title="Time/Date Input" position="center,center" size="414,150" flags="wfNoBorder" backgroundColor="transparent" zPosition="997">
+    <widget position="18,18" zPosition="-996" size="378,90" backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground"/>
+    <eLabel position="18,114" zPosition="-992" size="180,3" backgroundColor="red" foregroundColor="foreground"/>
+    <eLabel position="216,114" zPosition="-990" size="180,3" backgroundColor="green" foregroundColor="foreground"/>
+    <widget position="9,114" zPosition="-988" size="198,30" backgroundColor="background" foregroundColor="foreground" name="canceltext" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
+    <widget position="207,114" zPosition="-986" size="198,30" backgroundColor="background" foregroundColor="foreground" name="oktext" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
+    <eLabel position="0,0" zPosition="-998" size="414,150" backgroundColor="background" foregroundColor="foreground"/>
+  </screen>
   <!-- TimerEditList -->
   <screen name="TimerEditList" title="Timer Editor" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
     <widget position="1082,39" zPosition="-992" size="159,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1">
