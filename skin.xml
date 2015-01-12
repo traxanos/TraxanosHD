@@ -1621,6 +1621,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel position="360,6" zPosition="-996" size="256,168" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
   </screen>
+  <!-- NumericalTextInputHelpDialog -->
+  <screen name="NumericalTextInputHelpDialog" title="Channel" position="849,141" size="392,534" flags="wfNoBorder" backgroundColor="backgroundAccent" zPosition="99">
+    <widget position="18,18" zPosition="-994" size="118,48" backgroundColor="background" foregroundColor="foreground" name="key1" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="137,18" zPosition="-992" size="118,48" backgroundColor="background" foregroundColor="foreground" name="key2" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="256,18" zPosition="-990" size="118,48" backgroundColor="background" foregroundColor="foreground" name="key3" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="18,67" zPosition="-988" size="118,48" backgroundColor="background" foregroundColor="foreground" name="key4" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="137,67" zPosition="-986" size="118,48" backgroundColor="background" foregroundColor="foreground" name="key5" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="256,67" zPosition="-984" size="118,48" backgroundColor="background" foregroundColor="foreground" name="key6" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="18,116" zPosition="-982" size="118,48" backgroundColor="background" foregroundColor="foreground" name="key7" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="137,116" zPosition="-980" size="118,48" backgroundColor="background" foregroundColor="foreground" name="key8" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="256,116" zPosition="-978" size="118,48" backgroundColor="background" foregroundColor="foreground" name="key9" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="18,165" zPosition="-976" size="98,48" backgroundColor="background" foregroundColor="foreground" name="help1" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="117,165" zPosition="-974" size="158,48" backgroundColor="background" foregroundColor="foreground" name="key0" font="Regular; 16" halign="center" valign="center"/>
+    <widget position="276,165" zPosition="-972" size="98,48" backgroundColor="background" foregroundColor="foreground" name="help2" font="Regular; 16" halign="center" valign="center"/>
+    <eLabel position="0,0" zPosition="-998" size="392,534" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
+  </screen>
   <!-- PictureInPictureTest -->
   <screen name="PictureInPictureTest" position="815,126" size="426,240" flags="wfNoBorder" backgroundColor="transparent">
     <widget position="0,0" zPosition="-998" size="426,240" backgroundColor="transparent" foregroundColor="foreground" name="video"/>
