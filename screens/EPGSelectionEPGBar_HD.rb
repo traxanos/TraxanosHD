@@ -43,11 +43,50 @@ TraxanosHD::Screen.new(xml, :EPGSelectionEPGBar_HD, "EPG selection") do
       itemheight 27
       name "list"
       transparent 1
+      scrollbars
     end
 
   end
 
   colorbar(21) do
     colorbar_buttons1(true, true, true, true)
+  end
+
+  box do
+    position TraxanosHD.width-(TraxanosHD.right_width-(TraxanosHD.spacer*2)+TraxanosHD.border), 648
+    size TraxanosHD.right_width-(TraxanosHD.spacer*2), 30
+
+    label do
+      position -66
+      size 66, 30
+      text "EPG"
+      font "SegoeUI", 20
+      nowrap 1
+      orientation :center, :center
+      background :foregroundAccent
+      foreground :backgroundAccent
+    end
+
+    label do
+      position -(66 + 30 + TraxanosHD.spacer)
+      size 30, 30
+      text ">"
+      font "SegoeUI", 20
+      nowrap 1
+      orientation :center, :center
+      background :foregroundAccent
+      foreground :backgroundAccent
+    end
+
+    label do
+      position -(66 + 30 + TraxanosHD.spacer + 30 + TraxanosHD.spacer)
+      size 30, 30
+      text "<"
+      font "SegoeUI", 20
+      nowrap 1
+      orientation :center, :center
+      background :foregroundAccent
+      foreground :backgroundAccent
+    end
   end
 end

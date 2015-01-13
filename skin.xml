@@ -617,7 +617,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget position="1021,468" zPosition="-989" size="220,132" backgroundColor="background" render="Picon" source="Service" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget position="39,513" zPosition="-987" size="940,108" backgroundColor="background" foregroundColor="foreground" itemHeight="27" name="list" transparent="1"/>
+    <widget position="39,513" zPosition="-987" size="940,108" backgroundColor="background" foregroundColor="foreground" itemHeight="27" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png"/>
     <eLabel position="0,459" zPosition="-995" size="1280,219" backgroundColor="background" foregroundColor="foreground"/>
     <eLabel position="39,645" zPosition="-991" size="180,3" backgroundColor="red" foregroundColor="foreground"/>
     <eLabel position="237,645" zPosition="-989" size="180,3" backgroundColor="green" foregroundColor="foreground"/>
@@ -628,6 +628,9 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget position="426,648" zPosition="-977" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <widget position="624,648" zPosition="-975" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <eLabel position="21,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
+    <eLabel position="1175,648" zPosition="-989" size="66,30" backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="SegoeUI; 20" noWrap="1" halign="center" valign="center"/>
+    <eLabel position="1127,648" zPosition="-987" size="30,30" backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&gt;" font="SegoeUI; 20" noWrap="1" halign="center" valign="center"/>
+    <eLabel position="1079,648" zPosition="-985" size="30,30" backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&lt;" font="SegoeUI; 20" noWrap="1" halign="center" valign="center"/>
   </screen>
   <!-- EPGSelectionMulti -->
   <screen name="EPGSelectionMulti" title="EPG selection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
