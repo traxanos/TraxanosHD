@@ -98,7 +98,7 @@ class TraxanosHD::Element
     end
 
     widget do
-      position 0, 19, 3
+      position 0, 19, 5
       size 15, listHeight + 5
       name "timeline_now"
       alphatest "on"

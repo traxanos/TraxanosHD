@@ -799,7 +799,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget position="57,238" zPosition="2" size="3,6" backgroundColor="background" name="timeline3" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
     <widget position="57,238" zPosition="2" size="3,6" backgroundColor="background" name="timeline4" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
     <widget position="57,238" zPosition="2" size="3,6" backgroundColor="background" name="timeline5" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
-    <widget position="57,238" zPosition="3" size="15,395" backgroundColor="background" name="timeline_now" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline-now.png"/>
+    <widget position="57,238" zPosition="5" size="15,395" backgroundColor="background" name="timeline_now" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline-now.png"/>
     <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
     <widget position="867,159" zPosition="-989" size="356,36" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 24" render="Label" source="Event" halign="left" valign="center">
       <convert type="EventTime">StartTime</convert>
@@ -889,7 +889,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget position="57,238" zPosition="2" size="3,6" backgroundColor="background" name="timeline3" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
     <widget position="57,238" zPosition="2" size="3,6" backgroundColor="background" name="timeline4" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
     <widget position="57,238" zPosition="2" size="3,6" backgroundColor="background" name="timeline5" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
-    <widget position="57,238" zPosition="3" size="15,395" backgroundColor="background" name="timeline_now" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline-now.png"/>
+    <widget position="57,238" zPosition="5" size="15,395" backgroundColor="background" name="timeline_now" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline-now.png"/>
     <eLabel position="39,135" zPosition="-995" size="1202,546" backgroundColor="background" foregroundColor="foreground"/>
     <eLabel position="57,645" zPosition="-991" size="180,3" backgroundColor="red" foregroundColor="foreground"/>
     <eLabel position="255,645" zPosition="-989" size="180,3" backgroundColor="green" foregroundColor="foreground"/>
@@ -917,7 +917,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget position="57,130" zPosition="2" size="3,6" backgroundColor="background" name="timeline3" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
     <widget position="57,130" zPosition="2" size="3,6" backgroundColor="background" name="timeline4" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
     <widget position="57,130" zPosition="2" size="3,6" backgroundColor="background" name="timeline5" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
-    <widget position="57,130" zPosition="3" size="15,455" backgroundColor="background" name="timeline_now" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline-now.png"/>
+    <widget position="57,130" zPosition="5" size="15,455" backgroundColor="background" name="timeline_now" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline-now.png"/>
     <eLabel position="57,111" zPosition="-991" size="1166,474" backgroundColor="background" foregroundColor="foreground"/>
     <widget position="57,585" zPosition="-989" size="1166,53" backgroundColor="background" foregroundColor="foreground" transparent="0" text="asdkjahsdkajsh" font="SegoeUI; 20" halign="left" valign="top" noWrap="1" source="Event" render="Label">
       <convert type="EventName">ExtendedDescription</convert>
@@ -944,7 +944,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget position="57,76" zPosition="2" size="3,6" backgroundColor="background" name="timeline3" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
     <widget position="57,76" zPosition="2" size="3,6" backgroundColor="background" name="timeline4" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
     <widget position="57,76" zPosition="2" size="3,6" backgroundColor="background" name="timeline5" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png"/>
-    <widget position="57,76" zPosition="3" size="15,545" backgroundColor="background" name="timeline_now" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline-now.png"/>
+    <widget position="57,76" zPosition="5" size="15,545" backgroundColor="background" name="timeline_now" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline-now.png"/>
     <eLabel position="39,39" zPosition="-997" size="1202,642" backgroundColor="background" foregroundColor="foreground"/>
     <eLabel position="57,645" zPosition="-993" size="180,3" backgroundColor="red" foregroundColor="foreground"/>
     <eLabel position="255,645" zPosition="-991" size="180,3" backgroundColor="green" foregroundColor="foreground"/>
