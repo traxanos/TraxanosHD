@@ -551,13 +551,14 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget position="444,648" zPosition="-977" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <widget position="642,648" zPosition="-975" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <eLabel position="39,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
-    <widget position="934,159" zPosition="-987" size="220,132" backgroundColor="backgroundAccent" render="Picon" source="Service" alphatest="blend">
+    <eLabel position="867,159" zPosition="-987" size="354,156" backgroundColor="shadow" foregroundColor="foreground"/>
+    <widget position="934,171" zPosition="-985" size="220,132" backgroundColor="backgroundAccent" render="Picon" source="Service" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget position="867,309" zPosition="-985" size="356,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Bold; 18" render="Label" source="Service" halign="left" valign="center">
+    <widget position="867,333" zPosition="-983" size="356,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Bold; 18" render="Label" source="Service" halign="left" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget position="867,351" zPosition="-983" size="356,279" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Event">
+    <widget position="867,375" zPosition="-981" size="356,255" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Event">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel position="849,141" zPosition="-991" size="392,534" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
@@ -1503,20 +1504,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget position="444,648" zPosition="-977" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <widget position="642,648" zPosition="-975" size="198,30" backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1"/>
     <eLabel position="39,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
-    <widget position="934,159" zPosition="-987" size="220,132" backgroundColor="backgroundAccent" render="Picon" source="Service" alphatest="blend">
+    <eLabel position="867,159" zPosition="-987" size="354,156" backgroundColor="shadow" foregroundColor="foreground"/>
+    <widget position="934,171" zPosition="-985" size="220,132" backgroundColor="backgroundAccent" render="Picon" source="Service" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget position="867,309" zPosition="-985" size="356,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Service" halign="left" valign="center">
+    <widget position="867,333" zPosition="-983" size="356,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Service" halign="left" valign="center">
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget position="867,309" zPosition="-983" size="356,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Service" halign="center" valign="center">
+    <widget position="867,333" zPosition="-981" size="356,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Service" halign="center" valign="center">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget position="867,309" zPosition="-981" size="356,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Service" halign="right" valign="center">
+    <widget position="867,333" zPosition="-979" size="356,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Service" halign="right" valign="center">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget position="867,351" zPosition="-979" size="356,279" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Service">
+    <widget position="867,375" zPosition="-977" size="356,255" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Service">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel position="849,141" zPosition="-991" size="392,534" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
@@ -1597,30 +1599,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel position="39,648" zPosition="-983" size="810,30" backgroundColor="background" foregroundColor="foreground" transparent="1"/>
   </screen>
   <!-- NumberZap -->
-  <screen name="NumberZap" title="Channel" position="center,center" size="616,180" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="NumberZap" title="Channel" position="center,center" size="360,180" flags="wfNoBorder" backgroundColor="transparent">
     <widget position="18,81" zPosition="-996" size="324,81" backgroundColor="background" foregroundColor="foreground" halign="right" valign="bottom" name="servicenumber" font="SegoeUI; 66" transparent="1" noWrap="1"/>
     <widget position="18,18" zPosition="-994" size="324,42" backgroundColor="background" foregroundColor="foreground" halign="left" valign="top" name="servicename" font="SegoeUI; 36" transparent="1" noWrap="1"/>
     <eLabel position="0,0" zPosition="-998" size="360,180" backgroundColor="background" foregroundColor="foreground"/>
   </screen>
   <!-- NumberZapExt -->
-  <screen name="NumberZapExt" title="Channel" position="center,center" size="596,180" flags="wfNoBorder" backgroundColor="transparent">
-    <widget position="18,81" zPosition="-996" size="304,81" backgroundColor="background" foregroundColor="foreground" halign="right" valign="bottom" name="chNum" font="SegoeUI; 66" transparent="1" noWrap="1"/>
-    <widget position="18,18" zPosition="-994" size="304,42" backgroundColor="background" foregroundColor="foreground" halign="left" valign="top" name="chName" font="SegoeUI; 36" transparent="1" noWrap="1"/>
-    <widget position="18,60" zPosition="-992" size="304,42" backgroundColor="background" foregroundColor="foreground" halign="left" valign="top" name="chBouq" font="SegoeUI; 20" transparent="1" noWrap="1"/>
-    <eLabel position="0,0" zPosition="-998" size="340,180" backgroundColor="background" foregroundColor="foreground"/>
-    <widget position="358,24" zPosition="-994" size="220,132" backgroundColor="background" foregroundColor="foreground" name="chPicon" alphatest="blend" transparent="1"/>
-    <eLabel position="340,6" zPosition="-996" size="256,168" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
+  <screen name="NumberZapExt" title="Channel" position="center,center" size="574,156" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel position="0,0" zPosition="-997" size="244,156" backgroundColor="background" foregroundColor="foreground"/>
+    <widget position="12,12" zPosition="-995" size="220,132" backgroundColor="background" name="chPicon" alphatest="blend" transparent="1"/>
+    <widget position="262,24" zPosition="-990" size="294,36" backgroundColor="background" foregroundColor="foreground" halign="left" valign="center" name="chName" font="SegoeUI; 36" transparent="1" noWrap="1"/>
+    <widget position="262,72" zPosition="-988" size="294,60" backgroundColor="background" foregroundColor="foreground" halign="right" valign="center" name="chNum" font="SegoeUI; 66" transparent="1" noWrap="1"/>
+    <widget position="262,60" zPosition="-986" size="294,24" backgroundColor="background" foregroundColor="foreground" halign="left" valign="center" name="chBouq" font="SegoeUI; 20" transparent="1" noWrap="1"/>
+    <eLabel position="244,6" zPosition="-993" size="330,144" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
   </screen>
   <!-- NumberZapWithName -->
-  <screen name="NumberZapWithName" title="Channel" position="center,center" size="616,180" flags="wfNoBorder" backgroundColor="transparent">
-    <widget position="18,81" zPosition="-996" size="324,81" backgroundColor="background" foregroundColor="foreground" halign="right" valign="bottom" name="servicenumber" font="SegoeUI; 66" transparent="1" noWrap="1"/>
-    <widget position="18,18" zPosition="-994" size="324,42" backgroundColor="background" foregroundColor="foreground" halign="left" valign="top" name="servicename" font="SegoeUI; 36" transparent="1" noWrap="1"/>
-    <widget position="18,60" zPosition="-992" size="324,42" backgroundColor="background" foregroundColor="foreground" halign="left" valign="top" name="servicebouquet" font="SegoeUI; 20" transparent="1" noWrap="1"/>
-    <eLabel position="0,0" zPosition="-998" size="360,180" backgroundColor="background" foregroundColor="foreground"/>
-    <widget position="378,24" zPosition="-994" size="220,132" backgroundColor="background" source="Service" render="Picon" alphatest="blend" transparent="1">
+  <screen name="NumberZapWithName" title="Channel" position="center,center" size="574,156" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel position="0,0" zPosition="-997" size="244,156" backgroundColor="background" foregroundColor="foreground"/>
+    <widget position="12,12" zPosition="-995" size="220,132" backgroundColor="background" source="Service" render="Picon" alphatest="blend" transparent="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <eLabel position="360,6" zPosition="-996" size="256,168" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
+    <widget position="262,24" zPosition="-990" size="294,36" backgroundColor="background" foregroundColor="foreground" halign="left" valign="center" name="servicename" font="SegoeUI; 36" transparent="1" noWrap="1"/>
+    <widget position="262,72" zPosition="-988" size="294,60" backgroundColor="background" foregroundColor="foreground" halign="right" valign="center" name="servicenumber" font="SegoeUI; 66" transparent="1" noWrap="1"/>
+    <widget position="262,60" zPosition="-986" size="294,24" backgroundColor="background" foregroundColor="foreground" halign="left" valign="center" name="servicebouquet" font="SegoeUI; 20" transparent="1" noWrap="1"/>
+    <eLabel position="244,6" zPosition="-993" size="330,144" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
   </screen>
   <!-- NumericalTextInputHelpDialog -->
   <screen name="NumericalTextInputHelpDialog" title="Channel" position="849,141" size="392,534" flags="wfNoBorder" backgroundColor="backgroundAccent" zPosition="99">
@@ -2251,18 +2253,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel position="57,153" zPosition="-992" size="774,48" backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Timer Editor"/>
     <widget position="57,219" zPosition="-990" size="774,423" backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground"/>
     <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
-    <widget position="934,159" zPosition="-989" size="220,132" backgroundColor="backgroundAccent" render="Picon" source="ServiceEvent" alphatest="blend">
+    <eLabel position="867,159" zPosition="-989" size="354,156" backgroundColor="shadow" foregroundColor="foreground"/>
+    <widget position="934,171" zPosition="-987" size="220,132" backgroundColor="backgroundAccent" render="Picon" source="ServiceEvent" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget position="867,309" zPosition="-987" size="62,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Event" halign="left" valign="center">
+    <widget position="867,333" zPosition="-985" size="62,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Event" halign="left" valign="center">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget position="1161,309" zPosition="-985" size="62,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Event" halign="left" valign="center">
+    <widget position="1161,333" zPosition="-983" size="62,24" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Event" halign="left" valign="center">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget position="867,351" zPosition="-983" size="356,279" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Event">
+    <widget position="867,375" zPosition="-981" size="356,255" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Event">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel position="849,141" zPosition="-993" size="392,534" backgroundColor="backgroundAccent" foregroundColor="foregroundAccent"/>
