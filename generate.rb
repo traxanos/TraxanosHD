@@ -23,7 +23,7 @@ TraxanosHD.colors[:white]             = "\#00ffffff"
 TraxanosHD.colors[:black]             = "\#00000000"
 TraxanosHD.colors[:green]             = "\#00389416"
 TraxanosHD.colors[:yellow]            = "\#00e5b243"
-TraxanosHD.colors[:red]               = "\#00f23d21"
+TraxanosHD.colors[:red]               = "\#00e91515"
 TraxanosHD.colors[:blue]              = "\#000064c7"
 TraxanosHD.colors[:orange]            = "\#00f47d19"
 if dark
@@ -86,11 +86,11 @@ TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "sk
 TraxanosHD::Images::Icon.new code: '', foreground: :green, filename: "skin_default/icons/movie_seen.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 2
 TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/movie_rec.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 2
 
-TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
-TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_add.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
-TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_prepost.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
-TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_pre.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
-TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_post.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+# TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+# TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_add.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+# TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_prepost.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+# TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_pre.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
+# TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_post.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
 
 TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/ico_mp_forward.png", height: 16, width: 16, size: 17, background: :background, x: 0, y: 0, antialias: true
 TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/ico_mp_rewind.png", height: 16, width: 16, size: 17, background: :background, x: 0, y: 0, antialias: true
