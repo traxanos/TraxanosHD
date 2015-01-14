@@ -270,7 +270,7 @@ module TraxanosHD
       options["scrollbarSliderBorderWidth"] = 0
       options["scrollbarSliderForegroundColor"] = :foreground
       options["scrollbarSliderBorderColor"] = :foreground
-      # options["scrollbarBackgroundPicture"] = "TraxanosHD/images/scrollbar_bg.png"
+      options["scrollbarBackgroundPicture"] = "TraxanosHD/images/scrollbar_bg.png"
       # options["scrollbarSliderPicture"] = "TraxanosHD/scrollbar.png"
     end
 
