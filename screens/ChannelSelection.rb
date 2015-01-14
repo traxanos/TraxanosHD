@@ -1,4 +1,5 @@
 TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
+  position 0, 0, 10
   header
   main do
     title :Title

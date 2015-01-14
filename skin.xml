@@ -301,7 +301,7 @@
     <eLabel position="39,135" zPosition="-995" size="810,546" backgroundColor="background" foregroundColor="foreground"/>
   </screen>
   <!-- ChannelSelection -->
-  <screen name="ChannelSelection" title="Channel selection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="ChannelSelection" title="Channel selection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent" zPosition="10">
     <widget position="1082,39" zPosition="-992" size="159,69" backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
