@@ -1,7 +1,7 @@
 class TraxanosHD::Element
   def weather
 
-    widget do
+    parent.widget do
       position 0, 0
       size 0, 0
       render "VWeatherUpdater"

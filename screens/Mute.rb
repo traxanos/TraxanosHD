@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :Mute, "Mute") do
-  position TraxanosHD.border, TraxanosHD.border, 21
+  position TraxanosHD.border, TraxanosHD.border, 81
   size TraxanosHD.left_width, TraxanosHD.header_height
 
   label do

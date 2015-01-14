@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :Volume, "Volume") do
-  position TraxanosHD.border, TraxanosHD.border, 20
+  position TraxanosHD.border, TraxanosHD.border, 80
   size TraxanosHD.left_width, TraxanosHD.header_height
 
   width = 342

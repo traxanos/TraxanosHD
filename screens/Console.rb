@@ -9,6 +9,7 @@ TraxanosHD::Screen.new(xml, :Console, "Command execution") do
       name "text"
       transparent 1
       font "Console", TraxanosHD.default_left_font_size
+      scrollbars(nil)
     end
 
   end

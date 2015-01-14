@@ -1,7 +1,5 @@
 TraxanosHD::Screen.new(xml, :NumericalTextInputHelpDialog, "Channel") do
-  # position 120, 490, 8
-  # size 604, 125
-  position TraxanosHD.border+TraxanosHD.left_width, -(TraxanosHD.border + 546 - 6), 99
+  position TraxanosHD.border+TraxanosHD.left_width, 141, 99
   size TraxanosHD.right_width, 534
   background :backgroundAccent
 
@@ -104,7 +102,4 @@ TraxanosHD::Screen.new(xml, :NumericalTextInputHelpDialog, "Channel") do
 
     end
   end
-
-
-
 end

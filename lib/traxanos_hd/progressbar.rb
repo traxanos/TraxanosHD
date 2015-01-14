@@ -14,5 +14,6 @@ module TraxanosHD
       html.div "", style: "position: absolute; top: #{y}px; left: #{x}px; width: #{width/2}px; height: #{height}px; z-index: #{z}; background-color: #{TraxanosHD.css_color(options["foregroundColor"])}"
       html.div "", style: "position: absolute; top: #{y+(height/2)}px; left: #{x}px; width: #{width}px; height: 1px; z-index: #{z-1}; background-color: #{TraxanosHD.css_color("foreground")}"
     end
+
   end
 end

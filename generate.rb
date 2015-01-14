@@ -86,6 +86,7 @@ TraxanosHD::Images::Icon.new code: '', foreground: :orange, filename: "skin_d
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "skin_default/icons/movie_select.png", height: 20, width: 20, size: 18, background: :background, x: 1, y: 2
 TraxanosHD::Images::Icon.new code: '', foreground: :green, filename: "skin_default/icons/movie_seen.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 2
 TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/movie_rec.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 2
+TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/disabled_timer.png", height: 30, width: 30, size: 35, background: :background, x: -1, y: -3, antialias: false
 
 # TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
 # TraxanosHD::Images::Icon.new code: '', foreground: :red, filename: "skin_default/icons/epgclock_add.png", height: 21, width: 21, size: 18, background: :background, x: 4, y: 4
@@ -184,18 +185,28 @@ xml.skin do
 
   # load screens
   # eval File.read("./screens/Mute.rb")
-  Dir.glob("./screens/*.rb").each do |file|
+  screens = Dir.glob("./screens/*.rb")
+
+  # screens =[]
+  # screens << "./screens/InfoBar.rb"
+  # screens << "./screens/SecondInfoBar.rb"
+  # screens << "./screens/ChannelSelection.rb"
+  # screens << "./screens/Volume.rb"
+  # screens << "./screens/UnhandledKey.rb"
+
+
+  screens.each do |file|
     puts "render screen #{file}"
     instance_eval File.read(file), file
   end
 
   # specials
-  xml.screen position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :transparent, flags: :wfNoBorder, name: "SubtitleDisplay", zPosition: -10
-  xml.screen name: "VideoFinetune", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :black, zPosition: 999 do
+  xml.screen name: "SubtitleDisplay", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :transparent, flags: :wfNoBorder, zPosition: -11
+  xml.screen name: "VideoFinetune", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :black, zPosition: 150 do
     xml.widget source: "Canvas", render: "Canvas", position: "280,70", size: "720,576"
   end
-  xml.screen position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, name: "Standby", title: "Standby", zPosition: -90
-  xml.screen position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, name: "Scart", title: "Scart", zPosition: -90
+  xml.screen name: "Standby", title: "Standby", position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, zPosition: -100
+  xml.screen name: "Scart", title: "Scart", position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, zPosition: -100
 
 end
 

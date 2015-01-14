@@ -7,14 +7,14 @@ module TraxanosHD
     attr_reader :z
     attr_reader :width
     attr_reader :height
-
-    attr_reader :ref
-    attr_reader :parent_ref
     attr_reader :elements
+    attr_reader :parent
 
-    def initialize(ref, &block)
-      @parent_ref = ref
-      @ref = Reference.new(0, 0, 0, 0, 0)
+    def initialize(parent, &block)
+      @parent = parent
+      @z = parent_z + parent_elements_count + 1
+      @childs = 0
+
       @options = {}
       @converts = []
       @elements = []
@@ -26,8 +26,37 @@ module TraxanosHD
       foreground(:foreground)
 
       instance_eval(&block)
-
       after_initialize
+    end
+
+    def parent_x
+      return 0 if parent.nil? or parent.x.class != Fixnum or parent.class == Screen
+      parent.x
+    end
+
+    def parent_y
+      return 0 if parent.nil? or parent.y.class != Fixnum or parent.class == Screen
+      parent.y
+    end
+
+    def parent_width
+      return 0 if parent.nil? or parent.width.class != Fixnum
+      parent.width
+    end
+
+    def parent_height
+      return 0 if parent.nil? or parent.height.class != Fixnum
+      parent.height
+    end
+
+    def parent_z
+      return 0 if parent.nil? or parent.z.class != Fixnum
+      parent.z
+    end
+
+    def parent_elements_count
+      return 0 if parent.nil?
+      parent.elements.count
     end
 
     def after_initialize
@@ -91,6 +120,10 @@ module TraxanosHD
     end
 
     def render!(xml)
+      @options["position"] = "#{@x},#{@y}"
+      @options["size"] = "#{@width},#{@height}"
+      @options["zPosition"] = "#{@z}"
+
       render_elements!(xml)
 
       if converts.empty?
@@ -126,51 +159,38 @@ module TraxanosHD
       if x.class == Symbol
         @x = x
       elsif x < 0
-        @x = parent_ref.x + parent_ref.width + x
+        @x = parent_x + parent_width + x
       else
-        @x = parent_ref.x + x
+        @x = parent_x + x
       end
 
       if y.class == Symbol
         @y = y
       elsif y < 0
-        @y = parent_ref.y + parent_ref.height + y
+        @y = parent_y + parent_height + y
       else
-        @y = parent_ref.y + y
+        @y = parent_y + y
       end
 
-      @options["position"] = "#{@x},#{@y}"
 
-      if self.class == Screen
-        @options["zPosition"] = @z = z unless z.nil?
-      else
-        z = parent_ref.z += 1 if z.nil?
-        @options["zPosition"] = @z = z
-
-        ref.x = @x
-        ref.y = @y
-        ref.z = z
-      end
+      @z = z if z.present?
     end
 
     def size(width = nil, height = nil)
       if width.nil?
-        @width = parent_ref.width
+        @width = parent_width
       elsif width < 0
-        @width = parent_ref.width + width
+        @width = parent_width + width
       else
         @width = width
       end
       if height.nil?
-        @height = parent_ref.height
+        @height = parent_height
       elsif height < 0
-        @height = parent_ref.height + height
+        @height = parent_height + height
       else
         @height = height
       end
-      @options["size"] = "#{@width},#{@height}"
-      ref.width = @width
-      ref.height = @height
     end
 
     def text(text)
@@ -245,23 +265,23 @@ module TraxanosHD
     end
 
     def widget(&block)
-      @elements << Widget.new(ref, &block)
+      @elements << Widget.new(self, &block)
     end
 
     def label(&block)
-      @elements << Label.new(ref, &block)
+      @elements << Label.new(self, &block)
     end
 
     def pixmap(&block)
-      @elements << Pixmap.new(ref, &block)
+      @elements << Pixmap.new(self, &block)
     end
 
     def box(&block)
-      @elements << Box.new(ref, &block)
+      @elements << Box.new(self, &block)
     end
 
     def progressbar(&block)
-      @elements << Progressbar.new(ref, &block)
+      @elements << Progressbar.new(self, &block)
     end
 
     def scrollbars(mode = "showOnDemand")

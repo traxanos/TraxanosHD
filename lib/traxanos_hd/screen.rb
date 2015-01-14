@@ -2,15 +2,8 @@ module TraxanosHD
   class Screen < Element
     attr_reader :xml, :name, :applets
 
-    # attr_reader :x
-    # attr_reader :y
-    # attr_reader :z
-    # attr_reader :width
-    # attr_reader :height
-
     def initialize(xml, name, title = nil, &block)
-      @parent_ref = Reference.new(0, 0, -999, TraxanosHD.width, TraxanosHD.height)
-      @ref = Reference.new(0, 0, -999, 0, 0)
+      @z = 0
       @xml = xml
       @elements = []
       @applets = {}
@@ -37,6 +30,9 @@ module TraxanosHD
 
     def render!
       xml.comment! name.to_s
+      @options["position"] = "#{@x},#{@y}"
+      @options["size"] = "#{@width},#{@height}"
+      @options["zPosition"] = "#{@z}"
       xml.screen(options.reject { |k, v| v.blank? }) do |xml|
         elements.each do |element|
           element.render!(xml)
@@ -73,10 +69,6 @@ module TraxanosHD
         file << html.target!
       end
 
-    end
-
-    def parent_ref
-      @parent_ref
     end
 
     def flags(flags)
