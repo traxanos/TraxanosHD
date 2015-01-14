@@ -23,7 +23,7 @@ TraxanosHD::Screen.new(xml, :AllNews, "VTI News") do
 
     widget do
       position 0, 48 + TraxanosHD.spacer
-      size nil, 408
+      size nil, 384
       source "menu"
       transparent 1
       render "Listbox"
