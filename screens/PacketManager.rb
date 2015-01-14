@@ -1,7 +1,7 @@
-TraxanosHD::Screen.new(xml, :MyPluginManager, "VTI SoftwareManager") do
+TraxanosHD::Screen.new(xml, :PacketManager, "PacketManager") do
   header
   main do
-    title :title
+    title "PacketManager"
 
     template = '{
       "template": [
@@ -30,6 +30,6 @@ TraxanosHD::Screen.new(xml, :MyPluginManager, "VTI SoftwareManager") do
   end
 
   colorbar do
-    colorbar_buttons1(true, true, true)
+    colorbar_buttons2(true, true)
   end
 end
