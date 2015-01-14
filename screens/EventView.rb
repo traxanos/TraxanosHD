@@ -9,6 +9,7 @@ TraxanosHD::Screen.new(xml, :EventView, "EventView") do
       name "epg_description"
       font "Regular", TraxanosHD.default_left_font_size
       transparent 1
+      scrollbars(nil)
     end
 
   end

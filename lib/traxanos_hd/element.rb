@@ -265,12 +265,12 @@ module TraxanosHD
     end
 
     def scrollbars(mode = "showOnDemand")
-      options["scrollbarMode"] = mode
+      options["scrollbarMode"] = mode unless mode.nil?
       options["scrollbarWidth"] = 5
       options["scrollbarSliderBorderWidth"] = 0
       options["scrollbarSliderForegroundColor"] = :foreground
       options["scrollbarSliderBorderColor"] = :foreground
-      options["scrollbarBackgroundPicture"] = "TraxanosHD/images/scrollbar_bg.png"
+      # options["scrollbarBackgroundPicture"] = "TraxanosHD/images/scrollbar_bg.png"
       # options["scrollbarSliderPicture"] = "TraxanosHD/scrollbar.png"
     end
 
