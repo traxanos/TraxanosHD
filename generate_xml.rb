@@ -108,6 +108,7 @@ xml.skin do
   render_screen('NumericalTextInputHelpDialog', xml)
   render_screen('PluginBrowser', xml)
   render_screen('RdsInfoDisplay', xml)
+  render_screen('RassInteractive', xml)
   render_screen('PacketManager', xml)
   render_screen('ServiceInfo', xml)
   render_screen('Setup', xml)

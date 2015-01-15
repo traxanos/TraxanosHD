@@ -35,6 +35,6 @@ TraxanosHD::Screen.new(xml, :AllNews, "VTI News") do
   end
 
   colorbar do
-    colorbar_buttons1(true, true, true, true)
+    colorbar_buttons2(true, true, true, true)
   end
 end

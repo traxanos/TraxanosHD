@@ -18,6 +18,7 @@
     <color value="#00e91515" name="red"/>
     <color value="#000064c7" name="blue"/>
     <color value="#00f47d19" name="orange"/>
+    <color value="#10202020" name="logobg"/>
     <color value="#10101010" name="background"/>
     <color value="#00bbbbbb" name="foreground"/>
     <color value="#10202020" name="shadow"/>
@@ -736,7 +737,7 @@
     <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="22"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="23"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="19"/>
-    <eLabel backgroundColor="shadow" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
+    <eLabel backgroundColor="logobg" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
     <widget backgroundColor="backgroundAccent" render="Picon" source="ServiceEvent" alphatest="blend" position="934,171" size="220,132" zPosition="-7">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -934,7 +935,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
-    <eLabel backgroundColor="shadow" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
+    <eLabel backgroundColor="logobg" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
     <widget backgroundColor="backgroundAccent" render="Picon" source="Service" alphatest="blend" position="934,171" size="220,132" zPosition="-7">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -1701,7 +1702,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
-    <eLabel backgroundColor="shadow" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
+    <eLabel backgroundColor="logobg" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
     <widget backgroundColor="backgroundAccent" render="Picon" source="Service" alphatest="blend" position="934,171" size="220,132" zPosition="-7">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -1863,9 +1864,34 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- RdsInfoDisplay -->
   <screen name="RdsInfoDisplay" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720" zPosition="-2">
-    <widget backgroundColor="background" name="RassLogo" pixmap="TraxanosHD/images/rass.png" position="39,39" size="140,60" zPosition="-1"/>
+    <widget backgroundColor="nil" name="RassLogo" pixmap="TraxanosHD/images/rass.png" position="39,567" size="140,60" zPosition="-1"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="RtpText" font="SegoeUI; 30" halign="left" valign="center" noWrap="1" shadowColor="shadow" shadowOffset="-2,-2" position="39,639" size="1202,42" zPosition="0"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="RadioText" font="SegoeUI; 30" halign="left" valign="center" noWrap="1" shadowColor="shadow" shadowOffset="-2,-2" position="39,639" size="1202,42" zPosition="1"/>
+  </screen>
+  <!-- RassInteractive -->
+  <screen name="RassInteractive" flags="wfNoBorder" backgroundColor="transpWhite" position="39,180" size="136,336" zPosition="0">
+    <ePixmap backgroundColor="background" transparent="1" pixmap="TraxanosHD/images/rass_small.png" alphatest="on" position="18,18" size="100,43" zPosition="2"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="Index" font="Regular; 21" transparent="1" position="53,67" size="60,25" zPosition="3"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="0" font="Regular; 21" transparent="1" position="18,67" size="16,25" zPosition="4"/>
+    <widget backgroundColor="transpWhite" foregroundColor="black" name="Marker" font="Regular; 21" transparent="1" position="38,67" size="16,25" zPosition="5"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="1" font="Regular; 21" transparent="1" position="18,92" size="16,25" zPosition="6"/>
+    <widget backgroundColor="transpWhite" name="subpages_1" alphatest="on" transparent="1" position="53,92" size="36,20" zPosition="7"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="2" font="Regular; 21" transparent="1" position="18,117" size="16,25" zPosition="8"/>
+    <widget backgroundColor="transpWhite" name="subpages_2" alphatest="on" transparent="1" position="53,117" size="36,20" zPosition="9"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="3" font="Regular; 21" transparent="1" position="18,142" size="16,25" zPosition="10"/>
+    <widget backgroundColor="transpWhite" name="subpages_3" alphatest="on" transparent="1" position="53,142" size="36,20" zPosition="11"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="4" font="Regular; 21" transparent="1" position="18,167" size="16,25" zPosition="12"/>
+    <widget backgroundColor="transpWhite" name="subpages_4" alphatest="on" transparent="1" position="53,167" size="36,20" zPosition="13"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="5" font="Regular; 21" transparent="1" position="18,192" size="16,25" zPosition="14"/>
+    <widget backgroundColor="transpWhite" name="subpages_5" alphatest="on" transparent="1" position="53,192" size="36,20" zPosition="15"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="6" font="Regular; 21" transparent="1" position="18,217" size="16,25" zPosition="16"/>
+    <widget backgroundColor="transpWhite" name="subpages_6" alphatest="on" transparent="1" position="53,217" size="36,20" zPosition="17"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="7" font="Regular; 21" transparent="1" position="18,242" size="16,25" zPosition="18"/>
+    <widget backgroundColor="transpWhite" name="subpages_7" alphatest="on" transparent="1" position="53,242" size="36,20" zPosition="19"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="8" font="Regular; 21" transparent="1" position="18,267" size="16,25" zPosition="20"/>
+    <widget backgroundColor="transpWhite" name="subpages_8" alphatest="on" transparent="1" position="53,267" size="36,20" zPosition="21"/>
+    <eLabel backgroundColor="transpWhite" foregroundColor="black" text="9" font="Regular; 21" transparent="1" position="18,292" size="16,25" zPosition="22"/>
+    <widget backgroundColor="transpWhite" name="subpages_9" alphatest="on" transparent="1" position="53,292" size="36,20" zPosition="23"/>
   </screen>
   <!-- PacketManager -->
   <screen name="PacketManager" title="PacketManager" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720" zPosition="0">
@@ -2246,7 +2272,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Timer Editor" position="57,153" size="774,48" zPosition="-8"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,423" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
-    <eLabel backgroundColor="shadow" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
+    <eLabel backgroundColor="logobg" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
     <widget backgroundColor="backgroundAccent" render="Picon" source="ServiceEvent" alphatest="blend" position="934,171" size="220,132" zPosition="-7">
       <convert type="ServiceName">Reference</convert>
     </widget>
@@ -2622,10 +2648,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
   </screen>
   <!-- AllNews -->
@@ -2687,10 +2713,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
   </screen>
   <!-- VTIMainMenu -->

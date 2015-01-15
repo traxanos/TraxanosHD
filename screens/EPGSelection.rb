@@ -22,7 +22,7 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
     label do
       position 0, 0
       size 220+67+67, 132+24
-      background :shadow
+      background :logobg
     end
 
     widget do
