@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :Dish) do
-  position 1111, 135, -11
+  position 1111, 135, -1
   size 130, 160
 
   widget do

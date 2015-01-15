@@ -1,6 +1,6 @@
 TraxanosHD::Screen.new(xml, :MessageBox, "Message") do
 
-  position :center, :center, 100
+  position :center, :center, 1
   size 900, 260
   background :background
 

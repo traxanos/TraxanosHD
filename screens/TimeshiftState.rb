@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :TimeshiftState, "TimeshiftState") do
-  position 0, 0, -7
+  position 0, 0, 2
   box do # border
     position TraxanosHD.border, TraxanosHD.border
     size TraxanosHD.inner_width, TraxanosHD.header_height

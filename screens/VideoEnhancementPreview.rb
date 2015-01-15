@@ -1,7 +1,7 @@
 TraxanosHD::Screen.new(xml, :VideoEnhancementPreview, "VideoEnhancementPreview") do
   label do
-    position (TraxanosHD.width-TraxanosHD.left_width)/2, 510-12
-    size TraxanosHD.left_width, 180
+    position (TraxanosHD.width-TraxanosHD.left_width)/2, 486
+    size TraxanosHD.left_width, 192
 
     widget do
       position TraxanosHD.spacer, TraxanosHD.spacer

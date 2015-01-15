@@ -1,4 +1,5 @@
 TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
+  position 0, 0, 99
   header
   main do
     title "Virtual KeyBoard"

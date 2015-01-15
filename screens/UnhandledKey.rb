@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :UnhandledKey, "UnhandledKey") do
-  position TraxanosHD.border, TraxanosHD.border, 100
+  position TraxanosHD.border, TraxanosHD.border, 11
   size TraxanosHD.left_width, TraxanosHD.header_height
   label do
     background :transparent

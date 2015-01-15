@@ -1,7 +1,7 @@
 # (de-)installation von paketen
 TraxanosHD::Screen.new(xml, :Ipkg, "Installing Software...") do
+  position :center, :center
 
-  position :center, :center, 99
   size 510, 12 + 48 + 12 + 5 + 12 + 56 + 12 + 5 + 12
   background :background
 
@@ -30,7 +30,7 @@ TraxanosHD::Screen.new(xml, :Ipkg, "Installing Software...") do
   widget do
     position 12, 12 + 48 + 12
     size -24, 5
-    name :slider
+    name "slider"
     foreground :backgroundAccent
     transparent 1
   end
@@ -39,7 +39,7 @@ TraxanosHD::Screen.new(xml, :Ipkg, "Installing Software...") do
     position 12, 12 + 48 + 12 + 5 + 12
     size -24, 56
     font "Regular", 20
-    name :status
+    name "status"
   end
 
   label do
@@ -51,7 +51,7 @@ TraxanosHD::Screen.new(xml, :Ipkg, "Installing Software...") do
   widget do
     position 12, 12 + 48 + 12 + 5 + 12 + 56 + 12
     size -24, 5
-    name :activityslider
+    name "activityslider"
     foreground :backgroundAccent
     transparent 1
   end

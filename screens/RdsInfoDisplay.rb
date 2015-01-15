@@ -1,8 +1,16 @@
 TraxanosHD::Screen.new(xml, :RdsInfoDisplay) do
-  position 0, 0, -10
+  position 0, 0, -2
 
   widget do
-    position 39, 639
+    position TraxanosHD.border, TraxanosHD.border
+    size 140, 60
+    name "RassLogo"
+    image "TraxanosHD/images/rass.png"
+    foreground nil
+  end
+
+  widget do
+    position TraxanosHD.border, 639
     size 1202, 42
     name "RtpText"
     font "SegoeUI", 30
@@ -13,7 +21,7 @@ TraxanosHD::Screen.new(xml, :RdsInfoDisplay) do
   end
 
   widget do
-    position 39, 639
+    position TraxanosHD.border, 639
     size 1202, 42
     name "RadioText"
     font "SegoeUI", 30

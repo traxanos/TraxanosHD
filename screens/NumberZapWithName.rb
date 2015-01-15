@@ -1,14 +1,14 @@
 TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
   position :center, :center
-  size 244+330, 156
+  size 280+330, 156
 
   label do
     position 0, 0
-    size 244, 156
+    size 280, 156
   end
 
   widget do
-    position 12, 12
+    position 30, 12
     size 220, 132
     source "Service"
     render "Picon"
@@ -19,7 +19,7 @@ TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
   end
 
   label do
-    position 244, 6
+    position 280, 6
     size 330, 144
     accent
 
@@ -47,7 +47,7 @@ TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
       end
 
       widget do
-        position 0, 36
+        position 0, 36+16+18
         size nil, 24
         orientation :left, :center
         name "servicebouquet"

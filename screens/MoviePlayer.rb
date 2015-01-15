@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :MoviePlayer, "InfoBar") do
-  position 0, 0, -10
+  position 0, 0
   header
   recinfo
   playerbar

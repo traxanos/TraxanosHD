@@ -5,7 +5,7 @@ TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSetup") do
 
     widget do
       position 0, 48 + TraxanosHD.spacer
-      size nil, 30*13
+      size nil, 30*12
       itemheight 30
       name "config"
       transparent 1
@@ -13,7 +13,7 @@ TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSetup") do
     end
 
     widget do
-      position 0, 48 + TraxanosHD.spacer + (30*13) + 6
+      position 0, 48 + TraxanosHD.spacer + (30*12) + 24
       size nil, 27
       source "introduction"
       render "Label"

@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :BouquetSelection, "Choose bouquet") do
+TraxanosHD::Screen.new(xml, :BouquetSelector, "Choose bouquet") do
   header
   main do
     title "Choose bouquet"
@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :BouquetSelection, "Choose bouquet") do
       position 0, 48 + TraxanosHD.spacer
       size nil, 30*14
       itemheight 30
-      name "list"
+      name "menu"
       font "Regular", 18
       transparent 1
       enablewraparound 1
