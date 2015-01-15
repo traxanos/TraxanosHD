@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :RdsInfoDisplay) do
     name "RassLogo"
     image "TraxanosHD/images/rass.png"
     foreground nil
-    background :nil
+    background nil
   end
 
   widget do

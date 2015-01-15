@@ -71,6 +71,7 @@ xml.skin do
   render_screen('UnhandledKey', xml)
   render_screen('Volume', xml)
   render_screen('Mute', xml)
+  render_screen('AudioSelection', xml)
 
   render_screen('Menu', xml)
   render_screen('About', xml)

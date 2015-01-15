@@ -122,7 +122,7 @@ module TraxanosHD
     def render!(xml)
       @options["position"] = "#{@x},#{@y}"
       @options["size"] = "#{@width},#{@height}"
-      @options["zPosition"] = "#{@z}"
+      @options["zPosition"] = "#{@z}" unless @z.zero?
 
       render_elements!(xml)
 

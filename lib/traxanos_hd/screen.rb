@@ -32,7 +32,7 @@ module TraxanosHD
       xml.comment! name.to_s
       @options["position"] = "#{@x},#{@y}"
       @options["size"] = "#{@width},#{@height}"
-      @options["zPosition"] = "#{@z}"
+      @options["zPosition"] = "#{@z}" unless @z.zero?
       xml.screen(options.reject { |k, v| v.blank? }) do |xml|
         elements.each do |element|
           element.render!(xml)
