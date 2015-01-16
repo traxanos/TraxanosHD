@@ -12,7 +12,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
     end
 
     widget do
-      position 0, 48
+      position 0, 48 + 18
       size nil, 30
       render "Label"
       source "EnigmaVersion"
@@ -23,7 +23,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
     end
 
     widget do
-      position 0, 48 + 30
+      position 0, 48 + 18 + 30
       size nil, 30
       render "Label"
       source "ImageVersion"
@@ -34,7 +34,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
     end
 
     widget do
-      position 0, 48 + 30 + 30
+      position 0, 48 + 18 + 30 + 30
       size nil, 30
       render "Label"
       source "FPVersion"
@@ -45,7 +45,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
     end
 
     box do
-      position 0, 48 + 30 + 30 + 30 + 10
+      position 0, 48 + 18 + 30 + 30 + 30 + 10
       size nil, 106
 
       widget do
@@ -73,7 +73,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
 
 
     box do
-      position 0, 48 + 30 + 30 + 30 + 10 + 106 + 10
+      position 0, 48 + 18 + 30 + 30 + 30 + 10 + 106 + 10
       size nil, 166
 
       widget do
@@ -133,7 +133,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
     end
 
     label do
-      position 0, -(30+30)
+      position 0, -30
       size nil, 30
       text "Support for Vu+"
       transparent 1
@@ -148,7 +148,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
       text "www.vuplus-support.org"
       transparent 1
       font "Regular", 20
-      orientation :left, :top
+      orientation :center, :top
       nowrap 1
     end
 

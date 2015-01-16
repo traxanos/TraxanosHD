@@ -605,18 +605,18 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" render="VtiImageVersion" source="session.CurrentService" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="EnigmaVersion" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,201" size="774,30" zPosition="-7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="ImageVersion" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,231" size="774,30" zPosition="-6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="FPVersion" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,261" size="774,30" zPosition="-5"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="HDDHeader" transparent="1" font="Regular; 24" halign="left" valign="top" noWrap="1" position="57,301" size="774,36" zPosition="-3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="hddA" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,347" size="774,60" zPosition="-2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="TunerHeader" transparent="1" font="Regular; 24" halign="left" valign="top" noWrap="1" position="57,417" size="774,36" zPosition="-2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="Tuner0" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,463" size="774,30" zPosition="-1"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="Tuner1" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,493" size="774,30"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="Tuner2" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,523" size="774,30" zPosition="1"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="Tuner3" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,553" size="774,30" zPosition="2"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="Support for Vu+" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,603" size="774,30" zPosition="-2"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="www.vuplus-support.org" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,633" size="774,30" zPosition="-1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="EnigmaVersion" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,219" size="774,30" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="ImageVersion" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,249" size="774,30" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="FPVersion" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,279" size="774,30" zPosition="-5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="HDDHeader" transparent="1" font="Regular; 24" halign="left" valign="top" noWrap="1" position="57,319" size="774,36" zPosition="-3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="hddA" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,365" size="774,60" zPosition="-2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="TunerHeader" transparent="1" font="Regular; 24" halign="left" valign="top" noWrap="1" position="57,435" size="774,36" zPosition="-2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="Tuner0" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,481" size="774,30" zPosition="-1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="Tuner1" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,511" size="774,30"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="Tuner2" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,541" size="774,30" zPosition="1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="Tuner3" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,571" size="774,30" zPosition="2"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="Support for Vu+" transparent="1" font="Regular; 20" halign="left" valign="top" noWrap="1" position="57,633" size="774,30" zPosition="-2"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="www.vuplus-support.org" transparent="1" font="Regular; 20" halign="center" valign="top" noWrap="1" position="57,633" size="774,30" zPosition="-1"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" text="Skin by traxanos" transparent="1" font="Regular; 20" halign="right" valign="top" noWrap="1" position="57,633" size="774,30"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
