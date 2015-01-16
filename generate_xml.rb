@@ -103,6 +103,7 @@ xml.skin do
   render_screen('MovieSelection', xml)
   render_screen('MovieContextMenu', xml)
 
+  render_screen('NimSelection', xml)
   render_screen('NumberZapExt', xml)
   render_screen('NumberZap', xml)
   render_screen('NumberZapWithName', xml)
