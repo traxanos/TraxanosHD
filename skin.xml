@@ -2796,17 +2796,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,378" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
-        MultiContentEntryText(pos = (6, 0), size = (765, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-        MultiContentEntryText(pos = (6, 33), size = (765, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
+        MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (100, 50), png = 3),
+        MultiContentEntryText(pos = (120, 3),  size = (651, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+        MultiContentEntryText(pos = (120, 36), size = (651, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
       ],
       "fonts": [
         gFont("SegoeUI", 24),
         gFont("Regular", 14),
       ],
-      "itemHeight": 54
+      "itemHeight": 60
     }</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
@@ -2862,11 +2863,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,432" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,378" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
-        MultiContentEntryText(pos = (6, 0), size = (765, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-        MultiContentEntryText(pos = (6, 33), size = (765, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
+        MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (44, 44), png = 3),
+        MultiContentEntryText(pos = (56, 0), size = (715, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+        MultiContentEntryText(pos = (56, 33), size = (715, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
       ],
       "fonts": [
         gFont("SegoeUI", 24),
@@ -2876,9 +2878,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     }</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
   </screen>
   <!-- VTIStatusListMenu -->
-  <screen name="VTIStatusListMenu" title="VTI Status Menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+  <screen name="VTIStatusListMenu" title="VTIStatusListMenu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1082,39" size="159,69" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -2922,13 +2930,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
-        MultiContentEntryText(pos = (30, 0), size = (765, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-        MultiContentEntryPixmapAlphaTest(size = (5, 5), size = (24, 24), png = 3)
+        MultiContentEntryText(pos = (30, 0), size = (765, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+        MultiContentEntryPixmapAlphaTest(pos = (3, 3), size = (24, 24), png = 3)
       ],
       "fonts": [
-        gFont("SegoeUI", 24)
+        gFont("Regular", 20)
       ],
-      "itemHeight": 33
+      "itemHeight": 30
     }</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>

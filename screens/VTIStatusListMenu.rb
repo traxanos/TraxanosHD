@@ -1,17 +1,17 @@
-TraxanosHD::Screen.new(xml, :VTIStatusListMenu, "VTI Status Menu") do
+TraxanosHD::Screen.new(xml, :VTIStatusListMenu, "VTIStatusListMenu") do
   header
   main do
     title :title
 
     template = '{
       "template": [
-        MultiContentEntryText(pos = (30, 0), size = (765, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-        MultiContentEntryPixmapAlphaTest(size = (5, 5), size = (24, 24), png = 3)
+        MultiContentEntryText(pos = (30, 0), size = (765, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+        MultiContentEntryPixmapAlphaTest(pos = (3, 3), size = (24, 24), png = 3)
       ],
       "fonts": [
-        gFont("SegoeUI", 24)
+        gFont("Regular", 20)
       ],
-      "itemHeight": 33
+      "itemHeight": 30
     }'
 
     widget do
