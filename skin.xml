@@ -917,6 +917,81 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
   </screen>
+  <!-- DeviceManager2 -->
+  <screen name="DeviceManager2" title="DeviceManager2" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1082,39" size="159,69" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="1082,39" size="159,69" zPosition="3"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="965,48" size="108,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="965,75" size="108,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="956,42" size="126,63" zPosition="4"/>
+    <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="75,69" zPosition="5">
+      <convert type="VWeather">currentWeatherTemp</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 17" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="111,45" size="24,24" zPosition="6">
+      <convert type="VWeather">CF</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Meteocons; 48" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="147,45" size="57,57" zPosition="7">
+      <convert type="VWeather">forecastTodayCode</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,48" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTodayTempMax</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,75" size="39,24" zPosition="9">
+      <convert type="VWeather">forecastTodayTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="216,69" zPosition="4"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Meteocons; 45" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="261,48" size="51,51" zPosition="6">
+      <convert type="VWeather">forecastTomorrowCode</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,48" size="39,24" zPosition="7">
+      <convert type="VWeather">forecastTomorrowTempMax</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,75" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTomorrowTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,360" zPosition="-7">
+      <convert type="TemplatedMultiContent">{
+      "template": [
+        MultiContentEntryPixmapAlphaTest(pos = (721, 21), size = (48, 48), png = 1),
+        MultiContentEntryText(pos = (3,  3), size = (718, 24), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2),
+        MultiContentEntryText(pos = (3, 27), size = (718, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+        MultiContentEntryText(pos = (3, 48), size = (718, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 4),
+        MultiContentEntryText(pos = (3, 69), size = (718, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 5),
+      ],
+      "fonts": [
+        gFont("SegoeUI", 24),
+        gFont("Regular", 14),
+      ],
+      "itemHeight": 90
+    }</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
+  </screen>
+  <!-- DeviceManager2Message -->
+  <screen name="DeviceManager2Message" title="Message" flags="wfNoBorder" backgroundColor="background" position="center,center" size="900,522" zPosition="1">
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 36" name="messagetype" valign="center" position="90,12" size="798,66" zPosition="2"/>
+    <widget backgroundColor="background" pixmaps="TraxanosHD/images/input_info.png,TraxanosHD/images/input_error.png,TraxanosHD/images/input_question.png" transparent="1" name="messagepic" alphatest="on" position="12,12" size="66,66" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 20" name="messagetext" halign="center" valign="top" position="12,90" size="876,420" zPosition="4"/>
+  </screen>
   <!-- EPGSelection -->
   <screen name="EPGSelection" title="EPG selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
@@ -1430,6 +1505,51 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowdown.png" alphatest="on" position="0,0" name="arrowdown2" size="37,70" zPosition="11"/>
     <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowup.png" alphatest="on" position="0,0" name="arrowup" size="37,70" zPosition="11"/>
     <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowup.png" alphatest="on" position="0,0" name="arrowup2" size="37,70" zPosition="11"/>
+  </screen>
+  <!-- HarddiskSelection -->
+  <screen name="HarddiskSelection" title="Select HDD" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1082,39" size="159,69" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="1082,39" size="159,69" zPosition="3"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="965,48" size="108,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="965,75" size="108,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="956,42" size="126,63" zPosition="4"/>
+    <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="75,69" zPosition="5">
+      <convert type="VWeather">currentWeatherTemp</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 17" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="111,45" size="24,24" zPosition="6">
+      <convert type="VWeather">CF</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Meteocons; 48" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="147,45" size="57,57" zPosition="7">
+      <convert type="VWeather">forecastTodayCode</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,48" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTodayTempMax</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,75" size="39,24" zPosition="9">
+      <convert type="VWeather">forecastTodayTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="216,69" zPosition="4"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Meteocons; 45" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="261,48" size="51,51" zPosition="6">
+      <convert type="VWeather">forecastTomorrowCode</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,48" size="39,24" zPosition="7">
+      <convert type="VWeather">forecastTomorrowTempMax</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,75" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTomorrowTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Select HDD" position="57,153" size="774,48" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="hddlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- LanguageSelection -->
   <screen name="LanguageSelection" title="Language selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">

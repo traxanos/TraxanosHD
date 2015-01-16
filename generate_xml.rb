@@ -82,6 +82,8 @@ xml.skin do
   render_screen('Console', xml)
   render_screen('Dish', xml)
   render_screen('DirectoryBrowser', xml)
+  render_screen('DeviceManager2', xml)
+  render_screen('DeviceManager2Message', xml)
   # EPG
   render_screen('EPGSelection', xml)
   render_screen('EPGSelectionMulti', xml)
@@ -94,6 +96,7 @@ xml.skin do
   render_screen('GraphMultiEPG3', xml)
 
   render_screen('HelpMenu', xml)
+  render_screen('HarddiskSelection', xml)
   render_screen('LanguageSelection', xml)
   render_screen('LocationBox', xml)
   render_screen('MessageBox', xml)

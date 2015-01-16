@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :MessageBox, "Message") do
   widget do
     position 90, 12
     size 798, 300
-    font "SegoeUI", 20
+    font "SegoeUI", TraxanosHD.default_left_font_size
     name "text"
     orientation nil, :center
   end
