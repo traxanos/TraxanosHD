@@ -30,10 +30,10 @@ xml.skin do
   end
 
   xml.subtitles do
-    xml.sub name: "Subtitle_TTX",     font: "Regular;30", foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "3,3"
-    xml.sub name: "Subtitle_Regular", font: "Regular;30", foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "3,3"
-    xml.sub name: "Subtitle_Bold",    font: "Bold;30",    foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "3,3"
-    xml.sub name: "Subtitle_Italic",  font: "Italic;30",  foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "3,3"
+    xml.sub name: "Subtitle_TTX",     font: "Regular;30", foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+    xml.sub name: "Subtitle_Regular", font: "Regular;30", foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+    xml.sub name: "Subtitle_Bold",    font: "Bold;30",    foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+    xml.sub name: "Subtitle_Italic",  font: "Italic;30",  foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
   end
 
   xml.windowstyle(id: 0, type: :skinned) do
@@ -128,11 +128,13 @@ xml.skin do
   render_screen('VideoEnhancementPreview', xml)
   render_screen('VideoEnhancementSetup', xml)
   render_screen('MyPluginManager', xml)
+  # VTi
   render_screen('VtiNews', xml)
   render_screen('AllNews', xml)
   render_screen('VTIMainMenu', xml)
   render_screen('VTISubMenu', xml)
   render_screen('VTIStatusListMenu', xml)
+  render_screen('VTiUpdateInfo', xml)
 
 
   xml.screen name: "VideoFinetune", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :black, zPosition: 100 do
