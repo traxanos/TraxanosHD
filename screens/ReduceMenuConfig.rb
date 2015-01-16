@@ -1,18 +1,11 @@
-TraxanosHD::Screen.new(xml, :AllNews, "VTI News") do
+TraxanosHD::Screen.new(xml, :ReduceMenuConfig, "VTI ReduceMenu") do
   header
   main do
-    widget do
-      size nil, 48
-      name "header"
-      transparent 1
-      font "SegoeUI", 36
-      orientation :left, :top
-      nowrap 1
-    end
+    title :Title
 
     template = '{
       "template": [
-        MultiContentEntryText(pos = (60, 3), size = (712, 48), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+        MultiContentEntryText(pos = (60, 3), size = (712, 48), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0  ),
         MultiContentEntryPixmapAlphaTest(pos = (3, 3), size = (48, 48), png = 2)
       ],
       "fonts": [
@@ -35,6 +28,6 @@ TraxanosHD::Screen.new(xml, :AllNews, "VTI News") do
   end
 
   colorbar do
-    colorbar_buttons2(true, true, true, true)
+    colorbar_buttons2(true, true, true, false)
   end
 end

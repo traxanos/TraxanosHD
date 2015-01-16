@@ -18,7 +18,7 @@ TraxanosHD::Screen.new(xml, :VTISubMenu, "VTI Sub Menu") do
 
     widget do
       position 0, 48 + TraxanosHD.spacer
-      size nil, 54*7
+      size nil, 54*8
       render "Listbox"
       source "list"
       transparent 1
@@ -27,9 +27,5 @@ TraxanosHD::Screen.new(xml, :VTISubMenu, "VTI Sub Menu") do
       convert template, type: "TemplatedMultiContent"
     end
 
-  end
-
-  colorbar do
-    colorbar_buttons2(true)
   end
 end
