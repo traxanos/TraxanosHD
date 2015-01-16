@@ -1803,6 +1803,51 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
+  <!-- NimSetup -->
+  <screen name="NimSetup" title="Reception Settings" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1082,39" size="159,69" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="1082,39" size="159,69" zPosition="3"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="965,48" size="108,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="965,75" size="108,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="956,42" size="126,63" zPosition="4"/>
+    <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="75,69" zPosition="5">
+      <convert type="VWeather">currentWeatherTemp</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 17" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="111,45" size="24,24" zPosition="6">
+      <convert type="VWeather">CF</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Meteocons; 48" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="147,45" size="57,57" zPosition="7">
+      <convert type="VWeather">forecastTodayCode</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,48" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTodayTempMax</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,75" size="39,24" zPosition="9">
+      <convert type="VWeather">forecastTodayTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="216,69" zPosition="4"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Meteocons; 45" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="261,48" size="51,51" zPosition="6">
+      <convert type="VWeather">forecastTomorrowCode</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,48" size="39,24" zPosition="7">
+      <convert type="VWeather">forecastTomorrowTempMax</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,75" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTomorrowTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Reception Settings" position="57,153" size="774,48" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+  </screen>
   <!-- NimSelection -->
   <screen name="NimSelection" title="Choose Tuner" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
