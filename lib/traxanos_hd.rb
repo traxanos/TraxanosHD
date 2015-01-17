@@ -17,7 +17,7 @@ module TraxanosHD
     end
 
     def beta81
-      true
+      false
     end
 
     def width
