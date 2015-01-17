@@ -479,7 +479,7 @@
     <eLabel backgroundColor="green" foregroundColor="foreground" position="12,45" size="5,24" zPosition="3"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="12,75" size="5,24" zPosition="4"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="12,105" size="5,24" zPosition="5"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="config" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="21,12" size="531,270" zPosition="6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="config" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="24,12" size="528,270" zPosition="6"/>
     <eLabel backgroundColor="white" foregroundColor="foreground" position="12,300" size="540,1" zPosition="7"/>
     <widget backgroundColor="background" foregroundColor="foreground" source="streams" render="Listbox" transparent="1" position="12,318" size="540,150" zPosition="8">
       <convert type="TemplatedMultiContent">{
@@ -551,7 +551,7 @@
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="33,217" size="822,432" zPosition="4">
+    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="33,217" size="822,432" zPosition="4">
       <convert type="TemplatedMultiContent">{
     "template": [
       MultiContentEntryText(pos = (24,5), size = (774,48), flags = RT_HALIGN_LEFT, text = 0)
@@ -662,7 +662,7 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Choose bouquet" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" font="Regular; 18" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" font="Regular; 18" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -716,7 +716,7 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Channellist menu" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- ChannelSelection -->
@@ -761,7 +761,7 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="15"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="15"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="16"/>
@@ -799,7 +799,7 @@
   <screen name="ChoiceBox" title="Input" flags="wfNoBorder" backgroundColor="background" position="center,center" size="780,260" zPosition="99">
     <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 26" name="text" position="69,15" size="699,38" zPosition="100"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61529;" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" position="12,12" size="48,48" zPosition="101"/>
-    <widget backgroundColor="background" foregroundColor="foreground" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" enableWrapAround="1" transparent="1" name="list" itemHeight="30" position="12,72" size="756,176" zPosition="102"/>
+    <widget backgroundColor="background" foregroundColor="foreground" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" enableWrapAround="1" transparent="1" name="list" itemHeight="30" position="12,72" size="756,176" zPosition="102"/>
     <applet type="onLayoutFinish">
 
 from enigma import eSize, ePoint
@@ -858,7 +858,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="text" transparent="1" font="Console; 20" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,444" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="text" transparent="1" font="Console; 20" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,444" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- Dish -->
@@ -907,7 +907,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Directorybrowser" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="filelist" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,408" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="filelist" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,408" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -959,7 +959,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,360" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,360" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryPixmapAlphaTest(pos = (721, 21), size = (48, 48), png = 1),
@@ -1034,7 +1034,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="EPG Selection" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -1102,7 +1102,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="EPG Selection" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -1177,7 +1177,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget backgroundColor="background" render="Picon" source="Service" transparent="1" alphatest="blend" position="1021,468" size="220,132" zPosition="6">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="27" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="39,513" size="940,108" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="27" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="39,513" size="940,108" zPosition="7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="0,459" size="1280,219" zPosition="3"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="39,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="237,645" size="180,3" zPosition="6"/>
@@ -1234,7 +1234,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="EPG Selection" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="epg_description" font="Regular; 20" transparent="1" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="epg_description" font="Regular; 20" transparent="1" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -1289,7 +1289,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,219" size="774,21" zPosition="-6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,243" size="774,390" zPosition="-5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,243" size="774,390" zPosition="-5"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,238" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,238" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,238" size="3,6" zPosition="2"/>
@@ -1379,7 +1379,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label" position="57,153" size="1166,48" zPosition="-8"/>
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,219" size="1166,21" zPosition="-6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,243" size="1166,390" zPosition="-5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,243" size="1166,390" zPosition="-5"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,238" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,238" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,238" size="3,6" zPosition="2"/>
@@ -1407,7 +1407,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,111" size="1166,21" zPosition="6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,135" size="1166,450" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,135" size="1166,450" zPosition="7"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,130" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,130" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,130" size="3,6" zPosition="2"/>
@@ -1434,7 +1434,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   <!-- GraphMultiEPG3 -->
   <screen name="GraphMultiEPG3" title="EPG selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,57" size="1166,21" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,81" size="1166,540" zPosition="4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,81" size="1166,540" zPosition="4"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,76" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,76" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,76" size="3,6" zPosition="2"/>
@@ -1496,7 +1496,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="help..." position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="34" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,442" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="34" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,442" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
     <widget backgroundColor="background" name="rc" alphatest="blend" pixmaps="skin_default/rc_vu_1.png,skin_default/rc_vu_2.png,skin_default/rc_vu_3.png" position="968,159" size="154,500" zPosition="10"/>
@@ -1548,7 +1548,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Select HDD" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="hddlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="hddlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- LanguageSelection -->
@@ -1593,7 +1593,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Language selection" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="languages" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,414" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="languages" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,414" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (66, 0), size = (300,40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
@@ -1651,10 +1651,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 36" halign="left" valign="center" noWrap="1" transparent="1" name="text" position="57,153" size="774,48" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61531;" font="FontAwesome; 26" halign="left" valign="center" noWrap="1" transparent="1" position="57,219" size="774,36" zPosition="-7"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="target" font="Regular; 24" halign="left" valign="center" noWrap="1" transparent="1" position="90,219" size="741,36" zPosition="-6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="filelist" transparent="1" enableWrapAround="1" selectionDisabled="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,267" size="774,180" zPosition="-5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="filelist" transparent="1" enableWrapAround="1" selectionDisabled="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,267" size="774,180" zPosition="-5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61486;" font="FontAwesome; 26" halign="left" valign="center" noWrap="1" transparent="1" position="57,465" size="774,36" zPosition="-4"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="textbook" font="Regular; 24" halign="left" valign="center" noWrap="1" transparent="1" position="90,465" size="741,36" zPosition="-3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="booklist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,513" size="774,120" zPosition="-2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="booklist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,513" size="774,120" zPosition="-2"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -1845,7 +1845,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Select a movie" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,390" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,390" zPosition="-7"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="freeDiskSpace" transparent="1" noWrap="1" font="Regular; 16" halign="left" valign="center" position="57,609" size="774,30" zPosition="-6"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
@@ -1920,7 +1920,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Movielist menu" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- NimSetup -->
@@ -1965,7 +1965,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Reception Settings" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- NimSelection -->
@@ -2010,7 +2010,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Choose Tuner" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="nimlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="nimlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 3),  size = (760, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
@@ -2109,7 +2109,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Plugins" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="54" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,378" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="54" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,378" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -2192,7 +2192,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="PacketManager" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,378" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,378" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (60, 0), size = (640,33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 0),
@@ -2257,7 +2257,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Serviceinfo" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="infolist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="infolist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -2311,7 +2311,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Setup" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -2363,7 +2363,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -2417,7 +2417,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Choose your Skin" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="SkinList" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,390" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="SkinList" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,390" zPosition="-7"/>
     <widget backgroundColor="background" foregroundColor="foreground" source="introduction" render="Label" font="Regular; 18" halign="left" valign="top" position="57,609" size="774,30" zPosition="-6"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <widget backgroundColor="backgroundAccent" name="Preview" alphatest="on" position="905,197" size="280,210" zPosition="-8"/>
@@ -2472,13 +2472,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Subtitle selection" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1"/>
   <!-- TimeDateInput -->
   <screen name="TimeDateInput" title="Time/Date Input" flags="wfNoBorder" backgroundColor="transparent" position="center,center" size="414,150" zPosition="2">
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="18,18" size="378,90" zPosition="4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="18,18" size="378,90" zPosition="4"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="18,114" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="216,114" size="180,3" zPosition="7"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="canceltext" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="9,114" size="198,30" zPosition="8"/>
@@ -2527,7 +2527,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Timer Editor" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,423" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,423" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="logobg" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
     <widget backgroundColor="backgroundAccent" render="Picon" source="ServiceEvent" alphatest="blend" position="934,171" size="220,132" zPosition="-7">
@@ -2598,7 +2598,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Timer entry" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
@@ -2650,8 +2650,64 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Timer Editor" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,444" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,444" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+  </screen>
+  <!-- TimerSanityConflict -->
+  <screen name="TimerSanityConflict" title="Timer sanity error" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1082,39" size="159,69" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="1082,39" size="159,69" zPosition="3"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="965,48" size="108,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="965,75" size="108,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="956,42" size="126,63" zPosition="4"/>
+    <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="75,69" zPosition="5">
+      <convert type="VWeather">currentWeatherTemp</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 17" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="111,45" size="24,24" zPosition="6">
+      <convert type="VWeather">CF</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Meteocons; 48" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="147,45" size="57,57" zPosition="7">
+      <convert type="VWeather">forecastTodayCode</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,48" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTodayTempMax</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,75" size="39,24" zPosition="9">
+      <convert type="VWeather">forecastTodayTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="216,69" zPosition="4"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Meteocons; 45" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="261,48" size="51,51" zPosition="6">
+      <convert type="VWeather">forecastTomorrowCode</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,48" size="39,24" zPosition="7">
+      <convert type="VWeather">forecastTomorrowTempMax</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,75" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTomorrowTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Timer sanity error" position="57,153" size="1166,48" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="1166,150" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="timer1" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,387" size="574,250" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="timer2" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="649,387" size="574,250" zPosition="-5"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="1202,546" zPosition="-10"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
   </screen>
   <!-- VirtualKeyBoard -->
   <screen name="VirtualKeyBoard" title="Virtual KeyBoard" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720" zPosition="99">
@@ -2725,7 +2781,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- VideoEnhancementPreview -->
   <screen name="VideoEnhancementPreview" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="253,504" size="774,90" zPosition="2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="253,504" size="774,90" zPosition="2"/>
     <widget backgroundColor="background" foregroundColor="foreground" source="introduction" render="Label" font="Regular; 20" halign="center" valign="top" transparent="1" position="253,600" size="774,27" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="235,486" size="810,192" zPosition="1"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="253,645" size="180,3" zPosition="3"/>
@@ -2778,7 +2834,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,360" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,360" zPosition="-7"/>
     <widget backgroundColor="background" foregroundColor="foreground" source="introduction" render="Label" font="Regular; 20" halign="center" valign="top" transparent="1" position="57,603" size="774,27" zPosition="-6"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
@@ -2833,7 +2889,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,378" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,378" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (60, 0), size = (640,33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 0),
@@ -2953,7 +3009,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="header" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,378" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,378" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (60, 3), size = (712, 48), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
@@ -3018,7 +3074,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (100, 50), png = 3),
@@ -3085,7 +3141,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,432" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,432" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (44, 44), png = 3),
@@ -3143,7 +3199,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (30, 0), size = (765, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -3262,7 +3318,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,378" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,378" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (60, 3), size = (712, 48), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0  ),
@@ -3326,7 +3382,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="list" transparent="1" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" source="list" transparent="1" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,420" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (30, 0), size = (800, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0 ),
@@ -3391,7 +3447,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="Title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,432" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,219" size="774,432" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (44, 44), png = 3),
@@ -3449,7 +3505,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="storagelist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,495" size="774,135" zPosition="-7">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="storagelist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,495" size="774,135" zPosition="-7">
       <convert type="TemplatedMultiContent">{
       "template": [
           MultiContentEntryText(pos = (0, 3), size = (261, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -3466,7 +3522,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     }</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="Prozesse" position="57,219" size="450,36" zPosition="-6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="proclist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,267" size="450,162" zPosition="-5">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="proclist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,267" size="450,162" zPosition="-5">
       <convert type="TemplatedMultiContent">{
       "template": [
           MultiContentEntryText(pos = (0, 3), size = (230, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -3482,7 +3538,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     }</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="Arbeitsspeicher" position="531,219" size="300,36" zPosition="-4"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="memory" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="531,267" size="300,108" zPosition="-3">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="memory" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="531,267" size="300,108" zPosition="-3">
       <convert type="TemplatedMultiContent">{
       "template": [
           MultiContentEntryText(pos = (0, 3), size = (132, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -3506,7 +3562,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" name="temp" transparent="1" halign="left" valign="top" font="Regular; 18" position="867,339" size="356,21" zPosition="-3"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="fan" transparent="1" halign="left" valign="top" font="Regular; 18" position="867,372" size="356,21" zPosition="-2"/>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="Netzwerk" position="867,405" size="356,36" zPosition="-1"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="netdev" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="867,450" size="356,81">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="netdev" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="867,450" size="356,81">
       <convert type="TemplatedMultiContent">{
       "template": [
            MultiContentEntryText(pos = (0, 3),   size = (98, 21),  font = 0, flags = RT_HALIGN_LEFT  | RT_VALIGN_CENTER, text = 0),

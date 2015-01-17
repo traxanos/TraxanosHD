@@ -127,6 +127,7 @@ xml.skin do
   render_screen('TimerEditList', xml)
   render_screen('TimerEntry', xml)
   render_screen('TimerSelection', xml)
+  render_screen('TimerSanityConflict', xml)
   render_screen('VirtualKeyBoard', xml)
   render_screen('Ipkg', xml)
   render_screen('UpdatePlugin', xml)

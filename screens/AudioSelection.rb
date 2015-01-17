@@ -32,8 +32,8 @@ TraxanosHD::Screen.new(xml, :AudioSelection, "Audio") do
     end
 
     widget do
-      position 9, 0
-      size -9, 270
+      position 12, 0
+      size -12, 270
       name "config"
       itemheight 30
       scrollbars
