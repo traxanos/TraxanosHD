@@ -10,7 +10,7 @@ TraxanosHD::Screen.new(xml, :Setup) do
       name "config"
       transparent 1
       enablewraparound 1
-      scrollbars
+      scrollbars("showNever")
     end
 
   end

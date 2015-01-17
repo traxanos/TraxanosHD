@@ -2311,7 +2311,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" text="Setup" position="57,153" size="774,48" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,219" size="774,420" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
