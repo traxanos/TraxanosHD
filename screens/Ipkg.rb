@@ -40,6 +40,7 @@ TraxanosHD::Screen.new(xml, :Ipkg, "Installing Software...") do
     size -24, 56
     font "Regular", 20
     name "status"
+    orientation :center, :center
   end
 
   label do
