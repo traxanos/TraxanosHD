@@ -6,6 +6,7 @@ mkdir -p build/usr/share/enigma2/TraxanosHD
 mkdir -p build/control
 
 # copy assets
+cp -r skin_default build/usr/share/enigma2/TraxanosHD/
 cp -r images build/usr/share/enigma2/TraxanosHD/
 cp -r fonts build/usr/share/enigma2/TraxanosHD/
 cp *.png build/usr/share/enigma2/TraxanosHD/
