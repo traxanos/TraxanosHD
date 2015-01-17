@@ -3407,6 +3407,128 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
+  <!-- InfoPanel -->
+  <screen name="InfoPanel" title="VTI Panel" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1082,39" size="159,69" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="1082,39" size="159,69" zPosition="3"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="965,48" size="108,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="965,75" size="108,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="956,42" size="126,63" zPosition="4"/>
+    <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="75,69" zPosition="5">
+      <convert type="VWeather">currentWeatherTemp</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 17" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="111,45" size="24,24" zPosition="6">
+      <convert type="VWeather">CF</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Meteocons; 48" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="147,45" size="57,57" zPosition="7">
+      <convert type="VWeather">forecastTodayCode</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,48" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTodayTempMax</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="210,75" size="39,24" zPosition="9">
+      <convert type="VWeather">forecastTodayTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="216,69" zPosition="4"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Meteocons; 45" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="261,48" size="51,51" zPosition="6">
+      <convert type="VWeather">forecastTomorrowCode</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,48" size="39,24" zPosition="7">
+      <convert type="VWeather">forecastTomorrowTempMax</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="318,75" size="39,24" zPosition="8">
+      <convert type="VWeather">forecastTomorrowTempMin</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="255,42" size="108,63" zPosition="5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 36" halign="left" valign="top" noWrap="1" source="title" render="Label" position="57,153" size="774,48" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="storagelist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,495" size="774,135" zPosition="-7">
+      <convert type="TemplatedMultiContent">{
+      "template": [
+          MultiContentEntryText(pos = (0, 3), size = (261, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+          MultiContentEntryText(pos = (261, 3), size = (261, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+          MultiContentEntryText(pos = (522, 3), size = (51, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
+          MultiContentEntryText(pos = (573, 3), size = (99, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
+          MultiContentEntryText(pos = (672, 3), size = (102, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 4),
+      ],
+      "fonts": [
+        gFont("Regular", 18)
+      ],
+      "selectionEnabled": True,
+      "itemHeight": 27
+    }</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="Prozesse" position="57,219" size="450,36" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="proclist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,267" size="450,162" zPosition="-5">
+      <convert type="TemplatedMultiContent">{
+      "template": [
+          MultiContentEntryText(pos = (0, 3), size = (230, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+          MultiContentEntryText(pos = (230, 3), size = (70, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
+          MultiContentEntryText(pos = (300, 3), size = (70, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
+          MultiContentEntryText(pos = (370, 3), size = (70, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
+      ],
+      "fonts": [
+        gFont("Regular", 18)
+      ],
+      "selectionEnabled": False,
+      "itemHeight": 27
+    }</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="Arbeitsspeicher" position="531,219" size="300,36" zPosition="-4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="memory" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="531,267" size="300,108" zPosition="-3">
+      <convert type="TemplatedMultiContent">{
+      "template": [
+          MultiContentEntryText(pos = (0, 3), size = (132, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+          MultiContentEntryText(pos = (132, 3), size = (84, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
+          MultiContentEntryText(pos = (216, 3), size = (84, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
+      ],
+      "fonts": [
+        gFont("Regular", 18)
+      ],
+      "selectionEnabled": False,
+      "itemHeight": 27
+    }</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="Speicher" position="57,447" size="774,36" zPosition="-2"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="System" position="867,159" size="356,36" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="vtiversion" transparent="1" halign="left" valign="top" font="Regular; 18" position="867,207" size="356,21" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="kernel" transparent="1" halign="left" valign="top" font="Regular; 18" position="867,240" size="356,21" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="uptime" transparent="1" halign="left" valign="top" font="Regular; 18" position="867,273" size="356,21" zPosition="-5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="load" transparent="1" halign="left" valign="top" font="Regular; 18" position="867,306" size="356,21" zPosition="-4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="temp" transparent="1" halign="left" valign="top" font="Regular; 18" position="867,339" size="356,21" zPosition="-3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="fan" transparent="1" halign="left" valign="top" font="Regular; 18" position="867,372" size="356,21" zPosition="-2"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="Netzwerk" position="867,405" size="356,36" zPosition="-1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="netdev" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="867,450" size="356,81">
+      <convert type="TemplatedMultiContent">{
+      "template": [
+           MultiContentEntryText(pos = (0, 3),   size = (98, 21),  font = 0, flags = RT_HALIGN_LEFT  | RT_VALIGN_CENTER, text = 0),
+           MultiContentEntryText(pos = (98, 3),  size = (129, 21), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 1),
+           MultiContentEntryText(pos = (227, 3), size = (129, 21), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2),
+      ],
+      "fonts": [
+        gFont("Regular", 18)
+      ],
+      "selectionEnabled": False,
+      "itemHeight": 27
+    }</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="7"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="8"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="12"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="10"/>
+  </screen>
   <screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="black" zPosition="100">
     <widget source="Canvas" render="Canvas" position="280,70" size="720,576"/>
   </screen>

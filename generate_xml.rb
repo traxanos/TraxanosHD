@@ -143,6 +143,7 @@ xml.skin do
   render_screen('ReduceMenuConfig', xml)
   render_screen('CamSelectMenu', xml)
   render_screen('BackupSuite', xml)
+  render_screen('InfoPanel', xml)
 
 
   xml.screen name: "VideoFinetune", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :black, zPosition: 100 do
