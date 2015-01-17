@@ -17,6 +17,7 @@ module TraxanosHD
     end
 
     def beta81
+      true if ENV['beta81'] == "1"
       false
     end
 
