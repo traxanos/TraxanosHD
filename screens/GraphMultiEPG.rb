@@ -71,7 +71,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
       render "Label"
       source "Event"
       accent
-      orientation :left, :center
+      orientation :right, :center
       convert "EndTime", type: "EventTime"
       convert type: "ClockToText"
     end

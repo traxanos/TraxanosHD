@@ -979,7 +979,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" source="Event" render="Progress" position="934,222" size="220,5" zPosition="-5">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Event" halign="left" valign="center" position="1161,213" size="62,24" zPosition="-4">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="Label" source="Event" halign="right" valign="center" position="1161,213" size="62,24" zPosition="-4">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText"/>
     </widget>
