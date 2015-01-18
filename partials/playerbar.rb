@@ -44,10 +44,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0, 27
+          position 0, 27 + 6
           size 853, 42
           render "Label"
-          font "Regular", 30
+          font "Share", 30
           nowrap 1
           orientation :left, :top
           transparent 1

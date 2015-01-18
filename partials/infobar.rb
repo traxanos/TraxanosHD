@@ -28,10 +28,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0, 27
+          position 0, 27 + 6
           size 732, 42
           render "Label"
-          font "Regular", 30
+          font "Share", 30
           nowrap 1
           orientation :left, :top
           source "session.Event_Now"
@@ -79,10 +79,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0, 51 + 27
+          position 0, 51 + 27 + 6
           size 732, 42
           render "Label"
-          font "Regular", 22
+          font "Share", 24
           orientation :left, :top
           nowrap 1
           source "session.Event_Next"
