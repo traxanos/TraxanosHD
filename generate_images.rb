@@ -9,7 +9,7 @@ TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "ex
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "skin_default/icons/movie_link.png", height: 20, width: 20, size: 18, background: :background, x: 1, y: 4
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "skin_default/icons/movie_folder.png", height: 20, width: 20, size: 18, background: :background, x: 1, y: 4
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "skin_default/icons/folder.png", height: 20, width: 20, size: 18, background: :background, x: 1, y: 4
-TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "skin_default/icons/marker.png", height: 20, width: 20, size: 18, background: :background, x: 4, y: 3
+#TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "skin_default/icons/marker.png", height: 20, width: 20, size: 18, background: :background, x: 4, y: 3
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "skin_default/icons/music.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 1
 TraxanosHD::Images::Icon.new code: '', foreground: :foreground, filename: "skin_default/icons/movie_new.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 2
 TraxanosHD::Images::Icon.new code: '', foreground: :orange, filename: "skin_default/icons/movie_start.png", height: 20, width: 20, size: 18, background: :background, x: 0, y: 2
