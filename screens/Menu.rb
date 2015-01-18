@@ -17,8 +17,8 @@ TraxanosHD::Screen.new(xml, :Menu, "Main menu") do
   }'
 
   widget do
-    position 33, 153
-    size 822, 48 * 10
+    position 33, 153+18
+    size 822, 480
     source "menu"
     transparent 1
     render "Listbox"

@@ -523,7 +523,7 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="849,42" size="392,63" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="33,153" size="822,480" zPosition="3">
+    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="33,171" size="822,480" zPosition="3">
       <convert type="TemplatedMultiContent">{
     "template": [
       MultiContentEntryText(pos = (24,5), size = (774,48), flags = RT_HALIGN_LEFT, text = 0)
