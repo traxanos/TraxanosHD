@@ -103,7 +103,7 @@ module TraxanosHD
     end
 
     def default_title_font_size
-      36
+      34
     end
 
     def default_header_title_top_spacer

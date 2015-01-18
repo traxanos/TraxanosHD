@@ -13,7 +13,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
           MultiContentEntryText(pos = (672, 3), size = (102, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 4),
       ],
       "fonts": [
-        gFont("Regular", 18)
+        gFont("Regular", ' + TraxanosHD.default_font_size.to_s + ')
       ],
       "selectionEnabled": True,
       "itemHeight": 27
@@ -47,7 +47,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
           MultiContentEntryText(pos = (370, 3), size = (70, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
       ],
       "fonts": [
-        gFont("Regular", 18)
+        gFont("Regular", ' + TraxanosHD.default_font_size.to_s + ')
       ],
       "selectionEnabled": False,
       "itemHeight": 27
@@ -81,7 +81,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
           MultiContentEntryText(pos = (216, 3), size = (84, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
       ],
       "fonts": [
-        gFont("Regular", 18)
+        gFont("Regular", ' + TraxanosHD.default_font_size.to_s + ')
       ],
       "selectionEnabled": False,
       "itemHeight": 27
@@ -194,7 +194,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
            MultiContentEntryText(pos = (227, 3), size = (129, 21), font = 0, flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = 2),
       ],
       "fonts": [
-        gFont("Regular", 18)
+        gFont("Regular", ' + TraxanosHD.default_font_size.to_s + ')
       ],
       "selectionEnabled": False,
       "itemHeight": 27

@@ -235,7 +235,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         widget do
           position 0, y
           size nil, 24
-          font "Regular", 14
+          font "Regular", 16
           render "Label"
           source "session.CurrentService"
           nowrap 1
