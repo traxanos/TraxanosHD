@@ -28,8 +28,8 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0, 27 + 6
-          size 732, 42
+          position 0 + 3, 27 + 6
+          size 726 - 3, 42
           render "Label"
           font "Share", 30
           nowrap 1
@@ -40,11 +40,11 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 736, 27
+          position 730, 27 + 15
           size 51, 42
           render "Label"
           font "Regular", TraxanosHD.default_font_size
-          orientation :right, :center
+          orientation :right, :top
           nowrap 1
           source "session.Event_Now"
           transparent 1
@@ -53,11 +53,11 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 787, 27
+          position 781, 27 + 15
           size 66, 42
           render "Label"
           font "Regular", TraxanosHD.default_font_size
-          orientation :left, :center
+          orientation :left, :top
           nowrap 1
           source "session.Event_Now"
           transparent 1
@@ -66,11 +66,11 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 853, 27
-          size 90, 42
+          position 847, 27 + 15
+          size 93, 42
           render "Label"
           font "Regular", TraxanosHD.default_font_size
-          orientation :right, :center
+          orientation :right, :top
           nowrap 1
           source "session.Event_Now"
           convert "Remaining", type: "EventTime"
@@ -79,8 +79,8 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0, 51 + 27 + 6
-          size 732, 42
+          position 0 + 3, 51 + 27 + 6
+          size 726 -3, 42
           render "Label"
           font "Share", 24
           orientation :left, :top
@@ -91,11 +91,11 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 736, 51 + 27
+          position 730, 51 + 27
           size 51, 42
           render "Label"
           font "Regular", TraxanosHD.default_font_size
-          orientation :right, :center
+          orientation :right, :top
           nowrap 1
           source "session.Event_Next"
           transparent 1
@@ -104,11 +104,11 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 787, 51 + 27
+          position 781, 51 + 27
           size 66, 42
           render "Label"
           font "Regular", TraxanosHD.default_font_size
-          orientation :left, :center
+          orientation :left, :top
           nowrap 1
           source "session.Event_Next"
           transparent 1
@@ -117,11 +117,11 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 853, 51 + 27
-          size 90, 42
+          position 847, 51 + 27
+          size 93, 42
           render "Label"
           font "Regular", TraxanosHD.default_font_size
-          orientation :right, :center
+          orientation :right, :top
           nowrap 1
           source "session.Event_Next"
           convert "Remaining", type: "EventTime"

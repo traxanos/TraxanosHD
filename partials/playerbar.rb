@@ -44,8 +44,8 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0, 27 + 6
-          size 853, 42
+          position 0 + 3, 27 + 6
+          size 853 - 6, 42
           render "Label"
           font "Share", 30
           nowrap 1
@@ -61,11 +61,11 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 853, 27
-          size 90, 42
+          position 853, 27 + 15
+          size 90 - 3, 42
           render "Label"
-          font "Regular", 22
-          orientation :right, :center
+          font "Regular", TraxanosHD.default_font_size
+          orientation :right, :top
           nowrap 1
           source "session.CurrentService"
           convert "Remaining", type: "ServicePosition"
@@ -73,11 +73,11 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0, 51 + 27
-          size 943, 42
+          position 3, 51 + 27
+          size 943 - 6, 42
           render "Label"
-          font "Regular", 22
-          orientation :left, :center
+          font "Regular", TraxanosHD.default_font_size
+          orientation :left, :top
           nowrap 1
           source "session.CurrentService"
           transparent 1
@@ -85,11 +85,11 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0, 51 + 27
-          size 943, 42
+          position 3, 51 + 27
+          size 943 - 6, 42
           render "Label"
-          font "Regular", 22
-          orientation :right, :center
+          font "Regular", TraxanosHD.default_font_size
+          orientation :right, :top
           nowrap 1
           source "session.CurrentService"
           transparent 1
