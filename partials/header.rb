@@ -17,7 +17,7 @@ class TraxanosHD::Element
           widget do
             position TraxanosHD.spacer, 0
             size -(TraxanosHD.spacer*2)
-            font "Share", 55
+            font "Share", 50
             render "Label"
             orientation :right, :center
             nowrap 1

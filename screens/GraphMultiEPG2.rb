@@ -9,7 +9,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG2, "EPG selection") do
       widget do
         size nil, 36
         transparent 1
-        font "Share", 26
+        font "Regular", 26
         orientation :left, :top
         nowrap 1
         source "Title"
@@ -19,7 +19,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG2, "EPG selection") do
       widget do
         size nil, 36
         transparent 1
-        font "Share", 26
+        font "Regular", 26
         orientation :right, :bottom
         nowrap 1
         source "Event"
@@ -39,7 +39,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG2, "EPG selection") do
         size nil, 53
         transparent 0
         text "asdkjahsdkajsh"
-        font "Share", TraxanosHD.default_font_size
+        font "Regular", TraxanosHD.default_font_size
         orientation :left, :top
         nowrap 1
         source "Event"
@@ -61,7 +61,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG2, "EPG selection") do
       position -72
       size 72, 30
       text "MENU"
-      font "Share", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

@@ -37,7 +37,7 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
       size 62, 24
       nowrap 1
       transparent 1
-      font "Share", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_right_font_size
       render "Label"
       source "Event"
       accent
@@ -51,7 +51,7 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
       size 62, 24
       nowrap 1
       transparent 1
-      font "Share", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_right_font_size
       render "Label"
       source "Event"
       accent
@@ -64,7 +64,7 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
       position 0, 192+24
       size nil, 279-24
       transparent 1
-      font "Share", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_right_font_size
       render "VRunningText"
       config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
       source "Event"
@@ -85,7 +85,7 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
       position -72
       size 72, 30
       text "EPG"
-      font "Share", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

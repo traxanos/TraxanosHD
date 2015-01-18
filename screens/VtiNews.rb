@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :VtiNews, "VTI News") do
     widget do
       size nil, 480
       name "newsVTI"
-      font "Share", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size
       transparent 1
     end
   end

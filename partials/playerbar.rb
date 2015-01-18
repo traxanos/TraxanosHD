@@ -47,7 +47,7 @@ class TraxanosHD::Element
           position 0, 27
           size 853, 42
           render "Label"
-          font "Share", 30
+          font "Regular", 30
           nowrap 1
           orientation :left, :center
           transparent 1
@@ -64,7 +64,7 @@ class TraxanosHD::Element
           position 853, 27
           size 90, 42
           render "Label"
-          font "Share", 22
+          font "Regular", 22
           orientation :right, :center
           nowrap 1
           source "session.CurrentService"
@@ -76,7 +76,7 @@ class TraxanosHD::Element
           position 0, 51 + 27
           size 943, 42
           render "Label"
-          font "Share", 22
+          font "Regular", 22
           orientation :left, :center
           nowrap 1
           source "session.CurrentService"
@@ -88,7 +88,7 @@ class TraxanosHD::Element
           position 0, 51 + 27
           size 943, 42
           render "Label"
-          font "Share", 22
+          font "Regular", 22
           orientation :right, :center
           nowrap 1
           source "session.CurrentService"

@@ -8,7 +8,7 @@ TraxanosHD::Screen.new(xml, :Ipkg, "Installing Software...") do
   label do
     position 12 + 48 + 9, 15
     size -(9 +12 +12 +48), 38
-    font "Share", 26
+    font "Regular", 26
     text "Installing Software..."
   end
 
@@ -38,7 +38,7 @@ TraxanosHD::Screen.new(xml, :Ipkg, "Installing Software...") do
   widget do
     position 12, 12 + 48 + 12 + 5 + 12
     size -24, 56
-    font "Share", TraxanosHD.default_font_size
+    font "Regular", TraxanosHD.default_font_size
     name "status"
     orientation :center, :center
   end

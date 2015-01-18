@@ -9,7 +9,7 @@ TraxanosHD::Screen.new(xml, :NumberZap, "Channel") do
       size -(TraxanosHD.spacer*2), 81
       orientation :right, :bottom
       name "servicenumber"
-      font "Share", 66
+      font "Regular", 66
       transparent 1
       nowrap 1
     end
@@ -19,7 +19,7 @@ TraxanosHD::Screen.new(xml, :NumberZap, "Channel") do
       size -(TraxanosHD.spacer*2), 42
       orientation :left, :top
       name "servicename"
-      font "Share", 36
+      font "Regular", 36
       transparent 1
       nowrap 1
     end

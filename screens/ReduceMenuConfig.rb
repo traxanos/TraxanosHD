@@ -10,7 +10,7 @@ TraxanosHD::Screen.new(xml, :ReduceMenuConfig, "VTI ReduceMenu") do
         MultiContentEntryPixmapAlphaTest(pos = (711, 3), size = (48, 48), png = 2),
       ],
       "fonts": [
-        gFont("Share", 28)
+        gFont("Regular", 28)
       ],
       "itemHeight": 54
     }'

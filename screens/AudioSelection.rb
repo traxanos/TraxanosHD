@@ -63,8 +63,8 @@ TraxanosHD::Screen.new(xml, :AudioSelection, "Audio") do
         ], False, "showNever" )
       },
       "fonts": [
-        gFont("Share", 20),
-        gFont("Share", 20)
+        gFont("Regular", 20),
+        gFont("Regular", 20)
       ],
       "itemHeight": 30
     }'

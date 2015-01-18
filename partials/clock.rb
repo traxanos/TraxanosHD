@@ -6,7 +6,7 @@ class TraxanosHD::Element
       background :transparent
 
       left = 42 * TraxanosHD.grid
-      right = 51 * TraxanosHD.grid
+      right = 48 * TraxanosHD.grid
 
       label do
         # right
@@ -14,7 +14,7 @@ class TraxanosHD::Element
         size right
 
         widget do
-          font "Share", 55
+          font "Share", 50
           render "Label"
           orientation :center, :center
           nowrap 1

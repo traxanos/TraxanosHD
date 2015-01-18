@@ -8,7 +8,7 @@ TraxanosHD::Screen.new(xml, :BouquetSelector, "Choose bouquet") do
       size nil, 510
       itemheight 30
       name "menu"
-      font "Share", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size
       transparent 1
       enablewraparound 1
       scrollbars

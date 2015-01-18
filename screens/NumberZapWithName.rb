@@ -31,7 +31,7 @@ TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
         size nil, 36
         orientation :left, :center
         name "servicename"
-        font "Share", 36
+        font "Regular", 36
         transparent 1
         nowrap 1
       end
@@ -41,7 +41,7 @@ TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
         size nil, 60
         orientation :right, :center
         name "servicenumber"
-        font "Share", 66
+        font "Regular", 66
         transparent 1
         nowrap 1
       end
@@ -51,7 +51,7 @@ TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
         size nil, 24
         orientation :left, :center
         name "servicebouquet"
-        font "Share", TraxanosHD.default_font_size
+        font "Regular", TraxanosHD.default_font_size
         transparent 1
         nowrap 1
       end

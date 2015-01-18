@@ -14,7 +14,7 @@ TraxanosHD::Screen.new(xml, :RdsInfoDisplay) do
     position TraxanosHD.border, -(TraxanosHD.border + 42)
     size 1202, 42
     name "RtpText"
-    font "Share", 30
+    font "Regular", 30
     orientation :left, :center
     nowrap 1
     shadow :shadow
@@ -25,7 +25,7 @@ TraxanosHD::Screen.new(xml, :RdsInfoDisplay) do
     position TraxanosHD.border, -(TraxanosHD.border + 42)
     size 1202, 42
     name "RadioText"
-    font "Share", 30
+    font "Regular", 30
     orientation :left, :center
     nowrap 1
     shadow :shadow

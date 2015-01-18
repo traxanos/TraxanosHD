@@ -33,7 +33,7 @@ TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
     position 867, 651, 11
     size 356, 24
     name "long_key"
-    font "Share", 18
+    font "Regular", 18
     orientation :center, :center
     transparent 1
   end

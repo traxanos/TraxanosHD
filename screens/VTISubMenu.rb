@@ -12,8 +12,8 @@ TraxanosHD::Screen.new(xml, :VTISubMenu, "VTI Sub Menu") do
         MultiContentEntryPixmapAlphaTest(pos = (711, 8), size = (48, 48), png = 3),
       ],
       "fonts": [
-        gFont("Share", ' + (TraxanosHD.default_font_size + 4).to_s + '),
-        gFont("Share", ' + TraxanosHD.default_font_size.to_s + ')
+        gFont("Regular", ' + (TraxanosHD.default_font_size + 4).to_s + '),
+        gFont("Regular", ' + TraxanosHD.default_font_size.to_s + ')
       ],
       "itemHeight": 60
     }'

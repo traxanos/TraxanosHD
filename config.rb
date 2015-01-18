@@ -63,5 +63,7 @@ TraxanosHD.fonts[:Light]       = { scale: 100, filename: 'TraxanosHD/fonts/OpenS
 TraxanosHD.fonts[:Bold]        = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Bold.ttf' }
 TraxanosHD.fonts[:Italic]      = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Italic.ttf' }
 TraxanosHD.fonts[:Share]       = { scale: 100, filename: 'TraxanosHD/fonts/Share-Regular.ttf' }
+TraxanosHD.fonts[:ShareBold]   = { scale: 100, filename: 'TraxanosHD/fonts/Share-Bold.ttf' }
+TraxanosHD.fonts[:ShareItalic] = { scale: 100, filename: 'TraxanosHD/fonts/Share-Italic.ttf' }
 
 

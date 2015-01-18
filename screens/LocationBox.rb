@@ -5,7 +5,7 @@ TraxanosHD::Screen.new(xml, :LocationBox) do
       size -(TraxanosHD.spacer*2), 48
       name "text"
       transparent 1
-      font "Share", TraxanosHD.default_title_font_size
+      font "Regular", TraxanosHD.default_title_font_size
       nowrap 1
     end
   end
@@ -37,7 +37,7 @@ TraxanosHD::Screen.new(xml, :LocationBox) do
       position 33, 4
       size 772-32, 30
       name "target"
-      font "Share", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size
       transparent 1
       nowrap 1
     end
@@ -74,7 +74,7 @@ TraxanosHD::Screen.new(xml, :LocationBox) do
       position 33, 36 + 12 + (filelist_height) + TraxanosHD.spacer
       size -33, 36
       name "textbook"
-      font "Share", 24
+      font "Regular", 24
       orientation :left, :center
       nowrap 1
       transparent 1

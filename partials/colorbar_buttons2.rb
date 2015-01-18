@@ -16,7 +16,7 @@ class TraxanosHD::Element
         size 198, 30
         render "Label"
         source "#{red_name}"
-        font "Share", TraxanosHD.default_colorbar_font_size
+        font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
         nowrap 1
         transparent 1
@@ -29,7 +29,7 @@ class TraxanosHD::Element
         size 198, 30
         render "Label"
         source "#{green_name}"
-        font "Share", TraxanosHD.default_colorbar_font_size
+        font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
         nowrap 1
         transparent 1
@@ -42,7 +42,7 @@ class TraxanosHD::Element
         size 198, 30
         render "Label"
         source "#{yellow_name}"
-        font "Share", TraxanosHD.default_colorbar_font_size
+        font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
         nowrap 1
         transparent 1
@@ -55,7 +55,7 @@ class TraxanosHD::Element
         size 198, 30
         render "Label"
         source "#{blue_name}"
-        font "Share", TraxanosHD.default_colorbar_font_size
+        font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
         nowrap 1
         transparent 1

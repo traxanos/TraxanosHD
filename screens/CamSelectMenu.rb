@@ -11,7 +11,7 @@ TraxanosHD::Screen.new(xml, :CamSelectMenu, "VTI Cam Menu") do
         MultiContentEntryPixmapAlphaTest(pos = (3, 3), size = (24, 24), png = 2)
       ],
       "fonts": [
-        gFont("Share", 20)
+        gFont("Regular", 20)
       ],
       "itemHeight": 30
     }'

@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :MessageBox, "Message") do
   widget do
     position 90, 12
     size 798, 300
-    font "Share", TraxanosHD.default_font_size
+    font "Regular", TraxanosHD.default_font_size
     name "text"
     orientation nil, :center
   end
@@ -63,7 +63,7 @@ text_y = text_size[1]
 if text_y &lt; 66:
   text_y = 66
 
-text_size = (text_size[0] + 50, text_y)
+text_size = (text_size[0] + 100, text_y)
 
 # resize text
 # self["text"].instance.resize(eSize(*text_size))

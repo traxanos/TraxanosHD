@@ -30,10 +30,10 @@ xml.skin do
   end
 
   xml.subtitles do
-    xml.sub name: "Subtitle_TTX",     font: "Normal;30", foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-    xml.sub name: "Subtitle_Regular", font: "Normal;30", foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-    xml.sub name: "Subtitle_Bold",    font: "Bold;30",    foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-    xml.sub name: "Subtitle_Italic",  font: "Italic;30",  foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+    xml.sub name: "Subtitle_TTX",     font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+    xml.sub name: "Subtitle_Regular", font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+    xml.sub name: "Subtitle_Bold",    font: "ShareBold;30",    foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+    xml.sub name: "Subtitle_Italic",  font: "ShareItalic;30",  foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
   end
 
   xml.windowstyle(id: 0, type: :skinned) do

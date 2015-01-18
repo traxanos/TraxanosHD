@@ -11,8 +11,8 @@ TraxanosHD::Screen.new(xml, :MyPluginManager, "VTI SoftwareManager") do
         MultiContentEntryPixmapAlphaTest(pos = (711, 6), size = (48, 48), png = 4)
       ],
       "fonts": [
-        gFont("Share", 24),
-        gFont("Share", 16)
+        gFont("Regular", 24),
+        gFont("Regular", 16)
       ],
       "itemHeight": 60
     }'
