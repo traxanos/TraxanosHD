@@ -1,12 +1,15 @@
 TraxanosHD::Screen.new(xml, :PluginBrowser, "Plugins Manager") do
-  header
+  header do
+    header_title "Plugins"
+  end
+
   main do
-    title "Plugins"
+    # i hate that i cans style this screen
+    # todo search for better way
 
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 54*7
-      itemheight 54
+      size nil, 480
+      itemheight 60
       name "list"
       transparent 1
       enablewraparound 1

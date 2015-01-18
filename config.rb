@@ -43,6 +43,17 @@ else
 end
 
 
+if ENV['grey'] == "1"
+  TraxanosHD.colors[:background]        = "\#10111111"
+  TraxanosHD.colors[:foreground]        = "\#00bbbbbb"
+  TraxanosHD.colors[:shadow]            = "\#10202020"
+  TraxanosHD.colors[:foregroundAccent]  = "\#10bbbbbb"
+  TraxanosHD.colors[:backgroundAccent]  = "\#10333333"
+  TraxanosHD.colors[:logobg]            = "\#10333333"
+  TraxanosHD.colors[:foregroundAccent2] = "\#10bbbbbb"
+  TraxanosHD.colors[:backgroundAccent2] = "\#00333333"
+end
+
 TraxanosHD.fonts[:LCD]         = { scale: 100, filename: 'lcd.ttf' }
 TraxanosHD.fonts[:Console]     = { scale: 100, filename: 'nmsbd.ttf' }
 TraxanosHD.fonts[:Bold]        = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Bold.ttf' }

@@ -1,11 +1,12 @@
 TraxanosHD::Screen.new(xml, :TimerSanityConflict, "Timer sanity error") do
-  header
-  main(true) do
-    title "Timer sanity error"
+  header do
+    header_title "Timer sanity error"
+  end
+
+  main true do
 
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*5
+      size nil, 30*7
       itemheight 30
       name "list"
       transparent 1
@@ -13,7 +14,7 @@ TraxanosHD::Screen.new(xml, :TimerSanityConflict, "Timer sanity error") do
     end
 
     widget do
-      position 0, 48 + TraxanosHD.spacer + TraxanosHD.spacer + (30*5)
+      position 0, (30*7) + TraxanosHD.spacer
       size (parent.width - TraxanosHD.spacer)/2, 250
       name "timer1"
       transparent 1
@@ -21,7 +22,7 @@ TraxanosHD::Screen.new(xml, :TimerSanityConflict, "Timer sanity error") do
     end
 
     widget do
-      position -((parent.width - TraxanosHD.spacer)/2), 48 + TraxanosHD.spacer + TraxanosHD.spacer + (30*5)
+      position -((parent.width - TraxanosHD.spacer)/2), (30*7) + TraxanosHD.spacer
       size (parent.width - TraxanosHD.spacer)/2, 250
       name "timer2"
       transparent 1

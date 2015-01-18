@@ -1,18 +1,17 @@
 TraxanosHD::Screen.new(xml, :Setup) do
-  header
-  main do
-    title "Setup"
+  header do
+    header_title "Setup"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 30*16
       itemheight 30
       name "config"
       transparent 1
       enablewraparound 1
       scrollbars("showNever")
     end
-
   end
 
   colorbar do

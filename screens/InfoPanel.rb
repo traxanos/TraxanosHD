@@ -1,8 +1,9 @@
 TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
-  header
-  main do
-    title :title
+  header do
+    header_title :title
+  end
 
+  main do
     template = '{
       "template": [
           MultiContentEntryText(pos = (0, 3), size = (261, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -19,8 +20,8 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
     }'
 
     widget do
-      position 0, 48 + TraxanosHD.spacer + 36 + 12 + (27 * 6) + TraxanosHD.spacer + 36 + 12
-      size 774, 27 * 5
+      position 0, 36 + 12 + (27 * 6) + TraxanosHD.spacer + 36 + 12
+      size 774, 27 * 7
       render "Listbox"
       source "storagelist"
       transparent 1
@@ -30,7 +31,6 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
     end
 
     label do
-      position 0, 48 + TraxanosHD.spacer
       size 450, 36
       font "Regular", 24
       nowrap 1
@@ -54,7 +54,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
     }'
 
     widget do
-      position 0, 48 + TraxanosHD.spacer + 36 + 12
+      position 0, 36 + 12
       size 450, 27 * 6
       render "Listbox"
       source "proclist"
@@ -65,11 +65,11 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
     end
 
     label do
-      position  -300, 48 + TraxanosHD.spacer
+      position  -300, 0
       size 300, 36
       font "Regular", 24
       nowrap 1
-      orientation :left, :center
+      orientation :right, :center
       transparent 1
       text "Arbeitsspeicher"
     end
@@ -88,7 +88,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
     }'
 
     widget do
-      position -300, 48 + TraxanosHD.spacer + 36 + 12
+      position -300, 36 + 12
       size 300, 27 * 4
       render "Listbox"
       source "memory"
@@ -99,7 +99,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
     end
 
     label do
-      position 0, 48 + TraxanosHD.spacer + 36 + 12 + (27 * 6) + TraxanosHD.spacer
+      position 0, 36 + 12 + (27 * 6) + TraxanosHD.spacer
       size 774, 36
       font "Regular", 24
       nowrap 1

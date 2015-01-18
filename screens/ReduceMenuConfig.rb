@@ -1,12 +1,13 @@
 TraxanosHD::Screen.new(xml, :ReduceMenuConfig, "VTI ReduceMenu") do
-  header
-  main do
-    title :Title
+  header do
+    header_title :Title
+  end
 
+  main do
     template = '{
       "template": [
-        MultiContentEntryText(pos = (60, 3), size = (712, 48), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0  ),
-        MultiContentEntryPixmapAlphaTest(pos = (3, 3), size = (48, 48), png = 2)
+        MultiContentEntryText(pos = (6, 6), size = (706, 48), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+        MultiContentEntryPixmapAlphaTest(pos = (711, 3), size = (48, 48), png = 2),
       ],
       "fonts": [
         gFont("SegoeUI", 28)
@@ -15,8 +16,7 @@ TraxanosHD::Screen.new(xml, :ReduceMenuConfig, "VTI ReduceMenu") do
     }'
 
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 7*54
+      size 774, 9*54
       source "menu"
       transparent 1
       render "Listbox"
@@ -24,7 +24,6 @@ TraxanosHD::Screen.new(xml, :ReduceMenuConfig, "VTI ReduceMenu") do
       scrollbars
       convert template, type: "TemplatedMultiContent"
     end
-
   end
 
   colorbar do

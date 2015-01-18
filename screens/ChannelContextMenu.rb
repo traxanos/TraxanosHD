@@ -1,11 +1,11 @@
 TraxanosHD::Screen.new(xml, :ChannelContextMenu, "Channellist menu") do
-  header
-  main do
-    title "Channellist menu"
+  header do
+    header_title "Channellist menu"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 510
       itemheight 30
       name "menu"
       transparent 1

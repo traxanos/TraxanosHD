@@ -98,5 +98,13 @@ module TraxanosHD
       18
     end
 
+    def default_title_font_size
+      33
+    end
+
+    def default_header_title_top_spacer
+      TraxanosHD.spacer-3
+    end
+
   end
 end

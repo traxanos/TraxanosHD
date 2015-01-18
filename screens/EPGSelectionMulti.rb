@@ -1,11 +1,11 @@
 TraxanosHD::Screen.new(xml, :EPGSelectionMulti, "EPG selection") do
-  header
-  main do
-    title "EPG Selection"
+  header do
+    header_title "EPG Selection"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 30*16
       itemheight 30
       name "list"
       transparent 1

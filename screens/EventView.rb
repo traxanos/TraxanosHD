@@ -1,17 +1,16 @@
 TraxanosHD::Screen.new(xml, :EventView, "EventView") do
-  header
-  main do
-    title "EPG Selection"
+  header do
+    header_title "EPG Selection"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 420
+      size nil, 480
       name "epg_description"
       font "Regular", TraxanosHD.default_left_font_size
       transparent 1
       scrollbars(nil)
     end
-
   end
 
   colorbar do

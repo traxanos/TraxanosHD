@@ -1,17 +1,16 @@
 TraxanosHD::Screen.new(xml, :HarddiskSelection, "Select HDD") do
-  header
-  main do
-    title "Select HDD"
+  header do
+    header_title "Select HDD"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 480
       itemheight 30
       name "hddlist"
       transparent 1
       enablewraparound 1
       scrollbars
     end
-
   end
 end

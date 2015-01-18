@@ -1,10 +1,10 @@
 TraxanosHD::Screen.new(xml, :GraphMultiEPG1, "EPG selection") do
-  header
+  header do
+    header_title :Title
+  end
   main true do
-    title :Title
     box do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, -(48 + TraxanosHD.spacer*2)
+      size nil, 480
       graphepg
     end
   end

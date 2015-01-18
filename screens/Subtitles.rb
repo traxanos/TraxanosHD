@@ -1,18 +1,16 @@
 TraxanosHD::Screen.new(xml, :Subtitles, "Subtitle selection") do
-  header
-  main do
-    title "Subtitle selection"
+  header do
+    header_title "Subtitle selection"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 480
       itemheight 30
       name "config"
       transparent 1
       enablewraparound 1
       scrollbars
     end
-
   end
-
 end

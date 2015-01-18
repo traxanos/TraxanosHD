@@ -1,8 +1,9 @@
 TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
-  header
-  main do
-    title :title
+  header do
+    header_title :title
+  end
 
+  main do
     template = '{
       "template": [
         MultiContentEntryPixmapAlphaTest(pos = (721, 21), size = (48, 48), png = 1),
@@ -19,8 +20,7 @@ TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
     }'
 
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 4*90
+      size nil, 5*90
       render "Listbox"
       source "menu"
       transparent 1

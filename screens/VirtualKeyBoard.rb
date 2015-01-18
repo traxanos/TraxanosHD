@@ -1,32 +1,31 @@
 TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
   position 0, 0, 99
-  header
-  main do
-    title "Virtual KeyBoard"
 
+  header do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 36
+      position TraxanosHD.spacer, TraxanosHD.default_header_title_top_spacer
+      size -(TraxanosHD.spacer*2), 48
       name "header"
-      font "Bold", TraxanosHD.default_left_font_size+2
       transparent 1
+      font "SegoeUI", TraxanosHD.default_title_font_size
       nowrap 1
     end
+  end
 
+  main do
     label do
-      position 0, 48 + TraxanosHD.spacer + 36 + TraxanosHD.spacer
       size 696+2, 36+2
       background :foreground
     end
 
     label do
-      position 1, 48 + TraxanosHD.spacer + 36 + TraxanosHD.spacer + 1
+      position 1, 1
       size 696, 36
       background :background
     end
 
     label do
-      position 2, 48 + TraxanosHD.spacer + 36 + TraxanosHD.spacer + 2
+      position 2, 2
       font "FontAwesome", TraxanosHD.default_left_font_size
       orientation :center, :center
       size 30, 34
@@ -35,7 +34,7 @@ TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
     end
 
     widget do
-      position 33, 48 + TraxanosHD.spacer + 36 + TraxanosHD.spacer + 4
+      position 33, 4
       size 696-32, 30
       name "text"
       font "Regular", TraxanosHD.default_left_font_size
@@ -44,7 +43,7 @@ TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
     end
 
     widget do
-      position 0, 48 + TraxanosHD.spacer + 36 + TraxanosHD.spacer + 36 + TraxanosHD.spacer
+      position 0, 36 + TraxanosHD.spacer
       size 696, 300
       name "list"
       transparent 1

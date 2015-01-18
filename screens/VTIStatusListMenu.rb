@@ -1,7 +1,9 @@
 TraxanosHD::Screen.new(xml, :VTIStatusListMenu, "VTIStatusListMenu") do
-  header
+  header do
+    header_title :title
+  end
+
   main do
-    title :title
 
     template = '{
       "template": [
@@ -15,8 +17,7 @@ TraxanosHD::Screen.new(xml, :VTIStatusListMenu, "VTIStatusListMenu") do
     }'
 
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 480
       render "Listbox"
       source "list"
       transparent 1

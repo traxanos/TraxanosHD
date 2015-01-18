@@ -1,23 +1,24 @@
 TraxanosHD::Screen.new(xml, :NimSelection, "Choose Tuner") do
-  header
+  header do
+    header_title "Choose Tuner"
+  end
+
   main do
-    title "Choose Tuner"
 
     template = '{
       "template": [
-        MultiContentEntryText(pos = (6, 3),  size = (760, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
-        MultiContentEntryText(pos = (6, 33), size = (760, 45), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_WRAP, text = 2)
+        MultiContentEntryText(pos = (6, 0),  size = (705, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 1),
+        MultiContentEntryText(pos = (6, 33), size = (760, 48), font = 1, flags = RT_HALIGN_LEFT | RT_WRAP, text = 2)
       ],
       "fonts": [
         gFont("SegoeUI", 24),
-        gFont("Regular", 14),
+        gFont("Regular", 16),
       ],
-      "itemHeight": 84
+      "itemHeight": 81
     }'
 
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 5*84
+      size nil, 6*81
       render "Listbox"
       source "nimlist"
       transparent 1

@@ -1,7 +1,9 @@
 TraxanosHD::Screen.new(xml, :CamSelectMenu, "VTI Cam Menu") do
-  header
+  header do
+    header_title :Title
+  end
+
   main do
-    title :Title
 
     template = '{
       "template": [
@@ -15,8 +17,7 @@ TraxanosHD::Screen.new(xml, :CamSelectMenu, "VTI Cam Menu") do
     }'
 
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 14*30
+      size nil, 480
       source "list"
       transparent 1
       render "Listbox"

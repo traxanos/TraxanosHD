@@ -100,6 +100,8 @@ xml.skin do
   render_screen('LanguageSelection', xml)
   render_screen('LocationBox', xml)
   render_screen('MessageBox', xml)
+  render_screen('MyPluginManager', xml)
+  render_screen('myPacketManager', xml)
 
   # MoviePlayer
   render_screen('MoviePlayer', xml)
@@ -133,7 +135,6 @@ xml.skin do
   render_screen('UpdatePlugin', xml)
   render_screen('VideoEnhancementPreview', xml)
   render_screen('VideoEnhancementSetup', xml)
-  render_screen('MyPluginManager', xml)
   # VTi
   render_screen('VtiNews', xml)
   render_screen('AllNews', xml)

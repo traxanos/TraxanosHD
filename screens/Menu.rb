@@ -1,7 +1,9 @@
 TraxanosHD::Screen.new(xml, :Menu, "Main menu") do
-  header
+  header do
+    header_title :title
+  end
+
   main do
-    title :title
   end
 
   template = '{
@@ -15,8 +17,8 @@ TraxanosHD::Screen.new(xml, :Menu, "Main menu") do
   }'
 
   widget do
-    position 33, 217
-    size 822, 48 * 9
+    position 33, 153
+    size 822, 48 * 10
     source "menu"
     transparent 1
     render "Listbox"

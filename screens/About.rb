@@ -1,5 +1,8 @@
 TraxanosHD::Screen.new(xml, :About, "About") do
-  header
+  header do
+    header_title "About"
+  end
+
   main do
     widget do
       size nil, 48

@@ -1,11 +1,12 @@
 TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
-  position 0, 0, 10
-  header
+  header do
+    header_title :Title
+  end
+
   main do
-    title :Title
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      position 0
+      size nil, 480
       itemheight 30
       name "list"
       transparent 1

@@ -1,17 +1,17 @@
 TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
-  header
+  header do
+    header_title "help..."
+  end
+
   main do
-    title "help..."
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 34*13
-      itemheight 34
+      size nil, 480
+      itemheight 48
       name "list"
       transparent 1
       enablewraparound 1
       scrollbars
     end
-
   end
 
   main_accent do

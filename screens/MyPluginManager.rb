@@ -1,32 +1,31 @@
 TraxanosHD::Screen.new(xml, :MyPluginManager, "VTI SoftwareManager") do
-  header
-  main do
-    title :title
+  header do
+    header_title :title
+  end
 
+  main do
     template = '{
       "template": [
-        MultiContentEntryText(pos = (60, 0), size = (640,33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 0),
-        MultiContentEntryText(pos = (60, 33), size = (640,21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 2),
-        MultiContentEntryPixmapAlphaTest(pos = (3, 3), size = (48, 48), png = 4),
+        MultiContentEntryText(pos = (6, 0),  size = (705, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 0),
+        MultiContentEntryText(pos = (6, 36), size = (705, 24), font = 1, flags = RT_HALIGN_LEFT, text = 2),
+        MultiContentEntryPixmapAlphaTest(pos = (711, 6), size = (48, 48), png = 4)
       ],
       "fonts": [
         gFont("SegoeUI", 24),
-        gFont("Regular", 14)
+        gFont("Regular", 16)
       ],
-      "itemHeight": 54
+      "itemHeight": 60
     }'
 
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 54*7
+      size 774, 480
       render "Listbox"
       source "list"
       transparent 1
       enablewraparound 1
-      scrollbars("showNever")
+      scrollbars "showNever"
       convert template, type: "TemplatedMultiContent"
     end
-
   end
 
   colorbar do

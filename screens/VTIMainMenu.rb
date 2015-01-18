@@ -1,24 +1,24 @@
 TraxanosHD::Screen.new(xml, :VTIMainMenu, "VTI Panel") do
-  header
-  main do
-    title :title
+  header do
+    header_title :title
+  end
 
+  main do
     template = '{
       "template": [
-        MultiContentEntryPixmapAlphaTest(pos = (6, 5), size = (100, 50), png = 3),
-        MultiContentEntryText(pos = (120, 3),  size = (651, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-        MultiContentEntryText(pos = (120, 36), size = (651, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2)
+        MultiContentEntryText(pos = (6, 0),  size = (668,33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 0),
+        MultiContentEntryText(pos = (6, 36), size = (668,24), font = 1, flags = RT_HALIGN_LEFT, text = 2),
+        MultiContentEntryPixmapAlphaTest(pos = (668, 5), size = (100, 50), png = 3),
       ],
       "fonts": [
         gFont("SegoeUI", 24),
-        gFont("Regular", 14),
+        gFont("Regular", 16)
       ],
       "itemHeight": 60
     }'
 
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 7*60
+      size 774, 480
       render "Listbox"
       source "list"
       transparent 1
@@ -26,7 +26,6 @@ TraxanosHD::Screen.new(xml, :VTIMainMenu, "VTI Panel") do
       scrollbars
       convert template, type: "TemplatedMultiContent"
     end
-
   end
 
   colorbar do

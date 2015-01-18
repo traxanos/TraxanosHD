@@ -1,5 +1,7 @@
 TraxanosHD::Screen.new(xml, :VTiUpdateInfo, "VTI News") do
-  header
+  header do
+    title :title
+  end
   main do
     widget do
       size nil, 99

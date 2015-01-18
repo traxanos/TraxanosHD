@@ -1,11 +1,11 @@
 TraxanosHD::Screen.new(xml, :TimerEntry, "Timer entry") do
-  header
-  main do
-    title "Timer entry"
+  header do
+    header_title "Timer entry"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 480
       itemheight 30
       name "config"
       transparent 1

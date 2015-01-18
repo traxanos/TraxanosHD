@@ -1,27 +1,27 @@
 TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
-  header
+  header do
+    header_title "Select a movie"
+  end
 
   main do
-    title "Select a movie"
-
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*13
-      itemheight 30
-      name "list"
-      transparent 1
-      enablewraparound 1
-      scrollbars
-    end
-
-    widget do
-      position 0, 48 + TraxanosHD.spacer + (30*13)
+      position 0, 0
       size nil, 30
       name "freeDiskSpace"
       transparent 1
       nowrap 1
       font "Regular", 16
-      orientation :left, :center
+      orientation :left, :top
+    end
+
+    widget do
+      position 0, 30
+      size nil, 30*15
+      itemheight 30
+      name "list"
+      transparent 1
+      enablewraparound 1
+      scrollbars
     end
   end
 
@@ -127,38 +127,3 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
     end
   end
 end
-
-# xml.screen position: "0, 0", size: "1280, 720", backgroundColor: :transparent, flags: :wfNoBorder, name: "MovieSelection", title: "Select a movie" do
-
-#   # right
-#   # logo
-#   xml.widget position: "935,171", size: "220,132", render: "Picon", source: "Service", backgroundColor: :backgroundAccent, alphatest: "blend", zPosition: 10 do
-#     xml.convert "Reference", type: "ServiceName"
-#   end
-
-#   xml.widget position: "867,321", size: "356,24", valign: :center, halign: :left, backgroundColor: :backgroundAccent, foregroundColor: :foregroundAccent, render: "Label", source: "Service", transparent: 1, font: "Regular; 18", noWrap: 1, zPosition: 10 do
-#     xml.convert "Duration", type: "ServiceTime"
-#     xml.convert "AsLength", type: "ClockToText"
-#   end
-
-#   xml.widget position: "867,321", size: "356,24", valign: :center, halign: :center, backgroundColor: :backgroundAccent, foregroundColor: :foregroundAccent, render: "Label", source: "Service", transparent: 1, font: "Regular; 18", noWrap: 1, zPosition: 10 do
-#     xml.convert "RecordServiceName", type: "MovieInfo"
-#   end
-
-#   xml.widget position: "867,321", size: "356,24", valign: :center, halign: :right, backgroundColor: :backgroundAccent, foregroundColor: :foregroundAccent, render: "Label", source: "Service", transparent: 1, font: "Regular; 18", noWrap: 1, zPosition: 10 do
-#     xml.convert "FileSize", type: "MovieInfo"
-#   end
-
-#   xml.widget position: "867,363", size: "356,255", valign: :top, halign: :left, backgroundColor: :backgroundAccent, foregroundColor: :foregroundAccent, render: "VRunningText", source: "Service", transparent: 1, font: "Regular; 18", options: "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap", zPosition: 10 do
-#     xml.convert "ExtendedDescription", type: "EventName"
-#   end
-
-#   xml.eLabel position: "1151,645", size: "72,30", backgroundColor: :foregroundAccent, foregroundColor: :backgroundAccent, text: "MENU", font: "SegoeUI; 20", valign: :center, halign: :center, noWrap: 1
-
-#   # left
-#   partial_colorbar(xml, 645)
-#   partial_colorbar_buttons(xml, 645, true, true, true, true)
-#   xml.widget position: "57,219", size: "#{774+10},420", name: "list", itemHeight: 30, scrollbarMode: 'showOnDemand', backgroundColor: :background, foregroundColor: :foreground, transparent: 1, scrollbarWidth: 6, scrollbarSliderBorderWidth: 0, scrollbarSliderForegroundColor: :foreground, scrollbarSliderBorderColor: :foreground
-
-#   partial_main(xml, "Select a movie", true)
-# end

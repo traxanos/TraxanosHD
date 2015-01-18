@@ -1,11 +1,11 @@
 TraxanosHD::Screen.new(xml, :NimSetup, "Reception Settings") do
-  header
-  main do
-    title "Reception Settings"
+  header do
+    header_title "Reception Settings"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 480
       itemheight 30
       name "config"
       transparent 1

@@ -1,11 +1,11 @@
 TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSetup") do
-  header
-  main do
-    title :Title
+  header do
+    header_title :Title
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*12
+      size nil, 30*14
       itemheight 30
       name "config"
       transparent 1
@@ -13,12 +13,12 @@ TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSetup") do
     end
 
     widget do
-      position 0, 48 + TraxanosHD.spacer + (30*12) + 24
-      size nil, 27
+      position 0, (30*14) + TraxanosHD.spacer
+      size nil, 30
       source "introduction"
       render "Label"
       font "Regular", TraxanosHD.default_left_font_size
-      orientation :center, :top
+      orientation :center, :center
       transparent 1
     end
   end

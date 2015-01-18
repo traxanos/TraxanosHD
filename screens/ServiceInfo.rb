@@ -1,18 +1,17 @@
 TraxanosHD::Screen.new(xml, :ServiceInfo, "Serviceinfo") do
-  header
-  main do
-    title "Serviceinfo"
+  header do
+    header_title "Serviceinfo"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 480
       itemheight 30
       name "infolist"
       transparent 1
       enablewraparound 1
       scrollbars
     end
-
   end
 
   colorbar do

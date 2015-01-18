@@ -1,11 +1,11 @@
 TraxanosHD::Screen.new(xml, :SkinSelector, "Skin Selector") do
-  header
-  main do
-    title "Choose your Skin"
+  header do
+    header_title "Choose your Skin"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*13
+      size nil, 30*15
       itemheight 30
       name "SkinList"
       transparent 1
@@ -14,12 +14,12 @@ TraxanosHD::Screen.new(xml, :SkinSelector, "Skin Selector") do
     end
 
     widget do
-      position 0, 48 + TraxanosHD.spacer + (30*13)
+      position 0, 30*15
       size nil, 30
       source "introduction"
       render "Label"
       font "Regular", 18
-      orientation :left, :top
+      orientation :left, :center
     end
   end
 

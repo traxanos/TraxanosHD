@@ -1,11 +1,11 @@
 TraxanosHD::Screen.new(xml, :BouquetSelector, "Choose bouquet") do
-  header
-  main do
-    title "Choose bouquet"
+  header do
+    header_title "Choose bouquet"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 480
       itemheight 30
       name "menu"
       font "Regular", 18

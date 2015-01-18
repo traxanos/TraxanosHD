@@ -1,16 +1,15 @@
 TraxanosHD::Screen.new(xml, :VtiNews, "VTI News") do
-  header
-  main do
-    title :title
+  header do
+    header_title :title
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 408
+      size nil, 480
       name "newsVTI"
       font "Regular", TraxanosHD.default_left_font_size
       transparent 1
     end
-
   end
 
   colorbar do

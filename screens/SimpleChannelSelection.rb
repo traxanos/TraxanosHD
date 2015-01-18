@@ -1,12 +1,13 @@
 # erreichbar per Menü - Timer - Datensatz bearbeiten - Kanal auswählen
 TraxanosHD::Screen.new(xml, :SimpleChannelSelection, "Channel selection") do
-  header
+  header do
+    header_title :Title
+  end
+
   main do
     # copy of ChannelSelection without Accent
-    title :Title
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, 30*14
+      size nil, 480
       itemheight 30
       name "list"
       transparent 1

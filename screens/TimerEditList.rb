@@ -1,11 +1,11 @@
 TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
-  header
-  main do
-    title "Timer Editor"
+  header do
+    header_title "Timer Editor"
+  end
 
+  main do
     widget do
-      position 0, 48 + TraxanosHD.spacer
-      size nil, -(48 + 3 + TraxanosHD.spacer*2)
+      size nil, 480
       name "timerlist"
       transparent 1
       enablewraparound 1
