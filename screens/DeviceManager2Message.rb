@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :DeviceManager2Message, "Message") do
   widget do
     position 90, 12
     size 798, 66
-    font "Regular", 36
+    font "Share", 36
     name "messagetype"
     orientation nil, :center
   end
@@ -25,7 +25,7 @@ TraxanosHD::Screen.new(xml, :DeviceManager2Message, "Message") do
   widget do
     position 12, 90
     size 876, 420
-    font "Regular", TraxanosHD.default_font_size
+    font "Share", TraxanosHD.default_font_size
     name "messagetext"
     orientation :center, :top
   end

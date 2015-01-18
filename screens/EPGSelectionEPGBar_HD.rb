@@ -9,7 +9,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionEPGBar_HD, "EPG selection") do
       position 39, 12
       size 940, 42
       render "Label"
-      font "Regular", 30
+      font "Share", 30
       orientation :left, :bottom
       nowrap 1
       source "Service"
@@ -60,7 +60,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionEPGBar_HD, "EPG selection") do
       position -66
       size 66, 30
       text "EPG"
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -71,7 +71,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionEPGBar_HD, "EPG selection") do
       position -(66 + 30 + TraxanosHD.spacer)
       size 30, 30
       text ">"
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -82,7 +82,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionEPGBar_HD, "EPG selection") do
       position -(66 + 30 + TraxanosHD.spacer + 30 + TraxanosHD.spacer)
       size 30, 30
       text "<"
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

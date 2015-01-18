@@ -20,7 +20,7 @@ TraxanosHD::Screen.new(xml, :RassInteractive) do
       position 35, 49
       size 60, 25
       text "Index"
-      font "Regular", 21
+      font "Share", 21
       transparent 1
       background :transpWhite
       foreground :black
@@ -30,7 +30,7 @@ TraxanosHD::Screen.new(xml, :RassInteractive) do
       position 0, 49
       size 16, 25
       text "0"
-      font "Regular", 21
+      font "Share", 21
       transparent 1
       background :transpWhite
       foreground :black
@@ -40,7 +40,7 @@ TraxanosHD::Screen.new(xml, :RassInteractive) do
       position 20, 49
       size 16, 25
       name "Marker"
-      font "Regular", 21
+      font "Share", 21
       transparent 1
       background :transpWhite
       foreground :black
@@ -53,7 +53,7 @@ TraxanosHD::Screen.new(xml, :RassInteractive) do
         position 0, 49+(25*x)
         size 16, 25
         text "#{x}"
-        font "Regular", 21
+        font "Share", 21
         transparent 1
         background :transpWhite
         foreground :black

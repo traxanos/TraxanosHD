@@ -15,7 +15,7 @@ TraxanosHD::Screen.new(xml, :TimeshiftState, "TimeshiftState") do
         widget do
           size width
           name "state"
-          font "Regular", 36
+          font "Share", 36
           nowrap 1
           orientation :center, :center
           transparent 1

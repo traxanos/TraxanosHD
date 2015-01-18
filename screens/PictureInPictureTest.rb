@@ -8,7 +8,7 @@ TraxanosHD::Screen.new(xml, :PictureInPictureTest) do
   widget do
     background :transparent
     name "zap_focus"
-    font "Regular", 26
+    font "Share", 26
   end
 
 

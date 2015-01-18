@@ -32,7 +32,7 @@ TraxanosHD::Screen.new(xml, :TimeDateInput, "Time/Date Input") do
         position 18-9
         size 198, 30
         name "canceltext"
-        font "Regular", TraxanosHD.default_font_size
+        font "Share", TraxanosHD.default_font_size
         orientation :center, :center
         nowrap 1
         transparent 1
@@ -42,7 +42,7 @@ TraxanosHD::Screen.new(xml, :TimeDateInput, "Time/Date Input") do
         position 216-9
         size 198, 30
         name "oktext"
-        font "Regular", TraxanosHD.default_font_size
+        font "Share", TraxanosHD.default_font_size
         orientation :center, :center
         nowrap 1
         transparent 1

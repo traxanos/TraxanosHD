@@ -13,8 +13,8 @@ TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
         MultiContentEntryText(pos = (3, 69), size = (718, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 5),
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 20),
+        gFont("Share", 24),
+        gFont("Share", 20),
       ],
       "itemHeight": 90
     }'
@@ -36,7 +36,7 @@ TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
       size 198, 30
       render "Label"
       source "key_red"
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       orientation :center, :center
       nowrap 1
       transparent 1

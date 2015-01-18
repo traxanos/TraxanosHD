@@ -17,7 +17,7 @@ class TraxanosHD::Element
           widget do
             position TraxanosHD.spacer, 0
             size -(TraxanosHD.spacer*2)
-            font "Regular", 55
+            font "Share", 55
             render "Label"
             orientation :right, :center
             nowrap 1
@@ -30,7 +30,7 @@ class TraxanosHD::Element
           widget do
             position TraxanosHD.spacer, 6
             size -(TraxanosHD.spacer*2), 24
-            font "Regular", TraxanosHD.default_font_size
+            font "Share", TraxanosHD.default_font_size
             render "Label"
             orientation :left, :top
             nowrap 1
@@ -43,7 +43,7 @@ class TraxanosHD::Element
           widget do
             position TraxanosHD.spacer, 6 + 27
             size -(TraxanosHD.spacer*2), 24
-            font "Regular", TraxanosHD.default_font_size
+            font "Share", TraxanosHD.default_font_size
             render "Label"
             orientation :left, :bottom
             nowrap 1

@@ -21,7 +21,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG3, "EPG selection") do
       position -72
       size 72, 30
       text "MENU"
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

@@ -53,7 +53,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       size 62, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Share", TraxanosHD.default_right_font_size
       render "Label"
       source "ServiceEvent"
       accent
@@ -76,7 +76,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       size 62, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Share", TraxanosHD.default_right_font_size
       render "Label"
       source "ServiceEvent"
       accent
@@ -89,7 +89,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       position 0, 192+24
       size nil, 279-24
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Share", TraxanosHD.default_right_font_size
       render "VRunningText"
       config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
       source "ServiceEvent"
@@ -106,7 +106,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       position -72
       size 72, 30
       text "MENU"
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -117,7 +117,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       position -(72+TraxanosHD.spacer+66)
       size 66, 30
       text "EPG"
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

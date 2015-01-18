@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :EventView, "EventView") do
     widget do
       size nil, 480
       name "epg_description"
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       transparent 1
       scrollbars(nil)
     end

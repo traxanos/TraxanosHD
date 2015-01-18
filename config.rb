@@ -58,7 +58,10 @@ TraxanosHD.fonts[:LCD]         = { scale: 100, filename: 'lcd.ttf' }
 TraxanosHD.fonts[:Console]     = { scale: 100, filename: 'nmsbd.ttf' }
 TraxanosHD.fonts[:Meteocons]   = { scale: 100, filename: 'TraxanosHD/fonts/Meteocons.ttf' }
 TraxanosHD.fonts[:FontAwesome] = { scale: 100, filename: 'TraxanosHD/fonts/FontAwesome.ttf' }
-TraxanosHD.fonts[:Bold]        = { scale: 100, filename: 'TraxanosHD/fonts/Share-Bold.ttf' }
-TraxanosHD.fonts[:Regular]     = { scale: 100, filename: 'TraxanosHD/fonts/Share-Regular.ttf' }
-TraxanosHD.fonts[:Light]       = { scale: 100, filename: 'TraxanosHD/fonts/Share-Regular.ttf' }
-TraxanosHD.fonts[:Italic]      = { scale: 100, filename: 'TraxanosHD/fonts/Share-Italic.ttf' }
+TraxanosHD.fonts[:Regular]     = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Regular.ttf' }
+TraxanosHD.fonts[:Light]       = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Light.ttf' }
+TraxanosHD.fonts[:Bold]        = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Bold.ttf' }
+TraxanosHD.fonts[:Italic]      = { scale: 100, filename: 'TraxanosHD/fonts/OpenSans-Italic.ttf' }
+TraxanosHD.fonts[:Share]       = { scale: 100, filename: 'TraxanosHD/fonts/Share-Regular.ttf' }
+
+

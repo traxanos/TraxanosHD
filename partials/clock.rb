@@ -14,7 +14,7 @@ class TraxanosHD::Element
         size right
 
         widget do
-          font "Regular", 55
+          font "Share", 55
           render "Label"
           orientation :center, :center
           nowrap 1
@@ -33,7 +33,7 @@ class TraxanosHD::Element
         widget do
           position -(108+9), 6
           size 108, 24
-          font "Regular", TraxanosHD.default_font_size
+          font "Share", TraxanosHD.default_font_size
           render "Label"
           orientation :right, :center
           nowrap 1
@@ -46,7 +46,7 @@ class TraxanosHD::Element
         widget do
           position -(108+9), 6 + 27
           size 108, 24
-          font "Regular", TraxanosHD.default_font_size
+          font "Share", TraxanosHD.default_font_size
           render "Label"
           orientation :right, :center
           nowrap 1

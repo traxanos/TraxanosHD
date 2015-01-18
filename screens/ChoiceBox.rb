@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :ChoiceBox, "Input") do
   widget do
     position 12 + 48 + 9, 15
     size -(9 +12 +12 +48), 38
-    font "Regular", 26
+    font "Share", 26
     name "text"
     orientation :left, :center
   end

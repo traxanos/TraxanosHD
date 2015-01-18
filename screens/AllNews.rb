@@ -11,7 +11,7 @@ TraxanosHD::Screen.new(xml, :AllNews, "VTI News") do
         MultiContentEntryPixmapAlphaTest(pos = (711, 3), size = (48, 48), png = 2),
       ],
       "fonts": [
-        gFont("Regular", 28)
+        gFont("Share", 28)
       ],
       "itemHeight": 54
     }'

@@ -12,8 +12,8 @@ TraxanosHD::Screen.new(xml, :BackupSuite, "VTI BackupSuite") do
         MultiContentEntryPixmapAlphaTest(pos = (711, 8), size = (44, 44), png = 3),
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 20)
+        gFont("Share", 24),
+        gFont("Share", 20)
       ],
       "itemHeight": 60
     }'

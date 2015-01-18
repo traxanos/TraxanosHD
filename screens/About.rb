@@ -9,7 +9,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
       render "VtiImageVersion"
       source "session.CurrentService"
       transparent 1
-      font "Regular", TraxanosHD.default_title_font_size
+      font "Share", TraxanosHD.default_title_font_size
       orientation :left, :top
       nowrap 1
     end
@@ -20,7 +20,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
       render "Label"
       source "EnigmaVersion"
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       orientation :left, :top
       nowrap 1
     end
@@ -31,7 +31,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
       render "Label"
       source "ImageVersion"
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       orientation :left, :top
       nowrap 1
     end
@@ -42,7 +42,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
       render "Label"
       source "FPVersion"
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       orientation :left, :top
       nowrap 1
     end
@@ -57,7 +57,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
         render "Label"
         source "HDDHeader"
         transparent 1
-        font "Regular", TraxanosHD.default_font_size + 4
+        font "Share", TraxanosHD.default_font_size + 4
         orientation :left, :top
         nowrap 1
       end
@@ -68,7 +68,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
         render "Label"
         source "hddA"
         transparent 1
-        font "Regular", TraxanosHD.default_font_size
+        font "Share", TraxanosHD.default_font_size
         orientation :left, :top
         nowrap 1
       end
@@ -85,7 +85,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
         render "Label"
         source "TunerHeader"
         transparent 1
-        font "Regular", TraxanosHD.default_font_size + 4
+        font "Share", TraxanosHD.default_font_size + 4
         orientation :left, :top
         nowrap 1
       end
@@ -96,7 +96,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
         render "Label"
         source "Tuner0"
         transparent 1
-        font "Regular", TraxanosHD.default_font_size
+        font "Share", TraxanosHD.default_font_size
         orientation :left, :top
         nowrap 1
       end
@@ -107,7 +107,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
         render "Label"
         source "Tuner1"
         transparent 1
-        font "Regular", TraxanosHD.default_font_size
+        font "Share", TraxanosHD.default_font_size
         orientation :left, :top
         nowrap 1
       end
@@ -118,7 +118,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
         render "Label"
         source "Tuner2"
         transparent 1
-        font "Regular", TraxanosHD.default_font_size
+        font "Share", TraxanosHD.default_font_size
         orientation :left, :top
         nowrap 1
       end
@@ -129,7 +129,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
         render "Label"
         source "Tuner3"
         transparent 1
-        font "Regular", TraxanosHD.default_font_size
+        font "Share", TraxanosHD.default_font_size
         orientation :left, :top
         nowrap 1
       end
@@ -140,7 +140,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
       size nil, 30
       text "Support for Vu+"
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       orientation :left, :top
       nowrap 1
     end
@@ -150,7 +150,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
       size nil, 30
       text "www.vuplus-support.org"
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       orientation :center, :top
       nowrap 1
     end
@@ -160,7 +160,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
       size nil, 30
       text "Skin by traxanos"
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       orientation :right, :top
       nowrap 1
     end

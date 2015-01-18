@@ -10,7 +10,7 @@ TraxanosHD::Screen.new(xml, :LanguageSelection, "Language selection") do
         MultiContentEntryPixmapAlphaTest(pos = (702, 4), size = (60, 40), png = 2),
       ],
       "fonts": [
-        gFont("Regular", 24),
+        gFont("Share", 24),
       ],
       "itemHeight": 48
     }'

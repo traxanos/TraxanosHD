@@ -5,18 +5,13 @@ TraxanosHD::Screen.new(xml, :BouquetSelector, "Choose bouquet") do
 
   main do
     widget do
-      size nil, 480
+      size nil, 510
       itemheight 30
       name "menu"
-      font "Regular", TraxanosHD.default_font_size
+      font "Share", TraxanosHD.default_font_size
       transparent 1
       enablewraparound 1
       scrollbars
     end
-
-  end
-
-  colorbar do
-    colorbar_buttons1(true, true, true, true)
   end
 end

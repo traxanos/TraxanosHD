@@ -23,7 +23,7 @@ TraxanosHD::Screen.new(xml, :Volume, "Volume") do
       widget do
         position 255, 0
         size 87, TraxanosHD.header_height
-        font "Regular", 40
+        font "Share", 40
         render "VVolumeText"
         source "global.CurrentTime"
         orientation :center, :center
