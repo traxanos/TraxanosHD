@@ -17,7 +17,7 @@ TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSetup") do
       size nil, 30
       source "introduction"
       render "Label"
-      font "Regular", TraxanosHD.default_left_font_size
+      font "Regular", TraxanosHD.default_font_size
       orientation :center, :center
       transparent 1
     end

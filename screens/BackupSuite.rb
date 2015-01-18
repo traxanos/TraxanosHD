@@ -7,13 +7,13 @@ TraxanosHD::Screen.new(xml, :BackupSuite, "VTI BackupSuite") do
 
     template = '{
       "template": [
-        MultiContentEntryText(pos = (6, 0),  size = (705,33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 1),
+        MultiContentEntryText(pos = (6, 3),  size = (705,30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 1),
         MultiContentEntryText(pos = (6, 36), size = (705,24), font = 1, flags = RT_HALIGN_LEFT, text = 2),
         MultiContentEntryPixmapAlphaTest(pos = (711, 8), size = (44, 44), png = 3),
       ],
       "fonts": [
         gFont("Regular", 24),
-        gFont("Regular", 16)
+        gFont("Regular", 20)
       ],
       "itemHeight": 60
     }'

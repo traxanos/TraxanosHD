@@ -14,7 +14,7 @@ TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
       ],
       "fonts": [
         gFont("Regular", 24),
-        gFont("Regular", 14),
+        gFont("Regular", 20),
       ],
       "itemHeight": 90
     }'
@@ -36,7 +36,7 @@ TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
       size 198, 30
       render "Label"
       source "key_red"
-      font "Regular", 16
+      font "Regular", TraxanosHD.default_font_size
       orientation :center, :center
       nowrap 1
       transparent 1

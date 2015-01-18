@@ -38,7 +38,7 @@ TraxanosHD::Screen.new(xml, :Ipkg, "Installing Software...") do
   widget do
     position 12, 12 + 48 + 12 + 5 + 12
     size -24, 56
-    font "Regular", 20
+    font "Regular", TraxanosHD.default_font_size
     name "status"
     orientation :center, :center
   end

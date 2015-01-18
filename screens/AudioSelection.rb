@@ -8,25 +8,25 @@ TraxanosHD::Screen.new(xml, :AudioSelection, "Audio") do
     size -24, -24
 
     label do
-      position 0, 3
+      position 0, 0
       size 5, 24
       background :red
     end
 
     label do
-      position 0, 33
+      position 0, 30
       size 5, 24
       background :green
     end
 
     label do
-      position 0, 63
+      position 0, 60
       size 5, 24
       background :yellow
     end
 
     label do
-      position 0, 93
+      position 0, 90
       size 5, 24
       background :blue
     end
@@ -64,7 +64,7 @@ TraxanosHD::Screen.new(xml, :AudioSelection, "Audio") do
       },
       "fonts": [
         gFont("Regular", 20),
-        gFont("Regular", 16)
+        gFont("Regular", 20)
       ],
       "itemHeight": 30
     }'

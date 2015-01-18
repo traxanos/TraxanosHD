@@ -26,7 +26,7 @@ TraxanosHD::Screen.new(xml, :LocationBox) do
 
     label do
       position 2, 2
-      font "FontAwesome", TraxanosHD.default_left_font_size
+      font "FontAwesome", TraxanosHD.default_font_size
       orientation :center, :center
       size 30, 34
       text ""
@@ -37,7 +37,7 @@ TraxanosHD::Screen.new(xml, :LocationBox) do
       position 33, 4
       size 772-32, 30
       name "target"
-      font "Regular", TraxanosHD.default_left_font_size
+      font "Regular", TraxanosHD.default_font_size
       transparent 1
       nowrap 1
     end
@@ -65,7 +65,7 @@ TraxanosHD::Screen.new(xml, :LocationBox) do
       transparent 1
 
       position 2, 36 + 12 + (filelist_height) + TraxanosHD.spacer + 2
-      font "FontAwesome", TraxanosHD.default_left_font_size
+      font "FontAwesome", TraxanosHD.default_font_size
       orientation :center, :center
       size 30, 34
     end

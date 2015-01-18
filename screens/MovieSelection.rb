@@ -10,7 +10,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       name "freeDiskSpace"
       transparent 1
       nowrap 1
-      font "Regular", 16
+      font "Regular", TraxanosHD.default_font_size
       orientation :left, :top
     end
 
@@ -108,7 +108,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       position -72
       size 72, 30
       text "MENU"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -119,7 +119,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       position -(72+TraxanosHD.spacer+66)
       size 66, 30
       text "EPG"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

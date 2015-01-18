@@ -85,7 +85,7 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
       position -72
       size 72, 30
       text "EPG"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

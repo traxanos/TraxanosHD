@@ -6,13 +6,13 @@ TraxanosHD::Screen.new(xml, :VTIMainMenu, "VTI Panel") do
   main do
     template = '{
       "template": [
-        MultiContentEntryText(pos = (6, 0),  size = (668,33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 0),
-        MultiContentEntryText(pos = (6, 36), size = (668,24), font = 1, flags = RT_HALIGN_LEFT, text = 2),
+        MultiContentEntryText(pos = (6, 6),  size = (668, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+        MultiContentEntryText(pos = (6, 36), size = (668, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2),
         MultiContentEntryPixmapAlphaTest(pos = (668, 5), size = (100, 50), png = 3),
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 16)
+        gFont("Regular", ' + (TraxanosHD.default_font_size + 4).to_s + '),
+        gFont("Regular", ' + TraxanosHD.default_font_size.to_s + ')
       ],
       "itemHeight": 60
     }'

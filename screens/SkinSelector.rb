@@ -18,7 +18,7 @@ TraxanosHD::Screen.new(xml, :SkinSelector, "Skin Selector") do
       size nil, 30
       source "introduction"
       render "Label"
-      font "Regular", 18
+      font "Regular", TraxanosHD.default_font_size
       orientation :left, :center
     end
   end

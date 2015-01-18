@@ -12,8 +12,8 @@ class TraxanosHD::Element
       position 0, 0
       size TraxanosHD.left_width, TraxanosHD.header_height
 
-      left = 72 * TraxanosHD.grid
-      right = 36 * TraxanosHD.grid
+      left = 73 * TraxanosHD.grid
+      right = 43 * TraxanosHD.grid
 
       label do
         # left
@@ -21,8 +21,7 @@ class TraxanosHD::Element
         size left
 
         widget do
-          position 0, 0
-          size 75
+          size 79
           font "Regular", 55
           render "Label"
           orientation :right, :center
@@ -33,9 +32,9 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 72, 6
+          position 79, 6
           size 24, 24
-          font "Regular", 17
+          font "Regular", 22
           render "Label"
           orientation :right, :center
           nowrap 1
@@ -45,9 +44,9 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 75 + 9 + 24, 6
-          size 57, 57
-          font "Meteocons", 48
+          position 79 + 24
+          size TraxanosHD.header_height
+          font "Meteocons", 51
           render "Label"
           orientation :center, :center
           nowrap 1
@@ -59,7 +58,7 @@ class TraxanosHD::Element
         widget do
           position 75 + 6 + 24 + 57 + 9, 9
           size 39, 24
-          font "Regular", 16
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
           orientation :right, :center
           nowrap 1
@@ -71,7 +70,7 @@ class TraxanosHD::Element
         widget do
           position 75 + 6 + 24 + 57 + 9, 9 + 24 + 3
           size 39, 24
-          font "Regular", 16
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
           orientation :right, :center
           nowrap 1
@@ -88,9 +87,9 @@ class TraxanosHD::Element
         accent2
 
         widget do
-          position 6, 6
+          position 9, 6
           size 51, 51
-          font "Meteocons", 45
+          font "Meteocons", 48
           render "Label"
           orientation :center, :center
           nowrap 1
@@ -101,9 +100,9 @@ class TraxanosHD::Element
         end
 
         widget do
-          position -(39+6), 6
-          size 39, 24
-          font "Regular", 16
+          position 60, 6
+          size 60, 24
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
           orientation :right, :center
           nowrap 1
@@ -114,9 +113,9 @@ class TraxanosHD::Element
         end
 
         widget do
-          position -(39+6), 3 + 24 + 6
-          size 39, 24
-          font "Regular", 16
+          position 60, 3 + 24 + 6
+          size 60, 24
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
           orientation :right, :center
           nowrap 1

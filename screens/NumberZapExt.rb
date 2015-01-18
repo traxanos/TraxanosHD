@@ -49,7 +49,7 @@ TraxanosHD::Screen.new(xml, :NumberZapExt, "Channel") do
         size nil, 24
         orientation :left, :center
       name "chBouq"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       transparent 1
       nowrap 1
       end

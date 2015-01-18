@@ -6,7 +6,7 @@ class TraxanosHD::Element
       background :transparent
 
       left = 42 * TraxanosHD.grid
-      right = 53 * TraxanosHD.grid
+      right = 51 * TraxanosHD.grid
 
       label do
         # right
@@ -33,9 +33,9 @@ class TraxanosHD::Element
         widget do
           position -(108+9), 6
           size 108, 24
-          font "Regular", 16
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
-          orientation :right, :top
+          orientation :right, :center
           nowrap 1
           source "global.CurrentTime"
           convert "Format:%A", type: "ClockToText"
@@ -46,9 +46,9 @@ class TraxanosHD::Element
         widget do
           position -(108+9), 6 + 27
           size 108, 24
-          font "Regular", 16
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
-          orientation :right, :bottom
+          orientation :right, :center
           nowrap 1
           source "global.CurrentTime"
           convert "Format:%e. %B", type: "ClockToText"

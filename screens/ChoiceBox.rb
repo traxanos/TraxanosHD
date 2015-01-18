@@ -9,6 +9,7 @@ TraxanosHD::Screen.new(xml, :ChoiceBox, "Input") do
     size -(9 +12 +12 +48), 38
     font "Regular", 26
     name "text"
+    orientation :left, :center
   end
 
   label do

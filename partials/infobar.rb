@@ -43,7 +43,7 @@ class TraxanosHD::Element
           position 736, 27
           size 51, 42
           render "Label"
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           orientation :right, :center
           nowrap 1
           source "session.Event_Now"
@@ -56,7 +56,7 @@ class TraxanosHD::Element
           position 787, 27
           size 66, 42
           render "Label"
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           orientation :left, :center
           nowrap 1
           source "session.Event_Now"
@@ -69,7 +69,7 @@ class TraxanosHD::Element
           position 853, 27
           size 90, 42
           render "Label"
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           orientation :right, :center
           nowrap 1
           source "session.Event_Now"
@@ -94,7 +94,7 @@ class TraxanosHD::Element
           position 736, 51 + 27
           size 51, 42
           render "Label"
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           orientation :right, :center
           nowrap 1
           source "session.Event_Next"
@@ -107,7 +107,7 @@ class TraxanosHD::Element
           position 787, 51 + 27
           size 66, 42
           render "Label"
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           orientation :left, :center
           nowrap 1
           source "session.Event_Next"
@@ -120,7 +120,7 @@ class TraxanosHD::Element
           position 853, 51 + 27
           size 90, 42
           render "Label"
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           orientation :right, :center
           nowrap 1
           source "session.Event_Next"

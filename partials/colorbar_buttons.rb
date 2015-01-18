@@ -15,7 +15,7 @@ class TraxanosHD::Element
         position 18-9
         size 198, 30
         name "#{red_name}"
-        font "Regular", 16
+        font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
         nowrap 1
         transparent 1
@@ -27,7 +27,7 @@ class TraxanosHD::Element
         position 216-9
         size 198, 30
         name "#{green_name}"
-        font "Regular", 16
+        font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
         nowrap 1
         transparent 1
@@ -39,7 +39,7 @@ class TraxanosHD::Element
         position 414-9
         size 198, 30
         name "#{yellow_name}"
-        font "Regular", 16
+        font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
         nowrap 1
         transparent 1
@@ -51,7 +51,7 @@ class TraxanosHD::Element
         position 612-9
         size 198, 30
         name "#{blue_name}"
-        font "Regular", 16
+        font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
         nowrap 1
         transparent 1

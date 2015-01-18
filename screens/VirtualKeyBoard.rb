@@ -19,7 +19,7 @@ TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
 
     label do
       position 2, 2
-      font "FontAwesome", TraxanosHD.default_left_font_size
+      font "FontAwesome", TraxanosHD.default_font_size
       orientation :center, :center
       size 30, 34
       text ""
@@ -30,7 +30,7 @@ TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
       position 33, 4
       size 696-32, 30
       name "text"
-      font "Regular", TraxanosHD.default_left_font_size
+      font "Regular", TraxanosHD.default_font_size
       transparent 1
       nowrap 1
     end

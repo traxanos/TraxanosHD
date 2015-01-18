@@ -18,9 +18,9 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       custom "colorServiceDescriptionSelected", "channelSelection2Select"
       custom "foregroundColorServiceNotAvail", "#00555555"
       custom "serviceItemHeight", 30
-      custom "serviceInfoFont", "Regular; #{TraxanosHD.default_left_font_size}"
-      custom "serviceNameFont", "Regular; #{TraxanosHD.default_left_font_size}"
-      custom "serviceNumberFont", "Regular; #{TraxanosHD.default_left_font_size}"
+      custom "serviceInfoFont", "Regular; #{TraxanosHD.default_font_size}"
+      custom "serviceNameFont", "Regular; #{TraxanosHD.default_font_size}"
+      custom "serviceNumberFont", "Regular; #{TraxanosHD.default_font_size}"
       custom "colorServiceRecording", "red"
     end
   end
@@ -105,7 +105,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       position -72
       size 72, 30
       text "MENU"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -116,7 +116,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       position -(72+TraxanosHD.spacer+66)
       size 66, 30
       text "EPG"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

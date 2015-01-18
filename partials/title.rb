@@ -30,6 +30,7 @@ class TraxanosHD::Element
       transparent 1
       font "Regular", TraxanosHD.default_title_font_size
       nowrap 1
+      orientation :left, :center
     end
   end
 
@@ -43,6 +44,7 @@ class TraxanosHD::Element
         nowrap 1
         source title
         render "Label"
+        orientation :left, :center
       end
     else
       label do
@@ -52,6 +54,7 @@ class TraxanosHD::Element
         font "Regular", TraxanosHD.default_title_font_size
         nowrap 1
         text title
+        orientation :left, :center
       end
     end
   end

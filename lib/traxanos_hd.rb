@@ -90,12 +90,16 @@ module TraxanosHD
       end
     end
 
-    def default_left_font_size
+    def default_font_size
       20
     end
 
-    def default_right_font_size
+    def default_colorbar_font_size
       18
+    end
+
+    def default_right_font_size
+      20
     end
 
     def default_title_font_size

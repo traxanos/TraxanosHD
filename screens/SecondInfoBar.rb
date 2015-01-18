@@ -29,7 +29,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         widget do
           position 0, 60
           size nil, -60
-          font "Regular", TraxanosHD.default_left_font_size
+          font "Regular", TraxanosHD.default_font_size
           render "VRunningText"
           source "session.Event_Now"
           config "movetype=running,startpoint=0,direction=top,steptime=120,repeat=2,always=0,startdelay=5000,wrap"
@@ -80,7 +80,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         label do
           position 0, y
           size 120, 24
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           text "Provider:"
           nowrap 1
           orientation :left, :top
@@ -91,7 +91,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         widget do
           position -236, y
           size 236, 24
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
           source "session.CurrentService"
           nowrap 1
@@ -106,7 +106,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         label do
           position 0, y
           size 120, 24
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           text "Resolution:"
           nowrap 1
           orientation :left, :top
@@ -117,7 +117,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         widget do
           position -236, y
           size 99, 24
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
           source "session.CurrentService"
           nowrap 1
@@ -130,7 +130,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         label do
           position -236, y
           size 99, 24
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           text "x"
           nowrap 1
           orientation :center, :top
@@ -141,7 +141,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         widget do
           position -236, y
           size 99, 24
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
           source "session.CurrentService"
           nowrap 1
@@ -154,7 +154,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         widget do
           position -236+99, y
           size 66, 24
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           render "Label"
           source "session.CurrentService"
           nowrap 1
@@ -171,7 +171,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         label do
           position 0, y
           size 120, 24
-          font "Regular", 18
+          font "Regular", TraxanosHD.default_font_size
           text "Tuner:"
           nowrap 1
           orientation :left, :top
@@ -189,10 +189,22 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
 
         x = 120
         tuner_list.each do |tuner|
+          label do
+            position x, y
+            size 15, 24
+            font "Regular", TraxanosHD.default_font_size
+            nowrap 1
+            orientation :center, :top
+            transparent 1
+            text tuner[:name]
+            accent
+            foreground :shadow
+          end
+
           widget do
             position x, y
             size 15, 24
-            font "Regular", 18
+            font "Regular", TraxanosHD.default_font_size
             render "FixedLabel"
             source "session.TunerInfo"
             nowrap 1
@@ -425,7 +437,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         position 18
         size 54
         text "SNR"
-        font "Regular", 18
+        font "Regular", TraxanosHD.default_font_size
         orientation :left, :center
         transparent 1
         accent2
@@ -435,7 +447,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         position 405
         size 54
         text "AGC"
-        font "Regular", 18
+        font "Regular", TraxanosHD.default_font_size
         orientation :left, :center
         transparent 1
         accent2
@@ -464,7 +476,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       widget do
         position 351
         size 54, 36
-        font "Regular", 18
+        font "Regular", TraxanosHD.default_font_size
         orientation :left, :center
         transparent 1
         accent2
@@ -476,7 +488,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       widget do
         position 738
         size 54
-        font "Regular", 18
+        font "Regular", TraxanosHD.default_font_size
         orientation :left, :center
         transparent 1
         accent2
@@ -488,7 +500,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       widget do
         position 832
         size 150
-        font "Regular", 18
+        font "Regular", TraxanosHD.default_font_size
         render "Label"
         source "session.CurrentService"
         convert "TempInfo", type: "VtiInfo"
@@ -500,7 +512,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       widget do
         position 1022
         size 162
-        font "Regular", 18
+        font "Regular", TraxanosHD.default_font_size
         render "Label"
         source "session.CurrentService"
         convert "FanInfo", type: "VtiInfo"

@@ -39,7 +39,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG2, "EPG selection") do
         size nil, 53
         transparent 0
         text "asdkjahsdkajsh"
-        font "Regular", 20
+        font "Regular", TraxanosHD.default_font_size
         orientation :left, :top
         nowrap 1
         source "Event"
@@ -61,7 +61,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG2, "EPG selection") do
       position -72
       size 72, 30
       text "MENU"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

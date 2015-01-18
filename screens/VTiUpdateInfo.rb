@@ -16,7 +16,7 @@ TraxanosHD::Screen.new(xml, :VTiUpdateInfo, "VTI News") do
       size nil, 30*13
       name "update"
       transparent 1
-      font "Regular", TraxanosHD.default_left_font_size
+      font "Regular", TraxanosHD.default_font_size
       orientation :left, :top
     end
   end

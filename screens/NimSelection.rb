@@ -12,7 +12,7 @@ TraxanosHD::Screen.new(xml, :NimSelection, "Choose Tuner") do
       ],
       "fonts": [
         gFont("Regular", 24),
-        gFont("Regular", 16),
+        gFont("Regular", 20),
       ],
       "itemHeight": 81
     }'

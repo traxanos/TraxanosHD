@@ -71,7 +71,7 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
       position -66
       size 66, 30
       text "EPG"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -82,7 +82,7 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
       position -(66 + 30 + TraxanosHD.spacer)
       size 30, 30
       text ">"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -93,7 +93,7 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
       position -(66 + 30 + TraxanosHD.spacer + 30 + TraxanosHD.spacer)
       size 30, 30
       text "<"
-      font "Regular", 20
+      font "Regular", TraxanosHD.default_font_size
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

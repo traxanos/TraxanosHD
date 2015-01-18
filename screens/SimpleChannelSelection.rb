@@ -19,9 +19,9 @@ TraxanosHD::Screen.new(xml, :SimpleChannelSelection, "Channel selection") do
       custom "colorServiceDescriptionSelected", "channelSelection2Select"
       custom "foregroundColorServiceNotAvail", "#00555555"
       custom "serviceItemHeight", 30
-      custom "serviceInfoFont", "Regular; #{TraxanosHD.default_left_font_size}"
-      custom "serviceNameFont", "Regular; #{TraxanosHD.default_left_font_size}"
-      custom "serviceNumberFont", "Regular; #{TraxanosHD.default_left_font_size}"
+      custom "serviceInfoFont", "Regular; #{TraxanosHD.default_font_size}"
+      custom "serviceNameFont", "Regular; #{TraxanosHD.default_font_size}"
+      custom "serviceNumberFont", "Regular; #{TraxanosHD.default_font_size}"
       custom "colorServiceRecording", "red"
     end
   end
