@@ -17,7 +17,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
         widget do
           position 0, 0
           size nil, 42
-          font "SegoeUI", 30
+          font "Regular", 30
           render "Label"
           source "session.Event_Now"
           nowrap 1

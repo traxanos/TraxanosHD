@@ -5,7 +5,7 @@ TraxanosHD::Screen.new(xml, :LocationBox) do
       size -(TraxanosHD.spacer*2), 48
       name "text"
       transparent 1
-      font "SegoeUI", TraxanosHD.default_title_font_size
+      font "Regular", TraxanosHD.default_title_font_size
       nowrap 1
     end
   end

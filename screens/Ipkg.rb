@@ -8,7 +8,7 @@ TraxanosHD::Screen.new(xml, :Ipkg, "Installing Software...") do
   label do
     position 12 + 48 + 9, 15
     size -(9 +12 +12 +48), 38
-    font "SegoeUI", 26
+    font "Regular", 26
     text "Installing Software..."
   end
 

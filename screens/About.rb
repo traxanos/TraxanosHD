@@ -9,7 +9,7 @@ TraxanosHD::Screen.new(xml, :About, "About") do
       render "VtiImageVersion"
       source "session.CurrentService"
       transparent 1
-      font "SegoeUI", 36
+      font "Regular", 36
       orientation :left, :top
       nowrap 1
     end

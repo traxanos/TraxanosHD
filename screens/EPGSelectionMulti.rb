@@ -66,7 +66,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionMulti, "EPG selection") do
       position -72
       size 72, 30
       text "MENU"
-      font "SegoeUI", 20
+      font "Regular", 20
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -77,7 +77,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionMulti, "EPG selection") do
       position -(72+TraxanosHD.spacer+66)
       size 66, 30
       text "EPG"
-      font "SegoeUI", 20
+      font "Regular", 20
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -108,7 +108,7 @@ end
 #     xml.convert "ExtendedDescription", type: "EventName"
 #   end
 
-#   xml.eLabel position: "1151,645", size: "72,30", backgroundColor: :foregroundAccent, foregroundColor: :backgroundAccent, text: "MENU", font: "SegoeUI; 20", valign: :center, halign: :center, noWrap: 1
+#   xml.eLabel position: "1151,645", size: "72,30", backgroundColor: :foregroundAccent, foregroundColor: :backgroundAccent, text: "MENU", font: "Regular; 20", valign: :center, halign: :center, noWrap: 1
 
 #   partial_colorbar(xml, 645)
 #   partial_colorbar_buttons(xml, 645, true, true, true, true)

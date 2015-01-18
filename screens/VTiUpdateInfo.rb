@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :VTiUpdateInfo, "VTI News") do
       size nil, 99
       name "header"
       transparent 1
-      font "SegoeUI", 36
+      font "Regular", 36
       orientation :left, :top
     end
 

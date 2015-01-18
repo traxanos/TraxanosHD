@@ -11,7 +11,7 @@ TraxanosHD::Screen.new(xml, :VTIMainMenu, "VTI Panel") do
         MultiContentEntryPixmapAlphaTest(pos = (668, 5), size = (100, 50), png = 3),
       ],
       "fonts": [
-        gFont("SegoeUI", 24),
+        gFont("Regular", 24),
         gFont("Regular", 16)
       ],
       "itemHeight": 60

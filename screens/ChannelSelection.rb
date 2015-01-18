@@ -105,7 +105,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       position -72
       size 72, 30
       text "MENU"
-      font "SegoeUI", 20
+      font "Regular", 20
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -116,7 +116,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       position -(72+TraxanosHD.spacer+66)
       size 66, 30
       text "EPG"
-      font "SegoeUI", 20
+      font "Regular", 20
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

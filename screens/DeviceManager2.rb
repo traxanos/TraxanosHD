@@ -13,7 +13,7 @@ TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
         MultiContentEntryText(pos = (3, 69), size = (718, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 5),
       ],
       "fonts": [
-        gFont("SegoeUI", 24),
+        gFont("Regular", 24),
         gFont("Regular", 14),
       ],
       "itemHeight": 90

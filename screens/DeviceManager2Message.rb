@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :DeviceManager2Message, "Message") do
   widget do
     position 90, 12
     size 798, 66
-    font "SegoeUI", 36
+    font "Regular", 36
     name "messagetype"
     orientation nil, :center
   end

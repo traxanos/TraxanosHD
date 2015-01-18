@@ -17,7 +17,7 @@ class TraxanosHD::Element
           widget do
             position TraxanosHD.spacer, 0
             size -(TraxanosHD.spacer*2)
-            font "SegoeUI", 55
+            font "Regular", 55
             render "Label"
             orientation :right, :center
             nowrap 1
