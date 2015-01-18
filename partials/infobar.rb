@@ -33,7 +33,7 @@ class TraxanosHD::Element
           render "Label"
           font "Regular", 30
           nowrap 1
-          orientation :left, :center
+          orientation :left, :top
           source "session.Event_Now"
           transparent 1
           convert "Name", type: "EventName"
@@ -83,7 +83,7 @@ class TraxanosHD::Element
           size 732, 42
           render "Label"
           font "Regular", 22
-          orientation :left, :center
+          orientation :left, :top
           nowrap 1
           source "session.Event_Next"
           transparent 1

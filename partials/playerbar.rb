@@ -49,7 +49,7 @@ class TraxanosHD::Element
           render "Label"
           font "Regular", 30
           nowrap 1
-          orientation :left, :center
+          orientation :left, :top
           transparent 1
           if timeshift
             source "session.Event_Now"
