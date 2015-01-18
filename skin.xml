@@ -510,7 +510,7 @@
   </screen>
   <!-- Menu -->
   <screen name="Menu" title="Main menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -537,7 +537,7 @@
   </screen>
   <!-- About -->
   <screen name="About" title="About" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="About" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="About" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -567,7 +567,7 @@
   </screen>
   <!-- BouquetSelector -->
   <screen name="BouquetSelector" title="Choose bouquet" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Choose bouquet" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Choose bouquet" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -593,7 +593,7 @@
   </screen>
   <!-- ChannelContextMenu -->
   <screen name="ChannelContextMenu" title="Channellist menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Channellist menu" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Channellist menu" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -610,7 +610,7 @@
   </screen>
   <!-- ChannelSelection -->
   <screen name="ChannelSelection" title="Channel selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -679,7 +679,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- Console -->
   <screen name="Console" title="Command execution" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -700,7 +700,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- DirectoryBrowser -->
   <screen name="DirectoryBrowser" title="Directorybrowser" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Directorybrowser" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Directorybrowser" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -724,7 +724,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- DeviceManager2 -->
   <screen name="DeviceManager2" title="DeviceManager2" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -771,7 +771,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- EPGSelection -->
   <screen name="EPGSelection" title="EPG selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="EPG Selection" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="EPG Selection" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -811,7 +811,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- EPGSelectionMulti -->
   <screen name="EPGSelectionMulti" title="EPG selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="EPG Selection" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="EPG Selection" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -915,7 +915,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- EventView -->
   <screen name="EventView" title="EventView" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="EPG Selection" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="EPG Selection" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -941,7 +941,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- GraphMultiEPG -->
   <screen name="GraphMultiEPG" title="EPG selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1003,7 +1003,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- GraphMultiEPG1 -->
   <screen name="GraphMultiEPG1" title="EPG selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1092,19 +1092,19 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="SegoeUI; 20" noWrap="1" halign="center" valign="center" position="1151,651" size="72,30" zPosition="4"/>
   </screen>
   <!-- HelpMenu -->
-  <screen name="HelpMenu" title="Menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="help..." position="57,54" size="774,48" zPosition="3"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+  <screen name="HelpMenu" title="Menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720" zPosition="20">
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="help..." position="57,51" size="774,48" zPosition="23"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="22"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="24">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="25">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 16" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="26">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="849,42" size="392,63" zPosition="3"/>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="849,42" size="392,63" zPosition="23"/>
     <widget backgroundColor="background" foregroundColor="foreground" itemHeight="48" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
@@ -1117,7 +1117,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- HarddiskSelection -->
   <screen name="HarddiskSelection" title="Select HDD" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Select HDD" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Select HDD" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1134,7 +1134,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- LanguageSelection -->
   <screen name="LanguageSelection" title="Language selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Language selection" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Language selection" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1162,7 +1162,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- LocationBox -->
   <screen name="LocationBox" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" name="text" transparent="1" font="SegoeUI; 33" noWrap="1" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="text" transparent="1" font="SegoeUI; 33" noWrap="1" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1258,7 +1258,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- MyPluginManager -->
   <screen name="MyPluginManager" title="VTI SoftwareManager" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1296,7 +1296,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- myPacketManager -->
   <screen name="myPacketManager" title="VTI SoftwareManager" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1407,7 +1407,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- MovieSelection -->
   <screen name="MovieSelection" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Select a movie" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Select a movie" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1454,7 +1454,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- MovieContextMenu -->
   <screen name="MovieContextMenu" title="Movielist menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Movielist menu" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Movielist menu" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1471,7 +1471,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- NimSetup -->
   <screen name="NimSetup" title="Reception Settings" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Reception Settings" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Reception Settings" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1488,7 +1488,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- NimSelection -->
   <screen name="NimSelection" title="Choose Tuner" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Choose Tuner" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Choose Tuner" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1542,7 +1542,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="280,6" size="330,144" zPosition="3"/>
   </screen>
   <!-- NumericalTextInputHelpDialog -->
-  <screen name="NumericalTextInputHelpDialog" title="Channel" flags="wfNoBorder" backgroundColor="backgroundAccent" position="849,141" size="392,534" zPosition="8">
+  <screen name="NumericalTextInputHelpDialog" flags="wfNoBorder" backgroundColor="backgroundAccent" position="849,141" size="392,534" zPosition="8">
     <widget backgroundColor="background" foregroundColor="foreground" name="key1" font="Regular; 16" halign="center" valign="center" position="18,18" size="118,48" zPosition="11"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="key2" font="Regular; 16" halign="center" valign="center" position="137,18" size="118,48" zPosition="12"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="key3" font="Regular; 16" halign="center" valign="center" position="256,18" size="118,48" zPosition="13"/>
@@ -1559,7 +1559,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- PluginBrowser -->
   <screen name="PluginBrowser" title="Plugins Manager" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Plugins" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Plugins" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1614,7 +1614,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- PacketManager -->
   <screen name="PacketManager" title="PacketManager" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="PacketManager" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="PacketManager" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1651,7 +1651,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- ServiceInfo -->
   <screen name="ServiceInfo" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Serviceinfo" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Serviceinfo" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1677,7 +1677,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- Setup -->
   <screen name="Setup" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Setup" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Setup" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1701,7 +1701,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- SimpleChannelSelection -->
   <screen name="SimpleChannelSelection" title="Channel selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1727,7 +1727,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- SkinSelector -->
   <screen name="SkinSelector" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Choose your Skin" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Choose your Skin" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1754,7 +1754,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   <screen name="Standby" title="Standby" position="0,0" size="0,0" backgroundColor="transparent" flags="wfNoBorder"/>
   <!-- Subtitles -->
   <screen name="Subtitles" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Subtitle selection" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Subtitle selection" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1781,7 +1781,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- TimerEditList -->
   <screen name="TimerEditList" title="Timer Editor" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Timer Editor" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Timer Editor" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1824,7 +1824,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- TimerEntry -->
   <screen name="TimerEntry" title="Timer entry" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Timer entry" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Timer entry" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1848,7 +1848,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- TimerSelection -->
   <screen name="TimerSelection" title="Timer selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Timer Editor" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Timer Editor" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1865,7 +1865,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- TimerSanityConflict -->
   <screen name="TimerSanityConflict" title="Timer sanity error" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Timer sanity error" position="57,54" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" text="Timer sanity error" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1893,7 +1893,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- VirtualKeyBoard -->
   <screen name="VirtualKeyBoard" title="Virtual KeyBoard" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720" zPosition="99">
-    <widget backgroundColor="background" foregroundColor="foreground" name="header" transparent="1" font="SegoeUI; 33" noWrap="1" position="57,54" size="774,48" zPosition="102"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="header" transparent="1" font="SegoeUI; 33" noWrap="1" position="57,51" size="774,48" zPosition="102"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="101"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="103">
       <convert type="ClockToText">Default</convert>
@@ -1947,7 +1947,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- VideoEnhancementSetup -->
   <screen name="VideoEnhancementSetup" title="VideoEnhancementSetup" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -1974,7 +1974,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- VtiNews -->
   <screen name="VtiNews" title="VTI News" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -2000,7 +2000,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- AllNews -->
   <screen name="AllNews" title="VTI News" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" name="header" transparent="1" font="SegoeUI; 33" noWrap="1" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="header" transparent="1" font="SegoeUI; 33" noWrap="1" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -2037,7 +2037,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- VTIMainMenu -->
   <screen name="VTIMainMenu" title="VTI Panel" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -2076,7 +2076,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- VTISubMenu -->
   <screen name="VTISubMenu" title="VTI Sub Menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -2112,7 +2112,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- VTIStatusListMenu -->
   <screen name="VTIStatusListMenu" title="VTIStatusListMenu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -2176,7 +2176,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- ReduceMenuConfig -->
   <screen name="ReduceMenuConfig" title="VTI ReduceMenu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -2212,7 +2212,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- CamSelectMenu -->
   <screen name="CamSelectMenu" title="VTI Cam Menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -2249,7 +2249,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- BackupSuite -->
   <screen name="BackupSuite" title="VTI BackupSuite" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="Title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>
@@ -2287,7 +2287,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- InfoPanel -->
   <screen name="InfoPanel" title="VTI Panel" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,54" size="774,48" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="SegoeUI; 33" noWrap="1" source="title" render="Label" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="SegoeUI; 55" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
       <convert type="ClockToText">Default</convert>

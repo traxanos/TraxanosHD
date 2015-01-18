@@ -2,6 +2,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
   header do
     header_title :Title
   end
+
   main do
     box do
       size nil, 480
@@ -10,7 +11,6 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
   end
 
   main_accent do
-
     widget do
       position 0, 0
       size 356, 36

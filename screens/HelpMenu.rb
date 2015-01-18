@@ -1,4 +1,6 @@
 TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
+  position 0, 0, 20
+
   header do
     header_title "help..."
   end

@@ -103,7 +103,7 @@ module TraxanosHD
     end
 
     def default_header_title_top_spacer
-      TraxanosHD.spacer-3
+      TraxanosHD.spacer-6
     end
 
   end
