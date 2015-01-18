@@ -473,8 +473,8 @@
   </screen>
   <!-- Mute -->
   <screen name="Mute" title="Mute" flags="wfNoBorder" backgroundColor="transparent" position="39,39" size="810,69" zPosition="81">
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61534;" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="84"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61478;" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="85"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61478;" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="84"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61534;" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="85"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="0,0" size="69,69" zPosition="83"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="0,0" size="810,69" zPosition="82"/>
   </screen>

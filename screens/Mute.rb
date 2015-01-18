@@ -10,7 +10,7 @@ TraxanosHD::Screen.new(xml, :Mute, "Mute") do
 
       label do
         size TraxanosHD.header_height
-        text ""
+        text ""
         nowrap 1
         font "FontAwesome", 39
         orientation :center, :center
@@ -19,7 +19,7 @@ TraxanosHD::Screen.new(xml, :Mute, "Mute") do
 
       label do
         size TraxanosHD.header_height
-        text ""
+        text ""
         nowrap 1
         font "FontAwesome", 39
         orientation :center, :center
