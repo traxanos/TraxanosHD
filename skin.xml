@@ -557,10 +557,10 @@
   </screen>
   <!-- AudioSelection -->
   <screen name="AudioSelection" title="Audio" flags="wfNoBorder" backgroundColor="background" position="center,center" size="564,480">
-    <eLabel backgroundColor="red" foregroundColor="foreground" position="12,12" size="5,24" zPosition="2"/>
-    <eLabel backgroundColor="green" foregroundColor="foreground" position="12,42" size="5,24" zPosition="3"/>
-    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="12,72" size="5,24" zPosition="4"/>
-    <eLabel backgroundColor="blue" foregroundColor="foreground" position="12,102" size="5,24" zPosition="5"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="12,15" size="5,24" zPosition="2"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="12,45" size="5,24" zPosition="3"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="12,75" size="5,24" zPosition="4"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="12,105" size="5,24" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="config" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="24,12" size="528,270" zPosition="6"/>
     <eLabel backgroundColor="white" foregroundColor="foreground" position="12,300" size="540,1" zPosition="7"/>
     <widget backgroundColor="background" foregroundColor="foreground" source="streams" render="Listbox" transparent="1" position="12,318" size="540,150" zPosition="8">
