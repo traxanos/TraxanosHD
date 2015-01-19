@@ -64,10 +64,11 @@ xml.skin do
     xml.color name: :WindowTitleForeground, color: :foreground
   end
 
-  render_screen('InfoBar', xml)
   render_screen('SecondInfoBar', xml)
   render_screen('PVRState', xml)
   render_screen('TimeshiftState', xml)
+  render_screen('MoviePlayer', xml)
+  render_screen('InfoBar', xml)
   render_screen('UnhandledKey', xml)
   render_screen('Volume', xml)
   render_screen('Mute', xml)
@@ -104,7 +105,6 @@ xml.skin do
   render_screen('myPacketManager', xml)
 
   # MoviePlayer
-  render_screen('MoviePlayer', xml)
   render_screen('MovieSelection', xml)
   render_screen('MovieContextMenu', xml)
 
