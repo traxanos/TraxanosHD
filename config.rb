@@ -11,7 +11,6 @@ TraxanosHD.colors[:yellow]            = "\#00e5b243"
 TraxanosHD.colors[:red]               = "\#00e91515"
 TraxanosHD.colors[:blue]              = "\#000064c7"
 TraxanosHD.colors[:orange]            = "\#00f47d19"
-TraxanosHD.colors[:logobg]            = "\#10202020"
 
 if dark
   TraxanosHD.colors[:background]        = "\#10101010"
@@ -49,7 +48,6 @@ if ENV['grey'] == "1"
   TraxanosHD.colors[:shadow]            = "\#10202020"
   TraxanosHD.colors[:foregroundAccent]  = "\#10bbbbbb"
   TraxanosHD.colors[:backgroundAccent]  = "\#10333333"
-  TraxanosHD.colors[:logobg]            = "\#10333333"
   TraxanosHD.colors[:foregroundAccent2] = "\#10bbbbbb"
   TraxanosHD.colors[:backgroundAccent2] = "\#00333333"
 end
