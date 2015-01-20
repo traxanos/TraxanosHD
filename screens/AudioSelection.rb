@@ -8,26 +8,26 @@ TraxanosHD::Screen.new(xml, :AudioSelection, "Audio") do
     size -24, -24
 
     label do
-      position 0, 3
-      size 5, 24
+      position 0, 0
+      size 5, 27
       background :red
     end
 
     label do
-      position 0, 33
-      size 5, 24
+      position 0, 30
+      size 5, 27
       background :green
     end
 
     label do
-      position 0, 63
-      size 5, 24
+      position 0, 60
+      size 5, 27
       background :yellow
     end
 
     label do
-      position 0, 93
-      size 5, 24
+      position 0, 90
+      size 5, 27
       background :blue
     end
 

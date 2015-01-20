@@ -19,48 +19,67 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
   end
 
   main_accent do
-    label do
+    widget do
       position 0, 0
-      size 220+67+67, 132+24
-      background :logobg
-    end
-
-    widget do
-      position 67, 12
-      size 220, 132
-      render "Picon"
-      source "Service"
-      alphatest "blend"
-      accent
-      convert "Reference", type: "ServiceName"
-      foreground nil
-    end
-
-    widget do
-      position 0, 150+24
-      size nil, 24
+      size nil, 36
       nowrap 1
       transparent 1
-      font "ShareBold", TraxanosHD.default_font_size
+      font "Regular", 22
+      render "Label"
+      source "Service"
+      accent
+      orientation :left, :top
+      convert "name", type: "EventName"
+    end
+
+    widget do
+      position 0, 36 + 12
+      size 62, 24
+      nowrap 1
+      transparent 1
+      font "Regular", TraxanosHD.default_font_size-1
       render "Label"
       source "Service"
       accent
       orientation :left, :center
-      convert "Name", type: "EventName"
+      convert "StartTime", type: "EventTime"
+      convert type: "ClockToText"
+    end
+
+    progressbar do
+      position 67, 36 + 12 + 9
+      size 220, 5
+      transparent 1
+      source "Service"
+      accent
+      convert "Progress", type: "EventTime"
     end
 
     widget do
-      position 0, 192+24
-      size nil, 279-24
+      position -62, 36 + 12
+      size 62, 24
+      nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-1
+      render "Label"
+      source "Service"
+      accent
+      orientation :right, :center
+      convert "EndTime", type: "EventTime"
+      convert type: "ClockToText"
+    end
+
+    widget do
+      position 0, 36 + 12 + 9 + 24 + 9
+      size nil, 303
+      transparent 1
+      font "Regular", TraxanosHD.default_font_size-1
       render "VRunningText"
       config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
       source "Event"
       accent
       convert "ExtendedDescription", type: "EventName"
     end
-
   end
 
   box do
@@ -71,7 +90,7 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
       position -66
       size 66, 30
       text "EPG"
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -82,7 +101,7 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
       position -(66 + 30 + TraxanosHD.spacer)
       size 30, 30
       text ">"
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -93,7 +112,7 @@ TraxanosHD::Screen.new(xml, :EPGSelection, "EPG selection") do
       position -(66 + 30 + TraxanosHD.spacer + 30 + TraxanosHD.spacer)
       size 30, 30
       text "<"
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

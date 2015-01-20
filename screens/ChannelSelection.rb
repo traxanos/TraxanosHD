@@ -31,7 +31,6 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
   end
 
   main_accent do
-
     widget do
       position 0, 0
       size nil, 36
