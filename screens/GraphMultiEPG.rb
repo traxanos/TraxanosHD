@@ -13,38 +13,23 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
   main_accent do
     widget do
       position 0, 0
-      size 356, 36
+      size nil, 36
       nowrap 1
       transparent 1
-      font "Regular", 24
+      font "Regular", 22
       render "Label"
       source "Event"
       accent
-      orientation :left, :center
-      convert "StartTime", type: "EventTime"
-      convert "Format:%A", type: "ClockToText"
+      orientation :left, :top
+      convert "name", type: "EventName"
     end
 
     widget do
-      position 0, 0
-      size 356, 36
-      nowrap 1
-      transparent 1
-      font "Regular", 24
-      render "Label"
-      source "Event"
-      accent
-      orientation :right, :center
-      convert "StartTime", type: "EventTime"
-      convert "Format:%d.%m.%Y", type: "ClockToText"
-    end
-
-    widget do
-      position 0, 54
+      position 0, 36 + 12
       size 62, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-1
       render "Label"
       source "Event"
       accent
@@ -54,7 +39,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
     end
 
     progressbar do
-      position 67, 63
+      position 67, 36 + 12 + 9
       size 220, 5
       transparent 1
       source "Event"
@@ -63,11 +48,11 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
     end
 
     widget do
-      position -62, 54
+      position -62, 36 + 12
       size 62, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-1
       render "Label"
       source "Event"
       accent
@@ -77,23 +62,10 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
     end
 
     widget do
-      position 0, 96
-      size 356, 24
-      nowrap 1
+      position 0, 36 + 12 + 9 + 24 + 9
+      size nil, 375
       transparent 1
-      font "ShareBold", TraxanosHD.default_font_size
-      render "Label"
-      source "Event"
-      accent
-      orientation :left, :center
-      convert "Name", type: "EventName"
-    end
-
-    widget do
-      position 0, 120 + TraxanosHD.spacer
-      size nil, 330
-      transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-1
       render "VRunningText"
       config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
       source "Event"
@@ -101,6 +73,97 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
       convert "ExtendedDescription", type: "EventName"
     end
   end
+  # main_accent do
+  #   widget do
+  #     position 0, 0
+  #     size 356, 36
+  #     nowrap 1
+  #     transparent 1
+  #     font "Regular", 24
+  #     render "Label"
+  #     source "Event"
+  #     accent
+  #     orientation :left, :center
+  #     convert "StartTime", type: "EventTime"
+  #     convert "Format:%A", type: "ClockToText"
+  #   end
+
+  #   widget do
+  #     position 0, 0
+  #     size 356, 36
+  #     nowrap 1
+  #     transparent 1
+  #     font "Regular", 24
+  #     render "Label"
+  #     source "Event"
+  #     accent
+  #     orientation :right, :center
+  #     convert "StartTime", type: "EventTime"
+  #     convert "Format:%d.%m.%Y", type: "ClockToText"
+  #   end
+
+  #   widget do
+  #     position 0, 54
+  #     size 62, 24
+  #     nowrap 1
+  #     transparent 1
+  #     font "Regular", TraxanosHD.default_font_size
+  #     render "Label"
+  #     source "Event"
+  #     accent
+  #     orientation :left, :center
+  #     convert "StartTime", type: "EventTime"
+  #     convert type: "ClockToText"
+  #   end
+
+  #   progressbar do
+  #     position 67, 63
+  #     size 220, 5
+  #     transparent 1
+  #     source "Event"
+  #     accent
+  #     convert "Progress", type: "EventTime"
+  #   end
+
+  #   widget do
+  #     position -62, 54
+  #     size 62, 24
+  #     nowrap 1
+  #     transparent 1
+  #     font "Regular", TraxanosHD.default_font_size
+  #     render "Label"
+  #     source "Event"
+  #     accent
+  #     orientation :right, :center
+  #     convert "EndTime", type: "EventTime"
+  #     convert type: "ClockToText"
+  #   end
+
+  #   widget do
+  #     position 0, 96
+  #     size 356, 24
+  #     nowrap 1
+  #     transparent 1
+  #     font "ShareBold", TraxanosHD.default_font_size
+  #     render "Label"
+  #     source "Event"
+  #     accent
+  #     orientation :left, :center
+  #     convert "Name", type: "EventName"
+  #   end
+
+  #   widget do
+  #     position 0, 120 + TraxanosHD.spacer
+  #     size nil, 330
+  #     transparent 1
+  #     font "Regular", TraxanosHD.default_font_size
+  #     render "VRunningText"
+  #     config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
+  #     source "Event"
+  #     accent
+  #     convert "ExtendedDescription", type: "EventName"
+  #   end
+  # end
 
   colorbar do
     colorbar_buttons1(true, true, true, true)
@@ -114,7 +177,7 @@ TraxanosHD::Screen.new(xml, :GraphMultiEPG, "EPG selection") do
       position -72
       size 72, 30
       text "MENU"
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
