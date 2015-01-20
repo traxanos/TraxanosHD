@@ -697,7 +697,7 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="ServiceEvent" position="867,249" size="356,303" zPosition="-4">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 18" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="ServiceEvent" position="867,249" size="356,315" zPosition="-4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 18" render="NextEvent" source="ServiceEvent" halign="left" valign="top" position="867,578" size="356,60" zPosition="-3"/>
