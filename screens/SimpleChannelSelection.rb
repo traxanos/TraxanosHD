@@ -13,6 +13,7 @@ TraxanosHD::Screen.new(xml, :SimpleChannelSelection, "Channel selection") do
       transparent 1
       enablewraparound 1
       scrollbars
+      custom("progressbarHeight", "12") if TraxanosHD.beta81
       custom "colorEventProgressbarBorder", "foreground"
       custom "colorEventProgressbarBorderSelected", "foreground"
       custom "colorServiceDescription", "channelSelection2"

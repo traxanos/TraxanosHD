@@ -11,7 +11,7 @@ TraxanosHD::Screen.new(xml, :Menu, "Main menu") do
       MultiContentEntryText(pos = (24,5), size = (774,48), flags = RT_HALIGN_LEFT, text = 0)
     ],
     "fonts": [
-      gFont("Regular", 28)
+      gFont("Regular", 26)
     ],
     "itemHeight": 48
   }'

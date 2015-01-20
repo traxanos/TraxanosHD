@@ -11,8 +11,8 @@ TraxanosHD::Screen.new(xml, :NimSelection, "Choose Tuner") do
         MultiContentEntryText(pos = (6, 33), size = (760, 48), font = 1, flags = RT_HALIGN_LEFT | RT_WRAP, text = 2)
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 20),
+        gFont("Regular", ' + (TraxanosHD.default_font_size + 2).to_s + '),
+        gFont("Regular", ' + (TraxanosHD.default_font_size - 3).to_s + ')
       ],
       "itemHeight": 81
     }'
