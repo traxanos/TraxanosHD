@@ -79,7 +79,8 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0 + 3, 51 + 33
+          # + 2 font size bug
+          position 0 + 3 + 2, 51 + 33
           size 726 - 18, 42
           render "Label"
           font "Share", 24

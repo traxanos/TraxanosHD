@@ -85,7 +85,8 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 3, 51 + 33
+          # + 2 font size bug
+          position 3 + 2, 51 + 33
           size 943 - 6, 42
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2

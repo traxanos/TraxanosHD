@@ -35,7 +35,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       size nil, 36
       nowrap 1
       transparent 1
-      font "Share", 24
+      font "Regular", 22
       render "Label"
       source "Service"
       accent
@@ -48,7 +48,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       size nil, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       render "Label"
       source "Service"
       accent
@@ -62,7 +62,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       size nil, 24
       nowrap 1
       transparent 1
-      font "Share", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       render "Label"
       source "Service"
       accent
@@ -75,7 +75,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       size nil, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       render "Label"
       source "Service"
       accent
@@ -87,7 +87,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       position 0, 36 + 12 + 9 + 24 + 9
       size nil, 315
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       render "VRunningText"
       config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
       source "Service"
@@ -104,7 +104,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       position -72
       size 72, 30
       text "MENU"
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
@@ -115,7 +115,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
       position -(72+TraxanosHD.spacer+66)
       size 66, 30
       text "EPG"
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       nowrap 1
       orientation :center, :center
       background :foregroundAccent

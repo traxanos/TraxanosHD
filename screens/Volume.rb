@@ -1,11 +1,10 @@
 TraxanosHD::Screen.new(xml, :Volume, "Volume") do
   position TraxanosHD.border, TraxanosHD.border, 80
-  size TraxanosHD.left_width, TraxanosHD.header_height
+  size TraxanosHD.inner_width, TraxanosHD.header_height
 
   width = 342
 
   label do
-    size TraxanosHD.left_width, TraxanosHD.header_height
     background :transparent
 
     label do

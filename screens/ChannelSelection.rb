@@ -37,7 +37,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       size nil, 36
       nowrap 1
       transparent 1
-      font "Share", 24
+      font "Regular", 22
       render "Label"
       source "ServiceEvent"
       accent
@@ -50,7 +50,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       size 62, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       render "Label"
       source "ServiceEvent"
       accent
@@ -73,7 +73,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       size 62, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       render "Label"
       source "ServiceEvent"
       accent
@@ -86,7 +86,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       position 0, 36 + 12 + 9 + 24 + 9
       size nil, 315
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size-2
+      font "Regular", TraxanosHD.default_font_size-2
       render "VRunningText"
       config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
       source "ServiceEvent"
@@ -99,7 +99,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       size nil, 60
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size-2
+      font "Regular", TraxanosHD.default_font_size-2
       render "NextEvent"
       source "ServiceEvent"
       accent

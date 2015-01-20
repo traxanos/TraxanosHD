@@ -128,7 +128,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
       name "vtiversion"
       transparent 1
       orientation :left, :top
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size
     end
 
     widget do
@@ -137,7 +137,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
       name "kernel"
       transparent 1
       orientation :left, :top
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size
     end
 
     widget do
@@ -146,7 +146,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
       name "uptime"
       transparent 1
       orientation :left, :top
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size
     end
 
     widget do
@@ -155,7 +155,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
       name "load"
       transparent 1
       orientation :left, :top
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size
     end
 
     widget do
@@ -164,7 +164,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
       name "temp"
       transparent 1
       orientation :left, :top
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size
     end
 
     widget do
@@ -173,7 +173,7 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
       name "fan"
       transparent 1
       orientation :left, :top
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size
     end
 
     label do

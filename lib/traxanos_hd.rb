@@ -98,7 +98,7 @@ module TraxanosHD
       16
     end
 
-    def default_right_font_size
+    def default_font_size
       20
     end
 

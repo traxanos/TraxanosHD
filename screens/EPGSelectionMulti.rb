@@ -35,7 +35,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionMulti, "EPG selection") do
       size nil, 24
       nowrap 1
       transparent 1
-      font "ShareBold", TraxanosHD.default_right_font_size
+      font "ShareBold", TraxanosHD.default_font_size
       render "Label"
       source "Service"
       accent
@@ -47,7 +47,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionMulti, "EPG selection") do
       position 0, 192
       size nil, 279
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Regular", TraxanosHD.default_font_size
       render "VRunningText"
       config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
       source "Event"
