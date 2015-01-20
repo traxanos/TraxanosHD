@@ -15,29 +15,26 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
   end
 
   main_accent do
-    label do
+    widget do
       position 0, 0
-      size 220+67+67, 132+24
-      background :logobg
-    end
-
-    widget do
-      position 67, 12
-      size 220, 132
-      render "Picon"
+      size nil, 36
+      nowrap 1
+      transparent 1
+      font "Regular", 22
+      render "Label"
       source "ServiceEvent"
-      alphatest "blend"
       accent
-      convert "Reference", type: "ServiceName"
-      foreground nil
+      orientation :left, :top
+      convert "name", type: "EventName"
     end
 
     widget do
-      position 0, 150+24
+      position 0, 36 + 12
+
       size 62, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-1
       render "Label"
       source "Event"
       accent
@@ -47,24 +44,24 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
     end
 
     widget do
-      position -62, 150+24
+      position -62, 36 + 12
       size 62, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-1
       render "Label"
       source "Event"
       accent
-      orientation :left, :center
+      orientation :right, :center
       convert "EndTime", type: "EventTime"
       convert type: "ClockToText"
     end
 
     widget do
-      position 0, 192+24
-      size nil, 279-24
+      position 0, 36 + 12 + 9 + 24 + 9
+      size nil, 303
       transparent 1
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-1
       render "VRunningText"
       config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
       source "Event"
@@ -85,7 +82,7 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
       position -72
       size 72, 30
       text "EPG"
-      font "Regular", TraxanosHD.default_font_size
+      font "Regular", TraxanosHD.default_font_size-2
       nowrap 1
       orientation :center, :center
       background :foregroundAccent
