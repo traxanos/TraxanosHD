@@ -85,7 +85,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
 
     widget do
       position 0, 36 + 12 + 9 + 24 + 9
-      size nil, 303
+      size nil, 315
       transparent 1
       font "Regular", TraxanosHD.default_right_font_size
       render "VRunningText"
