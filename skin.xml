@@ -38,13 +38,11 @@
     <font name="Console" filename="nmsbd.ttf" scale="100"/>
     <font name="Meteocons" filename="TraxanosHD/fonts/Meteocons.ttf" scale="100"/>
     <font name="FontAwesome" filename="TraxanosHD/fonts/FontAwesome.ttf" scale="100"/>
-    <font name="Regular" filename="TraxanosHD/fonts/OpenSans-Regular.ttf" scale="100"/>
-    <font name="Light" filename="TraxanosHD/fonts/OpenSans-Light.ttf" scale="100"/>
-    <font name="Bold" filename="TraxanosHD/fonts/OpenSans-Bold.ttf" scale="100"/>
-    <font name="Italic" filename="TraxanosHD/fonts/OpenSans-Italic.ttf" scale="100"/>
-    <font name="Share" filename="TraxanosHD/fonts/Share-Regular.ttf" scale="100"/>
-    <font name="ShareBold" filename="TraxanosHD/fonts/Share-Bold.ttf" scale="100"/>
-    <font name="ShareItalic" filename="TraxanosHD/fonts/Share-Italic.ttf" scale="100"/>
+    <font name="Light" filename="TraxanosHD/fonts/ShareTech-Regular.ttf" scale="100"/>
+    <font name="Bold" filename="TraxanosHD/fonts/ShareTech-Regular.ttf" scale="140"/>
+    <font name="Italic" filename="TraxanosHD/fonts/ShareTech-Regular.ttf" scale="100"/>
+    <font name="Share" filename="TraxanosHD/fonts/ShareTech-Regular.ttf" scale="100"/>
+    <font name="Regular" filename="TraxanosHD/fonts/ShareTech-Regular.ttf" scale="120"/>
   </fonts>
   <subtitles>
     <sub name="Subtitle_TTX" font="Share;30" foregroundColor="subtitle" shadowColor="shadow" shadowOffset="2,2"/>
@@ -132,24 +130,24 @@
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 24" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="1143,159" size="80,36" zPosition="8">
       <convert type="ExtremeInfo">Number</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" text="Provider:" noWrap="1" halign="left" valign="top" transparent="1" position="867,213" size="120,24" zPosition="9"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="987,213" size="236,24" zPosition="10">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" text="Provider:" noWrap="1" halign="left" valign="top" transparent="1" position="867,213" size="120,24" zPosition="9"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="987,213" size="236,24" zPosition="10">
       <convert type="ServiceName">Provider</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" text="Resolution:" noWrap="1" halign="left" valign="top" transparent="1" position="867,237" size="120,24" zPosition="11"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="987,237" size="99,24" zPosition="12">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" text="Resolution:" noWrap="1" halign="left" valign="top" transparent="1" position="867,237" size="120,24" zPosition="11"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="987,237" size="99,24" zPosition="12">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" text="x" noWrap="1" halign="center" valign="top" transparent="1" position="987,237" size="99,24" zPosition="13"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="987,237" size="99,24" zPosition="14">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" text="x" noWrap="1" halign="center" valign="top" transparent="1" position="987,237" size="99,24" zPosition="13"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="987,237" size="99,24" zPosition="14">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="1086,237" size="66,24" zPosition="15">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="1086,237" size="66,24" zPosition="15">
       <convert type="ServiceInfo">Framerate</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" text="Tuner:" noWrap="1" halign="left" valign="top" transparent="1" position="867,285" size="120,24" zPosition="16"/>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 20" noWrap="1" halign="center" valign="top" transparent="1" text="A" position="987,285" size="15,24" zPosition="17"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="A" position="987,285" size="15,24" zPosition="18">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" text="Tuner:" noWrap="1" halign="left" valign="top" transparent="1" position="867,285" size="120,24" zPosition="16"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 18" noWrap="1" halign="center" valign="top" transparent="1" text="A" position="987,285" size="15,24" zPosition="17"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="A" position="987,285" size="15,24" zPosition="18">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide"/>
@@ -159,8 +157,8 @@
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 20" noWrap="1" halign="center" valign="top" transparent="1" text="B" position="1002,285" size="15,24" zPosition="20"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="B" position="1002,285" size="15,24" zPosition="21">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 18" noWrap="1" halign="center" valign="top" transparent="1" text="B" position="1002,285" size="15,24" zPosition="20"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="B" position="1002,285" size="15,24" zPosition="21">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide"/>
@@ -170,8 +168,8 @@
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 20" noWrap="1" halign="center" valign="top" transparent="1" text="C" position="1017,285" size="15,24" zPosition="23"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="C" position="1017,285" size="15,24" zPosition="24">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 18" noWrap="1" halign="center" valign="top" transparent="1" text="C" position="1017,285" size="15,24" zPosition="23"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="C" position="1017,285" size="15,24" zPosition="24">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide"/>
@@ -181,8 +179,8 @@
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 20" noWrap="1" halign="center" valign="top" transparent="1" text="D" position="1032,285" size="15,24" zPosition="26"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="D" position="1032,285" size="15,24" zPosition="27">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 18" noWrap="1" halign="center" valign="top" transparent="1" text="D" position="1032,285" size="15,24" zPosition="26"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 18" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="D" position="1032,285" size="15,24" zPosition="27">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide"/>
@@ -192,70 +190,48 @@
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 20" noWrap="1" halign="center" valign="top" transparent="1" text="E" position="1047,285" size="15,24" zPosition="29"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="E" position="1047,285" size="15,24" zPosition="30">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">16</convert>
-      <convert type="ConditionalShowHide"/>
-    </widget>
-    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="1047,308" size="15,3" zPosition="31">
-      <convert type="FrontendInfo">NUMBER</convert>
-      <convert type="ValueRange">4,4</convert>
-      <convert type="ConditionalShowHide"/>
-    </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 20" noWrap="1" halign="center" valign="top" transparent="1" text="F" position="1062,285" size="15,24" zPosition="32"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="F" position="1062,285" size="15,24" zPosition="33">
-      <convert type="TunerInfo">TunerUseMask</convert>
-      <convert type="ValueBitTest">32</convert>
-      <convert type="ConditionalShowHide"/>
-    </widget>
-    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="1062,308" size="15,3" zPosition="34">
-      <convert type="FrontendInfo">NUMBER</convert>
-      <convert type="ValueRange">5,5</convert>
-      <convert type="ConditionalShowHide"/>
-    </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 16" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="867,321" size="356,24" zPosition="35">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 16" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="867,321" size="356,24" zPosition="29">
       <convert type="VtiInfo">EcmInfo</convert>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_format_off.png" alphatest="blend" position="867,359" size="60,60" zPosition="36"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_format_on.png" alphatest="blend" position="867,359" size="60,60" zPosition="37">
+    <ePixmap pixmap="AtileHD/icons/ico_format_off.png" alphatest="blend" position="867,359" size="60,60" zPosition="30"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_format_on.png" alphatest="blend" position="867,359" size="60,60" zPosition="31">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_hd_off.png" alphatest="blend" position="933,359" size="60,60" zPosition="38"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_hd_on.png" alphatest="blend" position="933,359" size="60,60" zPosition="39">
+    <ePixmap pixmap="AtileHD/icons/ico_hd_off.png" alphatest="blend" position="933,359" size="60,60" zPosition="32"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_hd_on.png" alphatest="blend" position="933,359" size="60,60" zPosition="33">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_dolby_off.png" alphatest="blend" position="999,359" size="60,60" zPosition="40"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_dolby_on.png" alphatest="blend" position="999,359" size="60,60" zPosition="41">
+    <ePixmap pixmap="AtileHD/icons/ico_dolby_off.png" alphatest="blend" position="999,359" size="60,60" zPosition="34"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_dolby_on.png" alphatest="blend" position="999,359" size="60,60" zPosition="35">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_txt_off.png" alphatest="blend" position="867,418" size="60,60" zPosition="42"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_txt_on.png" alphatest="blend" position="867,418" size="60,60" zPosition="43">
+    <ePixmap pixmap="AtileHD/icons/ico_txt_off.png" alphatest="blend" position="867,418" size="60,60" zPosition="36"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_txt_on.png" alphatest="blend" position="867,418" size="60,60" zPosition="37">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_subtitel_off.png" alphatest="blend" position="933,418" size="60,60" zPosition="44"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_subtitel_on.png" alphatest="blend" position="933,418" size="60,60" zPosition="45">
+    <ePixmap pixmap="AtileHD/icons/ico_subtitel_off.png" alphatest="blend" position="933,418" size="60,60" zPosition="38"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_subtitel_on.png" alphatest="blend" position="933,418" size="60,60" zPosition="39">
       <convert type="VServiceInfo">SubtitlesAvailable</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_sub_off.png" alphatest="blend" position="999,418" size="60,60" zPosition="46"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_sub_on.png" alphatest="blend" position="999,418" size="60,60" zPosition="47">
+    <ePixmap pixmap="AtileHD/icons/ico_sub_off.png" alphatest="blend" position="999,418" size="60,60" zPosition="40"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_sub_on.png" alphatest="blend" position="999,418" size="60,60" zPosition="41">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_crypt_off.png" alphatest="blend" position="1065,418" size="60,60" zPosition="48"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_crypt_on.png" alphatest="blend" position="1065,418" size="60,60" zPosition="49">
+    <ePixmap pixmap="AtileHD/icons/ico_crypt_off.png" alphatest="blend" position="1065,418" size="60,60" zPosition="42"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_crypt_on.png" alphatest="blend" position="1065,418" size="60,60" zPosition="43">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,363" zPosition="5"/>
-    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" text="SNR" font="Regular; 20" halign="left" valign="center" transparent="1" position="57,537" size="54,36" zPosition="7"/>
-    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" text="AGC" font="Regular; 20" halign="left" valign="center" transparent="1" position="444,537" size="54,36" zPosition="8"/>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" text="SNR" font="Regular; 18" halign="left" valign="center" transparent="1" position="57,537" size="54,36" zPosition="7"/>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" text="AGC" font="Regular; 18" halign="left" valign="center" transparent="1" position="444,537" size="54,36" zPosition="8"/>
     <eLabel backgroundColor="foreground" foregroundColor="foreground" position="108,555" size="270,1" zPosition="8"/>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" transparent="1" render="Progress" source="session.FrontendStatus" position="108,553" size="270,5" zPosition="9">
       <convert type="FrontendInfo">SNR</convert>
@@ -264,13 +240,13 @@
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" transparent="1" render="Progress" source="session.FrontendStatus" position="495,553" size="270,5" zPosition="10">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 20" halign="left" valign="center" transparent="1" render="Label" source="session.FrontendStatus" position="390,537" size="54,36" zPosition="11">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" halign="left" valign="center" transparent="1" render="Label" source="session.FrontendStatus" position="390,537" size="54,36" zPosition="11">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 20" halign="left" valign="center" transparent="1" render="Label" source="session.FrontendStatus" position="777,537" size="54,36" zPosition="12">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" halign="left" valign="center" transparent="1" render="Label" source="session.FrontendStatus" position="777,537" size="54,36" zPosition="12">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 20" render="Label" source="session.CurrentService" halign="center" valign="center" transparent="1" position="871,537" size="150,36" zPosition="13">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" render="Label" source="session.CurrentService" halign="center" valign="center" transparent="1" position="871,537" size="150,36" zPosition="13">
       <convert type="VtiInfo">TempInfo</convert>
     </widget>
     <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 20" render="Label" source="session.CurrentService" halign="center" valign="center" transparent="1" position="1061,537" size="162,36" zPosition="14">
@@ -284,33 +260,33 @@
     <widget backgroundColor="background" foregroundColor="backgroundAccent2" source="session.Event_Now" transparent="1" render="Progress" position="39,644" size="943,5" zPosition="7">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,606" size="723,42" zPosition="8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,606" size="708,42" zPosition="8">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="769,615" size="51,42" zPosition="9">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="769,614" size="51,42" zPosition="9">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="left" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="820,615" size="66,42" zPosition="10">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="820,614" size="66,42" zPosition="10">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="886,615" size="93,42" zPosition="11">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="886,614" size="93,42" zPosition="11">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 24" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="42,657" size="723,42" zPosition="12">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 24" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="42,657" size="708,42" zPosition="12">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="769,651" size="51,42" zPosition="13">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="769,657" size="51,42" zPosition="13">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="820,651" size="66,42" zPosition="14">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="820,657" size="66,42" zPosition="14">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="886,651" size="93,42" zPosition="15">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="886,657" size="93,42" zPosition="15">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -358,13 +334,13 @@
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 30" noWrap="1" halign="left" valign="top" transparent="1" source="session.Event_Now" position="42,606" size="847,42" zPosition="8">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="892,615" size="87,42" zPosition="9">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="892,614" size="87,42" zPosition="9">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="left" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="42,651" size="937,42" zPosition="10">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="42,657" size="937,42" zPosition="10">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="42,651" size="937,42" zPosition="11">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="42,657" size="937,42" zPosition="11">
       <convert type="ServicePosition">Length</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,573" size="1202,147" zPosition="5"/>
@@ -432,13 +408,13 @@
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 30" noWrap="1" halign="left" valign="top" transparent="1" source="session.CurrentService" position="42,606" size="847,42" zPosition="10">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="892,615" size="87,42" zPosition="11">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="892,614" size="87,42" zPosition="11">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="left" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="42,651" size="937,42" zPosition="12">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="42,657" size="937,42" zPosition="12">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="42,651" size="937,42" zPosition="13">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="42,657" size="937,42" zPosition="13">
       <convert type="ServicePosition">Length</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,573" size="1202,147" zPosition="6"/>
@@ -500,33 +476,33 @@
     <widget backgroundColor="background" foregroundColor="backgroundAccent2" source="session.Event_Now" transparent="1" render="Progress" position="39,644" size="943,5" zPosition="8">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,606" size="723,42" zPosition="9">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,606" size="708,42" zPosition="9">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="769,615" size="51,42" zPosition="10">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="769,614" size="51,42" zPosition="10">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="left" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="820,615" size="66,42" zPosition="11">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="820,614" size="66,42" zPosition="11">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="886,615" size="93,42" zPosition="12">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="886,614" size="93,42" zPosition="12">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 24" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="42,657" size="723,42" zPosition="13">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Share; 24" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="42,657" size="708,42" zPosition="13">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="769,651" size="51,42" zPosition="14">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="769,657" size="51,42" zPosition="14">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="820,651" size="66,42" zPosition="15">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="820,657" size="66,42" zPosition="15">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 20" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="886,651" size="93,42" zPosition="16">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="886,657" size="93,42" zPosition="16">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -701,12 +677,12 @@
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 24" render="Label" source="ServiceEvent" halign="left" valign="top" position="867,159" size="356,36" zPosition="-8">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Share; 24" render="Label" source="ServiceEvent" halign="left" valign="top" position="867,159" size="356,36" zPosition="-8">
       <convert type="EventName">name</convert>
     </widget>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 20" render="Label" source="ServiceEvent" halign="left" valign="center" position="867,207" size="62,24" zPosition="-7">
@@ -791,8 +767,8 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- DeviceManager2 -->
@@ -831,9 +807,9 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 20" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- DeviceManager2Message -->
@@ -862,10 +838,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
     <eLabel backgroundColor="logobg" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
     <widget backgroundColor="backgroundAccent" render="Picon" source="Service" alphatest="blend" position="934,171" size="220,132" zPosition="-7">
@@ -902,10 +878,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
     <widget backgroundColor="backgroundAccent" render="Picon" source="Service" alphatest="blend" position="934,159" size="220,132" zPosition="-8">
       <convert type="ServiceName">Reference</convert>
@@ -977,10 +953,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="237,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="435,645" size="180,3" zPosition="7"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="633,645" size="180,3" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="30,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="228,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="426,648" size="198,30" zPosition="12"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="624,648" size="198,30" zPosition="13"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="30,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="228,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="426,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="624,648" size="198,30" zPosition="13"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="21,648" size="810,30" zPosition="9"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1175,648" size="66,30" zPosition="6"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&gt;" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1127,648" size="30,30" zPosition="7"/>
@@ -1006,10 +982,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- GraphMultiEPG -->
@@ -1067,10 +1043,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1151,645" size="72,30" zPosition="6"/>
   </screen>
@@ -1102,10 +1078,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1151,651" size="72,30" zPosition="5"/>
   </screen>
@@ -1134,10 +1110,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="11"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="7"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1151,651" size="72,30" zPosition="4"/>
   </screen>
@@ -1157,10 +1133,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="11"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="7"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1151,651" size="72,30" zPosition="4"/>
   </screen>
@@ -1260,10 +1236,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- MessageBox -->
@@ -1347,12 +1323,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (705, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 0),
-        MultiContentEntryText(pos = (6, 36), size = (705, 21), font = 1, flags = RT_HALIGN_LEFT, text = 2),
+        MultiContentEntryText(pos = (6, 33), size = (705, 21), font = 1, flags = RT_HALIGN_LEFT, text = 2),
         MultiContentEntryPixmapAlphaTest(pos = (711, 6), size = (48, 48), png = 4)
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 16)
+        gFont("Regular", 22),
+        gFont("Regular", 17)
       ],
       "itemHeight": 60
     }</convert>
@@ -1362,9 +1338,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- myPacketManager -->
@@ -1385,12 +1361,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (705, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 0),
-        MultiContentEntryText(pos = (6, 36), size = (705, 21), font = 1, flags = RT_HALIGN_LEFT, text = 2),
+        MultiContentEntryText(pos = (6, 33), size = (705, 21), font = 1, flags = RT_HALIGN_LEFT, text = 2),
         MultiContentEntryPixmapAlphaTest(pos = (711, 8), size = (48, 48), png = 4)
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 20)
+        gFont("Regular", 22),
+        gFont("Regular", 17)
       ],
       "itemHeight": 60
     }</convert>
@@ -1400,8 +1376,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- MovieSelection -->
@@ -1425,26 +1401,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
-    <eLabel backgroundColor="logobg" foregroundColor="foreground" position="867,159" size="354,156" zPosition="-8"/>
-    <widget backgroundColor="backgroundAccent" render="Picon" source="Service" alphatest="blend" position="934,171" size="220,132" zPosition="-7">
-      <convert type="ServiceName">Reference</convert>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Share; 24" render="Label" source="Service" halign="left" valign="top" position="867,159" size="356,36" zPosition="-8">
+      <convert type="EventName">name</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 20" render="Label" source="Service" halign="left" valign="center" position="867,333" size="356,24" zPosition="-6">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 20" render="Label" source="Service" halign="left" valign="center" position="867,207" size="356,24" zPosition="-7">
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 20" render="Label" source="Service" halign="center" valign="center" position="867,333" size="356,24" zPosition="-5">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Share; 20" render="Label" source="Service" halign="center" valign="center" position="867,207" size="356,24" zPosition="-6">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 20" render="Label" source="Service" halign="right" valign="center" position="867,333" size="356,24" zPosition="-4">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 20" render="Label" source="Service" halign="right" valign="center" position="867,207" size="356,24" zPosition="-5">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 20" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Service" position="867,375" size="356,255" zPosition="-3">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 20" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Service" position="867,249" size="356,303" zPosition="-4">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
@@ -1576,8 +1551,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- RdsInfoDisplay -->
@@ -1629,12 +1604,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (705, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 0),
-        MultiContentEntryText(pos = (6, 36), size = (705, 21), font = 1, flags = RT_HALIGN_LEFT, text = 2),
+        MultiContentEntryText(pos = (6, 33), size = (705, 21), font = 1, flags = RT_HALIGN_LEFT, text = 2),
         MultiContentEntryPixmapAlphaTest(pos = (711, 6), size = (48, 48), png = 4)
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 20)
+        gFont("Regular", 22),
+        gFont("Regular", 17)
       ],
       "itemHeight": 60
     }</convert>
@@ -1644,8 +1619,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- ServiceInfo -->
@@ -1668,10 +1643,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- Setup -->
@@ -1694,8 +1669,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- SimpleChannelSelection -->
@@ -1712,16 +1687,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Normal; 20" serviceNameFont="Normal; 20" serviceNumberFont="Normal; 20" colorServiceRecording="red" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- SkinSelector -->
@@ -1747,7 +1722,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
   </screen>
   <screen name="Standby" title="Standby" position="0,0" size="0,0" backgroundColor="transparent" flags="wfNoBorder"/>
@@ -1814,10 +1789,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="13"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1151,645" size="72,30" zPosition="6"/>
   </screen>
@@ -1841,8 +1816,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="canceltext" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="oktext" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="canceltext" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="oktext" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- TimerSelection -->
@@ -1884,10 +1859,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- VirtualKeyBoard -->
@@ -1940,8 +1915,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="451,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="649,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="847,645" size="180,3" zPosition="6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="244,648" size="198,30" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="442,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="244,648" size="198,30" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="442,648" size="198,30" zPosition="9"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="235,648" size="810,30" zPosition="7"/>
   </screen>
   <!-- VideoEnhancementSetup -->
@@ -1965,10 +1940,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- VtiNews -->
@@ -1991,10 +1966,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- AllNews -->
@@ -2028,10 +2003,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- VTIMainMenu -->
@@ -2052,12 +2027,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (668, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-        MultiContentEntryText(pos = (6, 36), size = (668, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2),
+        MultiContentEntryText(pos = (6, 33), size = (668, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2),
         MultiContentEntryPixmapAlphaTest(pos = (668, 5), size = (100, 50), png = 3),
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 20)
+        gFont("Regular", 22),
+        gFont("Regular", 17)
       ],
       "itemHeight": 60
     }</convert>
@@ -2067,10 +2042,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- VTISubMenu -->
@@ -2091,12 +2066,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (711, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
-        MultiContentEntryText(pos = (6, 36), size = (711, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2),
+        MultiContentEntryText(pos = (6, 33), size = (711, 21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2),
         MultiContentEntryPixmapAlphaTest(pos = (711, 8), size = (48, 48), png = 3),
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 20)
+        gFont("Regular", 22),
+        gFont("Regular", 17)
       ],
       "itemHeight": 60
     }</convert>
@@ -2106,7 +2081,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- VTIStatusListMenu -->
@@ -2140,10 +2115,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- VTiUpdateInfo -->
@@ -2167,10 +2142,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- ReduceMenuConfig -->
@@ -2204,9 +2179,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- CamSelectMenu -->
@@ -2226,7 +2201,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" source="list" transparent="1" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
-        MultiContentEntryText(pos = (30, 0), size = (800, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0 ),
+        MultiContentEntryText(pos = (33, 0), size = (800, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0 ),
         MultiContentEntryPixmapAlphaTest(pos = (3, 3), size = (24, 24), png = 2)
       ],
       "fonts": [
@@ -2240,10 +2215,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- BackupSuite -->
@@ -2263,13 +2238,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
-        MultiContentEntryText(pos = (6, 3),  size = (705,30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 1),
-        MultiContentEntryText(pos = (6, 36), size = (705,24), font = 1, flags = RT_HALIGN_LEFT, text = 2),
+        MultiContentEntryText(pos = (6, 6),  size = (705,27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_VALIGN_BOTTOM, text = 1),
+        MultiContentEntryText(pos = (6, 33), size = (705,21), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 2),
         MultiContentEntryPixmapAlphaTest(pos = (711, 8), size = (44, 44), png = 3),
       ],
       "fonts": [
-        gFont("Regular", 24),
-        gFont("Regular", 20)
+        gFont("Regular", 22),
+        gFont("Regular", 17)
       ],
       "itemHeight": 60
     }</convert>
@@ -2279,9 +2254,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- InfoPanel -->
@@ -2374,8 +2349,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 18" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
   </screen>
   <screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="black" zPosition="100">

@@ -29,7 +29,7 @@ class TraxanosHD::Element
 
         widget do
           position 0 + 3, 27 + 6
-          size 726 - 3, 42
+          size 726 - 18, 42
           render "Label"
           font "Share", 30
           nowrap 1
@@ -40,10 +40,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 730, 27 + 15
+          position 730, 27 + 14
           size 51, 42
           render "Label"
-          font "Regular", TraxanosHD.default_font_size
+          font "Regular", TraxanosHD.default_font_size-2
           orientation :right, :top
           nowrap 1
           source "session.Event_Now"
@@ -53,10 +53,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 781, 27 + 15
+          position 781, 27 + 14
           size 66, 42
           render "Label"
-          font "Regular", TraxanosHD.default_font_size
+          font "Regular", TraxanosHD.default_font_size-2
           orientation :left, :top
           nowrap 1
           source "session.Event_Now"
@@ -66,10 +66,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 847, 27 + 15
+          position 847, 27 + 14
           size 93, 42
           render "Label"
-          font "Regular", TraxanosHD.default_font_size
+          font "Regular", TraxanosHD.default_font_size-2
           orientation :right, :top
           nowrap 1
           source "session.Event_Now"
@@ -79,8 +79,8 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0 + 3, 51 + 27 + 6
-          size 726 -3, 42
+          position 0 + 3, 51 + 33
+          size 726 - 18, 42
           render "Label"
           font "Share", 24
           orientation :left, :top
@@ -91,10 +91,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 730, 51 + 27
+          position 730, 51 + 33
           size 51, 42
           render "Label"
-          font "Regular", TraxanosHD.default_font_size
+          font "Regular", TraxanosHD.default_font_size-2
           orientation :right, :top
           nowrap 1
           source "session.Event_Next"
@@ -104,10 +104,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 781, 51 + 27
+          position 781, 51 + 33
           size 66, 42
           render "Label"
-          font "Regular", TraxanosHD.default_font_size
+          font "Regular", TraxanosHD.default_font_size-2
           orientation :left, :top
           nowrap 1
           source "session.Event_Next"
@@ -117,10 +117,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 847, 51 + 27
+          position 847, 51 + 33
           size 93, 42
           render "Label"
-          font "Regular", TraxanosHD.default_font_size
+          font "Regular", TraxanosHD.default_font_size-2
           orientation :right, :top
           nowrap 1
           source "session.Event_Next"

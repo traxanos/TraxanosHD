@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :CamSelectMenu, "VTI Cam Menu") do
 
     template = '{
       "template": [
-        MultiContentEntryText(pos = (30, 0), size = (800, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0 ),
+        MultiContentEntryText(pos = (33, 0), size = (800, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0 ),
         MultiContentEntryPixmapAlphaTest(pos = (3, 3), size = (24, 24), png = 2)
       ],
       "fonts": [

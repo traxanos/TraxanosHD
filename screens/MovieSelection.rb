@@ -30,25 +30,21 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
   end
 
   main_accent do
-    label do
+    widget do
       position 0, 0
-      size 220+67+67, 132+24
-      background :logobg
-    end
-
-    widget do
-      position 67, 12
-      size 220, 132
-      render "Picon"
+      size nil, 36
+      nowrap 1
+      transparent 1
+      font "Share", 24
+      render "Label"
       source "Service"
-      alphatest "blend"
       accent
-      convert "Reference", type: "ServiceName"
-      foreground nil
+      orientation :left, :top
+      convert "name", type: "EventName"
     end
 
     widget do
-      position 0, 150+24
+      position 0, 36 + 12
       size nil, 24
       nowrap 1
       transparent 1
@@ -62,11 +58,11 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
     end
 
     widget do
-      position 0, 150+24
+      position 0, 36 + 12
       size nil, 24
       nowrap 1
       transparent 1
-      font "Regular", TraxanosHD.default_right_font_size
+      font "Share", TraxanosHD.default_right_font_size
       render "Label"
       source "Service"
       accent
@@ -75,7 +71,7 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
     end
 
     widget do
-      position 0, 150+24
+      position 0, 36 + 12
       size nil, 24
       nowrap 1
       transparent 1
@@ -88,8 +84,8 @@ TraxanosHD::Screen.new(xml, :MovieSelection, "Select a movie") do
     end
 
     widget do
-      position 0, 192+24
-      size nil, 279-24
+      position 0, 36 + 12 + 9 + 24 + 9
+      size nil, 303
       transparent 1
       font "Regular", TraxanosHD.default_right_font_size
       render "VRunningText"

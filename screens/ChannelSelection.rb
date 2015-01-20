@@ -37,7 +37,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       size nil, 36
       nowrap 1
       transparent 1
-      font "Regular", 24
+      font "Share", 24
       render "Label"
       source "ServiceEvent"
       accent

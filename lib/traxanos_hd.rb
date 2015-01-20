@@ -95,7 +95,7 @@ module TraxanosHD
     end
 
     def default_colorbar_font_size
-      18
+      16
     end
 
     def default_right_font_size
