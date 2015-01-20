@@ -7,7 +7,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionEPGBar_HD, "EPG selection") do
 
     widget do
       position 39, 12
-      size 940, 42
+      size 774, 42
       render "Label"
       font "Regular", 30
       orientation :left, :bottom
@@ -17,33 +17,25 @@ TraxanosHD::Screen.new(xml, :EPGSelectionEPGBar_HD, "EPG selection") do
       convert "Name", type: "ServiceName"
     end
 
-    progressbar do
-      position 1021, 153
-      size 220, 5
-      source "Event"
-      foreground :backgroundAccent
-      transparent 1
-      convert "Progress", type: "EventTime"
-    end
-
-    widget do
-      position 1021, 9
-      size 220, 132
-      render "Picon"
-      source "Service"
-      transparent 1
-      alphatest "blend"
-      convert "Reference", type: "ServiceName"
-      foreground nil
-    end
-
     widget do
       position 39, 54
-      size 940, 108
+      size 774, 108
       itemheight 27
       name "list"
       transparent 1
       scrollbars
+    end
+    # 852
+
+    widget do
+      position 852, 54
+      size 398, 102
+      transparent 1
+      font "Regular", TraxanosHD.default_font_size-1
+      render "VRunningText"
+      config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
+      source "Event"
+      convert "ExtendedDescription", type: "EventName"
     end
 
   end
@@ -53,8 +45,8 @@ TraxanosHD::Screen.new(xml, :EPGSelectionEPGBar_HD, "EPG selection") do
   end
 
   box do
-    position TraxanosHD.width-(TraxanosHD.right_width-(TraxanosHD.spacer*2)+TraxanosHD.border), 648
-    size TraxanosHD.right_width-(TraxanosHD.spacer*2), 30
+    position 852, 648
+    size 398, 30
 
     label do
       position -66

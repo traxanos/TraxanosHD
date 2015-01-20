@@ -954,17 +954,13 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="VWeather">forecastTomorrowTempMin</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="258,42" size="129,63" zPosition="5"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" halign="left" valign="bottom" noWrap="1" source="Service" transparent="1" position="39,471" size="940,42" zPosition="4">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" halign="left" valign="bottom" noWrap="1" source="Service" transparent="1" position="39,471" size="774,42" zPosition="4">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <eLabel backgroundColor="foreground" foregroundColor="foreground" position="1021,614" size="220,1" zPosition="4"/>
-    <widget backgroundColor="background" foregroundColor="backgroundAccent" source="Event" transparent="1" render="Progress" position="1021,612" size="220,5" zPosition="5">
-      <convert type="EventTime">Progress</convert>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="27" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="39,513" size="774,108" zPosition="5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 19" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Event" position="852,513" size="398,102" zPosition="6">
+      <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget backgroundColor="background" render="Picon" source="Service" transparent="1" alphatest="blend" position="1021,468" size="220,132" zPosition="6">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="27" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="39,513" size="940,108" zPosition="7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="0,459" size="1280,219" zPosition="3"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="39,645" size="180,3" zPosition="5"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="237,645" size="180,3" zPosition="6"/>
@@ -975,9 +971,9 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="426,648" size="198,30" zPosition="12"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="624,648" size="198,30" zPosition="13"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="21,648" size="810,30" zPosition="9"/>
-    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1175,648" size="66,30" zPosition="6"/>
-    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&gt;" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1127,648" size="30,30" zPosition="7"/>
-    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&lt;" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1079,648" size="30,30" zPosition="8"/>
+    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1184,648" size="66,30" zPosition="6"/>
+    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&gt;" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1136,648" size="30,30" zPosition="7"/>
+    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&lt;" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1088,648" size="30,30" zPosition="8"/>
   </screen>
   <!-- EventView -->
   <screen name="EventView" title="EventView" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
