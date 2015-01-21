@@ -104,6 +104,11 @@ xml.skin do
   render_screen('MyPluginManager', xml)
   render_screen('myPacketManager', xml)
 
+  # MultiQuickButton
+  render_screen('QuickButton', xml)
+  render_screen('MultiQuickButton', xml)
+  render_screen('MultiQuickButtonMacro', xml)
+
   # MoviePlayer
   render_screen('MovieSelection', xml)
   render_screen('MovieContextMenu', xml)
