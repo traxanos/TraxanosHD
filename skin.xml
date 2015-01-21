@@ -1644,6 +1644,48 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
   </screen>
+  <!-- EMCSelection -->
+  <screen name="EMCSelection" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Share; 34" noWrap="1" text="Select a movie" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Share; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Share; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Share; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" CoolFont="Regular; 20" CoolSelectFont="Regular; 20" CoolDateFont="Regular; 20" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="545" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="590" CoolBarHPos="12" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="foreground" UnwatchedColor="foreground" WatchingColor="blue" FinishedColor="green" RecordingColor="red" BackColorSel="backgroundAccent" FrontColorSel="foregroundAccent" foregroundColorSelected="#ffffff" position="57,153" size="774,480" zPosition="-8"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 22" render="Label" source="Service" halign="left" valign="top" position="867,159" size="356,36" zPosition="-8">
+      <convert type="EMCEventName">Name</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="Service" halign="left" valign="center" position="867,207" size="356,24" zPosition="-7">
+      <convert type="EMCServiceTime">Duration</convert>
+      <convert type="EMCClockToText">Format:%Hh:%Mmin</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="Service" halign="right" valign="center" position="867,207" size="356,24" zPosition="-6">
+      <convert type="EMCMovieInfo">FileSize</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 19" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Service" position="867,249" size="356,375" zPosition="-5">
+      <convert type="EMCEventName">ExtendedDescription</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
+    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="Regular; 18" noWrap="1" halign="center" valign="center" position="1151,645" size="72,30" zPosition="6"/>
+    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="Regular; 18" noWrap="1" halign="center" valign="center" position="1067,645" size="66,30" zPosition="7"/>
+  </screen>
   <!-- NimSetup -->
   <screen name="NimSetup" title="Reception Settings" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Share; 34" noWrap="1" text="Reception Settings" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>

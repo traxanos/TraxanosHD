@@ -116,6 +116,7 @@ xml.skin do
 
   # EnhancedMovieCenterMenu
   render_screen('EnhancedMovieCenterMenu', xml)
+  render_screen('EMCSelection', xml)
 
   render_screen('NimSetup', xml)
   render_screen('NimSelection', xml)
