@@ -1,0 +1,6 @@
+TraxanosHD::Screen.new(xml, :EMCMediaCenter, "InfoBar") do
+  position 0, 0
+  header
+  recinfo
+  playerbar
+end

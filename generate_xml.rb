@@ -68,6 +68,7 @@ xml.skin do
   render_screen('PVRState', xml)
   render_screen('TimeshiftState', xml)
   render_screen('MoviePlayer', xml)
+  render_screen('EMCMediaCenter', xml)
   render_screen('InfoBar', xml)
   render_screen('UnhandledKey', xml)
   render_screen('Volume', xml)
@@ -112,6 +113,9 @@ xml.skin do
   # MoviePlayer
   render_screen('MovieSelection', xml)
   render_screen('MovieContextMenu', xml)
+
+  # EnhancedMovieCenterMenu
+  render_screen('EnhancedMovieCenterMenu', xml)
 
   render_screen('NimSetup', xml)
   render_screen('NimSelection', xml)
