@@ -1,5 +1,5 @@
 class TraxanosHD::Element
-  def playerbar(timeshift = false)
+  def playerbar(timeshift = false, emc = false)
     label do
       position 0, 573
       size 1280, 147
@@ -25,9 +25,9 @@ class TraxanosHD::Element
         progressbar do
           position 0, 71
           size 943, 5
-          source "session.CurrentService"
           foreground :backgroundAccent
-          convert "Position", type: "ServicePosition"
+          source "#{emc ? '' : 'session.Current'}Service"
+          convert "Position", type: "#{emc ? 'EMC' : ''}ServicePosition"
         end
 
         unless timeshift
@@ -35,11 +35,11 @@ class TraxanosHD::Element
             position 0, 68
             size 943, 11
             render "PositionGauge"
-            source "session.CurrentService"
             foreground nil
             background nil
             transparent 1
-            convert "Gauge", type: "ServicePosition"
+            source "#{emc ? '' : 'session.Current'}Service"
+            convert "Gauge", type: "#{emc ? 'EMC' : ''}ServicePosition"
           end
         end
 
@@ -67,8 +67,8 @@ class TraxanosHD::Element
           font "Regular", TraxanosHD.default_font_size-2
           orientation :right, :top
           nowrap 1
-          source "session.CurrentService"
-          convert "Remaining", type: "ServicePosition"
+          source "#{emc ? '' : 'session.Current'}Service"
+          convert "Remaining", type: "#{emc ? 'EMC' : ''}ServicePosition"
           transparent 1
         end
 
@@ -79,9 +79,9 @@ class TraxanosHD::Element
           font "Regular", TraxanosHD.default_font_size-2
           orientation :left, :top
           nowrap 1
-          source "session.CurrentService"
           transparent 1
-          convert "Position", type: "ServicePosition"
+          source "#{emc ? '' : 'session.Current'}Service"
+          convert "Position", type: "#{emc ? 'EMC' : ''}ServicePosition"
         end
 
         widget do
@@ -92,9 +92,9 @@ class TraxanosHD::Element
           font "Regular", TraxanosHD.default_font_size-2
           orientation :right, :top
           nowrap 1
-          source "session.CurrentService"
           transparent 1
-          convert "Length", type: "ServicePosition"
+          source "#{emc ? '' : 'session.Current'}Service"
+          convert "Length", type: "#{emc ? 'EMC' : ''}ServicePosition"
         end
 
       end

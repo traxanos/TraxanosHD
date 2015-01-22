@@ -1,6 +1,6 @@
-TraxanosHD::Screen.new(xml, :MovieContextMenu, "Movielist menu") do
+TraxanosHD::Screen.new(xml, :EMCMenu, "EMC menu") do
   header do
-    header_title "Movielist menu"
+    header_title :title
   end
 
   main do
@@ -11,6 +11,8 @@ TraxanosHD::Screen.new(xml, :MovieContextMenu, "Movielist menu") do
       transparent 1
       enablewraparound 1
       scrollbars
+      convert type: "StringList"
     end
   end
 end
+
