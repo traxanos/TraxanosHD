@@ -1673,14 +1673,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="EMCEventName">Name</convert>
     </widget>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="Service" halign="left" valign="center" position="867,207" size="356,24" zPosition="-7">
+      <convert type="EMCServiceTime">StartTime</convert>
+      <convert type="EMCClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="Service" halign="center" valign="center" position="867,207" size="356,24" zPosition="-6">
+      <convert type="EMCServiceTime">StartTime</convert>
+      <convert type="EMCClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="Service" halign="right" valign="center" position="867,207" size="356,24" zPosition="-5">
+      <convert type="EMCServiceTime">EndTime</convert>
+      <convert type="EMCClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 19" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Service" position="867,255" size="356,327" zPosition="-4">
+      <convert type="EMCEventName">ExtendedDescription</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="Service" halign="left" valign="center" position="867,609" size="356,24" zPosition="-3">
       <convert type="EMCServiceTime">Duration</convert>
       <convert type="EMCClockToText">Format:%Hh:%Mmin</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="Service" halign="right" valign="center" position="867,207" size="356,24" zPosition="-6">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="Service" halign="right" valign="center" position="867,609" size="356,24" zPosition="-2">
       <convert type="EMCMovieInfo">FileSize</convert>
-    </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" transparent="1" font="Regular; 19" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Service" position="867,249" size="356,375" zPosition="-5">
-      <convert type="EMCEventName">ExtendedDescription</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="Regular; 18" noWrap="1" halign="center" valign="center" position="1151,645" size="72,30" zPosition="6"/>

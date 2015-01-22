@@ -58,8 +58,65 @@ TraxanosHD::Screen.new(xml, :EMCSelection, "Select a movie") do
       convert "Name", type: "EMCEventName"
     end
 
+    x = 36 + 12
     widget do
-      position 0, 36 + 12
+      position 0, x
+      size nil, 24
+      nowrap 1
+      transparent 1
+      font "Regular", TraxanosHD.default_font_size-1
+      render "Label"
+      source "Service"
+      accent
+      orientation :left, :center
+      convert "StartTime", type: "EMCServiceTime"
+      convert "Format:%H:%M", type: "EMCClockToText"
+    end
+
+    widget do
+      position 0, x
+      size nil, 24
+      nowrap 1
+      transparent 1
+      font "Regular", TraxanosHD.default_font_size-1
+      render "Label"
+      source "Service"
+      accent
+      orientation :center, :center
+      convert "StartTime", type: "EMCServiceTime"
+      convert "Format:%d.%m.%Y", type: "EMCClockToText"
+    end
+
+    widget do
+      position 0, x
+      size nil, 24
+      nowrap 1
+      transparent 1
+      font "Regular", TraxanosHD.default_font_size-1
+      render "Label"
+      source "Service"
+      accent
+      orientation :right, :center
+      convert "EndTime", type: "EMCServiceTime"
+      convert "Format:%H:%M", type: "EMCClockToText"
+    end
+
+    x = 36 + 12 + 24 + 24
+    widget do
+      position 0, x
+      size nil, 327
+      transparent 1
+      font "Regular", TraxanosHD.default_font_size-1
+      render "VRunningText"
+      config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
+      source "Service"
+      accent
+      convert "ExtendedDescription", type: "EMCEventName"
+    end
+
+    x = 36 + 12 + 24 + 24 + 342 + 12
+    widget do
+      position 0, -36-12
       size nil, 24
       nowrap 1
       transparent 1
@@ -72,21 +129,8 @@ TraxanosHD::Screen.new(xml, :EMCSelection, "Select a movie") do
       convert "Format:%Hh:%Mmin", type: "EMCClockToText"
     end
 
-    # widget do
-    #   position 0, 36 + 12
-    #   size nil, 24
-    #   nowrap 1
-    #   transparent 1
-    #   font "Regular", TraxanosHD.default_font_size-1
-    #   render "Label"
-    #   source "Service"
-    #   accent
-    #   orientation :center, :center
-    #   convert "RecordServiceName", type: "MovieInfo"
-    # end
-
     widget do
-      position 0, 36 + 12
+      position 0, -36-12
       size nil, 24
       nowrap 1
       transparent 1
@@ -98,17 +142,8 @@ TraxanosHD::Screen.new(xml, :EMCSelection, "Select a movie") do
       convert "FileSize", type: "EMCMovieInfo"
     end
 
-    widget do
-      position 0, 36 + 12 + 9 + 24 + 9
-      size nil, 375
-      transparent 1
-      font "Regular", TraxanosHD.default_font_size-1
-      render "VRunningText"
-      config "movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap"
-      source "Service"
-      accent
-      convert "ExtendedDescription", type: "EMCEventName"
-    end
+
+
   end
 
   box do
