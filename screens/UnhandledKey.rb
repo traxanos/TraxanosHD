@@ -1,21 +1,17 @@
 TraxanosHD::Screen.new(xml, :UnhandledKey, "UnhandledKey") do
   position TraxanosHD.border, TraxanosHD.border, 11
-  size TraxanosHD.inner_width, TraxanosHD.header_height
+  size TraxanosHD.header_height, TraxanosHD.header_height
 
   label do
-    background :transparent
+    size TraxanosHD.header_height
 
     label do
       size TraxanosHD.header_height
-
-      label do
-        size TraxanosHD.header_height
-        text ""
-        nowrap 1
-        font "FontAwesome", 39
-        orientation :center, :center
-        transparent 1
-      end
+      text ""
+      nowrap 1
+      font "FontAwesome", 39
+      orientation :center, :center
+      transparent 1
     end
   end
 end
