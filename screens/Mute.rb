@@ -1,9 +1,10 @@
 TraxanosHD::Screen.new(xml, :Mute, "Mute") do
   position TraxanosHD.border, TraxanosHD.border, 81
-  size TraxanosHD.header_height, TraxanosHD.header_height
+  width = 243 + 129
+  size width, TraxanosHD.header_height
 
   label do
-    size TraxanosHD.header_height
+    size width
 
     label do
       size TraxanosHD.header_height
@@ -22,5 +23,22 @@ TraxanosHD::Screen.new(xml, :Mute, "Mute") do
       orientation :center, :center
       transparent 1
     end
+
+    label do
+      position 255+24, 0
+      size 87+6, TraxanosHD.header_height
+      font "Regular", 40
+      orientation :center, :center
+      nowrap 1
+      transparent 1
+      text "0"
+    end
+
+    label do
+      position 78, 34
+      background :foreground
+      size 195, 1
+    end
+
   end
 end

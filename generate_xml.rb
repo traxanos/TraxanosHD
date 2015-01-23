@@ -159,7 +159,7 @@ xml.skin do
   render_screen('InfoPanel', xml)
 
 
-  xml.screen name: "VideoFinetune", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :black, zPosition: 100 do
+  xml.screen name: "VideoFinetune", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :black, zPosition: 70 do
     xml.widget source: "Canvas", render: "Canvas", position: "280,70", size: "720,576"
   end
   # xml.screen name: "Scart", title: "Scart", position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, zPosition: -100
