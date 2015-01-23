@@ -260,7 +260,7 @@
     <widget backgroundColor="background" foregroundColor="backgroundAccent2" source="session.Event_Now" transparent="1" render="Progress" position="39,644" size="943,5" zPosition="7">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,597" size="708,36" zPosition="8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,597" size="708,39" zPosition="8">
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="769,612" size="51,21" zPosition="9">
@@ -331,7 +331,7 @@
     <widget backgroundColor="background" foregroundColor="backgroundAccent" source="session.CurrentService" render="Progress" transparent="1" position="39,644" size="943,5" zPosition="7">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" transparent="1" source="session.Event_Now" position="42,597" size="847,36" zPosition="8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" transparent="1" source="session.Event_Now" position="42,597" size="847,39" zPosition="8">
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="892,612" size="87,21" zPosition="9">
@@ -405,7 +405,7 @@
     <widget render="PositionGauge" transparent="1" source="session.CurrentService" position="39,641" size="943,11" zPosition="9">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" transparent="1" source="session.CurrentService" position="42,597" size="847,36" zPosition="10">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" transparent="1" source="session.CurrentService" position="42,597" size="847,39" zPosition="10">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.CurrentService" transparent="1" position="892,612" size="87,21" zPosition="11">
@@ -479,7 +479,7 @@
     <widget render="PositionGauge" transparent="1" source="Service" position="39,641" size="943,11" zPosition="9">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" transparent="1" source="session.CurrentService" position="42,597" size="847,36" zPosition="10">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" transparent="1" source="session.CurrentService" position="42,597" size="847,39" zPosition="10">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="Service" transparent="1" position="892,612" size="87,21" zPosition="11">
@@ -550,7 +550,7 @@
     <widget backgroundColor="background" foregroundColor="backgroundAccent2" source="session.Event_Now" transparent="1" render="Progress" position="39,644" size="943,5" zPosition="8">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,597" size="708,36" zPosition="9">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,597" size="708,39" zPosition="9">
       <convert type="EventName">Name</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="769,612" size="51,21" zPosition="10">

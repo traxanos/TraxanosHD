@@ -45,7 +45,7 @@ class TraxanosHD::Element
 
         widget do
           position 0 + 3, 24
-          size 853 - 6, 36
+          size 853 - 6, 39
           render "Label"
           font "Regular", 30
           nowrap 1

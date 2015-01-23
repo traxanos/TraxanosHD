@@ -13,15 +13,9 @@ TraxanosHD.colors[:red]               = "\#00e91515"
 TraxanosHD.colors[:blue]              = "\#000064c7"
 TraxanosHD.colors[:orange]            = "\#00f47d19"
 
-if dark
-  TraxanosHD.colors[:background]        = "\#10101010"
-  TraxanosHD.colors[:foreground]        = "\#00bbbbbb"
-  TraxanosHD.colors[:shadow]            = "\#10202020"
-else
-  TraxanosHD.colors[:background]        = "\#10bbbbbb"
-  TraxanosHD.colors[:foreground]        = "\#00000000"
-  TraxanosHD.colors[:shadow]            = "\#10A0A0A0"
-end
+TraxanosHD.colors[:background]        = "\#1A101010"
+TraxanosHD.colors[:foreground]        = "\#00bbbbbb"
+TraxanosHD.colors[:shadow]            = "\#10202020"
 TraxanosHD.colors[:foregroundAccent]    = "\#00bbbbbb"
 TraxanosHD.colors[:backgroundAccent]    = "\#106c0aab"
 
@@ -34,13 +28,8 @@ TraxanosHD.colors[:graphepgBGNow]       = "\#10bbbbbb"
 TraxanosHD.colors[:graphepgFGNow]       = "\#00222222"
 TraxanosHD.colors[:foregroundAccent2]   = "\#10bbbbbb"
 TraxanosHD.colors[:backgroundAccent2]   = "\#006c0aab"
-if dark
-  TraxanosHD.colors[:channelSelection2]       = TraxanosHD.colors[:white]
-  TraxanosHD.colors[:channelSelection2Select] = TraxanosHD.colors[:white]
-else
-  TraxanosHD.colors[:channelSelection2]       = TraxanosHD.colors[:foreground]
-  TraxanosHD.colors[:channelSelection2Select] = TraxanosHD.colors[:background]
-end
+TraxanosHD.colors[:channelSelection2]       = TraxanosHD.colors[:white]
+TraxanosHD.colors[:channelSelection2Select] = TraxanosHD.colors[:white]
 
 
 if ENV['grey'] == "1"
