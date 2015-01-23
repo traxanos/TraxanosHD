@@ -44,10 +44,10 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0 + 3, 27 + 6
-          size 853 - 6, 42
+          position 0 + 3, 24
+          size 853 - 6, 36
           render "Label"
-          font "Share", 30
+          font "Regular", 30
           nowrap 1
           orientation :left, :top
           transparent 1
@@ -61,8 +61,8 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 853, 27 + 14
-          size 90 - 3, 42
+          position 853, 39
+          size 90 - 3, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
           orientation :right, :top
@@ -73,8 +73,8 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 3, 51 + 33
-          size 943 - 6, 42
+          position 3, 51 + 36
+          size 200, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
           orientation :left, :top
@@ -85,9 +85,9 @@ class TraxanosHD::Element
         end
 
         widget do
-          # + 2 font size bug
-          position 3 + 2, 51 + 33
-          size 943 - 6, 42
+          # + 1 font size bug
+          position 943 - 3 - 200, 51 + 36
+          size 200, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
           orientation :right, :top
