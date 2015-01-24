@@ -32,12 +32,12 @@ bash build.sh
 move_ipk "red_vti8"
 
 # Blue 8.1
-green=1 beta81=1 ruby generate.rb
+blue=1 beta81=1 ruby generate.rb
 bash build.sh
 move_ipk "blue_vti81"
 
 # Blue
-green=1 ruby generate.rb
+blue=1 ruby generate.rb
 bash build.sh
 move_ipk "blue_vti8"
 

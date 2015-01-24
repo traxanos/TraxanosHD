@@ -29,14 +29,14 @@ TraxanosHD::Screen.new(xml, :Volume, "Volume") do
 
     label do
       position 78, 34
-      background :foreground
+      background :progressbarPrimaryBG
       size 195, 1
     end
 
 
     widget do
       position 78, 32
-      foreground :backgroundAccent
+      foreground :progressbarPrimaryFG
       size 195, 5
       name "Volume"
       transparent 1

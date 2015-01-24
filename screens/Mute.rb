@@ -36,7 +36,7 @@ TraxanosHD::Screen.new(xml, :Mute, "Mute") do
 
     label do
       position 78, 34
-      background :foreground
+      background :progressbarPrimaryBG
       size 195, 1
     end
 
