@@ -52,7 +52,7 @@ if ENV['light'] == "1"
   TraxanosHD.colors[:channelSelection2Select] = "\#00ffffff"
 
   TraxanosHD.colors[:graphepgBGNormal]        = "\#10888888"
-  TraxanosHD.colors[:graphepgFGNormal]        = "\#00bbbbbb"
+  TraxanosHD.colors[:graphepgFGNormal]        = "\#00222222"
   TraxanosHD.colors[:graphepgBGNow]           = "\#10bbbbbb"
   TraxanosHD.colors[:graphepgFGNow]           = "\#00222222"
 end
