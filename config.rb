@@ -19,8 +19,8 @@ TraxanosHD.colors[:background]        = "\#1A101010"
 TraxanosHD.colors[:foreground]        = "\#00bbbbbb"
 TraxanosHD.colors[:foregroundAccent]  = "\#10bbbbbb"
 TraxanosHD.colors[:backgroundAccent]  = "\#10333333"
-TraxanosHD.colors[:selectionBG]       = "\#00bbbbbb"
-TraxanosHD.colors[:selectionFG]       = "\#00101010"
+TraxanosHD.colors[:selectionBG]       = "\#10666666"
+TraxanosHD.colors[:selectionFG]       = "\#00bbbbbb"
 
 # graphepg
 TraxanosHD.colors[:graphepgBGNormal]        = "\#10888888"

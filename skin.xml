@@ -24,8 +24,8 @@
     <color value="#00bbbbbb" name="foreground"/>
     <color value="#10bbbbbb" name="foregroundAccent"/>
     <color value="#10333333" name="backgroundAccent"/>
-    <color value="#00bbbbbb" name="selectionBG"/>
-    <color value="#00101010" name="selectionFG"/>
+    <color value="#10666666" name="selectionBG"/>
+    <color value="#00bbbbbb" name="selectionFG"/>
     <color value="#10888888" name="graphepgBGNormal"/>
     <color value="#00222222" name="graphepgFGNormal"/>
     <color value="#10bbbbbb" name="graphepgBGNow"/>
