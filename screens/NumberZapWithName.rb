@@ -34,6 +34,7 @@ TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
         font "Regular", 36
         transparent 1
         nowrap 1
+        accent
       end
 
       widget do
@@ -44,6 +45,7 @@ TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
         font "Regular", 66
         transparent 1
         nowrap 1
+        accent
       end
 
       widget do
@@ -54,6 +56,7 @@ TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
         font "Regular", TraxanosHD.default_font_size
         transparent 1
         nowrap 1
+        accent
       end
     end
   end

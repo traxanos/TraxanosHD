@@ -32,6 +32,7 @@ TraxanosHD::Screen.new(xml, :NumberZapExt, "Channel") do
         font "Regular", 36
         transparent 1
         nowrap 1
+        accent
       end
 
       widget do
@@ -42,16 +43,18 @@ TraxanosHD::Screen.new(xml, :NumberZapExt, "Channel") do
         font "Regular", 66
         transparent 1
         nowrap 1
+        accent
       end
 
       widget do
         position 0, 36
         size nil, 24
         orientation :left, :center
-      name "chBouq"
-      font "Regular", TraxanosHD.default_font_size
-      transparent 1
-      nowrap 1
+        name "chBouq"
+        font "Regular", TraxanosHD.default_font_size
+        transparent 1
+        nowrap 1
+        accent
       end
     end
   end

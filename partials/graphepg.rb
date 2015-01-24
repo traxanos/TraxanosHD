@@ -20,7 +20,7 @@ class TraxanosHD::Element
       orientation :left, :center
       custom "piconWidth", 60
       custom "EntryRecColor", "red"
-      custom "EntryBorderColor", "background"
+      custom "EntryBorderColor", "graphepgBorder"
 
       custom "ServiceNameBackgroundColor", "background"
       custom "ServiceNameForegroundColor", "foreground"
@@ -31,11 +31,11 @@ class TraxanosHD::Element
       custom "EntryNowForegroundColor", "graphepgFGNow"
       custom "EntryNowBackgroundColor", "graphepgBGNow"
 
-      custom "EntryForegroundColorSelected", "foregroundAccent"
-      custom "EntryBackgroundColorSelected", "backgroundAccent"
+      custom "EntryForegroundColorSelected", "selectionFG"
+      custom "EntryBackgroundColorSelected", "selectionBG"
 
-      custom "EntryNowForegroundColorSelected", "foregroundAccent"
-      custom "EntryNowBackgroundColorSelected", "backgroundAccent"
+      custom "EntryNowForegroundColorSelected", "selectionFG"
+      custom "EntryNowBackgroundColorSelected", "selectionBG"
 
       custom "FontSize1", "14"
       custom "FontSize2", "20"

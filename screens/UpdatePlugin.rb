@@ -29,6 +29,7 @@ TraxanosHD::Screen.new(xml, :UpdatePlugin, "Software Update...") do
     size -24, 30
     font "Regular", TraxanosHD.default_font_size-2
     name "package"
+    nowrap 1
     transparent 1
     orientation :left, :center
   end

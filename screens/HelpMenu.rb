@@ -36,6 +36,7 @@ TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
     font "Regular", 18
     orientation :center, :center
     transparent 1
+    accent
   end
 
   widget do

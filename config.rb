@@ -23,26 +23,45 @@ TraxanosHD.colors[:selectionBG]       = "\#10666666"
 TraxanosHD.colors[:selectionFG]       = "\#00bbbbbb"
 
 # graphepg
-TraxanosHD.colors[:graphepgBGNormal]        = "\#10888888"
+TraxanosHD.colors[:graphepgBorder]          = "\#1A101010"
+TraxanosHD.colors[:graphepgBGNormal]        = "\#10bbbbbb"
 TraxanosHD.colors[:graphepgFGNormal]        = "\#00222222"
-TraxanosHD.colors[:graphepgBGNow]           = "\#10bbbbbb"
+TraxanosHD.colors[:graphepgBGNow]           = "\#10888888"
 TraxanosHD.colors[:graphepgFGNow]           = "\#00222222"
 TraxanosHD.colors[:channelSelection2]       = "\#00ffffff"
 TraxanosHD.colors[:channelSelection2Select] = "\#00ffffff"
 
 TraxanosHD.colors[:progressbarPrimaryBG]    = "\#10bbbbbb"
-TraxanosHD.colors[:progressbarPrimaryFG]    = "\#10bbbbbb"
+TraxanosHD.colors[:progressbarPrimaryFG]    = "\#00bbbbbb"
 TraxanosHD.colors[:progressbarSecondaryBG]  = "\#10bbbbbb"
-TraxanosHD.colors[:progressbarSecondaryFG]  = "\#10bbbbbb"
+TraxanosHD.colors[:progressbarSecondaryFG]  = "\#00bbbbbb"
 TraxanosHD.colors[:scrollbarSecondaryBG]    = "\#10bbbbbb"
-TraxanosHD.colors[:scrollbarSecondaryFG]    = "\#10bbbbbb"
+TraxanosHD.colors[:scrollbarSecondaryFG]    = "\#00bbbbbb"
+
+if ENV['light'] == "1"
+  TraxanosHD.colors[:foreground]            = "\#00111111"
+  TraxanosHD.colors[:background]            = "\#10E0E0E0"
+  TraxanosHD.colors[:foregroundAccent]      = "\#00bbbbbb"
+  TraxanosHD.colors[:backgroundAccent]      = "\#10555555"
+  TraxanosHD.colors[:progressbarPrimaryFG]  = "\#00333333"
+  TraxanosHD.colors[:progressbarPrimaryBG]  = "\#00333333"
+  TraxanosHD.colors[:progressbarSecondaryBG]  = "\#00C0C0C0"
+  TraxanosHD.colors[:scrollbarSecondaryBG]    = "\#00000000"
+  TraxanosHD.colors[:scrollbarSecondaryFG]    = "\#00555555"
+  TraxanosHD.colors[:channelSelection2]       = "\#00555555"
+  TraxanosHD.colors[:channelSelection2Select] = "\#00ffffff"
+
+  TraxanosHD.colors[:graphepgBGNormal]        = "\#10888888"
+  TraxanosHD.colors[:graphepgFGNormal]        = "\#00bbbbbb"
+  TraxanosHD.colors[:graphepgBGNow]           = "\#10bbbbbb"
+  TraxanosHD.colors[:graphepgFGNow]           = "\#00222222"
+end
 
 if ENV['violett'] == "1"
   TraxanosHD.colors[:foregroundAccent]      = "\#00bbbbbb"
   TraxanosHD.colors[:backgroundAccent]      = "\#106c0aab"
   TraxanosHD.colors[:progressbarPrimaryFG]  = "\#106c0aab"
   TraxanosHD.colors[:selectionBG]           = "\#106c0aab"
-  TraxanosHD.colors[:selectionFG]           = "\#00bbbbbb"
 end
 
 if ENV['green'] == "1"
@@ -50,7 +69,6 @@ if ENV['green'] == "1"
   TraxanosHD.colors[:backgroundAccent]      = "\#10007100"
   TraxanosHD.colors[:progressbarPrimaryFG]  = "\#10007100"
   TraxanosHD.colors[:selectionBG]           = "\#10007100"
-  TraxanosHD.colors[:selectionFG]           = "\#00bbbbbb"
 end
 
 if ENV['blue'] == "1"
@@ -58,7 +76,6 @@ if ENV['blue'] == "1"
   TraxanosHD.colors[:backgroundAccent]      = "\#100050EF"
   TraxanosHD.colors[:progressbarPrimaryFG]  = "\#100050EF"
   TraxanosHD.colors[:selectionBG]           = "\#100050EF"
-  TraxanosHD.colors[:selectionFG]           = "\#00bbbbbb"
 end
 
 if ENV['red'] == "1"

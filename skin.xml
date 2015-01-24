@@ -26,18 +26,19 @@
     <color value="#10333333" name="backgroundAccent"/>
     <color value="#10666666" name="selectionBG"/>
     <color value="#00bbbbbb" name="selectionFG"/>
-    <color value="#10888888" name="graphepgBGNormal"/>
+    <color value="#1A101010" name="graphepgBorder"/>
+    <color value="#10bbbbbb" name="graphepgBGNormal"/>
     <color value="#00222222" name="graphepgFGNormal"/>
-    <color value="#10bbbbbb" name="graphepgBGNow"/>
+    <color value="#10888888" name="graphepgBGNow"/>
     <color value="#00222222" name="graphepgFGNow"/>
     <color value="#00ffffff" name="channelSelection2"/>
     <color value="#00ffffff" name="channelSelection2Select"/>
     <color value="#10bbbbbb" name="progressbarPrimaryBG"/>
-    <color value="#10bbbbbb" name="progressbarPrimaryFG"/>
+    <color value="#00bbbbbb" name="progressbarPrimaryFG"/>
     <color value="#10bbbbbb" name="progressbarSecondaryBG"/>
-    <color value="#10bbbbbb" name="progressbarSecondaryFG"/>
+    <color value="#00bbbbbb" name="progressbarSecondaryFG"/>
     <color value="#10bbbbbb" name="scrollbarSecondaryBG"/>
-    <color value="#10bbbbbb" name="scrollbarSecondaryFG"/>
+    <color value="#00bbbbbb" name="scrollbarSecondaryFG"/>
   </colors>
   <fonts>
     <font name="LCD" filename="lcd.ttf" scale="100"/>
@@ -1095,7 +1096,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,153" size="774,21" zPosition="-7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,177" size="774,450" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="graphepgBorder" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="selectionFG" EntryBackgroundColorSelected="selectionBG" EntryNowForegroundColorSelected="selectionFG" EntryNowBackgroundColorSelected="selectionBG" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,177" size="774,450" zPosition="-6"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
@@ -1149,7 +1150,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,153" size="1166,21" zPosition="-7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,177" size="1166,450" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="graphepgBorder" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="selectionFG" EntryBackgroundColorSelected="selectionBG" EntryNowForegroundColorSelected="selectionFG" EntryNowBackgroundColorSelected="selectionBG" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,177" size="1166,450" zPosition="-6"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
@@ -1177,7 +1178,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,111" size="1166,21" zPosition="6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,135" size="1166,450" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="graphepgBorder" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="selectionFG" EntryBackgroundColorSelected="selectionBG" EntryNowForegroundColorSelected="selectionFG" EntryNowBackgroundColorSelected="selectionBG" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,135" size="1166,450" zPosition="7"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,130" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,130" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,130" size="3,6" zPosition="2"/>
@@ -1204,7 +1205,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   <!-- GraphMultiEPG3 -->
   <screen name="GraphMultiEPG3" title="EPG selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,57" size="1166,21" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,81" size="1166,540" zPosition="4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="graphepgBorder" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="selectionFG" EntryBackgroundColorSelected="selectionBG" EntryNowForegroundColorSelected="selectionFG" EntryNowBackgroundColorSelected="selectionBG" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,81" size="1166,540" zPosition="4"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,76" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,76" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,76" size="3,6" zPosition="2"/>
@@ -1242,7 +1243,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
     <widget backgroundColor="background" name="rc" alphatest="blend" pixmaps="skin_default/rc_vu_1.png,skin_default/rc_vu_2.png,skin_default/rc_vu_3.png" position="968,159" size="154,500" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="long_key" font="Regular; 18" halign="center" valign="center" transparent="1" position="867,651" size="356,24" zPosition="11"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" name="long_key" font="Regular; 18" halign="center" valign="center" transparent="1" position="867,651" size="356,24" zPosition="11"/>
     <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowdown.png" alphatest="on" position="0,0" name="arrowdown" size="37,70" zPosition="11"/>
     <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowdown.png" alphatest="on" position="0,0" name="arrowdown2" size="37,70" zPosition="11"/>
     <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowup.png" alphatest="on" position="0,0" name="arrowup" size="37,70" zPosition="11"/>
@@ -1788,15 +1789,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   <screen name="NumberZapExt" title="Channel" flags="wfNoBorder" backgroundColor="transparent" position="center,center" size="610,156">
     <eLabel backgroundColor="background" foregroundColor="foreground" position="0,0" size="280,156" zPosition="1"/>
     <widget backgroundColor="background" name="chPicon" alphatest="blend" transparent="1" position="30,12" size="220,132" zPosition="2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" halign="left" valign="center" name="chName" font="Regular; 36" transparent="1" noWrap="1" position="298,24" size="294,36" zPosition="5"/>
-    <widget backgroundColor="background" foregroundColor="foreground" halign="right" valign="center" name="chNum" font="Regular; 66" transparent="1" noWrap="1" position="298,72" size="294,60" zPosition="6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" halign="left" valign="center" name="chBouq" font="Regular; 20" transparent="1" noWrap="1" position="298,60" size="294,24" zPosition="7"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" halign="left" valign="center" name="chName" font="Regular; 36" transparent="1" noWrap="1" position="298,24" size="294,36" zPosition="5"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" halign="right" valign="center" name="chNum" font="Regular; 66" transparent="1" noWrap="1" position="298,72" size="294,60" zPosition="6"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" halign="left" valign="center" name="chBouq" font="Regular; 20" transparent="1" noWrap="1" position="298,60" size="294,24" zPosition="7"/>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="280,6" size="330,144" zPosition="3"/>
   </screen>
   <!-- NumberZap -->
   <screen name="NumberZap" title="Channel" flags="wfNoBorder" backgroundColor="transparent" position="center,center" size="360,180">
-    <widget backgroundColor="background" foregroundColor="foreground" halign="right" valign="bottom" name="servicenumber" font="Regular; 66" transparent="1" noWrap="1" position="18,81" size="324,81" zPosition="2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" halign="left" valign="top" name="servicename" font="Regular; 36" transparent="1" noWrap="1" position="18,18" size="324,42" zPosition="3"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" halign="right" valign="bottom" name="servicenumber" font="Regular; 66" transparent="1" noWrap="1" position="18,81" size="324,81" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" halign="left" valign="top" name="servicename" font="Regular; 36" transparent="1" noWrap="1" position="18,18" size="324,42" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="0,0" size="360,180" zPosition="1"/>
   </screen>
   <!-- NumberZapWithName -->
@@ -1805,9 +1806,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" source="Service" render="Picon" alphatest="blend" transparent="1" position="30,12" size="220,132" zPosition="2">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" halign="left" valign="center" name="servicename" font="Regular; 36" transparent="1" noWrap="1" position="298,24" size="294,36" zPosition="5"/>
-    <widget backgroundColor="background" foregroundColor="foreground" halign="right" valign="center" name="servicenumber" font="Regular; 66" transparent="1" noWrap="1" position="298,72" size="294,60" zPosition="6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" halign="left" valign="center" name="servicebouquet" font="Regular; 20" transparent="1" noWrap="1" position="298,94" size="294,24" zPosition="7"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" halign="left" valign="center" name="servicename" font="Regular; 36" transparent="1" noWrap="1" position="298,24" size="294,36" zPosition="5"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" halign="right" valign="center" name="servicenumber" font="Regular; 66" transparent="1" noWrap="1" position="298,72" size="294,60" zPosition="6"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" halign="left" valign="center" name="servicebouquet" font="Regular; 20" transparent="1" noWrap="1" position="298,94" size="294,24" zPosition="7"/>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="280,6" size="330,144" zPosition="3"/>
   </screen>
   <!-- NumericalTextInputHelpDialog -->
@@ -2184,7 +2185,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   <screen name="Ipkg" title="Installing Software..." flags="wfNoBorder" backgroundColor="background" position="center,center" size="510,216">
     <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 26" text="Installing Software..." halign="left" valign="center" transparent="1" position="69,12" size="429,48" zPosition="1"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61803;" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" transparent="1" position="12,12" size="48,48" zPosition="2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" name="package" transparent="1" halign="left" valign="center" position="12,72" size="486,30" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" name="package" noWrap="1" transparent="1" halign="left" valign="center" position="12,72" size="486,30" zPosition="3"/>
     <eLabel backgroundColor="foreground" foregroundColor="foreground" position="12,116" size="486,1" zPosition="4"/>
     <widget backgroundColor="background" foregroundColor="backgroundAccent" name="activityslider" transparent="1" position="12,114" size="486,5" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" name="status" transparent="1" halign="center" valign="center" position="12,131" size="486,56" zPosition="6"/>
@@ -2195,7 +2196,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   <screen name="UpdatePlugin" title="Software Update..." flags="wfNoBorder" backgroundColor="background" position="center,center" size="510,216" zPosition="99">
     <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 26" text="Installing Software..." halign="left" valign="center" transparent="1" position="69,12" size="429,48" zPosition="100"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61803;" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" transparent="1" position="12,12" size="48,48" zPosition="101"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" name="package" transparent="1" halign="left" valign="center" position="12,72" size="486,30" zPosition="102"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" name="package" noWrap="1" transparent="1" halign="left" valign="center" position="12,72" size="486,30" zPosition="102"/>
     <eLabel backgroundColor="foreground" foregroundColor="foreground" position="12,116" size="486,1" zPosition="103"/>
     <widget backgroundColor="background" foregroundColor="backgroundAccent" name="activityslider" transparent="1" position="12,114" size="486,5" zPosition="104"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" name="status" transparent="1" halign="center" valign="center" position="12,131" size="486,56" zPosition="105"/>
