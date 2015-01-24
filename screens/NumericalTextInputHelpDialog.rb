@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :NumericalTextInputHelpDialog) do
-  position TraxanosHD.border+TraxanosHD.left_width, 141, 8
+  position TraxanosHD.border+TraxanosHD.left_width, 141, 31
   size TraxanosHD.right_width, 534
   background :backgroundAccent
 
@@ -31,8 +31,6 @@ TraxanosHD::Screen.new(xml, :NumericalTextInputHelpDialog) do
         font "Regular", TraxanosHD.default_font_size-2
         orientation :center, :center
       end
-
-
 
       widget do
         position 0, 48+1
@@ -80,21 +78,21 @@ TraxanosHD::Screen.new(xml, :NumericalTextInputHelpDialog) do
 
       widget do
         position 0, (48+1)*3
-        size 118-20, 48
+        size 118-40, 48
         name "help1"
         font "Regular", TraxanosHD.default_font_size-2
         orientation :center, :center
       end
       widget do
-        position 118+1-20, (48+1)*3
-        size 118+40, 48
+        position 118+1-40, (48+1)*3
+        size 118+80, 48
         name "key0"
         font "Regular", TraxanosHD.default_font_size-2
         orientation :center, :center
       end
       widget do
-        position 236+2+20, (48+1)*3
-        size 118-20, 48
+        position 236+2+40, (48+1)*3
+        size 118-40, 48
         name "help2"
         font "Regular", TraxanosHD.default_font_size-2
         orientation :center, :center

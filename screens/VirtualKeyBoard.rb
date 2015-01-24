@@ -1,5 +1,5 @@
 TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
-  position 0, 0, 99
+  position 0, 0, 30
 
   header do
     header_title2
@@ -43,4 +43,5 @@ TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
       selectiondisabled 1
     end
   end
+
 end

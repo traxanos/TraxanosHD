@@ -117,181 +117,181 @@
       <convert type="VWeather">forecastTomorrowTempMin</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="282,42" size="129,63" zPosition="5"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 30" render="Label" source="session.Event_Now" noWrap="1" halign="left" valign="center" transparent="1" position="57,153" size="774,42" zPosition="6">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 30" render="Label" source="session.Event_Now" noWrap="1" halign="left" valign="center" transparent="1" position="57,153" size="774,42" zPosition="-8">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 19" render="VRunningText" source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=120,repeat=2,always=0,startdelay=5000,wrap" halign="left" valign="top" transparent="1" position="57,213" size="774,279" zPosition="7">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 19" render="VRunningText" source="session.Event_Now" options="movetype=running,startpoint=0,direction=top,steptime=120,repeat=2,always=0,startdelay=5000,wrap" halign="left" valign="top" transparent="1" position="57,213" size="774,279" zPosition="-7">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,375" zPosition="4"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 22" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="867,159" size="276,36" zPosition="7">
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,375" zPosition="-10"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 22" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="867,159" size="276,36" zPosition="-8">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 22" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="1143,159" size="80,36" zPosition="8">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 22" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="1143,159" size="80,36" zPosition="-7">
       <convert type="ExtremeInfo">Number</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" text="Provider:" noWrap="1" halign="left" valign="top" transparent="1" position="867,207" size="120,24" zPosition="9"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="987,207" size="236,24" zPosition="10">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" text="Provider:" noWrap="1" halign="left" valign="top" transparent="1" position="867,207" size="120,24" zPosition="-6"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="987,207" size="236,24" zPosition="-5">
       <convert type="ServiceName">Provider</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" text="Resolution:" noWrap="1" halign="left" valign="top" transparent="1" position="867,231" size="120,24" zPosition="11"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="987,231" size="99,24" zPosition="12">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" text="Resolution:" noWrap="1" halign="left" valign="top" transparent="1" position="867,231" size="120,24" zPosition="-4"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="987,231" size="99,24" zPosition="-3">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" text="x" noWrap="1" halign="center" valign="top" transparent="1" position="987,231" size="99,24" zPosition="13"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="987,231" size="99,24" zPosition="14">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" text="x" noWrap="1" halign="center" valign="top" transparent="1" position="987,231" size="99,24" zPosition="-2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="987,231" size="99,24" zPosition="-1">
       <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="1086,231" size="66,24" zPosition="15">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="1086,231" size="66,24">
       <convert type="ServiceInfo">Framerate</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" text="Tuner:" noWrap="1" halign="left" valign="top" transparent="1" position="867,279" size="120,24" zPosition="16"/>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 19" noWrap="1" halign="center" valign="top" transparent="1" text="A" position="987,279" size="15,24" zPosition="17"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="A" position="987,279" size="15,24" zPosition="18">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" text="Tuner:" noWrap="1" halign="left" valign="top" transparent="1" position="867,279" size="120,24" zPosition="1"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 19" noWrap="1" halign="center" valign="top" transparent="1" text="A" position="987,279" size="15,24" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="A" position="987,279" size="15,24" zPosition="3">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="987,302" size="15,3" zPosition="19">
+    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="987,302" size="15,3" zPosition="4">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">0,0</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 19" noWrap="1" halign="center" valign="top" transparent="1" text="B" position="1002,279" size="15,24" zPosition="20"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="B" position="1002,279" size="15,24" zPosition="21">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 19" noWrap="1" halign="center" valign="top" transparent="1" text="B" position="1002,279" size="15,24" zPosition="5"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="B" position="1002,279" size="15,24" zPosition="6">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">2</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="1002,302" size="15,3" zPosition="22">
+    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="1002,302" size="15,3" zPosition="7">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 19" noWrap="1" halign="center" valign="top" transparent="1" text="C" position="1017,279" size="15,24" zPosition="23"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="C" position="1017,279" size="15,24" zPosition="24">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 19" noWrap="1" halign="center" valign="top" transparent="1" text="C" position="1017,279" size="15,24" zPosition="8"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="C" position="1017,279" size="15,24" zPosition="9">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">4</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="1017,302" size="15,3" zPosition="25">
+    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="1017,302" size="15,3" zPosition="10">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 19" noWrap="1" halign="center" valign="top" transparent="1" text="D" position="1032,279" size="15,24" zPosition="26"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="D" position="1032,279" size="15,24" zPosition="27">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="shadow" font="Regular; 19" noWrap="1" halign="center" valign="top" transparent="1" text="D" position="1032,279" size="15,24" zPosition="11"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="FixedLabel" source="session.TunerInfo" noWrap="1" halign="center" valign="top" transparent="1" text="D" position="1032,279" size="15,24" zPosition="12">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">8</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="1032,302" size="15,3" zPosition="28">
+    <widget backgroundColor="foregroundAccent" foregroundColor="foreground" render="FixedLabel" source="session.FrontendInfo" position="1032,302" size="15,3" zPosition="13">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">3,3</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 16" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="867,315" size="356,24" zPosition="29">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 16" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="867,315" size="356,24" zPosition="14">
       <convert type="VtiInfo">EcmInfo</convert>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_format_off.png" alphatest="blend" position="867,359" size="60,60" zPosition="30"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_format_on.png" alphatest="blend" position="867,359" size="60,60" zPosition="31">
+    <ePixmap pixmap="AtileHD/icons/ico_format_off.png" alphatest="blend" position="867,359" size="60,60" zPosition="15"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_format_on.png" alphatest="blend" position="867,359" size="60,60" zPosition="16">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_hd_off.png" alphatest="blend" position="933,359" size="60,60" zPosition="32"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_hd_on.png" alphatest="blend" position="933,359" size="60,60" zPosition="33">
+    <ePixmap pixmap="AtileHD/icons/ico_hd_off.png" alphatest="blend" position="933,359" size="60,60" zPosition="17"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_hd_on.png" alphatest="blend" position="933,359" size="60,60" zPosition="18">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_dolby_off.png" alphatest="blend" position="999,359" size="60,60" zPosition="34"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_dolby_on.png" alphatest="blend" position="999,359" size="60,60" zPosition="35">
+    <ePixmap pixmap="AtileHD/icons/ico_dolby_off.png" alphatest="blend" position="999,359" size="60,60" zPosition="19"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_dolby_on.png" alphatest="blend" position="999,359" size="60,60" zPosition="20">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_txt_off.png" alphatest="blend" position="867,418" size="60,60" zPosition="36"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_txt_on.png" alphatest="blend" position="867,418" size="60,60" zPosition="37">
+    <ePixmap pixmap="AtileHD/icons/ico_txt_off.png" alphatest="blend" position="867,418" size="60,60" zPosition="21"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_txt_on.png" alphatest="blend" position="867,418" size="60,60" zPosition="22">
       <convert type="ServiceInfo">HasTelext</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_subtitel_off.png" alphatest="blend" position="933,418" size="60,60" zPosition="38"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_subtitel_on.png" alphatest="blend" position="933,418" size="60,60" zPosition="39">
+    <ePixmap pixmap="AtileHD/icons/ico_subtitel_off.png" alphatest="blend" position="933,418" size="60,60" zPosition="23"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_subtitel_on.png" alphatest="blend" position="933,418" size="60,60" zPosition="24">
       <convert type="VServiceInfo">SubtitlesAvailable</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_sub_off.png" alphatest="blend" position="999,418" size="60,60" zPosition="40"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_sub_on.png" alphatest="blend" position="999,418" size="60,60" zPosition="41">
+    <ePixmap pixmap="AtileHD/icons/ico_sub_off.png" alphatest="blend" position="999,418" size="60,60" zPosition="25"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_sub_on.png" alphatest="blend" position="999,418" size="60,60" zPosition="26">
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <ePixmap pixmap="AtileHD/icons/ico_crypt_off.png" alphatest="blend" position="1065,418" size="60,60" zPosition="42"/>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_crypt_on.png" alphatest="blend" position="1065,418" size="60,60" zPosition="43">
+    <ePixmap pixmap="AtileHD/icons/ico_crypt_off.png" alphatest="blend" position="1065,418" size="60,60" zPosition="27"/>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="AtileHD/icons/ico_crypt_on.png" alphatest="blend" position="1065,418" size="60,60" zPosition="28">
       <convert type="ServiceInfo">IsCrypted</convert>
       <convert type="ConditionalShowHide"/>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,363" zPosition="5"/>
-    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" text="SNR" font="Regular; 18" halign="left" valign="center" transparent="1" position="57,537" size="54,36" zPosition="7"/>
-    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" text="AGC" font="Regular; 18" halign="left" valign="center" transparent="1" position="444,537" size="54,36" zPosition="8"/>
-    <eLabel backgroundColor="foreground" foregroundColor="foreground" position="108,555" size="270,1" zPosition="8"/>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" transparent="1" render="Progress" source="session.FrontendStatus" position="108,553" size="270,5" zPosition="9">
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,363" zPosition="-10"/>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" text="SNR" font="Regular; 18" halign="left" valign="center" transparent="1" position="57,537" size="54,36" zPosition="6"/>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" text="AGC" font="Regular; 18" halign="left" valign="center" transparent="1" position="444,537" size="54,36" zPosition="7"/>
+    <eLabel backgroundColor="foreground" foregroundColor="foreground" position="108,555" size="270,1" zPosition="7"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" transparent="1" render="Progress" source="session.FrontendStatus" position="108,553" size="270,5" zPosition="8">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel backgroundColor="foreground" foregroundColor="foreground" position="495,555" size="270,1" zPosition="9"/>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" transparent="1" render="Progress" source="session.FrontendStatus" position="495,553" size="270,5" zPosition="10">
+    <eLabel backgroundColor="foreground" foregroundColor="foreground" position="495,555" size="270,1" zPosition="8"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" transparent="1" render="Progress" source="session.FrontendStatus" position="495,553" size="270,5" zPosition="9">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" halign="left" valign="center" transparent="1" render="Label" source="session.FrontendStatus" position="390,537" size="54,36" zPosition="11">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" halign="left" valign="center" transparent="1" render="Label" source="session.FrontendStatus" position="390,537" size="54,36" zPosition="10">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" halign="left" valign="center" transparent="1" render="Label" source="session.FrontendStatus" position="777,537" size="54,36" zPosition="12">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" halign="left" valign="center" transparent="1" render="Label" source="session.FrontendStatus" position="777,537" size="54,36" zPosition="11">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" render="Label" source="session.CurrentService" halign="center" valign="center" transparent="1" position="871,537" size="150,36" zPosition="13">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" render="Label" source="session.CurrentService" halign="center" valign="center" transparent="1" position="871,537" size="150,36" zPosition="12">
       <convert type="VtiInfo">TempInfo</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" render="Label" source="session.CurrentService" halign="center" valign="center" transparent="1" position="1061,537" size="162,36" zPosition="14">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 18" render="Label" source="session.CurrentService" halign="center" valign="center" transparent="1" position="1061,537" size="162,36" zPosition="13">
       <convert type="VtiInfo">FanInfo</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="39,537" size="1202,36" zPosition="6"/>
-    <widget backgroundColor="background" alphatest="blend" render="Picon" source="session.CurrentService" position="1021,579" size="220,132" zPosition="6">
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="39,537" size="1202,36" zPosition="5"/>
+    <widget backgroundColor="background" alphatest="blend" render="Picon" source="session.CurrentService" position="1021,579" size="220,132" zPosition="8">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <eLabel backgroundColor="foreground" foregroundColor="foreground" position="39,646" size="943,1" zPosition="6"/>
-    <widget backgroundColor="background" foregroundColor="backgroundAccent2" source="session.Event_Now" transparent="1" render="Progress" position="39,644" size="943,5" zPosition="7">
+    <eLabel backgroundColor="foreground" foregroundColor="foreground" position="39,646" size="943,1" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="backgroundAccent2" source="session.Event_Now" transparent="1" render="Progress" position="39,644" size="943,5" zPosition="9">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,597" size="708,39" zPosition="8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" noWrap="1" halign="left" valign="top" source="session.Event_Now" transparent="1" position="42,597" size="708,39" zPosition="10">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="769,612" size="51,21" zPosition="9">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="769,612" size="51,21" zPosition="11">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="820,612" size="66,21" zPosition="10">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="820,612" size="66,21" zPosition="12">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="886,612" size="93,21" zPosition="11">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Now" transparent="1" position="886,612" size="93,21" zPosition="13">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 24" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="43,660" size="708,36" zPosition="12">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 24" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="43,660" size="708,36" zPosition="14">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="769,660" size="51,21" zPosition="13">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="769,660" size="51,21" zPosition="15">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="820,660" size="66,21" zPosition="14">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="left" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="820,660" size="66,21" zPosition="16">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format: - %H:%M</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="886,660" size="93,21" zPosition="15">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 18" halign="right" valign="top" noWrap="1" source="session.Event_Next" transparent="1" position="886,660" size="93,21" zPosition="17">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,573" size="1202,147" zPosition="5"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" position="0,573" size="1280,147" zPosition="4"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,573" size="1202,147" zPosition="7"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="0,573" size="1280,147" zPosition="6"/>
   </screen>
   <!-- PVRState -->
   <screen name="PVRState" flags="wfNoBorder" backgroundColor="transparent" position="39,39" size="810,69" zPosition="-9">
@@ -1805,20 +1805,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="280,6" size="330,144" zPosition="3"/>
   </screen>
   <!-- NumericalTextInputHelpDialog -->
-  <screen name="NumericalTextInputHelpDialog" flags="wfNoBorder" backgroundColor="backgroundAccent" position="849,141" size="392,534" zPosition="8">
-    <widget backgroundColor="background" foregroundColor="foreground" name="key1" font="Regular; 18" halign="center" valign="center" position="18,18" size="118,48" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key2" font="Regular; 18" halign="center" valign="center" position="137,18" size="118,48" zPosition="12"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key3" font="Regular; 18" halign="center" valign="center" position="256,18" size="118,48" zPosition="13"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key4" font="Regular; 18" halign="center" valign="center" position="18,67" size="118,48" zPosition="14"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key5" font="Regular; 18" halign="center" valign="center" position="137,67" size="118,48" zPosition="15"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key6" font="Regular; 18" halign="center" valign="center" position="256,67" size="118,48" zPosition="16"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key7" font="Regular; 18" halign="center" valign="center" position="18,116" size="118,48" zPosition="17"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key8" font="Regular; 18" halign="center" valign="center" position="137,116" size="118,48" zPosition="18"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key9" font="Regular; 18" halign="center" valign="center" position="256,116" size="118,48" zPosition="19"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="help1" font="Regular; 18" halign="center" valign="center" position="18,165" size="98,48" zPosition="20"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key0" font="Regular; 18" halign="center" valign="center" position="117,165" size="158,48" zPosition="21"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="help2" font="Regular; 18" halign="center" valign="center" position="276,165" size="98,48" zPosition="22"/>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="0,0" size="392,534" zPosition="9"/>
+  <screen name="NumericalTextInputHelpDialog" flags="wfNoBorder" backgroundColor="backgroundAccent" position="849,141" size="392,534" zPosition="31">
+    <widget backgroundColor="background" foregroundColor="foreground" name="key1" font="Regular; 18" halign="center" valign="center" position="18,18" size="118,48" zPosition="34"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key2" font="Regular; 18" halign="center" valign="center" position="137,18" size="118,48" zPosition="35"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key3" font="Regular; 18" halign="center" valign="center" position="256,18" size="118,48" zPosition="36"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key4" font="Regular; 18" halign="center" valign="center" position="18,67" size="118,48" zPosition="37"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key5" font="Regular; 18" halign="center" valign="center" position="137,67" size="118,48" zPosition="38"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key6" font="Regular; 18" halign="center" valign="center" position="256,67" size="118,48" zPosition="39"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key7" font="Regular; 18" halign="center" valign="center" position="18,116" size="118,48" zPosition="40"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key8" font="Regular; 18" halign="center" valign="center" position="137,116" size="118,48" zPosition="41"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key9" font="Regular; 18" halign="center" valign="center" position="256,116" size="118,48" zPosition="42"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="help1" font="Regular; 18" halign="center" valign="center" position="18,165" size="78,48" zPosition="43"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key0" font="Regular; 18" halign="center" valign="center" position="97,165" size="198,48" zPosition="44"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="help2" font="Regular; 18" halign="center" valign="center" position="296,165" size="78,48" zPosition="45"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="0,0" size="392,534" zPosition="32"/>
   </screen>
   <!-- PluginBrowser -->
   <screen name="PluginBrowser" title="Plugins Manager" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
@@ -2154,19 +2154,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
   <!-- VirtualKeyBoard -->
-  <screen name="VirtualKeyBoard" title="Virtual KeyBoard" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720" zPosition="99">
-    <widget backgroundColor="background" foregroundColor="foreground" name="header" transparent="1" font="Regular; 34" noWrap="1" halign="left" valign="center" position="57,51" size="774,48" zPosition="102"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="101"/>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="103">
+  <screen name="VirtualKeyBoard" title="Virtual KeyBoard" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720" zPosition="30">
+    <widget backgroundColor="background" foregroundColor="foreground" name="header" transparent="1" font="Regular; 34" noWrap="1" halign="left" valign="center" position="57,51" size="774,48" zPosition="33"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="32"/>
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="34">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="104">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="35">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="105">
+    <widget backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="36">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="849,42" size="392,63" zPosition="102"/>
+    <eLabel backgroundColor="backgroundAccent2" foregroundColor="foregroundAccent2" position="849,42" size="392,63" zPosition="33"/>
     <eLabel backgroundColor="foreground" foregroundColor="foreground" position="57,153" size="698,38" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="58,154" size="696,36" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" font="FontAwesome; 20" halign="center" valign="center" text="&#61701;" transparent="1" position="59,155" size="30,34" zPosition="-6"/>
