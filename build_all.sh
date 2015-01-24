@@ -21,12 +21,12 @@ green=1 ruby generate.rb
 bash build.sh
 move_ipk "green_vti8"
 
-# Green 8.1
+# Red 8.1
 red=1 beta81=1 ruby generate.rb
 bash build.sh
 move_ipk "red_vti81"
 
-# Green
+# Red
 red=1 ruby generate.rb
 bash build.sh
 move_ipk "red_vti8"
@@ -41,12 +41,12 @@ blue=1 ruby generate.rb
 bash build.sh
 move_ipk "blue_vti8"
 
-# Violet 8.1
+# Violett 8.1
 violett=1 beta81=1 ruby generate.rb
 bash build.sh
 move_ipk "violett_vti81"
 
-# Violet
+# Violett
 violett=1 ruby generate.rb
 bash build.sh
 move_ipk "violett_vti8"
