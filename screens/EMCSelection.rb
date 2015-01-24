@@ -40,14 +40,14 @@ TraxanosHD::Screen.new(xml, :EMCSelection, "Select a movie") do
       custom "CoolBarHPos", "12"
       custom "CoolBarSize", "55,10"
       custom "CoolBarSizeSa", "110,16"
-      custom "DefaultColor", "foreground"
-      custom "UnwatchedColor", "foreground"
+      custom "DefaultColor", "selectionFG"
+      custom "UnwatchedColor", "selectionFG"
       custom "WatchingColor", "blue"
       custom "FinishedColor", "green"
       custom "RecordingColor", "red"
-      custom "BackColorSel", "backgroundAccent"
-      custom "FrontColorSel", "foregroundAccent"
-      custom "foregroundColorSelected", "#ffffff"
+      custom "BackColorSel", "selectionBG"
+      custom "FrontColorSel", "selectionFG"
+      custom "foregroundColorSelected", "selectionFG"
     end
   end
 
