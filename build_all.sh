@@ -10,15 +10,53 @@ function move_ipk() {
 
 rm -rf ipks
 mkdir -p ipks
-ruby generate.rb
+
+# Green 8.1
+green=1 beta81=1 ruby generate.rb
 bash build.sh
-move_ipk "violette_vti8"
-grey=1 ruby generate.rb
+move_ipk "green_vti81"
+
+# Green
+green=1 ruby generate.rb
 bash build.sh
-move_ipk "grey_vti8"
+move_ipk "green_vti8"
+
+# Green 8.1
+red=1 beta81=1 ruby generate.rb
+bash build.sh
+move_ipk "red_vti81"
+
+# Green
+red=1 ruby generate.rb
+bash build.sh
+move_ipk "red_vti8"
+
+# Blue 8.1
+green=1 beta81=1 ruby generate.rb
+bash build.sh
+move_ipk "blue_vti81"
+
+# Blue
+green=1 ruby generate.rb
+bash build.sh
+move_ipk "blue_vti8"
+
+# Violet 8.1
+violett=1 beta81=1 ruby generate.rb
+bash build.sh
+move_ipk "violett_vti81"
+
+# Violet
+violett=1 ruby generate.rb
+bash build.sh
+move_ipk "violett_vti8"
+
+# Grey 8.1
 beta81=1 ruby generate.rb
 bash build.sh
-move_ipk "violette_vti81"
-beta81=1 grey=1 ruby generate.rb
-bash build.sh
 move_ipk "grey_vti81"
+
+# Grey
+ruby generate.rb
+bash build.sh
+move_ipk "grey_vti8"

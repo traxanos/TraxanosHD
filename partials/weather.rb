@@ -84,7 +84,7 @@ class TraxanosHD::Element
         # right
         position left, 3
         size right, -6
-        accent2
+        accent
 
         widget do
           position 9, 6
@@ -96,7 +96,7 @@ class TraxanosHD::Element
           transparent 1
           source "session.CurrentService"
           convert "forecastTomorrowCode", type: "VWeather"
-          accent2
+          accent
         end
 
         widget do
@@ -109,7 +109,7 @@ class TraxanosHD::Element
           transparent 1
           source "session.CurrentService"
           convert "forecastTomorrowTempMax", type: "VWeather"
-          accent2
+          accent
         end
 
         widget do
@@ -122,7 +122,7 @@ class TraxanosHD::Element
           transparent 1
           source "session.CurrentService"
           convert "forecastTomorrowTempMin", type: "VWeather"
-          accent2
+          accent
         end
 
       end

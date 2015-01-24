@@ -3,7 +3,7 @@ module TraxanosHD::Images
     def render
       if options[:name] == "sel"
         draw = Magick::Draw.new
-        draw.fill = color_by_colorname(:backgroundAccent2)
+        draw.fill = color_by_colorname(:backgroundAccent)
         draw.rectangle 1, height-6, width-2, height-2
         draw.draw image
       else

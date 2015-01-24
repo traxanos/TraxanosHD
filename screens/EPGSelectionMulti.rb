@@ -53,6 +53,7 @@ TraxanosHD::Screen.new(xml, :EPGSelectionMulti, "EPG selection") do
       transparent 1
       source "Service"
       accent
+      secondary
       convert "Progress", type: "EventTime"
     end
 

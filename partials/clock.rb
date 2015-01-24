@@ -28,7 +28,7 @@ class TraxanosHD::Element
         # left
         position -(right+left), 3
         size left, -6
-        accent2
+        accent
 
         widget do
           position -(108+9), 6
@@ -40,7 +40,7 @@ class TraxanosHD::Element
           source "global.CurrentTime"
           convert "Format:%A", type: "ClockToText"
           transparent 1
-          accent2
+          accent
         end
 
         widget do
@@ -53,7 +53,7 @@ class TraxanosHD::Element
           source "global.CurrentTime"
           convert "Format:%e. %B", type: "ClockToText"
           transparent 1
-          accent2
+          accent
         end
 
       end

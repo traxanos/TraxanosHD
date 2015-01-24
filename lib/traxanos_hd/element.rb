@@ -210,11 +210,6 @@ module TraxanosHD
       foreground :foregroundAccent
     end
 
-    def accent2
-      background :backgroundAccent2
-      foreground :foregroundAccent2
-    end
-
     def orientation(halign, valign = nil)
       @options["halign"] = halign
       @options["valign"] = valign

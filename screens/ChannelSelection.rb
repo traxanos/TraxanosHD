@@ -64,6 +64,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       transparent 1
       source "ServiceEvent"
       accent
+      secondary
       convert "Progress", type: "EventTime"
     end
 

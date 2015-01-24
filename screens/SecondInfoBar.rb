@@ -411,7 +411,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
   label do
     position TraxanosHD.border, 135+402
     size TraxanosHD.inner_width, 36
-    accent2
+    accent
 
     label do
       position 18
@@ -420,7 +420,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       font "Regular", TraxanosHD.default_font_size-2
       orientation :left, :center
       transparent 1
-      accent2
+      accent
     end
 
     label do
@@ -430,27 +430,29 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       font "Regular", TraxanosHD.default_font_size-2
       orientation :left, :center
       transparent 1
-      accent2
+      accent
     end
 
     progressbar do
       position 69, 16
       size 270,5
       transparent 1
-      accent2
+      accent
       render "Progress"
       source "session.FrontendStatus"
       convert "SNR", type: "FrontendInfo"
+      secondary
     end
 
     progressbar do
       position 456, 16
       size 270,5
       transparent 1
-      accent2
+      accent
       render "Progress"
       source "session.FrontendStatus"
       convert "AGC", type: "FrontendInfo"
+      secondary
     end
 
     widget do
@@ -459,7 +461,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       font "Regular", TraxanosHD.default_font_size-2
       orientation :left, :center
       transparent 1
-      accent2
+      accent
       render "Label"
       source "session.FrontendStatus"
       convert "SNR", type: "FrontendInfo"
@@ -471,7 +473,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       font "Regular", TraxanosHD.default_font_size-2
       orientation :left, :center
       transparent 1
-      accent2
+      accent
       render "Label"
       source "session.FrontendStatus"
       convert "AGC", type: "FrontendInfo"
@@ -486,7 +488,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       convert "TempInfo", type: "VtiInfo"
       orientation :center, :center
       transparent 1
-      accent2
+      accent
     end
 
     widget do
@@ -498,7 +500,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       convert "FanInfo", type: "VtiInfo"
       orientation :center, :center
       transparent 1
-      accent2
+      accent
     end
   end
 

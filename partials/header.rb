@@ -12,7 +12,7 @@ class TraxanosHD::Element
         label do
           position TraxanosHD.left_width, 3
           size TraxanosHD.right_width, TraxanosHD.header_height-6
-          accent2
+          accent
 
           widget do
             position TraxanosHD.spacer, 0
@@ -24,7 +24,7 @@ class TraxanosHD::Element
             source "global.CurrentTime"
             convert "Default", type: "ClockToText"
             transparent 1
-            accent2
+            accent
           end
 
           widget do
@@ -37,7 +37,7 @@ class TraxanosHD::Element
             source "global.CurrentTime"
             convert "Format:%A", type: "ClockToText"
             transparent 1
-            accent2
+            accent
           end
 
           widget do
@@ -50,7 +50,7 @@ class TraxanosHD::Element
             source "global.CurrentTime"
             convert "Format:%e. %B", type: "ClockToText"
             transparent 1
-            accent2
+            accent
           end
         end
       else
