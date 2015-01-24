@@ -2,8 +2,8 @@ module TraxanosHD::Images
   class Scrollbar < Base
     def render
       line = Magick::Draw.new
-      line.fill(color_by_colorname(:foreground))
-      line.fill_opacity(opacity_by_colorname(:foreground))
+      line.fill(color_by_colorname(:scrollbarSecondaryBG))
+      line.fill_opacity(opacity_by_colorname(:scrollbarSecondaryBG))
       line.rectangle(2, 0, 2, height)
       line.fill(color_by_colorname(:background))
       line.fill_opacity(opacity_by_colorname(:background))

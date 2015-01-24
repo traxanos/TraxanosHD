@@ -41,12 +41,12 @@ xml.skin do
     xml.color name: :LabelForeground, color: :foreground
     xml.color name: :ListboxBackground, color: :background
     xml.color name: :ListboxForeground, color: :foreground
-    xml.color name: :ListboxSelectedBackground, color: :backgroundAccent2
-    xml.color name: :ListboxSelectedForeground, color: :foregroundAccent2
-    xml.color name: :ListboxMarkedBackground, color: :backgroundAccent2
-    xml.color name: :ListboxMarkedForeground, color: :foregroundAccent2
-    xml.color name: :ListboxMarkedAndSelectedBackground, color: :backgroundAccent2
-    xml.color name: :ListboxMarkedAndSelectedForeground, color: :foregroundAccent2
+    xml.color name: :ListboxSelectedBackground, color: :selectionBG
+    xml.color name: :ListboxSelectedForeground, color: :selectionFG
+    xml.color name: :ListboxMarkedBackground, color: :selectionBG
+    xml.color name: :ListboxMarkedForeground, color: :selectionFG
+    xml.color name: :ListboxMarkedAndSelectedBackground, color: :selectionBG
+    xml.color name: :ListboxMarkedAndSelectedForeground, color: :selectionFG
     xml.color name: :WindowTitleForeground, color: :foreground
   end
 
@@ -55,12 +55,12 @@ xml.skin do
     xml.color name: :LabelForeground, color: :foreground
     xml.color name: :ListboxBackground, color: :background
     xml.color name: :ListboxForeground, color: :foreground
-    xml.color name: :ListboxSelectedBackground, color: :backgroundAccent2
-    xml.color name: :ListboxSelectedForeground, color: :foregroundAccent2
-    xml.color name: :ListboxMarkedBackground, color: :backgroundAccent2
-    xml.color name: :ListboxMarkedForeground, color: :foregroundAccent2
-    xml.color name: :ListboxMarkedAndSelectedBackground, color: :backgroundAccent2
-    xml.color name: :ListboxMarkedAndSelectedForeground, color: :foregroundAccent2
+    xml.color name: :ListboxSelectedBackground, color: :selectionBG
+    xml.color name: :ListboxSelectedForeground, color: :selectionFG
+    xml.color name: :ListboxMarkedBackground, color: :selectionBG
+    xml.color name: :ListboxMarkedForeground, color: :selectionFG
+    xml.color name: :ListboxMarkedAndSelectedBackground, color: :selectionBG
+    xml.color name: :ListboxMarkedAndSelectedForeground, color: :selectionFG
     xml.color name: :WindowTitleForeground, color: :foreground
   end
 

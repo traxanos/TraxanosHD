@@ -19,6 +19,8 @@ TraxanosHD.colors[:background]        = "\#1A101010"
 TraxanosHD.colors[:foreground]        = "\#00bbbbbb"
 TraxanosHD.colors[:foregroundAccent]  = "\#10bbbbbb"
 TraxanosHD.colors[:backgroundAccent]  = "\#10333333"
+TraxanosHD.colors[:selectionBG]       = "\#00bbbbbb"
+TraxanosHD.colors[:selectionFG]       = "\#00101010"
 
 # graphepg
 TraxanosHD.colors[:graphepgBGNormal]        = "\#10888888"
@@ -39,24 +41,32 @@ if ENV['violett'] == "1"
   TraxanosHD.colors[:foregroundAccent]      = "\#00bbbbbb"
   TraxanosHD.colors[:backgroundAccent]      = "\#106c0aab"
   TraxanosHD.colors[:progressbarPrimaryFG]  = "\#106c0aab"
+  TraxanosHD.colors[:selectionBG]           = "\#106c0aab"
+  TraxanosHD.colors[:selectionFG]           = "\#00bbbbbb"
 end
 
 if ENV['green'] == "1"
   TraxanosHD.colors[:foregroundAccent]      = "\#00bbbbbb"
-  TraxanosHD.colors[:backgroundAccent]      = "\#10008A00"
-  TraxanosHD.colors[:progressbarPrimaryFG]  = "\#10008A00"
+  TraxanosHD.colors[:backgroundAccent]      = "\#10007100"
+  TraxanosHD.colors[:progressbarPrimaryFG]  = "\#10007100"
+  TraxanosHD.colors[:selectionBG]           = "\#10007100"
+  TraxanosHD.colors[:selectionFG]           = "\#00bbbbbb"
 end
 
 if ENV['blue'] == "1"
   TraxanosHD.colors[:foregroundAccent]      = "\#00bbbbbb"
   TraxanosHD.colors[:backgroundAccent]      = "\#100050EF"
   TraxanosHD.colors[:progressbarPrimaryFG]  = "\#100050EF"
+  TraxanosHD.colors[:selectionBG]           = "\#100050EF"
+  TraxanosHD.colors[:selectionFG]           = "\#00bbbbbb"
 end
 
 if ENV['red'] == "1"
   TraxanosHD.colors[:foregroundAccent]      = "\#00bbbbbb"
   TraxanosHD.colors[:backgroundAccent]      = "\#10911d10"
   TraxanosHD.colors[:progressbarPrimaryFG]  = "\#10911d10"
+  TraxanosHD.colors[:selectionBG]           = "\#10911d10"
+  TraxanosHD.colors[:selectionFG]           = "\#00bbbbbb"
 end
 
 TraxanosHD.fonts[:LCD]         = { scale: 100, filename: 'lcd.ttf' }

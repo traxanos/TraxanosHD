@@ -283,10 +283,9 @@ module TraxanosHD
       options["scrollbarMode"] = mode unless mode.nil?
       options["scrollbarWidth"] = 5
       options["scrollbarSliderBorderWidth"] = 0
-      options["scrollbarSliderForegroundColor"] = :foreground
-      options["scrollbarSliderBorderColor"] = :foreground
+      options["scrollbarSliderForegroundColor"] = :scrollbarSecondaryFG
+      options["scrollbarSliderBorderColor"] = :scrollbarSecondaryFG
       options["scrollbarBackgroundPicture"] = "TraxanosHD/images/scrollbar_bg.png" if TraxanosHD.beta81
-      # options["scrollbarSliderPicture"] = "TraxanosHD/scrollbar.png"
     end
 
     def enablewraparound(value)

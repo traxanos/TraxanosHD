@@ -24,6 +24,8 @@
     <color value="#00bbbbbb" name="foreground"/>
     <color value="#10bbbbbb" name="foregroundAccent"/>
     <color value="#10333333" name="backgroundAccent"/>
+    <color value="#00bbbbbb" name="selectionBG"/>
+    <color value="#00101010" name="selectionFG"/>
     <color value="#10888888" name="graphepgBGNormal"/>
     <color value="#00222222" name="graphepgFGNormal"/>
     <color value="#10bbbbbb" name="graphepgBGNow"/>
@@ -59,12 +61,12 @@
     <color name="LabelForeground" color="foreground"/>
     <color name="ListboxBackground" color="background"/>
     <color name="ListboxForeground" color="foreground"/>
-    <color name="ListboxSelectedBackground" color="backgroundAccent2"/>
-    <color name="ListboxSelectedForeground" color="foregroundAccent2"/>
-    <color name="ListboxMarkedBackground" color="backgroundAccent2"/>
-    <color name="ListboxMarkedForeground" color="foregroundAccent2"/>
-    <color name="ListboxMarkedAndSelectedBackground" color="backgroundAccent2"/>
-    <color name="ListboxMarkedAndSelectedForeground" color="foregroundAccent2"/>
+    <color name="ListboxSelectedBackground" color="selectionBG"/>
+    <color name="ListboxSelectedForeground" color="selectionFG"/>
+    <color name="ListboxMarkedBackground" color="selectionBG"/>
+    <color name="ListboxMarkedForeground" color="selectionFG"/>
+    <color name="ListboxMarkedAndSelectedBackground" color="selectionBG"/>
+    <color name="ListboxMarkedAndSelectedForeground" color="selectionFG"/>
     <color name="WindowTitleForeground" color="foreground"/>
   </windowstyle>
   <windowstyle id="1" type="skinned">
@@ -72,12 +74,12 @@
     <color name="LabelForeground" color="foreground"/>
     <color name="ListboxBackground" color="background"/>
     <color name="ListboxForeground" color="foreground"/>
-    <color name="ListboxSelectedBackground" color="backgroundAccent2"/>
-    <color name="ListboxSelectedForeground" color="foregroundAccent2"/>
-    <color name="ListboxMarkedBackground" color="backgroundAccent2"/>
-    <color name="ListboxMarkedForeground" color="foregroundAccent2"/>
-    <color name="ListboxMarkedAndSelectedBackground" color="backgroundAccent2"/>
-    <color name="ListboxMarkedAndSelectedForeground" color="foregroundAccent2"/>
+    <color name="ListboxSelectedBackground" color="selectionBG"/>
+    <color name="ListboxSelectedForeground" color="selectionFG"/>
+    <color name="ListboxMarkedBackground" color="selectionBG"/>
+    <color name="ListboxMarkedForeground" color="selectionFG"/>
+    <color name="ListboxMarkedAndSelectedBackground" color="selectionBG"/>
+    <color name="ListboxMarkedAndSelectedForeground" color="selectionFG"/>
     <color name="WindowTitleForeground" color="foreground"/>
   </windowstyle>
   <!-- SecondInfoBar -->
@@ -614,7 +616,7 @@
     <eLabel backgroundColor="green" foregroundColor="foreground" position="12,42" size="5,27" zPosition="3"/>
     <eLabel backgroundColor="yellow" foregroundColor="foreground" position="12,72" size="5,27" zPosition="4"/>
     <eLabel backgroundColor="blue" foregroundColor="foreground" position="12,102" size="5,27" zPosition="5"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="config" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="24,12" size="528,270" zPosition="6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="config" itemHeight="30" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="24,12" size="528,270" zPosition="6"/>
     <eLabel backgroundColor="white" foregroundColor="foreground" position="12,300" size="540,1" zPosition="7"/>
     <widget backgroundColor="background" foregroundColor="foreground" source="streams" render="Listbox" transparent="1" position="12,318" size="540,150" zPosition="8">
       <convert type="TemplatedMultiContent">{
@@ -658,7 +660,7 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="33,171" size="822,480" zPosition="3">
+    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="33,171" size="822,480" zPosition="3">
       <convert type="TemplatedMultiContent">{
     "template": [
       MultiContentEntryText(pos = (24,5), size = (774,48), flags = RT_HALIGN_LEFT, text = 0)
@@ -714,7 +716,7 @@
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,510" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,510" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- ChannelContextMenu -->
@@ -731,7 +733,7 @@
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,510" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,510" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- ChannelSelection -->
@@ -748,7 +750,7 @@
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -786,7 +788,7 @@
   <screen name="ChoiceBox" title="Input" flags="wfNoBorder" backgroundColor="background" position="center,center" size="780,260" zPosition="99">
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 26" name="text" halign="left" valign="center" position="69,15" size="699,38" zPosition="100"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61529;" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" position="12,12" size="48,48" zPosition="101"/>
-    <widget backgroundColor="background" foregroundColor="foreground" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" enableWrapAround="1" transparent="1" name="list" itemHeight="30" position="12,72" size="756,176" zPosition="102"/>
+    <widget backgroundColor="background" foregroundColor="foreground" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" enableWrapAround="1" transparent="1" name="list" itemHeight="30" position="12,72" size="756,176" zPosition="102"/>
     <applet type="onLayoutFinish">
 
 from enigma import eSize, ePoint
@@ -817,7 +819,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="text" transparent="1" font="Console; 20" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,510" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="text" transparent="1" font="Console; 20" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,510" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- Dish -->
@@ -838,7 +840,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="filelist" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="filelist" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -862,7 +864,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,450" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,450" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryPixmapAlphaTest(pos = (721, 21), size = (48, 48), png = 1),
@@ -909,7 +911,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -957,7 +959,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -1034,7 +1036,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" font="Regular; 30" halign="left" valign="bottom" noWrap="1" source="Service" transparent="1" position="39,471" size="774,42" zPosition="4">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="27" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="39,513" size="774,108" zPosition="5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="27" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="39,513" size="774,108" zPosition="5"/>
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 19" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Event" position="852,513" size="398,102" zPosition="6">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
@@ -1066,7 +1068,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="epg_description" font="Regular; 20" transparent="1" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="epg_description" font="Regular; 20" transparent="1" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -1093,7 +1095,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,153" size="774,21" zPosition="-7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,177" size="774,450" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,177" size="774,450" zPosition="-6"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
@@ -1147,7 +1149,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,153" size="1166,21" zPosition="-7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,177" size="1166,450" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,177" size="1166,450" zPosition="-6"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,172" size="3,6" zPosition="2"/>
@@ -1175,7 +1177,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,111" size="1166,21" zPosition="6"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,135" size="1166,450" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,135" size="1166,450" zPosition="7"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,130" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,130" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,130" size="3,6" zPosition="2"/>
@@ -1202,7 +1204,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   <!-- GraphMultiEPG3 -->
   <screen name="GraphMultiEPG3" title="EPG selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" name="timeline_text" selectionDisabled="1" transparent="1" position="57,57" size="1166,21" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,81" size="1166,540" zPosition="4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="list" itemHeight="30" transparent="1" halign="left" valign="center" piconWidth="60" EntryRecColor="red" EntryBorderColor="background" ServiceNameBackgroundColor="background" ServiceNameForegroundColor="foreground" EntryForegroundColor="graphepgFGNormal" EntryBackgroundColor="graphepgBGNormal" EntryNowForegroundColor="graphepgFGNow" EntryNowBackgroundColor="graphepgBGNow" EntryForegroundColorSelected="foregroundAccent" EntryBackgroundColorSelected="backgroundAccent" EntryNowForegroundColorSelected="foregroundAccent" EntryNowBackgroundColorSelected="backgroundAccent" FontSize1="14" FontSize2="20" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,81" size="1166,540" zPosition="4"/>
     <widget backgroundColor="background" name="timeline0" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,76" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline1" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,76" size="3,6" zPosition="2"/>
     <widget backgroundColor="background" name="timeline2" alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="57,76" size="3,6" zPosition="2"/>
@@ -1236,7 +1238,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="23"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="48" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="48" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
     <widget backgroundColor="background" name="rc" alphatest="blend" pixmaps="skin_default/rc_vu_1.png,skin_default/rc_vu_2.png,skin_default/rc_vu_3.png" position="968,159" size="154,500" zPosition="10"/>
@@ -1260,7 +1262,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="hddlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="hddlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- LanguageSelection -->
@@ -1277,7 +1279,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="languages" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="languages" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 0), size = (690,40), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
@@ -1309,10 +1311,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="background" foregroundColor="foreground" position="58,154" size="772,36" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" font="FontAwesome; 20" halign="center" valign="center" text="&#61531;" transparent="1" position="59,155" size="30,34" zPosition="-6"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="target" font="Regular; 20" transparent="1" noWrap="1" position="90,157" size="740,30" zPosition="-5"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="filelist" transparent="1" enableWrapAround="1" selectionDisabled="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,201" size="774,180" zPosition="-4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="filelist" transparent="1" enableWrapAround="1" selectionDisabled="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,201" size="774,180" zPosition="-4"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61486;" font="FontAwesome; 20" halign="center" valign="center" noWrap="1" transparent="1" position="59,401" size="30,34" zPosition="-3"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="textbook" font="Regular; 24" halign="left" valign="center" noWrap="1" transparent="1" position="90,399" size="741,36" zPosition="-2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="booklist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,447" size="774,180" zPosition="-1"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="booklist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,447" size="774,180" zPosition="-1"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -1401,7 +1403,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (705, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 0),
@@ -1439,7 +1441,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (705, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 0),
@@ -1476,7 +1478,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -1502,7 +1504,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <ePixmap backgroundColor="background" pixmap="skin_default/buttons/key_0.png" alphatest="on" position="867,161" size="35,25" zPosition="-8"/>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" name="key_0" halign="left" valign="center" noWrap="1" transparent="1" font="Regular; 19" position="906,159" size="316,30" zPosition="-7"/>
@@ -1535,7 +1537,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" render="Listbox" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" render="Listbox" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (30, 0), size = (765, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)
@@ -1572,7 +1574,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="freeDiskSpace" transparent="1" noWrap="1" font="Regular; 18" halign="left" valign="top" position="57,153" size="774,30" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,183" size="774,450" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,183" size="774,450" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -1629,7 +1631,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,510" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,510" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- EnhancedMovieCenterMenu -->
@@ -1646,7 +1648,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" source="help" render="Label" font="Regular; 19" position="867,159" size="356,498" zPosition="-8"/>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
@@ -1674,7 +1676,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" CoolFont="Regular; 20" CoolSelectFont="Regular; 20" CoolDateFont="Regular; 20" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="545" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="590" CoolBarHPos="12" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="foreground" UnwatchedColor="foreground" WatchingColor="blue" FinishedColor="green" RecordingColor="red" BackColorSel="backgroundAccent" FrontColorSel="foregroundAccent" foregroundColorSelected="#ffffff" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" CoolFont="Regular; 20" CoolSelectFont="Regular; 20" CoolDateFont="Regular; 20" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="545" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="590" CoolBarHPos="12" CoolBarSize="55,10" CoolBarSizeSa="110,16" DefaultColor="foreground" UnwatchedColor="foreground" WatchingColor="blue" FinishedColor="green" RecordingColor="red" BackColorSel="backgroundAccent" FrontColorSel="foregroundAccent" foregroundColorSelected="#ffffff" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -1731,7 +1733,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,510" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,510" zPosition="-8">
       <convert type="StringList"/>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
@@ -1750,7 +1752,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- NimSelection -->
@@ -1767,7 +1769,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="nimlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,486" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="nimlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,486" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 0),  size = (705, 33), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 1),
@@ -1838,7 +1840,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="60" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="60" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -1893,7 +1895,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (705, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_BOTTOM, text = 0),
@@ -1930,7 +1932,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="infolist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="infolist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -1956,7 +1958,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -1980,7 +1982,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" colorEventProgressbarBorder="foreground" colorEventProgressbarBorderSelected="foreground" colorServiceDescription="channelSelection2" colorServiceDescriptionSelected="channelSelection2Select" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceInfoFont="Regular; 20" serviceNameFont="Regular; 20" serviceNumberFont="Regular; 20" colorServiceRecording="red" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -2006,7 +2008,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="SkinList" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,450" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="SkinList" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,450" zPosition="-8"/>
     <widget backgroundColor="background" foregroundColor="foreground" source="introduction" render="Label" font="Regular; 18" halign="left" valign="center" position="57,603" size="774,30" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <widget backgroundColor="backgroundAccent" name="Preview" alphatest="on" position="905,197" size="280,210" zPosition="-8"/>
@@ -2033,13 +2035,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1"/>
   <!-- TimeDateInput -->
   <screen name="TimeDateInput" title="Time/Date Input" flags="wfNoBorder" backgroundColor="transparent" position="center,center" size="414,150" zPosition="2">
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="18,18" size="378,90" zPosition="4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="18,18" size="378,90" zPosition="4"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="18,114" size="180,3" zPosition="6"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="216,114" size="180,3" zPosition="7"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="canceltext" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="9,114" size="198,30" zPosition="8"/>
@@ -2060,7 +2062,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 22" render="Label" source="ServiceEvent" halign="left" valign="top" position="867,159" size="356,36" zPosition="-8">
       <convert type="EventName">name</convert>
@@ -2102,7 +2104,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -2126,7 +2128,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,510" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,510" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- TimerSanityConflict -->
@@ -2143,9 +2145,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="1166,210" zPosition="-8"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="timer1" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,381" size="574,250" zPosition="-7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="timer2" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="649,381" size="574,250" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="list" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="1166,210" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="timer1" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,381" size="574,250" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="timer2" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="649,381" size="574,250" zPosition="-6"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="1202,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
     <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
@@ -2202,7 +2204,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   </screen>
   <!-- VideoEnhancementPreview -->
   <screen name="VideoEnhancementPreview" title="VideoEnhancementPreview" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="253,504" size="774,90" zPosition="2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="253,504" size="774,90" zPosition="2"/>
     <widget backgroundColor="background" foregroundColor="foreground" source="introduction" render="Label" font="Regular; 20" halign="center" valign="top" transparent="1" position="253,600" size="774,27" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="235,486" size="810,192" zPosition="1"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="253,645" size="180,3" zPosition="3"/>
@@ -2227,7 +2229,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,420" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,420" zPosition="-8"/>
     <widget backgroundColor="background" foregroundColor="foreground" source="introduction" render="Label" font="Regular; 20" halign="center" valign="center" transparent="1" position="57,591" size="774,30" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
     <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
@@ -2280,7 +2282,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,486" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,486" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6), size = (706, 48), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
@@ -2317,7 +2319,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (668, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -2356,7 +2358,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (711, 27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
@@ -2392,7 +2394,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="list" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (30, 0), size = (765, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -2456,7 +2458,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,486" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,486" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6), size = (706, 48), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
@@ -2492,7 +2494,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="list" transparent="1" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" source="list" transparent="1" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (33, 0), size = (800, 30), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0 ),
@@ -2529,7 +2531,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,153" size="774,480" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
         MultiContentEntryText(pos = (6, 6),  size = (705,27), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER | RT_VALIGN_BOTTOM, text = 1),
@@ -2567,7 +2569,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="storagelist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,429" size="774,189" zPosition="-8">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="storagelist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,429" size="774,189" zPosition="-8">
       <convert type="TemplatedMultiContent">{
       "template": [
           MultiContentEntryText(pos = (0, 3), size = (261, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -2584,7 +2586,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     }</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="Prozesse" position="57,153" size="450,36" zPosition="-7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="proclist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="57,201" size="450,162" zPosition="-6">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="proclist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,201" size="450,162" zPosition="-6">
       <convert type="TemplatedMultiContent">{
       "template": [
           MultiContentEntryText(pos = (0, 3), size = (230, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -2600,7 +2602,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     }</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 24" noWrap="1" halign="right" valign="center" transparent="1" text="Arbeitsspeicher" position="531,153" size="300,36" zPosition="-5"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="memory" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="531,201" size="300,108" zPosition="-4">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="memory" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="531,201" size="300,108" zPosition="-4">
       <convert type="TemplatedMultiContent">{
       "template": [
           MultiContentEntryText(pos = (0, 3), size = (132, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
@@ -2624,7 +2626,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" name="temp" transparent="1" halign="left" valign="top" font="Regular; 20" position="867,339" size="356,21" zPosition="-3"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="fan" transparent="1" halign="left" valign="top" font="Regular; 20" position="867,372" size="356,21" zPosition="-2"/>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 24" noWrap="1" halign="left" valign="center" transparent="1" text="Netzwerk" position="867,405" size="356,36" zPosition="-1"/>
-    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="netdev" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="foreground" scrollbarSliderBorderColor="foreground" position="867,450" size="356,81">
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="netdev" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="867,450" size="356,81">
       <convert type="TemplatedMultiContent">{
       "template": [
            MultiContentEntryText(pos = (0, 3),   size = (98, 21),  font = 0, flags = RT_HALIGN_LEFT  | RT_VALIGN_CENTER, text = 0),
