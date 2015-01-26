@@ -1497,7 +1497,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
       <convert type="ServicePosition">Position</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 24" halign="left" valign="top" noWrap="1" name="artist" transparent="1" position="43,660" size="980,36" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" halign="right" valign="top" noWrap="1" name="album" transparent="1" position="43,660" size="980,21" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" halign="right" valign="top" noWrap="1" name="album" transparent="1" position="43,660" size="980,36" zPosition="11"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" noWrap="1" halign="right" valign="top" transparent="1" source="session.CurrentService" render="Label" position="1031,660" size="73,21" zPosition="12">
       <convert type="ServicePosition">Length</convert>
     </widget>

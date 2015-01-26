@@ -128,7 +128,7 @@ TraxanosHD::Screen.new(xml, :MediaPlayer, "MediaPlayer") do
 
       widget do
         position 4, 51 + 36
-        size 980, 21
+        size 980, 36
         font "Regular", TraxanosHD.default_font_size-2
         orientation :right, :top
         nowrap 1
