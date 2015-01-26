@@ -22,7 +22,7 @@ class TraxanosHD::Element
 
         widget do
           size 79
-          font "Regular", 50
+          font "Regular", 41
           render "Label"
           orientation :right, :center
           nowrap 1

@@ -25,7 +25,6 @@ class TraxanosHD::Element
         progressbar do
           position 0, 71
           size 943, 5
-          foreground :backgroundAccent
           source "#{emc ? '' : 'session.Current'}Service"
           convert "Position", type: "#{emc ? 'EMC' : ''}ServicePosition"
         end

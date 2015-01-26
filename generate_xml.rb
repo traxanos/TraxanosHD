@@ -105,6 +105,7 @@ xml.skin do
   render_screen('MessageBox', xml)
   render_screen('MyPluginManager', xml)
   render_screen('myPacketManager', xml)
+  render_screen('MediaPlayer', xml)
 
   # MultiQuickButton
   render_screen('QuickButton', xml)

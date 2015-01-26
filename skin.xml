@@ -86,7 +86,7 @@
   <!-- SecondInfoBar -->
   <screen name="SecondInfoBar" title="SecondInfoBar" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 42" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
@@ -98,7 +98,7 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="971,42" size="126,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="118,45" size="24,24" zPosition="6">
@@ -308,7 +308,7 @@
   </screen>
   <!-- TimeshiftState -->
   <screen name="TimeshiftState" title="TimeshiftState" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 42" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
@@ -356,7 +356,7 @@
   <!-- MoviePlayer -->
   <screen name="MoviePlayer" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 42" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
@@ -368,7 +368,7 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="971,42" size="126,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="118,45" size="24,24" zPosition="6">
@@ -430,7 +430,7 @@
   <!-- EMCMediaCenter -->
   <screen name="EMCMediaCenter" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 42" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
@@ -442,7 +442,7 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="971,42" size="126,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="118,45" size="24,24" zPosition="6">
@@ -504,7 +504,7 @@
   <!-- InfoBar -->
   <screen name="InfoBar" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 42" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
@@ -516,7 +516,7 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="971,42" size="126,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="118,45" size="24,24" zPosition="6">
@@ -996,7 +996,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   <!-- EPGSelectionEPGBar_HD -->
   <screen name="EPGSelectionEPGBar_HD" title="EPG selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 42" render="Label" halign="center" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="1097,39" size="144,69" zPosition="4">
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
@@ -1008,7 +1008,7 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="971,42" size="126,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
     </widget>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="118,45" size="24,24" zPosition="6">
@@ -1464,6 +1464,47 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
+  </screen>
+  <!-- MediaPlayer -->
+  <screen name="MediaPlayer" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" text="Media Player" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="Browser" font="Regular; 20" transparent="1" position="57,153" size="573,24" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="filelist" enableWrapAround="1" itemHeight="25" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" transparent="1" position="57,189" size="573,325" zPosition="-7"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="Playlist" font="Regular; 20" transparent="1" position="648,153" size="573,24" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="playlist" selectionDisabled="1" enableWrapAround="1" itemHeight="25" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" transparent="1" position="648,189" size="573,325" zPosition="-5"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="1202,414" zPosition="-10"/>
+    <eLabel backgroundColor="progressbarPrimaryBG" foregroundColor="foreground" position="39,646" size="1068,1" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="progressbarPrimaryFG" source="session.CurrentService" render="Progress" transparent="1" position="39,644" size="1068,5" zPosition="10">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget render="PositionGauge" transparent="1" source="session.CurrentService" position="39,644" size="1068,5" zPosition="14">
+      <convert type="ServicePosition">Gauge</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 30" noWrap="1" halign="left" valign="top" name="title" transparent="1" position="42,597" size="980,39" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" noWrap="1" halign="right" valign="top" name="year" transparent="1" position="42,612" size="980,21" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" noWrap="1" halign="right" valign="top" transparent="1" source="session.CurrentService" render="Label" position="1031,612" size="73,21" zPosition="9">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 24" halign="left" valign="top" noWrap="1" name="artist" transparent="1" position="43,660" size="980,36" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" halign="right" valign="top" noWrap="1" name="album" transparent="1" position="43,660" size="980,21" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" noWrap="1" halign="right" valign="top" transparent="1" source="session.CurrentService" render="Label" position="1031,660" size="73,21" zPosition="12">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <widget backgroundColor="background" pixmap="skin_default/no_coverArt.png" name="coverArt" transparent="1" alphatest="blend" position="1125,588" size="116,116" zPosition="13"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,573" size="1202,147" zPosition="4"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="0,573" size="1280,147" zPosition="3"/>
+    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="Regular; 18" noWrap="1" halign="center" valign="center" position="1151,519" size="72,30" zPosition="5"/>
   </screen>
   <!-- QuickButton -->
   <screen name="QuickButton" title="QuickButton" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">

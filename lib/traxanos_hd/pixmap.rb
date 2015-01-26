@@ -3,5 +3,8 @@ module TraxanosHD
     def type
       "ePixmap"
     end
+    def after_initialize
+      foreground nil
+    end
   end
 end
