@@ -1,10 +1,10 @@
 TraxanosHD::Screen.new(xml, :MediaPlayer, "MediaPlayer") do
   position 0, 0
 
-  # pixmap do
-  #   position 0, 0, -20
-  #   image "TraxanosHD/mpbg.png"
-  # end
+  pixmap do
+    position 0, 0, -20
+    image "TraxanosHD/mpbg.png"
+  end
 
   header do
     header_title "Media Player"

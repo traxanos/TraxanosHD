@@ -83,6 +83,7 @@ xml.skin do
   render_screen('ChannelSelection', xml)
   render_screen('ChoiceBox', xml)
   render_screen('Console', xml)
+  render_screen('CutListEditor', xml)
   render_screen('Dish', xml)
   render_screen('DirectoryBrowser', xml)
   render_screen('DeviceManager2', xml)
