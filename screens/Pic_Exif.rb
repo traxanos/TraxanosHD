@@ -1,6 +1,6 @@
-TraxanosHD::Screen.new(xml, :Pic_Exif, "Info") do
+TraxanosHD::Screen.new(xml, :Pic_Exif, "PicturePlayer") do
   header do
-    header_title "Info"
+    header_title "PicturePlayer"
   end
 
   main do
