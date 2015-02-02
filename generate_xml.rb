@@ -134,6 +134,8 @@ xml.skin do
   render_screen('NumberZapWithName', xml)
   render_screen('NumericalTextInputHelpDialog', xml)
   render_screen('PluginBrowser', xml)
+  render_screen('picshow', xml)
+  render_screen('Pic_Exif', xml)
   render_screen('RdsInfoDisplay', xml)
   render_screen('RassInteractive', xml)
   render_screen('PacketManager', xml)

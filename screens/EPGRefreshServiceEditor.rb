@@ -10,7 +10,7 @@ TraxanosHD::Screen.new(xml, :EPGRefreshServiceEditor) do
       name "config"
       transparent 1
       enablewraparound 1
-      scrollbars("showNever")
+      scrollbars
     end
   end
 
