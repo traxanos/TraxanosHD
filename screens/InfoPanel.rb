@@ -76,9 +76,9 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
 
     template = '{
       "template": [
-          MultiContentEntryText(pos = (0, 3), size = (132, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-          MultiContentEntryText(pos = (132, 3), size = (84, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
-          MultiContentEntryText(pos = (216, 3), size = (84, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
+          MultiContentEntryText(pos = (0, 3), size = (84, 21), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+          MultiContentEntryText(pos = (84, 3), size = (108, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
+          MultiContentEntryText(pos = (192, 3), size = (108, 21), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
       ],
       "fonts": [
         gFont("Regular", ' + TraxanosHD.default_font_size.to_s + ')
