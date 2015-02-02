@@ -1,6 +1,6 @@
 TraxanosHD::Screen.new(xml, :picshow, "PicturePlayer") do
   header do
-    header_title "EPG Refresh Configuration"
+    header_title "PicturePlayer"
   end
 
   main do
