@@ -93,6 +93,11 @@ xml.skin do
   render_screen('EPGSelectionMulti', xml)
   render_screen('EPGSelectionEPGBar_HD', xml)
   render_screen('EventView', xml)
+
+  # EPGRefresh
+  render_screen('EPGRefreshConfiguration', xml)
+  render_screen('EPGRefreshServiceEditor', xml)
+
   # GraphMultiEPG
   render_screen('GraphMultiEPG', xml)
   render_screen('GraphMultiEPG1', xml)
