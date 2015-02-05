@@ -13,6 +13,7 @@
     <color value="#77ffffff" name="transpWhite"/>
     <color value="#00ffffff" name="white"/>
     <color value="#00000000" name="black"/>
+    <color value="#00777777" name="dark"/>
     <color value="#00bbbbbb" name="grey"/>
     <color value="#00389416" name="green"/>
     <color value="#00e5b243" name="yellow"/>
@@ -2192,6 +2193,65 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
+  </screen>
+  <!-- ScanSetup -->
+  <screen name="ScanSetup" title="Manual Scan" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" text="Manual Scan" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,450" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="introduction" font="Regular; 20" halign="center" valign="center" transparent="1" position="57,633" size="774,30" zPosition="-7"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+  </screen>
+  <!-- ServiceScan -->
+  <screen name="ServiceScan" title="Service Scan" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" text="Service Scan" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="network" font="Regular; 20" transparent="1" position="57,153" size="774,24" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="transponder" font="Regular; 20" transparent="1" position="57,189" size="774,24" zPosition="-7"/>
+    <eLabel backgroundColor="white" foregroundColor="foreground" position="57,227" size="774,1" zPosition="-6"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="scan_progress" borderWidth="0" borderColor="backgroundAccent" transparent="1" position="57,225" size="774,5" zPosition="-5"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="scan_state" font="Regular; 20" transparent="1" position="57,243" size="774,24" zPosition="-4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="pass" font="Regular; 20" transparent="1" position="57,279" size="774,24" zPosition="-3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="servicelist" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" selectionDisabled="1" position="57,363" size="774,300" zPosition="-2"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+  </screen>
+  <!-- ScanSimple -->
+  <screen name="ScanSimple" title="Automatic Scan" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" text="Automatic Scan" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,450" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="footer" font="Regular; 20" halign="center" valign="center" transparent="1" position="57,633" size="774,30" zPosition="-7"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
   <!-- SimpleChannelSelection -->
   <screen name="SimpleChannelSelection" title="Channel selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">

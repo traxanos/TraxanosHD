@@ -142,6 +142,10 @@ xml.skin do
   render_screen('PacketManager', xml)
   render_screen('ServiceInfo', xml)
   render_screen('Setup', xml)
+  render_screen('ScanSetup', xml)
+  render_screen('ServiceScan', xml)
+  render_screen('ScanSimple', xml)
+
   render_screen('SimpleChannelSelection', xml)
   render_screen('SkinSelector', xml)
   xml.screen name: "Standby", title: "Standby", position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder
