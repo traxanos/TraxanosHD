@@ -4,7 +4,7 @@ class TraxanosHD::Element
       widget do
         size nil, 48
         transparent 1
-        font "Regular", TraxanosHD.default_title_font_size
+        font "Light", TraxanosHD.default_title_font_size
         orientation :left, :top
         nowrap 1
         source title
@@ -14,7 +14,7 @@ class TraxanosHD::Element
       label do
         size nil, 48
         transparent 1
-        font "Regular", TraxanosHD.default_title_font_size
+        font "Light", TraxanosHD.default_title_font_size
         orientation :left, :top
         nowrap 1
         text title

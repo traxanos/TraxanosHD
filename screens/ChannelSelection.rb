@@ -1,16 +1,13 @@
 TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
-  header do
-    header_title :Title
-  end
+  newmain do
+    title :Title
 
-  main do
     widget do
-      position 0
-      size nil, 480
+      position 0, TraxanosHD.spacer+48
+      size nil, 510
+      transparent 1
       itemheight 30
       name "list"
-      transparent 1
-      enablewraparound 1
       scrollbars
       custom("progressbarHeight", "12") if TraxanosHD.beta81
       custom "colorEventProgressbarBorder", "foreground"
@@ -30,7 +27,8 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
     colorbar_buttons1(true, true, true, true)
   end
 
-  main_accent do
+  newmain_accent do
+
     widget do
       position 0, 0
       size nil, 36
@@ -45,7 +43,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
     end
 
     widget do
-      position 0, 36 + 12
+      position 0, 36 + 6
       size 62, 24
       nowrap 1
       transparent 1
@@ -59,7 +57,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
     end
 
     progressbar do
-      position 67, 36 + 12 + 9
+      position 67, 36 + 6 + 10
       size 220, 5
       transparent 1
       source "ServiceEvent"
@@ -69,7 +67,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
     end
 
     widget do
-      position -62, 36 + 12
+      position -62, 36 + 6
       size 62, 24
       nowrap 1
       transparent 1
@@ -83,8 +81,8 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
     end
 
     widget do
-      position 0, 36 + 12 + 9 + 24 + 9
-      size nil, 303
+      position 0, 36 + 12 + 6 + 24
+      size nil, 348
       transparent 1
       font "Regular", TraxanosHD.default_font_size-1
       render "VRunningText"
@@ -95,7 +93,7 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
     end
 
     widget do
-      position 0, -79
+      position 0, 36 + 12 + 6 + 24 + 348 + 18
       size nil, 60
       nowrap 1
       transparent 1
@@ -105,7 +103,6 @@ TraxanosHD::Screen.new(xml, :ChannelSelection, "Channel selection") do
       accent
       orientation :left, :top
     end
-
   end
 
   box do

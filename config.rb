@@ -92,10 +92,10 @@ TraxanosHD.fonts[:Console]     = { scale: 100, filename: 'nmsbd.ttf' }
 TraxanosHD.fonts[:Meteocons]   = { scale: 100, filename: 'TraxanosHD/fonts/Meteocons.ttf' }
 TraxanosHD.fonts[:FontAwesome] = { scale: 100, filename: 'TraxanosHD/fonts/FontAwesome.ttf' }
 
-TraxanosHD.fonts[:Light]       = { scale: 100, filename: 'TraxanosHD/fonts/ShareTech-Regular.ttf' }
-TraxanosHD.fonts[:Bold]        = { scale: 140, filename: 'TraxanosHD/fonts/ShareTech-Regular.ttf' }
-TraxanosHD.fonts[:Italic]      = { scale: 100, filename: 'TraxanosHD/fonts/ShareTech-Regular.ttf' }
-TraxanosHD.fonts[:Share]       = { scale: 100, filename: 'TraxanosHD/fonts/ShareTech-Regular.ttf' }
-TraxanosHD.fonts[:Regular]     = { scale: 120, filename: 'TraxanosHD/fonts/ShareTech-Regular.ttf' }
+TraxanosHD.fonts[:Light]       = { scale: 90, filename: 'TraxanosHD/fonts/SegoeUI-HalfLight.ttf' }
+TraxanosHD.fonts[:Bold]        = { scale: 140, filename: 'TraxanosHD/fonts/SegoeUI.ttf' }
+TraxanosHD.fonts[:Italic]      = { scale: 100, filename: 'TraxanosHD/fonts/SegoeUI.ttf' }
+TraxanosHD.fonts[:Share]       = { scale: 100, filename: 'TraxanosHD/fonts/SegoeUI.ttf' }
+TraxanosHD.fonts[:Regular]     = { scale: 100, filename: 'TraxanosHD/fonts/SegoeUI.ttf' }
 
 
