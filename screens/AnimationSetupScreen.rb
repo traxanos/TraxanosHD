@@ -1,6 +1,6 @@
-TraxanosHD::Screen.new(xml, :RecordPathsSettings, "Recording paths") do
+TraxanosHD::Screen.new(xml, :AnimationSetupScreen, "Animation Setup") do
   header do
-    header_title "Recording paths"
+    header_title "Animation Setup"
   end
 
   main do
@@ -15,6 +15,6 @@ TraxanosHD::Screen.new(xml, :RecordPathsSettings, "Recording paths") do
   end
 
   colorbar do
-    colorbar_buttons2(true, true, false, false)
+    colorbar_buttons2(true, true, false, true)
   end
 end
