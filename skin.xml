@@ -2253,6 +2253,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" name="footer" font="Regular; 20" halign="center" valign="center" transparent="1" position="57,633" size="774,30" zPosition="-7"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
   </screen>
+  <!-- SIBsetupScreen -->
+  <screen name="SIBsetupScreen" title="Second-InfoBar setup" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" source="Title" render="Label" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" position="57,153" size="774,480" zPosition="-8"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="Save" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="Cancel" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
+  </screen>
   <!-- SimpleChannelSelection -->
   <screen name="SimpleChannelSelection" title="Channel selection" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" source="Title" render="Label" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>

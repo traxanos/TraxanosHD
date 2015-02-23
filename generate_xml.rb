@@ -146,6 +146,7 @@ xml.skin do
   render_screen('ServiceScan', xml)
   render_screen('ScanSimple', xml)
 
+  render_screen('SIBsetupScreen', xml)
   render_screen('SimpleChannelSelection', xml)
   render_screen('SkinSelector', xml)
   xml.screen name: "Standby", title: "Standby", position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder
