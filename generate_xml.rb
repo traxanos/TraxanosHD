@@ -141,6 +141,7 @@ xml.skin do
   render_screen('RdsInfoDisplay', xml)
   render_screen('RassInteractive', xml)
   render_screen('PacketManager', xml)
+  render_screen('RecordPathsSettings', xml)
   render_screen('ServiceInfo', xml)
   render_screen('Setup', xml)
   render_screen('ScanSetup', xml)
