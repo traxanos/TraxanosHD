@@ -79,6 +79,7 @@ xml.skin do
   render_screen('Menu', xml)
   render_screen('About', xml)
   render_screen('AnimationSetupScreen', xml)
+  render_screen('AutoShutDownConfiguration', xml)
   render_screen('BouquetSelector', xml)
   render_screen('Blindscan', xml)
   render_screen('ChannelContextMenu', xml)
