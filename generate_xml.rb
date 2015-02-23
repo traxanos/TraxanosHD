@@ -107,6 +107,7 @@ xml.skin do
 
   render_screen('HelpMenu', xml)
   render_screen('HarddiskSelection', xml)
+  render_screen('HdmiCecPlugin', xml)
   render_screen('LanguageSelection', xml)
   render_screen('LocationBox', xml)
   render_screen('MessageBox', xml)
