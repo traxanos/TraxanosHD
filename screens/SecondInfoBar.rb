@@ -53,7 +53,7 @@ TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
       nowrap 1
       orientation :right, :top
       transparent 1
-      convert "Number", type: "ExtremeInfo"
+      convert "ServiceNumber", type: "ExtendedServiceInfo"
       accent
     end
 
