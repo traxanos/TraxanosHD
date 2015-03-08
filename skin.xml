@@ -136,7 +136,7 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 22" render="Label" source="session.CurrentService" noWrap="1" halign="right" valign="top" transparent="1" position="1143,159" size="80,36" zPosition="-7">
-      <convert type="ExtremeInfo">Number</convert>
+      <convert type="ExtendedServiceInfo">ServiceNumber</convert>
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" text="Provider:" noWrap="1" halign="left" valign="top" transparent="1" position="867,207" size="120,24" zPosition="-6"/>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 19" render="Label" source="session.CurrentService" noWrap="1" halign="left" valign="top" transparent="1" position="987,207" size="236,24" zPosition="-5">
