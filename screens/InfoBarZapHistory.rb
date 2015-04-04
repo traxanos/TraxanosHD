@@ -4,8 +4,8 @@ TraxanosHD::Screen.new(xml, :InfoBarZapHistory) do
     size 1280, 246
 
     widget do
-      position 39, 18
-      size 540, 210
+      position 701, 18
+      size 540, 180
       itemheight 30
       name "ZapHistoryList"
       transparent 1
@@ -13,19 +13,19 @@ TraxanosHD::Screen.new(xml, :InfoBarZapHistory) do
     end
 
     widget do
-      position 597, 18
+      position 39, 18
       size 644, 42
       font "Regular", 30
       render "Label"
       source "ServiceEvent"
       nowrap 1
-      orientation :left, :top
+      orientation :left, :center
       transparent 1
       convert "Name", type: "EventName"
     end
 
     label do
-      position 597, 18+42+12
+      position 39, 18+42+12
       size 644, 24
 
       widget do
@@ -36,7 +36,6 @@ TraxanosHD::Screen.new(xml, :InfoBarZapHistory) do
         font "Regular", TraxanosHD.default_font_size-1
         render "Label"
         source "ServiceEvent"
-        accent
         orientation :left, :center
         convert "StartTime", type: "EventTime"
         convert type: "ClockToText"
@@ -47,7 +46,6 @@ TraxanosHD::Screen.new(xml, :InfoBarZapHistory) do
         size 510, 5
         transparent 1
         source "ServiceEvent"
-        accent
         secondary
         convert "Progress", type: "EventTime"
       end
@@ -60,7 +58,6 @@ TraxanosHD::Screen.new(xml, :InfoBarZapHistory) do
         font "Regular", TraxanosHD.default_font_size-1
         render "Label"
         source "ServiceEvent"
-        accent
         orientation :right, :center
         convert "EndTime", type: "EventTime"
         convert type: "ClockToText"
@@ -69,8 +66,8 @@ TraxanosHD::Screen.new(xml, :InfoBarZapHistory) do
     end
 
     widget do
-      position 597, 18+24+12+42+12
-      size 644, 99
+      position 39, 18+24+12+42+12
+      size 644, 126
       font "Regular", TraxanosHD.default_font_size-1
       render "VRunningText"
       source "ServiceEvent"
