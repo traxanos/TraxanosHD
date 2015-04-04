@@ -16,11 +16,6 @@ module TraxanosHD
       true
     end
 
-    def beta81
-      return true if ENV['beta81'] == "1"
-      false
-    end
-
     def width
       1280
     end
