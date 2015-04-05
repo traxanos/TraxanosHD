@@ -1397,6 +1397,43 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="7"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1151,651" size="72,30" zPosition="4"/>
   </screen>
+  <!-- CiSelection -->
+  <screen name="CiSelection" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" text="Common Interface" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="text" font="Regular; 34" halign="center" valign="center" transparent="1" position="57,153" size="774,48" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="entries" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,213" size="774,450" zPosition="-7"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+  </screen>
+  <!-- MMIDialog -->
+  <screen name="MMIDialog" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" name="title" transparent="1" font="Regular; 34" noWrap="1" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="subtitle" font="Regular; 22" halign="center" valign="left" transparent="1" position="57,153" size="774,48" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="entries" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,213" size="774,390" zPosition="-7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="bottom" font="Regular; 20" halign="center" valign="center" transparent="1" position="57,633" size="774,30" zPosition="-6"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+  </screen>
   <!-- HelpMenu -->
   <screen name="HelpMenu" title="Menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720" zPosition="20">
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" text="help..." halign="left" valign="center" position="57,51" size="774,48" zPosition="23"/>
@@ -1440,24 +1477,24 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
   </screen>
   <!-- InfoBarZapHistory -->
   <screen name="InfoBarZapHistory" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
-    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="ZapHistoryList" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="39,453" size="540,210" zPosition="2"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 30" render="Label" source="ServiceEvent" noWrap="1" halign="left" valign="top" transparent="1" position="597,453" size="644,42" zPosition="3">
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="ZapHistoryList" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="701,453" size="540,180" zPosition="2"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 30" render="Label" source="ServiceEvent" noWrap="1" halign="left" valign="center" transparent="1" position="39,453" size="644,42" zPosition="3">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="ServiceEvent" halign="left" valign="center" position="597,507" size="62,24" zPosition="5">
+    <widget backgroundColor="background" foregroundColor="foreground" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="ServiceEvent" halign="left" valign="center" position="39,507" size="62,24" zPosition="5">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <eLabel backgroundColor="progressbarSecondaryBG" foregroundColor="foreground" position="664,518" size="510,1" zPosition="5"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="progressbarSecondaryFG" transparent="1" source="ServiceEvent" render="Progress" position="664,516" size="510,5" zPosition="6">
+    <eLabel backgroundColor="progressbarSecondaryBG" foregroundColor="foreground" position="106,518" size="510,1" zPosition="5"/>
+    <widget backgroundColor="background" foregroundColor="progressbarSecondaryFG" transparent="1" source="ServiceEvent" render="Progress" position="106,516" size="510,5" zPosition="6">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="ServiceEvent" halign="right" valign="center" position="1179,507" size="62,24" zPosition="7">
+    <widget backgroundColor="background" foregroundColor="foreground" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="ServiceEvent" halign="right" valign="center" position="621,507" size="62,24" zPosition="7">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText"/>
     </widget>
-    <eLabel backgroundColor="background" foregroundColor="foreground" position="597,507" size="644,24" zPosition="4"/>
-    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 19" render="VRunningText" source="ServiceEvent" options="movetype=running,startpoint=0,direction=top,steptime=120,repeat=2,always=0,startdelay=5000,wrap" halign="left" valign="top" transparent="1" position="597,543" size="644,99" zPosition="5">
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,507" size="644,24" zPosition="4"/>
+    <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 19" render="VRunningText" source="ServiceEvent" options="movetype=running,startpoint=0,direction=top,steptime=120,repeat=2,always=0,startdelay=5000,wrap" halign="left" valign="top" transparent="1" position="39,543" size="644,126" zPosition="5">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1175,651" size="66,30" zPosition="6"/>

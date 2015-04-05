@@ -107,6 +107,10 @@ xml.skin do
   render_screen('GraphMultiEPG2', xml)
   render_screen('GraphMultiEPG3', xml)
 
+  # CI
+  render_screen('CiSelection', xml)
+  render_screen('MMIDialog', xml)
+
   render_screen('HelpMenu', xml)
   render_screen('HarddiskSelection', xml)
   render_screen('InfoBarZapHistory', xml)
