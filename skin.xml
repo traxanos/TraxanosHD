@@ -647,6 +647,78 @@
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="12,12" size="540,456" zPosition="1"/>
   </screen>
+  <!-- AtileHD_Config -->
+  <screen name="AtileHD_Config" title="AtileHD Setup" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" source="Title" render="Label" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,153" size="774,480" zPosition="-8"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="4"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,648" size="198,30" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
+    <widget backgroundColor="backgroundAccent" name="Picture" alphatest="on" position="905,197" size="280,210" zPosition="-8"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
+  </screen>
+  <!-- AtileHDScreens -->
+  <screen name="AtileHDScreens" title="AtileHD Setup" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" source="Title" render="Label" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Listbox" source="menu" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,153" size="774,480" zPosition="-8">
+      <convert type="TemplatedMultiContent">{
+      "template": [
+        MultiContentEntryPixmapAlphaTest(pos = (3, 3), size = (24, 24), png = 2),
+        MultiContentEntryText(pos = (30, 3),  size = (668, 24), font = 0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 1),
+      ],
+      "fonts": [
+        gFont("Regular", 20)
+      ],
+      "itemHeight": 30
+    }</convert>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+    <widget backgroundColor="backgroundAccent" name="Picture" alphatest="on" position="905,197" size="280,210" zPosition="-8"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,645" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,645" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,645" size="180,3" zPosition="7"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,645" size="180,3" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,648" size="198,30" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,648" size="198,30" zPosition="11"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="9"/>
+  </screen>
+  <!-- AtileHD_About -->
+  <screen name="AtileHD_About" title="TraxanosHD" flags="wfNoBorder" backgroundColor="background" position="center,center" size="400,228">
+    <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 34" text="TraxanosHD" halign="center" valign="center" transparent="1" position="18,18" size="364,48" zPosition="1"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="Skin by traxanos" transparent="1" font="Regular; 20" halign="center" valign="top" noWrap="1" position="18,84" size="364,30" zPosition="2"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="Support for Vu+" transparent="1" font="Regular; 20" halign="center" valign="top" noWrap="1" position="18,132" size="364,30" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="www.vuplus-support.org" transparent="1" font="Regular; 20" halign="center" valign="top" noWrap="1" position="18,180" size="364,30" zPosition="4"/>
+  </screen>
   <!-- Menu -->
   <screen name="Menu" title="Main menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" source="title" render="Label" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>

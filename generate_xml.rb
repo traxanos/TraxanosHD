@@ -76,6 +76,10 @@ xml.skin do
   render_screen('Mute', xml)
   render_screen('AudioSelection', xml)
 
+  render_screen('AtileHD_Config', xml)
+  render_screen('AtileHDScreens', xml)
+  render_screen('AtileHD_About', xml)
+
   render_screen('Menu', xml)
   render_screen('About', xml)
   render_screen('AnimationSetupScreen', xml)
