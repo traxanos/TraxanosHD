@@ -103,6 +103,11 @@ xml.skin do
 
   # AutoTimer
   render_screen('AutoTimerWizard', xml)
+  render_screen('AutoTimerSettings', xml)
+  render_screen('AutoTimerOverview', xml)
+  render_screen('AutoTimerEditor', xml)
+  render_screen('AutoTimerFilterEditor', xml)
+  render_screen('AutoTimerServiceEditor', xml)
 
   # EPGRefresh
   render_screen('EPGRefreshConfiguration', xml)
