@@ -2535,7 +2535,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="timerlist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,153" size="774,480" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 22" render="Label" source="ServiceEvent" halign="left" valign="top" position="867,159" size="356,36" zPosition="-8">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 22" render="Label" source="Event" halign="left" valign="top" position="867,159" size="356,36" zPosition="-8">
       <convert type="EventName">name</convert>
     </widget>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" noWrap="1" transparent="1" font="Regular; 19" render="Label" source="Event" halign="left" valign="center" position="867,207" size="62,24" zPosition="-7">

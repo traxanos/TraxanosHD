@@ -22,7 +22,7 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
       transparent 1
       font "Regular", 22
       render "Label"
-      source "ServiceEvent"
+      source "Event"
       accent
       orientation :left, :top
       convert "name", type: "EventName"
