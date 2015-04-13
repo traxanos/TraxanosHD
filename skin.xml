@@ -1270,6 +1270,34 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,648" size="198,30" zPosition="12"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,648" size="810,30" zPosition="8"/>
   </screen>
+  <!-- AutoTimerWizard -->
+  <screen name="AutoTimerWizard" title="Welcome..." flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" text="Setup" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="text" transparent="1" font="Regular; 20" position="57,153" size="774,180" zPosition="-8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" source="list" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" transparent="1" position="57,363" size="774,300" zPosition="-7">
+      <convert type="StringList"/>
+    </widget>
+    <widget backgroundColor="background" foregroundColor="foreground" name="config" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,363" size="774,300" zPosition="-6"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+    <widget backgroundColor="background" name="HelpWindow" pixmap="skin_default/buttons/key_text.png" transparent="1" alphatest="on" position="849,141" size="1,1" zPosition="-10"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,141" size="392,534" zPosition="-10"/>
+    <widget backgroundColor="background" name="rc" alphatest="blend" pixmaps="skin_default/rc_vu_1.png,skin_default/rc_vu_2.png,skin_default/rc_vu_3.png" position="968,159" size="154,500" zPosition="10"/>
+    <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowdown.png" alphatest="on" position="0,0" name="arrowdown" size="37,70" zPosition="11"/>
+    <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowdown.png" alphatest="on" position="0,0" name="arrowdown2" size="37,70" zPosition="11"/>
+    <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowup.png" alphatest="on" position="0,0" name="arrowup" size="37,70" zPosition="11"/>
+    <widget backgroundColor="background" pixmap="TraxanosHD/images/arrowup.png" alphatest="on" position="0,0" name="arrowup2" size="37,70" zPosition="11"/>
+  </screen>
   <!-- EPGRefreshConfiguration -->
   <screen name="EPGRefreshConfiguration" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" text="EPG Refresh Configuration" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>

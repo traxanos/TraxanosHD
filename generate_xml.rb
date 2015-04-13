@@ -101,6 +101,9 @@ xml.skin do
   render_screen('EPGSelectionEPGBar_HD', xml)
   render_screen('EventView', xml)
 
+  # AutoTimer
+  render_screen('AutoTimerWizard', xml)
+
   # EPGRefresh
   render_screen('EPGRefreshConfiguration', xml)
   render_screen('EPGRefreshServiceEditor', xml)
