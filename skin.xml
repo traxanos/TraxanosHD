@@ -2322,6 +2322,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="MENU" font="Regular; 18" noWrap="1" halign="center" valign="center" position="1151,645" size="72,30" zPosition="6"/>
     <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="Regular; 18" noWrap="1" halign="center" valign="center" position="1067,645" size="66,30" zPosition="7"/>
   </screen>
+  <!-- MovieMenu -->
+  <screen name="MovieMenu" title="Movie Menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" source="Title" render="Label" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" source="menu" render="Listbox" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,153" size="774,510" zPosition="-8">
+      <convert type="StringList"/>
+    </widget>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+  </screen>
   <!-- EMCMenu -->
   <screen name="EMCMenu" title="EMC menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" source="title" render="Label" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
