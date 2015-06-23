@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :AutoTimerServiceEditor, "Edit AutoTimer Services") do
+screen = TraxanosHD::Screen.new(:AutoTimerServiceEditor, "Edit AutoTimer Services") do
   header do
     header_title :Title
   end
@@ -23,4 +23,4 @@ screen = TraxanosHD::Screen.new(xml, :AutoTimerServiceEditor, "Edit AutoTimer Se
   end
 end
 
-screen.render!
+screen.render!(@main)

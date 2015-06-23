@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :TimerEntry, "Timer entry") do
+screen = TraxanosHD::Screen.new(:TimerEntry, "Timer entry") do
   header do
     header_title "Timer entry"
   end
@@ -20,4 +20,4 @@ screen = TraxanosHD::Screen.new(xml, :TimerEntry, "Timer entry") do
   end
 end
 
-screen.render!
+screen.render!(@main)

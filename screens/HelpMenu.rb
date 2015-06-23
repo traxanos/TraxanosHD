@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
+screen = TraxanosHD::Screen.new(:HelpMenu, "Menu") do
   position 0, 0, 20
 
   header do
@@ -81,4 +81,4 @@ screen = TraxanosHD::Screen.new(xml, :HelpMenu, "Menu") do
 
 end
 
-screen.render!
+screen.render!(@main)

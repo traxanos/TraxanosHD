@@ -2,9 +2,8 @@ module TraxanosHD
   class Screen < Element
     attr_reader :xml, :name, :applets
 
-    def initialize(xml, name, title = nil, &block)
+    def initialize(name, title = nil, &block)
       @z = 0
-      @xml = xml
       @elements = []
       @applets = {}
 
@@ -28,7 +27,9 @@ module TraxanosHD
       # render_preview!
     end
 
-    def render!(variant = nil)
+    def render!(xml, variant = nil)
+      @xml = xml
+
       puts "render screen #{@name}"
       xml.comment! name.to_s
       @options["position"] = "#{@x},#{@y}"

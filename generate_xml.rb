@@ -1,217 +1,218 @@
-def render_screen(name, xml)
+def render_screen(name)
   file = "screens/#{name}.rb"
   instance_eval File.read(file), file
 end
 
-# Gernerate screens
-xml = Builder::XmlMarkup.new indent: 2
-xml.instruct! :xml, encoding: "ASCII"
-xml.comment! "TraxanosHD by traxanos | optimized for VTI"
-xml.comment! "inspired by MetrixHD (by iMaxxx) and AtileHD"
-xml.comment! "recommended to use with XPicons in picon folder"
-
-xml.skin do
-
-  xml.output(id: 0) do
-    xml.resolution bpp: 32, xres: 1280, yres: 720
-  end
-
-  xml.colors do
-    TraxanosHD.colors.each do |name, value|
-      xml.color value: value, name: name
-    end
-  end
-
-  xml.fonts do
-    TraxanosHD.fonts.each do |name, options|
-      xml.font name: name, filename: options[:filename], scale: options[:scale]
-    end
-  end
-
-  xml.subtitles do
-    xml.sub name: "Subtitle_TTX",     font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-    xml.sub name: "Subtitle_Regular", font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-    xml.sub name: "Subtitle_Bold",    font: "ShareBold;30",    foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-    xml.sub name: "Subtitle_Italic",  font: "ShareItalic;30",  foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-  end
-
-  xml.windowstyle(id: 0, type: :skinned) do
-    xml.color name: :Background, color: :background
-    xml.color name: :LabelForeground, color: :foreground
-    xml.color name: :ListboxBackground, color: :background
-    xml.color name: :ListboxForeground, color: :foreground
-    xml.color name: :ListboxSelectedBackground, color: :selectionBG
-    xml.color name: :ListboxSelectedForeground, color: :selectionFG
-    xml.color name: :ListboxMarkedBackground, color: :selectionBG
-    xml.color name: :ListboxMarkedForeground, color: :selectionFG
-    xml.color name: :ListboxMarkedAndSelectedBackground, color: :selectionBG
-    xml.color name: :ListboxMarkedAndSelectedForeground, color: :selectionFG
-    xml.color name: :WindowTitleForeground, color: :foreground
-  end
-
-  xml.windowstyle(id: 1, type: :skinned) do
-    xml.color name: :Background, color: :background
-    xml.color name: :LabelForeground, color: :foreground
-    xml.color name: :ListboxBackground, color: :background
-    xml.color name: :ListboxForeground, color: :foreground
-    xml.color name: :ListboxSelectedBackground, color: :selectionBG
-    xml.color name: :ListboxSelectedForeground, color: :selectionFG
-    xml.color name: :ListboxMarkedBackground, color: :selectionBG
-    xml.color name: :ListboxMarkedForeground, color: :selectionFG
-    xml.color name: :ListboxMarkedAndSelectedBackground, color: :selectionBG
-    xml.color name: :ListboxMarkedAndSelectedForeground, color: :selectionFG
-    xml.color name: :WindowTitleForeground, color: :foreground
-  end
-
-  render_screen('SecondInfoBar', xml)
-  render_screen('PVRState', xml)
-  render_screen('TimeshiftState', xml)
-  render_screen('MoviePlayer', xml)
-  render_screen('EMCMediaCenter', xml)
-  render_screen('InfoBar', xml)
-  render_screen('UnhandledKey', xml)
-  render_screen('Volume', xml)
-  render_screen('Mute', xml)
-  render_screen('AudioSelection', xml)
-
-  render_screen('AtileHD_Config', xml)
-  render_screen('AtileHDScreens', xml)
-  render_screen('AtileHD_About', xml)
-
-  render_screen('Menu', xml)
-  render_screen('About', xml)
-  render_screen('AnimationSetupScreen', xml)
-  render_screen('AutoShutDownConfiguration', xml)
-  render_screen('BouquetSelector', xml)
-  render_screen('Blindscan', xml)
-  render_screen('ChannelContextMenu', xml)
-  render_screen('ChannelSelection', xml)
-  render_screen('ChoiceBox', xml)
-  render_screen('Console', xml)
-  render_screen('CutListEditor', xml)
-  render_screen('Dish', xml)
-  render_screen('DirectoryBrowser', xml)
-  render_screen('DeviceManager2', xml)
-  render_screen('DeviceManager2Message', xml)
-  # EPG
-  render_screen('EPGSelection', xml)
-  render_screen('EPGSelectionMulti', xml)
-  render_screen('EPGSelectionEPGBar_HD', xml)
-  render_screen('EventView', xml)
-
-  # AutoTimer
-  render_screen('AutoTimerWizard', xml)
-  render_screen('AutoTimerSettings', xml)
-  render_screen('AutoTimerOverview', xml)
-  render_screen('AutoTimerEditor', xml)
-  render_screen('AutoTimerFilterEditor', xml)
-  render_screen('AutoTimerServiceEditor', xml)
-  render_screen('AutoTimerImporter', xml)
-  render_screen('AutoTimerPreview', xml)
-
-  # EPGRefresh
-  render_screen('EPGRefreshConfiguration', xml)
-  render_screen('EPGRefreshServiceEditor', xml)
-
-  # GraphMultiEPG
-  render_screen('GraphMultiEPG', xml)
-  render_screen('GraphMultiEPG1', xml)
-  render_screen('GraphMultiEPG2', xml)
-  render_screen('GraphMultiEPG3', xml)
-
-  # CI
-  render_screen('CiSelection', xml)
-  render_screen('MMIDialog', xml)
-
-  render_screen('HelpMenu', xml)
-  render_screen('HarddiskSelection', xml)
-  render_screen('InfoBarZapHistory', xml)
-  render_screen('HdmiCecPlugin', xml)
-  render_screen('LanguageSelection', xml)
-  render_screen('LocationBox', xml)
-  render_screen('MessageBox', xml)
-  render_screen('MyPluginManager', xml)
-  render_screen('myPacketManager', xml)
-  render_screen('MediaPlayer', xml)
-
-  # MultiQuickButton
-  render_screen('QuickButton', xml)
-  render_screen('MultiQuickButton', xml)
-  render_screen('MultiQuickButtonMacro', xml)
-
-  # MoviePlayer
-  render_screen('MovieSelection', xml)
-  render_screen('MovieContextMenu', xml)
-
-  # EnhancedMovieCenterMenu
-  render_screen('EnhancedMovieCenterMenu', xml)
-  render_screen('EMCSelection', xml)
-  render_screen('MovieMenu', xml)
-  render_screen('EMCMenu', xml)
-
-  render_screen('NimSetup', xml)
-  render_screen('NimSelection', xml)
-  render_screen('NumberZapExt', xml)
-  render_screen('NumberZap', xml)
-  render_screen('NumberZapWithName', xml)
-  render_screen('NumericalTextInputHelpDialog', xml)
-  render_screen('PluginBrowser', xml)
-  render_screen('picshow', xml)
-  render_screen('Pic_Exif', xml)
-  render_screen('RdsInfoDisplay', xml)
-  render_screen('RassInteractive', xml)
-  render_screen('PacketManager', xml)
-  render_screen('RecordPathsSettings', xml)
-  render_screen('ServiceInfo', xml)
-  render_screen('Setup', xml)
-  render_screen('ScanSetup', xml)
-  render_screen('ServiceScan', xml)
-  render_screen('ScanSimple', xml)
-
-  render_screen('SIBsetupScreen', xml)
-  render_screen('SimpleChannelSelection', xml)
-  render_screen('SkinSelector', xml)
-  xml.screen name: "Standby", title: "Standby", position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder
-  render_screen('Subtitles', xml)
-  xml.screen name: "SubtitleDisplay", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :transparent, flags: :wfNoBorder, zPosition: -1
-  render_screen('TimeDateInput', xml)
-  render_screen('TimerEditList', xml)
-  render_screen('TimerEntry', xml)
-  render_screen('TimerSelection', xml)
-  render_screen('TimerSanityConflict', xml)
-  render_screen('VirtualKeyBoard', xml)
-  render_screen('Ipkg', xml)
-  render_screen('UpdatePlugin', xml)
-  render_screen('VideoEnhancementPreview', xml)
-  render_screen('VideoEnhancementSetup', xml)
-  # VTi
-  render_screen('VtiNews', xml)
-  render_screen('AllNews', xml)
-  render_screen('VTIMainMenu', xml)
-  render_screen('VTISubMenu', xml)
-  render_screen('VTIStatusListMenu', xml)
-  render_screen('VTiUpdateInfo', xml)
-  render_screen('ReduceMenuConfig', xml)
-  render_screen('CamSelectMenu', xml)
-  render_screen('BackupSuite', xml)
-  render_screen('InfoPanel', xml)
-
-
-  xml.screen name: "VideoFinetune", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :black, zPosition: 70 do
-    xml.widget source: "Canvas", render: "Canvas", position: "280,70", size: "720,576"
-  end
-  # xml.screen name: "Scart", title: "Scart", position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder, zPosition: -100
-
-  # screens.each do |file|
-  #   puts "render screen #{file}"
-  #   instance_eval File.read(file), file
-  # end
-
-
+def build_xml_for_variant
+  xml
 end
 
-# write xml
-File.open("skin.xml", "w") do |file|
-  file << xml.target!
+def build_skin_to_file(subxml, filename)
+  xml = Builder::XmlMarkup.new indent: 2
+  xml.instruct! :xml, encoding: "ASCII"
+  xml.comment! "TraxanosHD by traxanos | optimized for VTI"
+  xml.comment! "inspired by MetrixHD (by iMaxxx) and AtileHD"
+  xml.comment! "recommended to use with XPicons in picon folder"
+  xml.skin do
+    xml << subxml.target
+  end
+
+  File.open(filename, "w") do |file|
+    file << xml.target!
+  end
 end
 
+@main = Builder::XmlMarkup.new indent: 2, margin: 1
+@logoleft = Builder::XmlMarkup.new indent: 2, margin: 1
+
+@main.output(id: 0) do |xml|
+  xml.resolution bpp: 32, xres: 1280, yres: 720
+end
+
+@main.colors do |xml|
+  TraxanosHD.colors.each do |name, value|
+    @main.color value: value, name: name
+  end
+end
+
+@main.fonts do |xml|
+  TraxanosHD.fonts.each do |name, options|
+    xml.font name: name, filename: options[:filename], scale: options[:scale]
+  end
+end
+
+@main.windowstyle(id: 0, type: :skinned) do |xml|
+  xml.color name: :Background, color: :background
+  xml.color name: :LabelForeground, color: :foreground
+  xml.color name: :ListboxBackground, color: :background
+  xml.color name: :ListboxForeground, color: :foreground
+  xml.color name: :ListboxSelectedBackground, color: :selectionBG
+  xml.color name: :ListboxSelectedForeground, color: :selectionFG
+  xml.color name: :ListboxMarkedBackground, color: :selectionBG
+  xml.color name: :ListboxMarkedForeground, color: :selectionFG
+  xml.color name: :ListboxMarkedAndSelectedBackground, color: :selectionBG
+  xml.color name: :ListboxMarkedAndSelectedForeground, color: :selectionFG
+  xml.color name: :WindowTitleForeground, color: :foreground
+end
+
+@main.windowstyle(id: 1, type: :skinned) do |xml|
+  xml.color name: :Background, color: :background
+  xml.color name: :LabelForeground, color: :foreground
+  xml.color name: :ListboxBackground, color: :background
+  xml.color name: :ListboxForeground, color: :foreground
+  xml.color name: :ListboxSelectedBackground, color: :selectionBG
+  xml.color name: :ListboxSelectedForeground, color: :selectionFG
+  xml.color name: :ListboxMarkedBackground, color: :selectionBG
+  xml.color name: :ListboxMarkedForeground, color: :selectionFG
+  xml.color name: :ListboxMarkedAndSelectedBackground, color: :selectionBG
+  xml.color name: :ListboxMarkedAndSelectedForeground, color: :selectionFG
+  xml.color name: :WindowTitleForeground, color: :foreground
+end
+
+@main.subtitles do |xml|
+  xml.sub name: "Subtitle_TTX",     font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+  xml.sub name: "Subtitle_Regular", font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+  xml.sub name: "Subtitle_Bold",    font: "ShareBold;30",    foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+  xml.sub name: "Subtitle_Italic",  font: "ShareItalic;30",  foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+end
+
+# screens
+render_screen('SecondInfoBar')
+render_screen('PVRState')
+render_screen('TimeshiftState')
+render_screen('MoviePlayer')
+render_screen('EMCMediaCenter')
+render_screen('InfoBar')
+render_screen('UnhandledKey')
+render_screen('Volume')
+render_screen('Mute')
+render_screen('AudioSelection')
+
+render_screen('AtileHD_Config')
+render_screen('AtileHDScreens')
+render_screen('AtileHD_About')
+
+render_screen('Menu')
+render_screen('About')
+render_screen('AnimationSetupScreen')
+render_screen('AutoShutDownConfiguration')
+render_screen('BouquetSelector')
+render_screen('Blindscan')
+render_screen('ChannelContextMenu')
+render_screen('ChannelSelection')
+render_screen('ChoiceBox')
+render_screen('Console')
+render_screen('CutListEditor')
+render_screen('Dish')
+render_screen('DirectoryBrowser')
+render_screen('DeviceManager2')
+render_screen('DeviceManager2Message')
+# EPG
+render_screen('EPGSelection')
+render_screen('EPGSelectionMulti')
+render_screen('EPGSelectionEPGBar_HD')
+render_screen('EventView')
+
+# AutoTimer
+render_screen('AutoTimerWizard')
+render_screen('AutoTimerSettings')
+render_screen('AutoTimerOverview')
+render_screen('AutoTimerEditor')
+render_screen('AutoTimerFilterEditor')
+render_screen('AutoTimerServiceEditor')
+render_screen('AutoTimerImporter')
+render_screen('AutoTimerPreview')
+
+# EPGRefresh
+render_screen('EPGRefreshConfiguration')
+render_screen('EPGRefreshServiceEditor')
+
+# GraphMultiEPG
+render_screen('GraphMultiEPG')
+render_screen('GraphMultiEPG1')
+render_screen('GraphMultiEPG2')
+render_screen('GraphMultiEPG3')
+
+# CI
+render_screen('CiSelection')
+render_screen('MMIDialog')
+
+render_screen('HelpMenu')
+render_screen('HarddiskSelection')
+render_screen('InfoBarZapHistory')
+render_screen('HdmiCecPlugin')
+render_screen('LanguageSelection')
+render_screen('LocationBox')
+render_screen('MessageBox')
+render_screen('MyPluginManager')
+render_screen('myPacketManager')
+render_screen('MediaPlayer')
+
+# MultiQuickButton
+render_screen('QuickButton')
+render_screen('MultiQuickButton')
+render_screen('MultiQuickButtonMacro')
+
+# MoviePlayer
+render_screen('MovieSelection')
+render_screen('MovieContextMenu')
+
+# EnhancedMovieCenterMenu
+render_screen('EnhancedMovieCenterMenu')
+render_screen('EMCSelection')
+render_screen('MovieMenu')
+render_screen('EMCMenu')
+
+render_screen('NimSetup')
+render_screen('NimSelection')
+render_screen('NumberZapExt')
+render_screen('NumberZap')
+render_screen('NumberZapWithName')
+render_screen('NumericalTextInputHelpDialog')
+render_screen('PluginBrowser')
+render_screen('picshow')
+render_screen('Pic_Exif')
+render_screen('RdsInfoDisplay')
+render_screen('RassInteractive')
+render_screen('PacketManager')
+render_screen('RecordPathsSettings')
+render_screen('ServiceInfo')
+render_screen('Setup')
+render_screen('ScanSetup')
+render_screen('ServiceScan')
+render_screen('ScanSimple')
+
+render_screen('SIBsetupScreen')
+render_screen('SimpleChannelSelection')
+render_screen('SkinSelector')
+@main.screen name: "Standby", title: "Standby", position: "0,0", size: "0,0", backgroundColor: :transparent, flags: :wfNoBorder
+render_screen('Subtitles')
+@main.screen name: "SubtitleDisplay", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :transparent, flags: :wfNoBorder, zPosition: -1
+render_screen('TimeDateInput')
+render_screen('TimerEditList')
+render_screen('TimerEntry')
+render_screen('TimerSelection')
+render_screen('TimerSanityConflict')
+render_screen('VirtualKeyBoard')
+render_screen('Ipkg')
+render_screen('UpdatePlugin')
+render_screen('VideoEnhancementPreview')
+render_screen('VideoEnhancementSetup')
+# VTi
+render_screen('VtiNews')
+render_screen('AllNews')
+render_screen('VTIMainMenu')
+render_screen('VTISubMenu')
+render_screen('VTIStatusListMenu')
+render_screen('VTiUpdateInfo')
+render_screen('ReduceMenuConfig')
+render_screen('CamSelectMenu')
+render_screen('BackupSuite')
+render_screen('InfoPanel')
+
+@main.screen name: "VideoFinetune", position: "0,0", size: "#{TraxanosHD.width},#{TraxanosHD.height}", backgroundColor: :black, zPosition: 70 do |xml|
+  xml.widget source: "Canvas", render: "Canvas", position: "280,70", size: "720,576"
+end
+
+build_skin_to_file(@main, 'skin.xml')
+build_skin_to_file(@logoleft, 'allScreens/skin_LogoLeft.xml')

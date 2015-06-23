@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :VTIMainMenu, "VTI Panel") do
+screen = TraxanosHD::Screen.new(:VTIMainMenu, "VTI Panel") do
   header do
     header_title :title
   end
@@ -33,4 +33,4 @@ screen = TraxanosHD::Screen.new(xml, :VTIMainMenu, "VTI Panel") do
   end
 end
 
-screen.render!
+screen.render!(@main)

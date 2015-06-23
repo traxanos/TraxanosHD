@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :EPGRefreshConfiguration) do
+screen = TraxanosHD::Screen.new(:EPGRefreshConfiguration) do
   header do
     header_title "EPG Refresh Configuration"
   end
@@ -43,4 +43,4 @@ screen = TraxanosHD::Screen.new(xml, :EPGRefreshConfiguration) do
   end
 end
 
-screen.render!
+screen.render!(@main)

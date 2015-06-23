@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :Volume, "Volume") do
+screen = TraxanosHD::Screen.new(:Volume, "Volume") do
   position TraxanosHD.border, TraxanosHD.border, 80
   width = 243 + 129
   size width, TraxanosHD.header_height
@@ -44,4 +44,4 @@ screen = TraxanosHD::Screen.new(xml, :Volume, "Volume") do
   end
 end
 
-screen.render!
+screen.render!(@main)

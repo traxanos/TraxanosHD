@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :DirectoryBrowser, "Directorybrowser") do
+screen = TraxanosHD::Screen.new(:DirectoryBrowser, "Directorybrowser") do
   header do
     header_title "Directorybrowser"
   end
@@ -17,4 +17,4 @@ screen = TraxanosHD::Screen.new(xml, :DirectoryBrowser, "Directorybrowser") do
   end
 end
 
-screen.render!
+screen.render!(@main)

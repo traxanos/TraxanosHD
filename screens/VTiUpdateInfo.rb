@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :VTiUpdateInfo, "VTI News") do
+screen = TraxanosHD::Screen.new(:VTiUpdateInfo, "VTI News") do
   header do
     header_title :title
   end
@@ -27,4 +27,4 @@ screen = TraxanosHD::Screen.new(xml, :VTiUpdateInfo, "VTI News") do
 
 end
 
-screen.render!
+screen.render!(@main)

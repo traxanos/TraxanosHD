@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :MultiQuickButton, "MultiQuickButton Panel") do
+screen = TraxanosHD::Screen.new(:MultiQuickButton, "MultiQuickButton Panel") do
   header do
     header_title :Title
   end
@@ -81,4 +81,4 @@ screen = TraxanosHD::Screen.new(xml, :MultiQuickButton, "MultiQuickButton Panel"
   end
 end
 
-screen.render!
+screen.render!(@main)

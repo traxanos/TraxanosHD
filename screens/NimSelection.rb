@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :NimSelection, "Choose Tuner") do
+screen = TraxanosHD::Screen.new(:NimSelection, "Choose Tuner") do
   header do
     header_title "Choose Tuner"
   end
@@ -30,4 +30,4 @@ screen = TraxanosHD::Screen.new(xml, :NimSelection, "Choose Tuner") do
   end
 end
 
-screen.render!
+screen.render!(@main)

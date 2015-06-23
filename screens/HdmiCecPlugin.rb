@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :HdmiCecPlugin, "HdmiCecPlugin") do
+screen = TraxanosHD::Screen.new(:HdmiCecPlugin, "HdmiCecPlugin") do
   header do
     header_title :Title
   end
@@ -19,4 +19,4 @@ screen = TraxanosHD::Screen.new(xml, :HdmiCecPlugin, "HdmiCecPlugin") do
   end
 end
 
-screen.render!
+screen.render!(@main)

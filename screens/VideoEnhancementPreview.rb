@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :VideoEnhancementPreview, "VideoEnhancementPreview") do
+screen = TraxanosHD::Screen.new(:VideoEnhancementPreview, "VideoEnhancementPreview") do
   label do
     position (TraxanosHD.width-TraxanosHD.left_width)/2, 486
     size TraxanosHD.left_width, 192
@@ -28,4 +28,4 @@ screen = TraxanosHD::Screen.new(xml, :VideoEnhancementPreview, "VideoEnhancement
   end
 end
 
-screen.render!
+screen.render!(@main)

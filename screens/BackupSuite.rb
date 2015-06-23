@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :BackupSuite, "VTI BackupSuite") do
+screen = TraxanosHD::Screen.new(:BackupSuite, "VTI BackupSuite") do
   header do
     header_title :Title
   end
@@ -34,4 +34,4 @@ screen = TraxanosHD::Screen.new(xml, :BackupSuite, "VTI BackupSuite") do
   end
 end
 
-screen.render!
+screen.render!(@main)

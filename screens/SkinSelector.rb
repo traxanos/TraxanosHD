@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :SkinSelector, "Skin Selector") do
+screen = TraxanosHD::Screen.new(:SkinSelector, "Skin Selector") do
   header do
     header_title "Choose your Skin"
   end
@@ -39,4 +39,4 @@ screen = TraxanosHD::Screen.new(xml, :SkinSelector, "Skin Selector") do
   end
 end
 
-screen.render!
+screen.render!(@main)

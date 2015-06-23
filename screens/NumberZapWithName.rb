@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
+screen = TraxanosHD::Screen.new(:NumberZapWithName, "Channel") do
   position :center, :center
   size 280+330, 156
 
@@ -63,4 +63,4 @@ screen = TraxanosHD::Screen.new(xml, :NumberZapWithName, "Channel") do
 
 end
 
-screen.render!
+screen.render!(@main)

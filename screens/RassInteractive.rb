@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :RassInteractive) do
+screen = TraxanosHD::Screen.new(:RassInteractive) do
   position 39, 180
   size 100+(TraxanosHD.spacer*2), 300+(TraxanosHD.spacer*2)
   background :transpWhite
@@ -73,4 +73,4 @@ screen = TraxanosHD::Screen.new(xml, :RassInteractive) do
 
 end
 
-screen.render!
+screen.render!(@main)

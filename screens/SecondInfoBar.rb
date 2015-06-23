@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
+screen = TraxanosHD::Screen.new(:SecondInfoBar, "SecondInfoBar") do
   position 0, 0
   header
 
@@ -507,4 +507,5 @@ screen = TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar") do
   infobar
 end
 
-screen.render!
+screen.render!(@main)
+screen.render!(@logoleft, 'LogoLeft')

@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :NumericalTextInputHelpDialog) do
+screen = TraxanosHD::Screen.new(:NumericalTextInputHelpDialog) do
   position TraxanosHD.border+TraxanosHD.left_width, 141, 31
   size TraxanosHD.right_width, 534
   background :backgroundAccent
@@ -102,4 +102,4 @@ screen = TraxanosHD::Screen.new(xml, :NumericalTextInputHelpDialog) do
   end
 end
 
-screen.render!
+screen.render!(@main)

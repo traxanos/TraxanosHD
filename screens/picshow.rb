@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :picshow, "PicturePlayer") do
+screen = TraxanosHD::Screen.new(:picshow, "PicturePlayer") do
   header do
     header_title "PicturePlayer"
   end
@@ -27,4 +27,4 @@ screen = TraxanosHD::Screen.new(xml, :picshow, "PicturePlayer") do
   end
 end
 
-screen.render!
+screen.render!(@main)

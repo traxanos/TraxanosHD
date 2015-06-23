@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :LanguageSelection, "Language selection") do
+screen = TraxanosHD::Screen.new(:LanguageSelection, "Language selection") do
   header do
     header_title "Language selection"
   end
@@ -27,4 +27,4 @@ screen = TraxanosHD::Screen.new(xml, :LanguageSelection, "Language selection") d
   end
 end
 
-screen.render!
+screen.render!(@main)

@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :ScanSetup, "Manual Scan") do
+screen = TraxanosHD::Screen.new(:ScanSetup, "Manual Scan") do
   header do
     header_title "Manual Scan"
   end
@@ -24,4 +24,4 @@ screen = TraxanosHD::Screen.new(xml, :ScanSetup, "Manual Scan") do
 
 end
 
-screen.render!
+screen.render!(@main)

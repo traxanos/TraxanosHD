@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :CamSelectMenu, "VTI Cam Menu") do
+screen = TraxanosHD::Screen.new(:CamSelectMenu, "VTI Cam Menu") do
   header do
     header_title :Title
   end
@@ -32,4 +32,4 @@ screen = TraxanosHD::Screen.new(xml, :CamSelectMenu, "VTI Cam Menu") do
   end
 end
 
-screen.render!
+screen.render!(@main)

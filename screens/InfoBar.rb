@@ -1,8 +1,9 @@
-screen = TraxanosHD::Screen.new(xml, :InfoBar, "InfoBar") do
+screen = TraxanosHD::Screen.new(:InfoBar, "InfoBar") do
   position 0, 0
   header
   recinfo
   infobar
 end
 
-screen.render!
+screen.render!(@main)
+screen.render!(@logoleft, 'LogoLeft')

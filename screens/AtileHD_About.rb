@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :AtileHD_About, "TraxanosHD") do
+screen = TraxanosHD::Screen.new(:AtileHD_About, "TraxanosHD") do
   position :center, :center
 
   size 400, (5*TraxanosHD.spacer) + 48 + 30 + 30 + 30
@@ -46,4 +46,4 @@ screen = TraxanosHD::Screen.new(xml, :AtileHD_About, "TraxanosHD") do
 
 end
 
-screen.render!
+screen.render!(@main)

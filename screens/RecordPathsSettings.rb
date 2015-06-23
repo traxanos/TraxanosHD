@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :RecordPathsSettings, "Recording paths") do
+screen = TraxanosHD::Screen.new(:RecordPathsSettings, "Recording paths") do
   header do
     header_title "Recording paths"
   end
@@ -19,4 +19,4 @@ screen = TraxanosHD::Screen.new(xml, :RecordPathsSettings, "Recording paths") do
   end
 end
 
-screen.render!
+screen.render!(@main)

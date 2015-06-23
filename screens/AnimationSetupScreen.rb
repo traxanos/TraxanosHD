@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :AnimationSetupScreen, "Animation Setup") do
+screen = TraxanosHD::Screen.new(:AnimationSetupScreen, "Animation Setup") do
   header do
     header_title "Animation Setup"
   end
@@ -19,4 +19,4 @@ screen = TraxanosHD::Screen.new(xml, :AnimationSetupScreen, "Animation Setup") d
   end
 end
 
-screen.render!
+screen.render!(@main)

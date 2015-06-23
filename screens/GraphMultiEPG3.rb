@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :GraphMultiEPG3, "EPG selection") do
+screen = TraxanosHD::Screen.new(:GraphMultiEPG3, "EPG selection") do
   label do
     position TraxanosHD.border, TraxanosHD.border
     size -(TraxanosHD.border*2), -(TraxanosHD.border*2)
@@ -30,4 +30,4 @@ screen = TraxanosHD::Screen.new(xml, :GraphMultiEPG3, "EPG selection") do
   end
 end
 
-screen.render!
+screen.render!(@main)

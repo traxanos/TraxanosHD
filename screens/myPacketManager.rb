@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :myPacketManager, "VTI SoftwareManager") do
+screen = TraxanosHD::Screen.new(:myPacketManager, "VTI SoftwareManager") do
   header do
     header_title :title
   end
@@ -33,4 +33,4 @@ screen = TraxanosHD::Screen.new(xml, :myPacketManager, "VTI SoftwareManager") do
   end
 end
 
-screen.render!
+screen.render!(@main)

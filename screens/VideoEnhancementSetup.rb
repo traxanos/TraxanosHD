@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSetup") do
+screen = TraxanosHD::Screen.new(:VideoEnhancementSetup, "VideoEnhancementSetup") do
   header do
     header_title :Title
   end
@@ -28,4 +28,4 @@ screen = TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSe
   end
 end
 
-screen.render!
+screen.render!(@main)

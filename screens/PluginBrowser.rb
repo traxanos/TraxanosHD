@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :PluginBrowser, "Plugins Manager") do
+screen = TraxanosHD::Screen.new(:PluginBrowser, "Plugins Manager") do
   header do
     header_title "Plugins"
   end
@@ -23,4 +23,4 @@ screen = TraxanosHD::Screen.new(xml, :PluginBrowser, "Plugins Manager") do
   end
 end
 
-screen.render!
+screen.render!(@main)

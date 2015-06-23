@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :EPGRefreshServiceEditor) do
+screen = TraxanosHD::Screen.new(:EPGRefreshServiceEditor) do
   header do
     header_title "Edit Services to refresh"
   end
@@ -19,4 +19,4 @@ screen = TraxanosHD::Screen.new(xml, :EPGRefreshServiceEditor) do
   end
 end
 
-screen.render!
+screen.render!(@main)

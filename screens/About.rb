@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :About, "About") do
+screen = TraxanosHD::Screen.new(:About, "About") do
   header do
     header_title "About"
   end
@@ -168,4 +168,4 @@ screen = TraxanosHD::Screen.new(xml, :About, "About") do
   end
 end
 
-screen.render!
+screen.render!(@main)

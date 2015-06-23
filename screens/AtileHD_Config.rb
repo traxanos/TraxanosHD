@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :AtileHD_Config, "AtileHD Setup") do
+screen = TraxanosHD::Screen.new(:AtileHD_Config, "AtileHD Setup") do
   header do
     header_title :Title
   end
@@ -30,4 +30,4 @@ screen = TraxanosHD::Screen.new(xml, :AtileHD_Config, "AtileHD Setup") do
   end
 end
 
-screen.render!
+screen.render!(@main)

@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :RdsInfoDisplay) do
+screen = TraxanosHD::Screen.new(:RdsInfoDisplay) do
   position 0, 0, -2
 
   widget do
@@ -34,4 +34,4 @@ screen = TraxanosHD::Screen.new(xml, :RdsInfoDisplay) do
 
 end
 
-screen.render!
+screen.render!(@main)

@@ -1,5 +1,5 @@
 # (de-)installation von paketen
-screen = TraxanosHD::Screen.new(xml, :UpdatePlugin, "Software Update...") do
+screen = TraxanosHD::Screen.new(:UpdatePlugin, "Software Update...") do
 
   position :center, :center, 99
   size 510, 12 + 48 + 12 + 5 + 12 + 56 + 12 + 5 + 12 + 12 + 30
@@ -73,4 +73,4 @@ screen = TraxanosHD::Screen.new(xml, :UpdatePlugin, "Software Update...") do
 
 end
 
-screen.render!
+screen.render!(@main)

@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :Blindscan, "Blindscan") do
+screen = TraxanosHD::Screen.new(:Blindscan, "Blindscan") do
   header do
     header_title "Blindscan"
   end
@@ -27,4 +27,4 @@ screen = TraxanosHD::Screen.new(xml, :Blindscan, "Blindscan") do
   end
 end
 
-screen.render!
+screen.render!(@main)

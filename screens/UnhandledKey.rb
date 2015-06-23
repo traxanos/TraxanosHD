@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(xml, :UnhandledKey, "UnhandledKey") do
+screen = TraxanosHD::Screen.new(:UnhandledKey, "UnhandledKey") do
   position TraxanosHD.border, TraxanosHD.border, 11
   size TraxanosHD.header_height, TraxanosHD.header_height
 
@@ -16,4 +16,4 @@ screen = TraxanosHD::Screen.new(xml, :UnhandledKey, "UnhandledKey") do
   end
 end
 
-screen.render!
+screen.render!(@main)
