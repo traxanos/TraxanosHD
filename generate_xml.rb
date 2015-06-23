@@ -1,3 +1,18 @@
+# hack for correct encoding
+module Builder
+  class XmlMarkup
+    def initialize(options={})
+      indent = options[:indent] || 0
+      margin = options[:margin] || 0
+      @quote = (options[:quote] == :single) ? "'" : '"'
+      encoding = options[:encoding] || "utf-8"
+      @explicit_nil_handling = options[:explicit_nil_handling]
+      super(indent, margin, encoding)
+      @target = options[:target] || ""
+    end
+  end
+end
+
 def render_screen(name)
   file = "screens/#{name}.rb"
   instance_eval File.read(file), file
@@ -22,8 +37,8 @@ def build_skin_to_file(subxml, filename)
   end
 end
 
-@main = Builder::XmlMarkup.new indent: 2, margin: 1
-@logoleft = Builder::XmlMarkup.new indent: 2, margin: 1
+@main = Builder::XmlMarkup.new indent: 2, margin: 1, encoding: 'ASCII'
+@logoleft = Builder::XmlMarkup.new indent: 2, margin: 1, encoding: 'ASCII'
 
 @main.output(id: 0) do |xml|
   xml.resolution bpp: 32, xres: 1280, yres: 720

@@ -593,12 +593,12 @@
   </screen>
   <!-- UnhandledKey -->
   <screen name="UnhandledKey" title="UnhandledKey" flags="wfNoBorder" backgroundColor="transparent" position="39,39" size="69,69" zPosition="11">
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="13"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61534;" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="13"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="0,0" size="69,69" zPosition="12"/>
   </screen>
   <!-- Volume -->
   <screen name="Volume" title="Volume" flags="wfNoBorder" backgroundColor="transparent" position="39,39" size="372,69" zPosition="80">
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="" font="FontAwesome; 39" noWrap="1" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="82"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61480;" font="FontAwesome; 39" noWrap="1" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="82"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 40" render="VVolumeText" source="global.CurrentTime" halign="center" valign="center" noWrap="1" transparent="1" position="279,0" size="93,69" zPosition="83"/>
     <eLabel backgroundColor="progressbarPrimaryBG" foregroundColor="foreground" position="78,34" size="195,1" zPosition="84"/>
     <widget backgroundColor="background" foregroundColor="progressbarPrimaryFG" name="Volume" transparent="1" position="78,32" size="195,5" zPosition="85"/>
@@ -606,8 +606,8 @@
   </screen>
   <!-- Mute -->
   <screen name="Mute" title="Mute" flags="wfNoBorder" backgroundColor="transparent" position="39,39" size="372,69" zPosition="81">
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="83"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="84"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61478;" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="83"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61534;" noWrap="1" font="FontAwesome; 39" halign="center" valign="center" transparent="1" position="0,0" size="69,69" zPosition="84"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 40" halign="center" valign="center" noWrap="1" transparent="1" text="0" position="279,0" size="93,69" zPosition="85"/>
     <eLabel backgroundColor="progressbarPrimaryBG" foregroundColor="foreground" position="78,34" size="195,1" zPosition="86"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="0,0" size="372,69" zPosition="82"/>
@@ -937,7 +937,7 @@
   <!-- ChoiceBox -->
   <screen name="ChoiceBox" title="Input" flags="wfNoBorder" backgroundColor="background" position="center,center" size="780,260" zPosition="99">
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 26" name="text" halign="left" valign="center" position="69,15" size="699,38" zPosition="100"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" position="12,12" size="48,48" zPosition="101"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61529;" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" position="12,12" size="48,48" zPosition="101"/>
     <widget backgroundColor="background" foregroundColor="foreground" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" enableWrapAround="1" transparent="1" name="list" itemHeight="30" position="12,72" size="756,176" zPosition="102"/>
     <applet type="onLayoutFinish">
 
@@ -1870,10 +1870,10 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
     <eLabel backgroundColor="foreground" foregroundColor="foreground" position="57,153" size="774,38" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="58,154" size="772,36" zPosition="-7"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" font="FontAwesome; 20" halign="center" valign="center" text="" transparent="1" position="59,155" size="30,34" zPosition="-6"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" font="FontAwesome; 20" halign="center" valign="center" text="&#61531;" transparent="1" position="59,155" size="30,34" zPosition="-6"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="target" font="Regular; 20" transparent="1" noWrap="1" position="90,157" size="740,30" zPosition="-5"/>
     <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="filelist" transparent="1" enableWrapAround="1" selectionDisabled="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,201" size="774,180" zPosition="-4"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="" font="FontAwesome; 20" halign="center" valign="center" noWrap="1" transparent="1" position="59,401" size="30,34" zPosition="-3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61486;" font="FontAwesome; 20" halign="center" valign="center" noWrap="1" transparent="1" position="59,401" size="30,34" zPosition="-3"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="textbook" font="Regular; 24" halign="left" valign="center" noWrap="1" transparent="1" position="90,399" size="741,36" zPosition="-2"/>
     <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="booklist" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,447" size="774,180" zPosition="-1"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
@@ -2965,7 +2965,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="33"/>
     <eLabel backgroundColor="foreground" foregroundColor="foreground" position="57,153" size="698,38" zPosition="-8"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="58,154" size="696,36" zPosition="-7"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" font="FontAwesome; 20" halign="center" valign="center" text="" transparent="1" position="59,155" size="30,34" zPosition="-6"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" font="FontAwesome; 20" halign="center" valign="center" text="&#61701;" transparent="1" position="59,155" size="30,34" zPosition="-6"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="text" font="Regular; 20" transparent="1" noWrap="1" position="90,157" size="664,30" zPosition="-5"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="list" transparent="1" selectionDisabled="1" position="57,207" size="696,300" zPosition="-4"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
@@ -2973,7 +2973,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   <!-- Ipkg -->
   <screen name="Ipkg" title="Installing Software..." flags="wfNoBorder" backgroundColor="background" position="center,center" size="510,216">
     <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 26" text="Installing Software..." halign="left" valign="center" transparent="1" position="69,12" size="429,48" zPosition="1"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" transparent="1" position="12,12" size="48,48" zPosition="2"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61803;" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" transparent="1" position="12,12" size="48,48" zPosition="2"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" name="package" noWrap="1" transparent="1" halign="left" valign="center" position="12,72" size="486,30" zPosition="3"/>
     <eLabel backgroundColor="foreground" foregroundColor="foreground" position="12,116" size="486,1" zPosition="4"/>
     <widget backgroundColor="background" foregroundColor="backgroundAccent" name="activityslider" transparent="1" position="12,114" size="486,5" zPosition="5"/>
@@ -2984,7 +2984,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
   <!-- UpdatePlugin -->
   <screen name="UpdatePlugin" title="Software Update..." flags="wfNoBorder" backgroundColor="background" position="center,center" size="510,216" zPosition="99">
     <eLabel backgroundColor="background" foregroundColor="foreground" font="Regular; 26" text="Installing Software..." halign="left" valign="center" transparent="1" position="69,12" size="429,48" zPosition="100"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" text="" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" transparent="1" position="12,12" size="48,48" zPosition="101"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" text="&#61803;" font="FontAwesome; 30" halign="center" valign="center" noWrap="1" transparent="1" position="12,12" size="48,48" zPosition="101"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 18" name="package" noWrap="1" transparent="1" halign="left" valign="center" position="12,72" size="486,30" zPosition="102"/>
     <eLabel backgroundColor="foreground" foregroundColor="foreground" position="12,116" size="486,1" zPosition="103"/>
     <widget backgroundColor="background" foregroundColor="backgroundAccent" name="activityslider" transparent="1" position="12,114" size="486,5" zPosition="104"/>
