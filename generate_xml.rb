@@ -41,6 +41,13 @@ end
   end
 end
 
+@main.subtitles do |xml|
+  xml.sub name: "Subtitle_TTX",     font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+  xml.sub name: "Subtitle_Regular", font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+  xml.sub name: "Subtitle_Bold",    font: "ShareBold;30",    foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+  xml.sub name: "Subtitle_Italic",  font: "ShareItalic;30",  foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
+end
+
 @main.windowstyle(id: 0, type: :skinned) do |xml|
   xml.color name: :Background, color: :background
   xml.color name: :LabelForeground, color: :foreground
@@ -67,13 +74,6 @@ end
   xml.color name: :ListboxMarkedAndSelectedBackground, color: :selectionBG
   xml.color name: :ListboxMarkedAndSelectedForeground, color: :selectionFG
   xml.color name: :WindowTitleForeground, color: :foreground
-end
-
-@main.subtitles do |xml|
-  xml.sub name: "Subtitle_TTX",     font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-  xml.sub name: "Subtitle_Regular", font: "Share;30",        foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-  xml.sub name: "Subtitle_Bold",    font: "ShareBold;30",    foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
-  xml.sub name: "Subtitle_Italic",  font: "ShareItalic;30",  foregroundColor: :subtitle, shadowColor: :shadow, shadowOffset: "2,2"
 end
 
 # screens

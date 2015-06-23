@@ -52,6 +52,12 @@
     <font name="Share" filename="TraxanosHD/fonts/ShareTech-Regular.ttf" scale="100"/>
     <font name="Regular" filename="TraxanosHD/fonts/ShareTech-Regular.ttf" scale="120"/>
   </fonts>
+  <subtitles>
+    <sub name="Subtitle_TTX" font="Share;30" foregroundColor="subtitle" shadowColor="shadow" shadowOffset="2,2"/>
+    <sub name="Subtitle_Regular" font="Share;30" foregroundColor="subtitle" shadowColor="shadow" shadowOffset="2,2"/>
+    <sub name="Subtitle_Bold" font="ShareBold;30" foregroundColor="subtitle" shadowColor="shadow" shadowOffset="2,2"/>
+    <sub name="Subtitle_Italic" font="ShareItalic;30" foregroundColor="subtitle" shadowColor="shadow" shadowOffset="2,2"/>
+  </subtitles>
   <windowstyle id="0" type="skinned">
     <color name="Background" color="background"/>
     <color name="LabelForeground" color="foreground"/>
@@ -78,12 +84,6 @@
     <color name="ListboxMarkedAndSelectedForeground" color="selectionFG"/>
     <color name="WindowTitleForeground" color="foreground"/>
   </windowstyle>
-  <subtitles>
-    <sub name="Subtitle_TTX" font="Share;30" foregroundColor="subtitle" shadowColor="shadow" shadowOffset="2,2"/>
-    <sub name="Subtitle_Regular" font="Share;30" foregroundColor="subtitle" shadowColor="shadow" shadowOffset="2,2"/>
-    <sub name="Subtitle_Bold" font="ShareBold;30" foregroundColor="subtitle" shadowColor="shadow" shadowOffset="2,2"/>
-    <sub name="Subtitle_Italic" font="ShareItalic;30" foregroundColor="subtitle" shadowColor="shadow" shadowOffset="2,2"/>
-  </subtitles>
   <!-- SecondInfoBar -->
   <screen name="SecondInfoBar" title="SecondInfoBar" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" render="VWeatherUpdater" source="global.CurrentTime" position="0,0" size="0,0" zPosition="1"/>
