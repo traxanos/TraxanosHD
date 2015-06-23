@@ -1,10 +1,12 @@
-[nil, 'NoWeather'].each do |variant|
+[nil, 'NoWeather', 'LogoLeft-NoWeather'].each do |variant|
   variant = variant
   $noweather = (variant =~/NoWeather/ ? true : false)
 
   case variant
   when 'NoWeather'
     xml = @noweather
+  when 'LogoLeft-NoWeather'
+    xml = @logoleft_noweather
   else
     xml = @main
   end

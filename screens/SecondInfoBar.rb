@@ -1,4 +1,4 @@
-[nil, 'LogoLeft', 'NoWeather'].each do |variant|
+[nil, 'LogoLeft', 'NoWeather', 'LogoLeft-NoWeather'].each do |variant|
   variant = variant
   $logoleft = (variant =~/LogoLeft/ ? :left : :right)
   $noweather = (variant =~/NoWeather/ ? true : false)
@@ -8,6 +8,8 @@
     xml = @logoleft
   when 'NoWeather'
     xml = @noweather
+  when 'LogoLeft-NoWeather'
+    xml = @logoleft_noweather
   else
     xml = @main
   end
