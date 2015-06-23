@@ -1,9 +1,13 @@
-screen = TraxanosHD::Screen.new(:InfoBar, "InfoBar") do
+TraxanosHD::Screen.new(@main, :InfoBar, "InfoBar") do
   position 0, 0
   header
   recinfo
-  infobar
+  infobar(:right)
 end
 
-screen.render!(@main)
-screen.render!(@logoleft, 'LogoLeft')
+TraxanosHD::Screen.new(@logoleft, :InfoBar, "InfoBar") do
+  position 0, 0
+  header
+  recinfo
+  infobar(:left)
+end

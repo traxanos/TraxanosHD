@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:EMCSelection, "Select a movie") do
+TraxanosHD::Screen.new(@main, :EMCSelection, "Select a movie") do
   header do
     header_title "Select a movie"
 
@@ -195,4 +195,3 @@ screen = TraxanosHD::Screen.new(:EMCSelection, "Select a movie") do
   end
 end
 
-screen.render!(@main)

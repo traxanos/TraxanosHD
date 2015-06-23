@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:EventView, "EventView") do
+TraxanosHD::Screen.new(@main, :EventView, "EventView") do
   header do
     header_title "EPG Selection"
   end
@@ -18,4 +18,3 @@ screen = TraxanosHD::Screen.new(:EventView, "EventView") do
   end
 end
 
-screen.render!(@main)

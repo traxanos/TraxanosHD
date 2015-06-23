@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:InfoBarZapHistory) do
+TraxanosHD::Screen.new(@main, :InfoBarZapHistory) do
   label do
     position 0, 435
     size 1280, 246
@@ -91,4 +91,3 @@ screen = TraxanosHD::Screen.new(:InfoBarZapHistory) do
   end
 end
 
-screen.render!(@main)

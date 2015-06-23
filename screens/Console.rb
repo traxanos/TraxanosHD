@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:Console, "Command execution") do
+TraxanosHD::Screen.new(@main, :Console, "Command execution") do
   header do
     header_title :Title
   end
@@ -15,4 +15,3 @@ screen = TraxanosHD::Screen.new(:Console, "Command execution") do
   end
 end
 
-screen.render!(@main)

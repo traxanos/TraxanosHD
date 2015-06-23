@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:ServiceScan, "Service Scan") do
+TraxanosHD::Screen.new(@main, :ServiceScan, "Service Scan") do
   header do
     header_title "Service Scan"
   end
@@ -62,4 +62,3 @@ screen = TraxanosHD::Screen.new(:ServiceScan, "Service Scan") do
   end
 end
 
-screen.render!(@main)

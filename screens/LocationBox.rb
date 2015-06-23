@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:LocationBox) do
+TraxanosHD::Screen.new(@main, :LocationBox) do
   header do
     widget do
       position TraxanosHD.spacer, TraxanosHD.default_header_title_top_spacer
@@ -96,4 +96,3 @@ screen = TraxanosHD::Screen.new(:LocationBox) do
   end
 end
 
-screen.render!(@main)

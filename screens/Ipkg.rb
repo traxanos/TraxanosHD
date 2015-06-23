@@ -1,5 +1,5 @@
 # (de-)installation von paketen
-screen = TraxanosHD::Screen.new(:Ipkg, "Installing Software...") do
+TraxanosHD::Screen.new(@main, :Ipkg, "Installing Software...") do
   position :center, :center
 
   size 510, 12 + 48 + 12 + 5 + 12 + 56 + 12 + 5 + 12 + 12 + 30
@@ -73,4 +73,3 @@ screen = TraxanosHD::Screen.new(:Ipkg, "Installing Software...") do
 
 end
 
-screen.render!(@main)

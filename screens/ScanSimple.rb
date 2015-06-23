@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:ScanSimple, "Automatic Scan") do
+TraxanosHD::Screen.new(@main, :ScanSimple, "Automatic Scan") do
   header do
     header_title "Automatic Scan"
   end
@@ -24,4 +24,3 @@ screen = TraxanosHD::Screen.new(:ScanSimple, "Automatic Scan") do
 
 end
 
-screen.render!(@main)

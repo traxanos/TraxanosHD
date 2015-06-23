@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:Dish) do
+TraxanosHD::Screen.new(@main, :Dish) do
   position 1111, 135, -1
   size 130, 160
 
@@ -10,4 +10,3 @@ screen = TraxanosHD::Screen.new(:Dish) do
   end
 end
 
-screen.render!(@main)

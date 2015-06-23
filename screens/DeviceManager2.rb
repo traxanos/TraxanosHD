@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:DeviceManager2, "DeviceManager2") do
+TraxanosHD::Screen.new(@main, :DeviceManager2, "DeviceManager2") do
   header do
     header_title :title
   end
@@ -45,4 +45,3 @@ screen = TraxanosHD::Screen.new(:DeviceManager2, "DeviceManager2") do
   end
 end
 
-screen.render!(@main)

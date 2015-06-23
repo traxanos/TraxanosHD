@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:LanguageSelection, "Language selection") do
+TraxanosHD::Screen.new(@main, :LanguageSelection, "Language selection") do
   header do
     header_title "Language selection"
   end
@@ -27,4 +27,3 @@ screen = TraxanosHD::Screen.new(:LanguageSelection, "Language selection") do
   end
 end
 
-screen.render!(@main)

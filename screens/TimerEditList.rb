@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:TimerEditList, "Timer Editor") do
+TraxanosHD::Screen.new(@main, :TimerEditList, "Timer Editor") do
   header do
     header_title "Timer Editor"
   end
@@ -91,4 +91,3 @@ screen = TraxanosHD::Screen.new(:TimerEditList, "Timer Editor") do
   end
 end
 
-screen.render!(@main)

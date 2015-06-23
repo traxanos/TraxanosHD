@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:GraphMultiEPG1, "EPG selection") do
+TraxanosHD::Screen.new(@main, :GraphMultiEPG1, "EPG selection") do
   header do
     header_title :Title
   end
@@ -31,4 +31,3 @@ screen = TraxanosHD::Screen.new(:GraphMultiEPG1, "EPG selection") do
   end
 end
 
-screen.render!(@main)

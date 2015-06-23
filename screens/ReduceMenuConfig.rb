@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:ReduceMenuConfig, "VTI ReduceMenu") do
+TraxanosHD::Screen.new(@main, :ReduceMenuConfig, "VTI ReduceMenu") do
   header do
     header_title :Title
   end
@@ -31,4 +31,3 @@ screen = TraxanosHD::Screen.new(:ReduceMenuConfig, "VTI ReduceMenu") do
   end
 end
 
-screen.render!(@main)

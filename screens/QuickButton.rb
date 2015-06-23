@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:QuickButton, "QuickButton") do
+TraxanosHD::Screen.new(@main, :QuickButton, "QuickButton") do
   header do
     header_title :Title
   end
@@ -19,4 +19,3 @@ screen = TraxanosHD::Screen.new(:QuickButton, "QuickButton") do
   end
 end
 
-screen.render!(@main)

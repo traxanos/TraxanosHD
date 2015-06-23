@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:TimeshiftState, "TimeshiftState") do
+TraxanosHD::Screen.new(@main, :TimeshiftState, "TimeshiftState") do
   position 0, 0
   box do # border
     position TraxanosHD.border, TraxanosHD.border
@@ -28,4 +28,3 @@ screen = TraxanosHD::Screen.new(:TimeshiftState, "TimeshiftState") do
   playerbar true
 end
 
-screen.render!(@main)

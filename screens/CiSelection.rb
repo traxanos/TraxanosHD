@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:CiSelection, "Common Interface") do
+TraxanosHD::Screen.new(@main, :CiSelection, "Common Interface") do
   header do
     header_title "Common Interface"
   end
@@ -25,4 +25,3 @@ screen = TraxanosHD::Screen.new(:CiSelection, "Common Interface") do
 
 end
 
-screen.render!(@main)

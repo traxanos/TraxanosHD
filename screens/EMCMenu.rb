@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:EMCMenu, "EMC menu") do
+TraxanosHD::Screen.new(@main, :EMCMenu, "EMC menu") do
   header do
     header_title :title
   end
@@ -16,4 +16,3 @@ screen = TraxanosHD::Screen.new(:EMCMenu, "EMC menu") do
   end
 end
 
-screen.render!(@main)

@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:AutoShutDownConfiguration, "AutoShutDown") do
+TraxanosHD::Screen.new(@main, :AutoShutDownConfiguration, "AutoShutDown") do
   header do
     header_title "AutoShutDown"
   end
@@ -19,4 +19,3 @@ screen = TraxanosHD::Screen.new(:AutoShutDownConfiguration, "AutoShutDown") do
   end
 end
 
-screen.render!(@main)

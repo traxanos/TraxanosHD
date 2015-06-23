@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:ChoiceBox, "Input") do
+TraxanosHD::Screen.new(@main, :ChoiceBox, "Input") do
 
   position :center, :center, 99
   size 780, 260
@@ -48,4 +48,3 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
 
 end
 
-screen.render!(@main)

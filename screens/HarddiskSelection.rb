@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:HarddiskSelection, "Select HDD") do
+TraxanosHD::Screen.new(@main, :HarddiskSelection, "Select HDD") do
   header do
     header_title "Select HDD"
   end
@@ -15,4 +15,3 @@ screen = TraxanosHD::Screen.new(:HarddiskSelection, "Select HDD") do
   end
 end
 
-screen.render!(@main)

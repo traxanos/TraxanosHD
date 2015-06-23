@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:SIBsetupScreen, "Second-InfoBar setup") do
+TraxanosHD::Screen.new(@main, :SIBsetupScreen, "Second-InfoBar setup") do
   header do
     header_title "Second-InfoBar setup"
   end
@@ -19,4 +19,3 @@ screen = TraxanosHD::Screen.new(:SIBsetupScreen, "Second-InfoBar setup") do
   end
 end
 
-screen.render!(@main)

@@ -2,7 +2,8 @@ module TraxanosHD
   class Screen < Element
     attr_reader :xml, :name, :applets
 
-    def initialize(name, title = nil, &block)
+    def initialize(xml, name, title = nil, &block)
+      @xml = xml
       @z = 0
       @elements = []
       @applets = {}
@@ -20,16 +21,13 @@ module TraxanosHD
       # eval bock
       instance_eval(&block)
 
-      # # render
-      # render!
+      # render
+      render!
 
-      # # render preview
-      # render_preview!
+      render_preview!
     end
 
-    def render!(xml, variant = nil)
-      @xml = xml
-
+    def render!
       puts "render screen #{@name}"
       xml.comment! name.to_s
       @options["position"] = "#{@x},#{@y}"
@@ -46,10 +44,10 @@ module TraxanosHD
         end
       end
 
-      render_preview!(variant)
+      render_preview!
     end
 
-    def render_preview!(variant = nil)
+    def render_preview!
       html = Builder::XmlMarkup.new indent: 2
       html.declare! :DOCTYPE, :html
       html.html do

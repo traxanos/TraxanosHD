@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:Setup) do
+TraxanosHD::Screen.new(@main, :Setup) do
   header do
     header_title "Setup"
   end
@@ -19,4 +19,3 @@ screen = TraxanosHD::Screen.new(:Setup) do
   end
 end
 
-screen.render!(@main)

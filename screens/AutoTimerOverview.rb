@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:AutoTimerOverview, "AutoTimer Overview") do
+TraxanosHD::Screen.new(@main, :AutoTimerOverview, "AutoTimer Overview") do
   header do
     header_title :Title
   end
@@ -40,4 +40,3 @@ screen = TraxanosHD::Screen.new(:AutoTimerOverview, "AutoTimer Overview") do
   end
 end
 
-screen.render!(@main)

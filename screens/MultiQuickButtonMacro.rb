@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:MultiQuickButtonMacro, "MultiQuickButton macro configuration") do
+TraxanosHD::Screen.new(@main, :MultiQuickButtonMacro, "MultiQuickButton macro configuration") do
   header do
     header_title :Title
   end
@@ -31,4 +31,3 @@ screen = TraxanosHD::Screen.new(:MultiQuickButtonMacro, "MultiQuickButton macro 
   end
 end
 
-screen.render!(@main)

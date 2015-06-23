@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:AutoTimerImporter, "Import AutoTimer") do
+TraxanosHD::Screen.new(@main, :AutoTimerImporter, "Import AutoTimer") do
   header do
     header_title :Title
   end
@@ -23,4 +23,3 @@ screen = TraxanosHD::Screen.new(:AutoTimerImporter, "Import AutoTimer") do
   end
 end
 
-screen.render!(@main)

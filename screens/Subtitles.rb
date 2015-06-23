@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:Subtitles, "Subtitle selection") do
+TraxanosHD::Screen.new(@main, :Subtitles, "Subtitle selection") do
   header do
     header_title "Subtitle selection"
   end
@@ -15,4 +15,3 @@ screen = TraxanosHD::Screen.new(:Subtitles, "Subtitle selection") do
   end
 end
 
-screen.render!(@main)

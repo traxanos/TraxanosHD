@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:NimSetup, "Reception Settings") do
+TraxanosHD::Screen.new(@main, :NimSetup, "Reception Settings") do
   header do
     header_title "Reception Settings"
   end
@@ -16,4 +16,3 @@ screen = TraxanosHD::Screen.new(:NimSetup, "Reception Settings") do
   end
 end
 
-screen.render!(@main)

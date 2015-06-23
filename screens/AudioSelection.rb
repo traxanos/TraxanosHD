@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:AudioSelection, "Audio") do
+TraxanosHD::Screen.new(@main, :AudioSelection, "Audio") do
   position :center, :center
   size 564, 480
   background :background
@@ -82,4 +82,3 @@ screen = TraxanosHD::Screen.new(:AudioSelection, "Audio") do
 
 end
 
-screen.render!(@main)

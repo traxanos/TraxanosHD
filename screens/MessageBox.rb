@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:MessageBox, "Message") do
+TraxanosHD::Screen.new(@main, :MessageBox, "Message") do
 
   position :center, :center, 1
   size 900, 260
@@ -107,4 +107,3 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y()))'
 
 end
 
-screen.render!(@main)

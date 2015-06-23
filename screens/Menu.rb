@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:Menu, "Main menu") do
+TraxanosHD::Screen.new(@main, :Menu, "Main menu") do
   header do
     header_title :title
   end
@@ -29,4 +29,3 @@ screen = TraxanosHD::Screen.new(:Menu, "Main menu") do
 
 end
 
-screen.render!(@main)

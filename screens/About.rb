@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:About, "About") do
+TraxanosHD::Screen.new(@main, :About, "About") do
   header do
     header_title "About"
   end
@@ -168,4 +168,3 @@ screen = TraxanosHD::Screen.new(:About, "About") do
   end
 end
 
-screen.render!(@main)

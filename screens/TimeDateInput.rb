@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:TimeDateInput, "Time/Date Input") do
+TraxanosHD::Screen.new(@main, :TimeDateInput, "Time/Date Input") do
   position :center, :center, 2
   size 378 + (TraxanosHD.spacer*2), 150
   label do
@@ -52,4 +52,3 @@ screen = TraxanosHD::Screen.new(:TimeDateInput, "Time/Date Input") do
   end
 end
 
-screen.render!(@main)

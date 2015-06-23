@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:MovieSelection, "Select a movie") do
+TraxanosHD::Screen.new(@main, :MovieSelection, "Select a movie") do
   header do
     header_title "Select a movie"
   end
@@ -170,4 +170,3 @@ screen = TraxanosHD::Screen.new(:MovieSelection, "Select a movie") do
   end
 end
 
-screen.render!(@main)

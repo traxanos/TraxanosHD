@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:VTISubMenu, "VTI Sub Menu") do
+TraxanosHD::Screen.new(@main, :VTISubMenu, "VTI Sub Menu") do
   header do
     header_title :title
   end
@@ -35,4 +35,3 @@ screen = TraxanosHD::Screen.new(:VTISubMenu, "VTI Sub Menu") do
   end
 end
 
-screen.render!(@main)

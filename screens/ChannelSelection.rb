@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:ChannelSelection, "Channel selection") do
+TraxanosHD::Screen.new(@main, :ChannelSelection, "Channel selection") do
   header do
     header_title :Title
   end
@@ -137,4 +137,3 @@ screen = TraxanosHD::Screen.new(:ChannelSelection, "Channel selection") do
 
 end
 
-screen.render!(@main)

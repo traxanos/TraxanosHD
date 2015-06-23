@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:Mute, "Mute") do
+TraxanosHD::Screen.new(@main, :Mute, "Mute") do
   position TraxanosHD.border, TraxanosHD.border, 81
   width = 243 + 129
   size width, TraxanosHD.header_height
@@ -43,4 +43,3 @@ screen = TraxanosHD::Screen.new(:Mute, "Mute") do
   end
 end
 
-screen.render!(@main)

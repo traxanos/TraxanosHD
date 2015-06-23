@@ -1,4 +1,4 @@
-screen = TraxanosHD::Screen.new(:EnhancedMovieCenterMenu, "EnhancedMovieCenterMenu") do
+TraxanosHD::Screen.new(@main, :EnhancedMovieCenterMenu, "EnhancedMovieCenterMenu") do
   header do
     header_title "EnhancedMovieCenterMenu"
   end
@@ -28,4 +28,3 @@ screen = TraxanosHD::Screen.new(:EnhancedMovieCenterMenu, "EnhancedMovieCenterMe
   end
 end
 
-screen.render!(@main)
