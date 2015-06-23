@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :BackupSuite, "VTI BackupSuite") do
+screen = TraxanosHD::Screen.new(xml, :BackupSuite, "VTI BackupSuite") do
   header do
     header_title :Title
   end
@@ -33,3 +33,5 @@ TraxanosHD::Screen.new(xml, :BackupSuite, "VTI BackupSuite") do
     colorbar_buttons2(true, true, true)
   end
 end
+
+screen.render!

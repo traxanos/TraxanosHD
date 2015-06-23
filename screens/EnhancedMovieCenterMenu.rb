@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :EnhancedMovieCenterMenu, "EnhancedMovieCenterMenu") do
+screen = TraxanosHD::Screen.new(xml, :EnhancedMovieCenterMenu, "EnhancedMovieCenterMenu") do
   header do
     header_title "EnhancedMovieCenterMenu"
   end
@@ -27,3 +27,5 @@ TraxanosHD::Screen.new(xml, :EnhancedMovieCenterMenu, "EnhancedMovieCenterMenu")
     colorbar_buttons1(true, true, false, true)
   end
 end
+
+screen.render!

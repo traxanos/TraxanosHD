@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :EPGRefreshServiceEditor) do
+screen = TraxanosHD::Screen.new(xml, :EPGRefreshServiceEditor) do
   header do
     header_title "Edit Services to refresh"
   end
@@ -18,3 +18,5 @@ TraxanosHD::Screen.new(xml, :EPGRefreshServiceEditor) do
     colorbar_buttons2(true, true, true, true)
   end
 end
+
+screen.render!

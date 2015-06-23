@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :RecordPathsSettings, "Recording paths") do
+screen = TraxanosHD::Screen.new(xml, :RecordPathsSettings, "Recording paths") do
   header do
     header_title "Recording paths"
   end
@@ -18,3 +18,5 @@ TraxanosHD::Screen.new(xml, :RecordPathsSettings, "Recording paths") do
     colorbar_buttons2(true, true, false, false)
   end
 end
+
+screen.render!

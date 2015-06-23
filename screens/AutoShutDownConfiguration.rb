@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :AutoShutDownConfiguration, "AutoShutDown") do
+screen = TraxanosHD::Screen.new(xml, :AutoShutDownConfiguration, "AutoShutDown") do
   header do
     header_title "AutoShutDown"
   end
@@ -18,3 +18,5 @@ TraxanosHD::Screen.new(xml, :AutoShutDownConfiguration, "AutoShutDown") do
     colorbar_buttons1(:buttonred, :buttongreen, :buttonyellow)
   end
 end
+
+screen.render!

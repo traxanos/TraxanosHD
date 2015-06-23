@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :PVRState) do
+screen = TraxanosHD::Screen.new(xml, :PVRState) do
   position TraxanosHD.border, TraxanosHD.border, -9
   size TraxanosHD.left_width, TraxanosHD.header_height
   width = 138
@@ -18,3 +18,5 @@ TraxanosHD::Screen.new(xml, :PVRState) do
     end
   end
 end
+
+screen.render!

@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :AnimationSetupScreen, "Animation Setup") do
+screen = TraxanosHD::Screen.new(xml, :AnimationSetupScreen, "Animation Setup") do
   header do
     header_title "Animation Setup"
   end
@@ -18,3 +18,5 @@ TraxanosHD::Screen.new(xml, :AnimationSetupScreen, "Animation Setup") do
     colorbar_buttons2(true, true, false, true)
   end
 end
+
+screen.render!

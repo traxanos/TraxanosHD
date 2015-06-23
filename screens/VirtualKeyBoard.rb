@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
+screen = TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
   position 0, 0, 30
 
   header do
@@ -45,3 +45,5 @@ TraxanosHD::Screen.new(xml, :VirtualKeyBoard, "Virtual KeyBoard") do
   end
 
 end
+
+screen.render!

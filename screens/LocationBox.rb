@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :LocationBox) do
+screen = TraxanosHD::Screen.new(xml, :LocationBox) do
   header do
     widget do
       position TraxanosHD.spacer, TraxanosHD.default_header_title_top_spacer
@@ -95,3 +95,5 @@ TraxanosHD::Screen.new(xml, :LocationBox) do
     colorbar_buttons1(true, true, true, true)
   end
 end
+
+screen.render!

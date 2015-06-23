@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :myPacketManager, "VTI SoftwareManager") do
+screen = TraxanosHD::Screen.new(xml, :myPacketManager, "VTI SoftwareManager") do
   header do
     header_title :title
   end
@@ -32,3 +32,5 @@ TraxanosHD::Screen.new(xml, :myPacketManager, "VTI SoftwareManager") do
     colorbar_buttons2(true, true)
   end
 end
+
+screen.render!

@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :BouquetSelector, "Choose bouquet") do
+screen = TraxanosHD::Screen.new(xml, :BouquetSelector, "Choose bouquet") do
   header do
     header_title "Choose bouquet"
   end
@@ -14,3 +14,5 @@ TraxanosHD::Screen.new(xml, :BouquetSelector, "Choose bouquet") do
     end
   end
 end
+
+screen.render!

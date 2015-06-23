@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :Console, "Command execution") do
+screen = TraxanosHD::Screen.new(xml, :Console, "Command execution") do
   header do
     header_title :Title
   end
@@ -14,3 +14,5 @@ TraxanosHD::Screen.new(xml, :Console, "Command execution") do
 
   end
 end
+
+screen.render!

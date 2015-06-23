@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :ChannelContextMenu, "Channellist menu") do
+screen = TraxanosHD::Screen.new(xml, :ChannelContextMenu, "Channellist menu") do
   header do
     header_title "Channellist menu"
   end
@@ -15,3 +15,5 @@ TraxanosHD::Screen.new(xml, :ChannelContextMenu, "Channellist menu") do
 
   end
 end
+
+screen.render!

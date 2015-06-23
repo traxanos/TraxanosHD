@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :AutoTimerEditor, "AutoTimer Settings") do
+screen = TraxanosHD::Screen.new(xml, :AutoTimerEditor, "AutoTimer Settings") do
   header do
     header_title :Title
   end
@@ -29,3 +29,5 @@ TraxanosHD::Screen.new(xml, :AutoTimerEditor, "AutoTimer Settings") do
     colorbar_buttons2(true, true, true, true)
   end
 end
+
+screen.render!

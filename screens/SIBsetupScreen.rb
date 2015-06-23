@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :SIBsetupScreen, "Second-InfoBar setup") do
+screen = TraxanosHD::Screen.new(xml, :SIBsetupScreen, "Second-InfoBar setup") do
   header do
     header_title "Second-InfoBar setup"
   end
@@ -18,3 +18,5 @@ TraxanosHD::Screen.new(xml, :SIBsetupScreen, "Second-InfoBar setup") do
     colorbar_buttons3("Save", "Cancel", false, false)
   end
 end
+
+screen.render!

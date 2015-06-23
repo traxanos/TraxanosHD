@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :Pic_Exif, "PicturePlayer") do
+screen = TraxanosHD::Screen.new(xml, :Pic_Exif, "PicturePlayer") do
   header do
     header_title "PicturePlayer"
   end
@@ -30,3 +30,5 @@ TraxanosHD::Screen.new(xml, :Pic_Exif, "PicturePlayer") do
     colorbar_buttons2(true)
   end
 end
+
+screen.render!

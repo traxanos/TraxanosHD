@@ -1,5 +1,4 @@
 def render_screen(name, xml)
-  puts "render screen #{name}"
   file = "screens/#{name}.rb"
   instance_eval File.read(file), file
 end
@@ -64,7 +63,6 @@ xml.skin do
     xml.color name: :WindowTitleForeground, color: :foreground
   end
 
-  render_screen('Test', xml)
   render_screen('SecondInfoBar', xml)
   render_screen('PVRState', xml)
   render_screen('TimeshiftState', xml)

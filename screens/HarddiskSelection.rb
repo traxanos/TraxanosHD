@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :HarddiskSelection, "Select HDD") do
+screen = TraxanosHD::Screen.new(xml, :HarddiskSelection, "Select HDD") do
   header do
     header_title "Select HDD"
   end
@@ -14,3 +14,5 @@ TraxanosHD::Screen.new(xml, :HarddiskSelection, "Select HDD") do
     end
   end
 end
+
+screen.render!

@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :ReduceMenuConfig, "VTI ReduceMenu") do
+screen = TraxanosHD::Screen.new(xml, :ReduceMenuConfig, "VTI ReduceMenu") do
   header do
     header_title :Title
   end
@@ -30,3 +30,5 @@ TraxanosHD::Screen.new(xml, :ReduceMenuConfig, "VTI ReduceMenu") do
     colorbar_buttons2(true, true, true, false)
   end
 end
+
+screen.render!

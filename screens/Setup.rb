@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :Setup) do
+screen = TraxanosHD::Screen.new(xml, :Setup) do
   header do
     header_title "Setup"
   end
@@ -18,3 +18,5 @@ TraxanosHD::Screen.new(xml, :Setup) do
     colorbar_buttons2(true, true, false, false)
   end
 end
+
+screen.render!

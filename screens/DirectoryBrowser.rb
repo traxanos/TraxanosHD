@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :DirectoryBrowser, "Directorybrowser") do
+screen = TraxanosHD::Screen.new(xml, :DirectoryBrowser, "Directorybrowser") do
   header do
     header_title "Directorybrowser"
   end
@@ -16,3 +16,5 @@ TraxanosHD::Screen.new(xml, :DirectoryBrowser, "Directorybrowser") do
     colorbar_buttons2(true, true)
   end
 end
+
+screen.render!

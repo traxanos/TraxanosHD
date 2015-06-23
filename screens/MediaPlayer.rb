@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :MediaPlayer, "MediaPlayer") do
+screen = TraxanosHD::Screen.new(xml, :MediaPlayer, "MediaPlayer") do
   position 0, 0
 
   pixmap do
@@ -177,3 +177,5 @@ TraxanosHD::Screen.new(xml, :MediaPlayer, "MediaPlayer") do
     end
   end
 end
+
+screen.render!

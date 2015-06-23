@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :MMIDialog) do
+screen = TraxanosHD::Screen.new(xml, :MMIDialog) do
   header do
     widget do
       position TraxanosHD.spacer, TraxanosHD.default_header_title_top_spacer
@@ -42,3 +42,5 @@ TraxanosHD::Screen.new(xml, :MMIDialog) do
   end
 
 end
+
+screen.render!

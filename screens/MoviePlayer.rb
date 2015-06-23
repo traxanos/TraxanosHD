@@ -1,6 +1,8 @@
-TraxanosHD::Screen.new(xml, :MoviePlayer, "InfoBar") do
+screen = TraxanosHD::Screen.new(xml, :MoviePlayer, "InfoBar") do
   position 0, 0
   header
   recinfo
   playerbar
 end
+
+screen.render!

@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :AtileHDScreens, "AtileHD Setup") do
+screen = TraxanosHD::Screen.new(xml, :AtileHDScreens, "AtileHD Setup") do
   header do
     header_title :Title
   end
@@ -41,3 +41,5 @@ TraxanosHD::Screen.new(xml, :AtileHDScreens, "AtileHD Setup") do
     colorbar_buttons2(true, true, false, false)
   end
 end
+
+screen.render!

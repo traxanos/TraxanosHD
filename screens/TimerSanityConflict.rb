@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :TimerSanityConflict, "Timer sanity error") do
+screen = TraxanosHD::Screen.new(xml, :TimerSanityConflict, "Timer sanity error") do
   header do
     header_title "Timer sanity error"
   end
@@ -35,3 +35,5 @@ TraxanosHD::Screen.new(xml, :TimerSanityConflict, "Timer sanity error") do
     colorbar_buttons1(true, true, true, true)
   end
 end
+
+screen.render!

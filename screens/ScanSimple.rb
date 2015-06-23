@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :ScanSimple, "Automatic Scan") do
+screen = TraxanosHD::Screen.new(xml, :ScanSimple, "Automatic Scan") do
   header do
     header_title "Automatic Scan"
   end
@@ -23,3 +23,5 @@ TraxanosHD::Screen.new(xml, :ScanSimple, "Automatic Scan") do
   end
 
 end
+
+screen.render!

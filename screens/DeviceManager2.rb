@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
+screen = TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
   header do
     header_title :title
   end
@@ -44,3 +44,5 @@ TraxanosHD::Screen.new(xml, :DeviceManager2, "DeviceManager2") do
     colorbar_buttons1(false, true, true, true)
   end
 end
+
+screen.render!

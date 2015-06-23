@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :VTIStatusListMenu, "VTIStatusListMenu") do
+screen = TraxanosHD::Screen.new(xml, :VTIStatusListMenu, "VTIStatusListMenu") do
   header do
     header_title :title
   end
@@ -32,3 +32,5 @@ TraxanosHD::Screen.new(xml, :VTIStatusListMenu, "VTIStatusListMenu") do
     colorbar_buttons1(true, true, true, true)
   end
 end
+
+screen.render!

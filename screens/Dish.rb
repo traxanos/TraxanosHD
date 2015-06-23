@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :Dish) do
+screen = TraxanosHD::Screen.new(xml, :Dish) do
   position 1111, 135, -1
   size 130, 160
 
@@ -9,3 +9,5 @@ TraxanosHD::Screen.new(xml, :Dish) do
     foreground nil
   end
 end
+
+screen.render!

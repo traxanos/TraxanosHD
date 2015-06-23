@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
+screen = TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
   header do
     header_title "Timer Editor"
   end
@@ -90,3 +90,5 @@ TraxanosHD::Screen.new(xml, :TimerEditList, "Timer Editor") do
     end
   end
 end
+
+screen.render!

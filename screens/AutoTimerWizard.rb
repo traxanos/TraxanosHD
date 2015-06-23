@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :AutoTimerWizard, "Welcome...") do
+screen = TraxanosHD::Screen.new(xml, :AutoTimerWizard, "Welcome...") do
   header do
     header_title "Setup"
   end
@@ -30,7 +30,6 @@ TraxanosHD::Screen.new(xml, :AutoTimerWizard, "Welcome...") do
       scrollbars
     end
   end
-
 
   widget do
     position TraxanosHD.border+TraxanosHD.left_width, 135+6, -10
@@ -95,3 +94,5 @@ TraxanosHD::Screen.new(xml, :AutoTimerWizard, "Welcome...") do
   end
 
 end
+
+screen.render!

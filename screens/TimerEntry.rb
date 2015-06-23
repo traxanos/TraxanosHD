@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :TimerEntry, "Timer entry") do
+screen = TraxanosHD::Screen.new(xml, :TimerEntry, "Timer entry") do
   header do
     header_title "Timer entry"
   end
@@ -19,3 +19,5 @@ TraxanosHD::Screen.new(xml, :TimerEntry, "Timer entry") do
     colorbar_buttons1("canceltext", "oktext", false, false)
   end
 end
+
+screen.render!

@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSetup") do
+screen = TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSetup") do
   header do
     header_title :Title
   end
@@ -27,3 +27,5 @@ TraxanosHD::Screen.new(xml, :VideoEnhancementSetup, "VideoEnhancementSetup") do
     colorbar_buttons2(true, true, true, true)
   end
 end
+
+screen.render!

@@ -21,14 +21,15 @@ module TraxanosHD
       # eval bock
       instance_eval(&block)
 
-      # render
-      render!
+      # # render
+      # render!
 
-      # render preview
-      render_preview!
+      # # render preview
+      # render_preview!
     end
 
-    def render!
+    def render!(variant = nil)
+      puts "render screen #{@name}"
       xml.comment! name.to_s
       @options["position"] = "#{@x},#{@y}"
       @options["size"] = "#{@width},#{@height}"
@@ -43,9 +44,11 @@ module TraxanosHD
           end
         end
       end
+
+      render_preview!(variant)
     end
 
-    def render_preview!
+    def render_preview!(variant = nil)
       html = Builder::XmlMarkup.new indent: 2
       html.declare! :DOCTYPE, :html
       html.html do

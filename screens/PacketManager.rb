@@ -1,5 +1,5 @@
 # VTI CamMenu - Cam verwaltung
-TraxanosHD::Screen.new(xml, :PacketManager, "PacketManager") do
+screen = TraxanosHD::Screen.new(xml, :PacketManager, "PacketManager") do
   header do
     header_title "PacketManager"
   end
@@ -33,3 +33,5 @@ TraxanosHD::Screen.new(xml, :PacketManager, "PacketManager") do
     colorbar_buttons2(true, true)
   end
 end
+
+screen.render!

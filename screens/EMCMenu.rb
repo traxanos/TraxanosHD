@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :EMCMenu, "EMC menu") do
+screen = TraxanosHD::Screen.new(xml, :EMCMenu, "EMC menu") do
   header do
     header_title :title
   end
@@ -16,3 +16,4 @@ TraxanosHD::Screen.new(xml, :EMCMenu, "EMC menu") do
   end
 end
 
+screen.render!

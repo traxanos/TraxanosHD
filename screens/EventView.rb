@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :EventView, "EventView") do
+screen = TraxanosHD::Screen.new(xml, :EventView, "EventView") do
   header do
     header_title "EPG Selection"
   end
@@ -17,3 +17,5 @@ TraxanosHD::Screen.new(xml, :EventView, "EventView") do
     colorbar_buttons1(true, true, true, true)
   end
 end
+
+screen.render!

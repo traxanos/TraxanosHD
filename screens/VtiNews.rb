@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :VtiNews, "VTI News") do
+screen = TraxanosHD::Screen.new(xml, :VtiNews, "VTI News") do
   header do
     header_title :title
   end
@@ -16,3 +16,5 @@ TraxanosHD::Screen.new(xml, :VtiNews, "VTI News") do
     colorbar_buttons2(true, true, true, true)
   end
 end
+
+screen.render!

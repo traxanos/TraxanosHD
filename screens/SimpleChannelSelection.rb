@@ -1,5 +1,5 @@
 # erreichbar per Menü - Timer - Datensatz bearbeiten - Kanal auswählen
-TraxanosHD::Screen.new(xml, :SimpleChannelSelection, "Channel selection") do
+screen = TraxanosHD::Screen.new(xml, :SimpleChannelSelection, "Channel selection") do
   header do
     header_title :Title
   end
@@ -31,3 +31,5 @@ TraxanosHD::Screen.new(xml, :SimpleChannelSelection, "Channel selection") do
     colorbar_buttons1(true, true, true, true)
   end
 end
+
+screen.render!

@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :DeviceManager2Message, "Message") do
+screen = TraxanosHD::Screen.new(xml, :DeviceManager2Message, "Message") do
 
   position :center, :center, 1
   size 900, 522
@@ -31,3 +31,5 @@ TraxanosHD::Screen.new(xml, :DeviceManager2Message, "Message") do
   end
 
 end
+
+screen.render!

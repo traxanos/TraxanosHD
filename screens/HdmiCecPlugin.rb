@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :HdmiCecPlugin, "HdmiCecPlugin") do
+screen = TraxanosHD::Screen.new(xml, :HdmiCecPlugin, "HdmiCecPlugin") do
   header do
     header_title :Title
   end
@@ -18,3 +18,5 @@ TraxanosHD::Screen.new(xml, :HdmiCecPlugin, "HdmiCecPlugin") do
     colorbar_buttons2(true, true, true, true)
   end
 end
+
+screen.render!

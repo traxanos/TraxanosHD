@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :MovieContextMenu, "Movielist menu") do
+screen = TraxanosHD::Screen.new(xml, :MovieContextMenu, "Movielist menu") do
   header do
     header_title "Movielist menu"
   end
@@ -14,3 +14,5 @@ TraxanosHD::Screen.new(xml, :MovieContextMenu, "Movielist menu") do
     end
   end
 end
+
+screen.render!

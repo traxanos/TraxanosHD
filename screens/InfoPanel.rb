@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
+screen = TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
   header do
     header_title :title
   end
@@ -216,3 +216,5 @@ TraxanosHD::Screen.new(xml, :InfoPanel, "VTI Panel") do
     colorbar_buttons2(true, true)
   end
 end
+
+screen.render!

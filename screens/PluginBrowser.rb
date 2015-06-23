@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :PluginBrowser, "Plugins Manager") do
+screen = TraxanosHD::Screen.new(xml, :PluginBrowser, "Plugins Manager") do
   header do
     header_title "Plugins"
   end
@@ -22,3 +22,5 @@ TraxanosHD::Screen.new(xml, :PluginBrowser, "Plugins Manager") do
     colorbar_buttons1("red", "green")
   end
 end
+
+screen.render!

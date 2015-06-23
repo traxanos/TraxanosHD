@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :VTISubMenu, "VTI Sub Menu") do
+screen = TraxanosHD::Screen.new(xml, :VTISubMenu, "VTI Sub Menu") do
   header do
     header_title :title
   end
@@ -34,3 +34,5 @@ TraxanosHD::Screen.new(xml, :VTISubMenu, "VTI Sub Menu") do
     colorbar_buttons2(true)
   end
 end
+
+screen.render!

@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :Blindscan, "Blindscan") do
+screen = TraxanosHD::Screen.new(xml, :Blindscan, "Blindscan") do
   header do
     header_title "Blindscan"
   end
@@ -26,3 +26,5 @@ TraxanosHD::Screen.new(xml, :Blindscan, "Blindscan") do
     colorbar_buttons2(true, true, false, true)
   end
 end
+
+screen.render!

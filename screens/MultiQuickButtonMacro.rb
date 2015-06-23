@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :MultiQuickButtonMacro, "MultiQuickButton macro configuration") do
+screen = TraxanosHD::Screen.new(xml, :MultiQuickButtonMacro, "MultiQuickButton macro configuration") do
   header do
     header_title :Title
   end
@@ -30,3 +30,5 @@ TraxanosHD::Screen.new(xml, :MultiQuickButtonMacro, "MultiQuickButton macro conf
     colorbar_buttons1(:buttonred, :buttongreen, :buttonyellow, :buttonblue)
   end
 end
+
+screen.render!

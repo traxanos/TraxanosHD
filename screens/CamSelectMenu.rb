@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :CamSelectMenu, "VTI Cam Menu") do
+screen = TraxanosHD::Screen.new(xml, :CamSelectMenu, "VTI Cam Menu") do
   header do
     header_title :Title
   end
@@ -31,3 +31,5 @@ TraxanosHD::Screen.new(xml, :CamSelectMenu, "VTI Cam Menu") do
     colorbar_buttons2(true, true, true, true)
   end
 end
+
+screen.render!

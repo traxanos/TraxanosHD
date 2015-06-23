@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :VideoEnhancementPreview, "VideoEnhancementPreview") do
+screen = TraxanosHD::Screen.new(xml, :VideoEnhancementPreview, "VideoEnhancementPreview") do
   label do
     position (TraxanosHD.width-TraxanosHD.left_width)/2, 486
     size TraxanosHD.left_width, 192
@@ -27,3 +27,5 @@ TraxanosHD::Screen.new(xml, :VideoEnhancementPreview, "VideoEnhancementPreview")
     colorbar_buttons2(true, true, false, false)
   end
 end
+
+screen.render!

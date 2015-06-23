@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :CutListEditor, "Cutlist editor") do
+screen = TraxanosHD::Screen.new(xml, :CutListEditor, "Cutlist editor") do
 
   pixmap do
     position 0, 0, -20
@@ -101,3 +101,4 @@ TraxanosHD::Screen.new(xml, :CutListEditor, "Cutlist editor") do
   end
 end
 
+screen.render!

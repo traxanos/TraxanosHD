@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(xml, :ServiceInfo, "Serviceinfo") do
+screen = TraxanosHD::Screen.new(xml, :ServiceInfo, "Serviceinfo") do
   header do
     header_title "Serviceinfo"
   end
@@ -18,3 +18,5 @@ TraxanosHD::Screen.new(xml, :ServiceInfo, "Serviceinfo") do
     colorbar_buttons1(:red, :green, :yellow, :blue)
   end
 end
+
+screen.render!
