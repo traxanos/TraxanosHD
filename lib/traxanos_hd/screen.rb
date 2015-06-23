@@ -2,8 +2,9 @@ module TraxanosHD
   class Screen < Element
     attr_reader :xml, :name, :applets
 
-    def initialize(xml, name, title = nil, &block)
+    def initialize(xml, name, title = nil, variant = nil, &block)
       @xml = xml
+      @variant = variant
       @z = 0
       @elements = []
       @applets = {}
@@ -28,7 +29,7 @@ module TraxanosHD
     end
 
     def render!
-      puts "render screen #{@name}"
+      puts "render screen #{@name}##{@variant}"
       xml.comment! name.to_s
       @options["position"] = "#{@x},#{@y}"
       @options["size"] = "#{@width},#{@height}"
@@ -67,7 +68,13 @@ module TraxanosHD
         end
       end
 
-      File.open("preview/#{name}.html", "w") do |file|
+      if @variant.nil?
+        filename = "preview/#{name}.html"
+      else
+        filename = "preview/#{name}_#{@variant}.html"
+      end
+
+      File.open(filename, "w") do |file|
         file << html.target!
       end
 

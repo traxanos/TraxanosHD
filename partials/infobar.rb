@@ -9,7 +9,11 @@ class TraxanosHD::Element
         size -(TraxanosHD.border*2), 147
 
         widget do
-          position -220, 6
+          if side == :left
+            position 0, 6
+          else
+            position -220, 6
+          end
           size 220, 132
           alphatest :blend
           render "Picon"
@@ -18,8 +22,14 @@ class TraxanosHD::Element
           convert 'Reference', type: "ServiceName"
         end
 
+        if side == :left
+          base = 220 + 36 + 3
+        else
+          base = 0
+        end
+
         progressbar do
-          position 0, 71
+          position base, 71
           size 943, 5
           source "session.Event_Now"
           foreground :backgroundAccent
@@ -28,7 +38,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0 + 3, 24
+          position base + 3, 24
           size 726 - 18, 39
           render "Label"
           font "Regular", 30
@@ -40,7 +50,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 730, 39
+          position base + 730, 39
           size 51, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
@@ -53,7 +63,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 781, 39
+          position base + 781, 39
           size 66, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
@@ -66,7 +76,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 847, 39
+          position base + 847, 39
           size 93, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
@@ -80,7 +90,7 @@ class TraxanosHD::Element
 
         widget do
           # + 1 font size bug
-          position 3 + 1, 51 + 36
+          position base + 3 + 1, 51 + 36
           size 726 - 18, 36
           render "Label"
           font "Regular", 24
@@ -92,7 +102,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 730, 51 + 36
+          position base + 730, 51 + 36
           size 51, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
@@ -105,7 +115,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 781, 51 + 36
+          position base + 781, 51 + 36
           size 66, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
@@ -118,7 +128,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 847, 51 + 36
+          position base + 847, 51 + 36
           size 93, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2

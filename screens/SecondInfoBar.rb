@@ -5,8 +5,7 @@ TraxanosHD::Screen.new(@main, :SecondInfoBar, "SecondInfoBar") do
   infobar
 end
 
-
-TraxanosHD::Screen.new(@logoleft, :SecondInfoBar, "SecondInfoBar") do
+TraxanosHD::Screen.new(@logoleft, :SecondInfoBar, "SecondInfoBar", 'LogoLeft') do
   position 0, 0
   header
   second_infobar_header

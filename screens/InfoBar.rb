@@ -5,7 +5,7 @@ TraxanosHD::Screen.new(@main, :InfoBar, "InfoBar") do
   infobar(:right)
 end
 
-TraxanosHD::Screen.new(@logoleft, :InfoBar, "InfoBar") do
+TraxanosHD::Screen.new(@logoleft, :InfoBar, "InfoBar", 'LogoLeft') do
   position 0, 0
   header
   recinfo
