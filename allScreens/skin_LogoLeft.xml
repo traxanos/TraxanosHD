@@ -309,5 +309,4 @@
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,573" size="1202,147" zPosition="6"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="0,573" size="1280,147" zPosition="5"/>
   </screen>
-  <target/>
 </skin>

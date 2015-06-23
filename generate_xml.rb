@@ -13,8 +13,8 @@ def build_skin_to_file(subxml, filename)
   xml.comment! "TraxanosHD by traxanos | optimized for VTI"
   xml.comment! "inspired by MetrixHD (by iMaxxx) and AtileHD"
   xml.comment! "recommended to use with XPicons in picon folder"
-  xml.skin do
-    xml << subxml.target
+  xml.skin do |xml|
+    xml << subxml.target!
   end
 
   File.open(filename, "w") do |file|
