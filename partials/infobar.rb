@@ -1,5 +1,5 @@
 class TraxanosHD::Element
-  def infobar(side = :right)
+  def infobar(side)
     label do
       position 0, 573
       size 1280, 147

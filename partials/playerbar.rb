@@ -1,5 +1,5 @@
 class TraxanosHD::Element
-  def playerbar(timeshift = false, emc = false)
+  def playerbar(side, timeshift = false, emc = false)
     label do
       position 0, 573
       size 1280, 147
@@ -9,7 +9,11 @@ class TraxanosHD::Element
         size -(TraxanosHD.border*2), 147
 
         widget do
-          position -220, 6
+          if side == :left
+            position 0, 6
+          else
+            position -220, 6
+          end
           size 220, 132
           alphatest :blend
           render "Picon"
@@ -22,8 +26,14 @@ class TraxanosHD::Element
           end
         end
 
+        if side == :left
+          base = 220 + 36 + 3
+        else
+          base = 0
+        end
+
         progressbar do
-          position 0, 71
+          position base, 71
           size 943, 5
           source "#{emc ? '' : 'session.Current'}Service"
           convert "Position", type: "#{emc ? 'EMC' : ''}ServicePosition"
@@ -31,7 +41,7 @@ class TraxanosHD::Element
 
         unless timeshift
           widget do
-            position 0, 68
+            position base, 68
             size 943, 11
             render "PositionGauge"
             foreground nil
@@ -43,7 +53,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 0 + 3, 24
+          position base + 3, 24
           size 853 - 6, 39
           render "Label"
           font "Regular", 30
@@ -60,7 +70,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 853, 39
+          position base + 853, 39
           size 90 - 3, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
@@ -72,7 +82,7 @@ class TraxanosHD::Element
         end
 
         widget do
-          position 3, 51 + 36
+          position base + 3, 51 + 36
           size 200, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2
@@ -85,7 +95,7 @@ class TraxanosHD::Element
 
         widget do
           # + 1 font size bug
-          position 943 - 3 - 200, 51 + 36
+          position base + 943 - 3 - 200, 51 + 36
           size 200, 21
           render "Label"
           font "Regular", TraxanosHD.default_font_size-2

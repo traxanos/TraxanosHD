@@ -2,12 +2,12 @@ TraxanosHD::Screen.new(@main, :SecondInfoBar, "SecondInfoBar") do
   position 0, 0
   header
   second_infobar_header
-  infobar
+  infobar :right
 end
 
 TraxanosHD::Screen.new(@logoleft, :SecondInfoBar, "SecondInfoBar", 'LogoLeft') do
   position 0, 0
   header
   second_infobar_header
-  infobar(:left)
+  infobar :left
 end
