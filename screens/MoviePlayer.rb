@@ -1,10 +1,13 @@
-[nil, 'LogoLeft'].each do |variant|
-  $variant = variant
-  $side = (variant =~/LogoLeft/ ? :left : :right)
+[nil, 'LogoLeft', 'NoWeather'].each do |variant|
+  variant = variant
+  $logoleft = (variant =~/LogoLeft/ ? :left : :right)
+  $noweather = (variant =~/NoWeather/ ? true : false)
 
   case variant
   when 'LogoLeft'
     xml = @logoleft
+  when 'NoWeather'
+    xml = @noweather
   else
     xml = @main
   end
@@ -13,6 +16,6 @@
     position 0, 0
     header
     recinfo
-    playerbar $side
+    playerbar
   end
 end

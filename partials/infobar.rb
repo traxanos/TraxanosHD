@@ -1,5 +1,5 @@
 class TraxanosHD::Element
-  def infobar(side)
+  def infobar
     label do
       position 0, 573
       size 1280, 147
@@ -9,7 +9,7 @@ class TraxanosHD::Element
         size -(TraxanosHD.border*2), 147
 
         widget do
-          if side == :left
+          if $logoleft == :left
             position 0, 6
           else
             position -220, 6
@@ -22,7 +22,7 @@ class TraxanosHD::Element
           convert 'Reference', type: "ServiceName"
         end
 
-        if side == :left
+        if $logoleft == :left
           base = 220 + 36 + 3
         else
           base = 0

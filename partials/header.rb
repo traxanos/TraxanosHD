@@ -55,7 +55,7 @@ class TraxanosHD::Element
         end
       else
         clock
-        weather
+        weather unless $noweather
       end
     end
   end

@@ -39,6 +39,7 @@ end
 
 @main = Builder::XmlMarkup.new indent: 2, margin: 1, encoding: 'ASCII'
 @logoleft = Builder::XmlMarkup.new indent: 2, margin: 1, encoding: 'ASCII'
+@noweather = Builder::XmlMarkup.new indent: 2, margin: 1, encoding: 'ASCII'
 
 @main.output(id: 0) do |xml|
   xml.resolution bpp: 32, xres: 1280, yres: 720
@@ -231,3 +232,4 @@ end
 
 build_skin_to_file(@main, 'skin.xml')
 build_skin_to_file(@logoleft, 'allScreens/skin_LogoLeft.xml')
+build_skin_to_file(@noweather, 'allScreens/skin_NoWeather.xml')

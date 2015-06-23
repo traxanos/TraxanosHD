@@ -1,18 +1,21 @@
-[nil, 'LogoLeft'].each do |variant|
-  $variant = variant
-  $side = (variant =~/LogoLeft/ ? :left : :right)
+[nil, 'LogoLeft', 'NoWeather'].each do |variant|
+  variant = variant
+  $logoleft = (variant =~/LogoLeft/ ? :left : :right)
+  $noweather = (variant =~/NoWeather/ ? true : false)
 
   case variant
   when 'LogoLeft'
     xml = @logoleft
+  when 'NoWeather'
+    xml = @noweather
   else
     xml = @main
   end
 
-  TraxanosHD::Screen.new(xml, :EMCMediaCenter, "InfoBar", $variant) do
+  TraxanosHD::Screen.new(xml, :EMCMediaCenter, "InfoBar", variant) do
     position 0, 0
     header
     recinfo
-    playerbar $side, false, true
+    playerbar false, true
   end
 end
