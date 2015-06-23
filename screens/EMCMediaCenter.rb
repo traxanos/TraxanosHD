@@ -1,14 +1,18 @@
-TraxanosHD::Screen.new(@main, :EMCMediaCenter, "InfoBar") do
-  position 0, 0
-  header
-  recinfo
-  playerbar :right, false, true
-end
+[nil, 'LogoLeft'].each do |variant|
+  $variant = variant
+  $side = (variant =~/LogoLeft/ ? :left : :right)
 
-TraxanosHD::Screen.new(@logoleft, :EMCMediaCenter, "InfoBar", "LogoLeft") do
-  position 0, 0
-  header
-  recinfo
-  playerbar :left, false, true
-end
+  case variant
+  when 'LogoLeft'
+    xml = @logoleft
+  else
+    xml = @main
+  end
 
+  TraxanosHD::Screen.new(xml, :EMCMediaCenter, "InfoBar", $variant) do
+    position 0, 0
+    header
+    recinfo
+    playerbar $side, false, true
+  end
+end

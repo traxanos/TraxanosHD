@@ -1,13 +1,18 @@
-TraxanosHD::Screen.new(@main, :SecondInfoBar, "SecondInfoBar") do
-  position 0, 0
-  header
-  second_infobar_header
-  infobar :right
-end
+[nil, 'LogoLeft'].each do |variant|
+  $variant = variant
+  $side = (variant =~/LogoLeft/ ? :left : :right)
 
-TraxanosHD::Screen.new(@logoleft, :SecondInfoBar, "SecondInfoBar", 'LogoLeft') do
-  position 0, 0
-  header
-  second_infobar_header
-  infobar :left
+  case variant
+  when 'LogoLeft'
+    xml = @logoleft
+  else
+    xml = @main
+  end
+
+  TraxanosHD::Screen.new(xml, :SecondInfoBar, "SecondInfoBar", $variant) do
+    position 0, 0
+    header
+    second_infobar_header
+    infobar $side
+  end
 end

@@ -1,13 +1,18 @@
-TraxanosHD::Screen.new(@main, :InfoBar, "InfoBar") do
-  position 0, 0
-  header
-  recinfo
-  infobar :right
-end
+[nil, 'LogoLeft'].each do |variant|
+  $variant = variant
+  $side = (variant =~/LogoLeft/ ? :left : :right)
 
-TraxanosHD::Screen.new(@logoleft, :InfoBar, "InfoBar", 'LogoLeft') do
-  position 0, 0
-  header
-  recinfo
-  infobar :left
+  case variant
+  when 'LogoLeft'
+    xml = @logoleft
+  else
+    xml = @main
+  end
+
+  TraxanosHD::Screen.new(xml, :InfoBar, "InfoBar", $variant) do
+    position 0, 0
+    header
+    recinfo
+    infobar $side
+  end
 end
