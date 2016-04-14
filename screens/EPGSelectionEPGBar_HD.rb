@@ -16,7 +16,7 @@
 
     label do
       position 0, 459
-      size 1280, 219
+      size 1280, 219+6
 
       widget do
         position 39, 12
@@ -58,7 +58,7 @@
     end
 
     box do
-      position 852, 648
+      position 852, 648+6
       size 398, 30
 
       label do

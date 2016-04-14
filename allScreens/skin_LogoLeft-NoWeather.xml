@@ -417,18 +417,18 @@
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 19" render="VRunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,always=0,startdelay=5000,wrap" source="Event" position="852,513" size="398,102" zPosition="5">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <eLabel backgroundColor="background" foregroundColor="foreground" position="0,459" size="1280,219" zPosition="2"/>
-    <eLabel backgroundColor="red" foregroundColor="foreground" position="39,645" size="180,3" zPosition="4"/>
-    <eLabel backgroundColor="green" foregroundColor="foreground" position="237,645" size="180,3" zPosition="5"/>
-    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="435,645" size="180,3" zPosition="6"/>
-    <eLabel backgroundColor="blue" foregroundColor="foreground" position="633,645" size="180,3" zPosition="7"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="30,648" size="198,30" zPosition="9"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="228,648" size="198,30" zPosition="10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="426,648" size="198,30" zPosition="11"/>
-    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="624,648" size="198,30" zPosition="12"/>
-    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="21,648" size="810,30" zPosition="8"/>
-    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1184,648" size="66,30" zPosition="5"/>
-    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&gt;" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1136,648" size="30,30" zPosition="6"/>
-    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&lt;" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1088,648" size="30,30" zPosition="7"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="0,459" size="1280,225" zPosition="2"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="39,672" size="180,3" zPosition="4"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="237,672" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="435,672" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="633,672" size="180,3" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="30,636" size="198,42" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="228,636" size="198,42" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="426,636" size="198,42" zPosition="11"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="key_blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="624,636" size="198,42" zPosition="12"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="21,636" size="810,36" zPosition="8"/>
+    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="EPG" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1184,654" size="66,30" zPosition="5"/>
+    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&gt;" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1136,654" size="30,30" zPosition="6"/>
+    <eLabel backgroundColor="foregroundAccent" foregroundColor="backgroundAccent" text="&lt;" font="Regular; 20" noWrap="1" halign="center" valign="center" position="1088,654" size="30,30" zPosition="7"/>
   </screen>
 </skin>

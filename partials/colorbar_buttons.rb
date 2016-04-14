@@ -13,7 +13,7 @@ class TraxanosHD::Element
     if red
       widget do
         position 18-9
-        size 198, 30
+        size 198, 42
         name "#{red_name}"
         font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
@@ -25,7 +25,7 @@ class TraxanosHD::Element
     if green
       widget do
         position 216-9
-        size 198, 30
+        size 198, 42
         name "#{green_name}"
         font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
@@ -37,7 +37,7 @@ class TraxanosHD::Element
     if yellow
       widget do
         position 414-9
-        size 198, 30
+        size 198, 42
         name "#{yellow_name}"
         font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
@@ -49,7 +49,7 @@ class TraxanosHD::Element
     if blue
       widget do
         position 612-9
-        size 198, 30
+        size 198, 42
         name "#{blue_name}"
         font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center

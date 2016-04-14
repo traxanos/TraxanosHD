@@ -3,7 +3,7 @@ class TraxanosHD::Element
     if red
       label do
         position 18-9
-        size 198, 30
+        size 198, 42
         text "#{red}"
         font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
@@ -15,7 +15,7 @@ class TraxanosHD::Element
     if green
       label do
         position 216-9
-        size 198, 30
+        size 198, 42
         text "#{green}"
         font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
@@ -27,7 +27,7 @@ class TraxanosHD::Element
     if yellow
       label do
         position 414-9
-        size 198, 30
+        size 198, 42
         text "#{yellow}"
         font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
@@ -39,7 +39,7 @@ class TraxanosHD::Element
     if blue
       label do
         position 612-9
-        size 198, 30
+        size 198, 42
         text "#{blue}"
         font "Regular", TraxanosHD.default_colorbar_font_size
         orientation :center, :center
