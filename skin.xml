@@ -91,13 +91,13 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,48" size="120,24" zPosition="5">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,48" size="138,24" zPosition="5">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,75" size="120,24" zPosition="6">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,75" size="138,24" zPosition="6">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="959,42" size="138,63" zPosition="4"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="941,42" size="156,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
@@ -313,13 +313,13 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,48" size="120,24" zPosition="5">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,48" size="138,24" zPosition="5">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,75" size="120,24" zPosition="6">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,75" size="138,24" zPosition="6">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="959,42" size="138,63" zPosition="4"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="941,42" size="156,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
     <widget backgroundColor="background" foregroundColor="foreground" name="state" font="Regular; 36" noWrap="1" halign="center" valign="center" transparent="1" position="39,39" size="138,69" zPosition="5"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="138,69" zPosition="4"/>
@@ -361,13 +361,13 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,48" size="120,24" zPosition="5">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,48" size="138,24" zPosition="5">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,75" size="120,24" zPosition="6">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,75" size="138,24" zPosition="6">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="959,42" size="138,63" zPosition="4"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="941,42" size="156,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
@@ -435,13 +435,13 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,48" size="120,24" zPosition="5">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,48" size="138,24" zPosition="5">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,75" size="120,24" zPosition="6">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,75" size="138,24" zPosition="6">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="959,42" size="138,63" zPosition="4"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="941,42" size="156,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
@@ -509,13 +509,13 @@
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,48" size="120,24" zPosition="5">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,48" size="138,24" zPosition="5">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,75" size="120,24" zPosition="6">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,75" size="138,24" zPosition="6">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="959,42" size="138,63" zPosition="4"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="941,42" size="156,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
@@ -734,7 +734,15 @@
     </widget>
     <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
-    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="33,171" size="822,480" zPosition="3">
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,672" size="180,3" zPosition="4"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,672" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,672" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,672" size="180,3" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,636" size="198,42" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="yellow" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="444,636" size="198,42" zPosition="10"/>
+    <widget backgroundColor="background" foregroundColor="foreground" name="blue" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="642,636" size="198,42" zPosition="11"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,636" size="810,36" zPosition="8"/>
+    <widget backgroundColor="background" foregroundColor="foreground" source="menu" transparent="1" render="Listbox" enableWrapAround="1" scrollbarMode="showNever" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="33,171" size="822,432" zPosition="4">
       <convert type="TemplatedMultiContent">{
     "template": [
       MultiContentEntryText(pos = (24,5), size = (774,48), flags = RT_HALIGN_LEFT, text = 0)
@@ -1189,13 +1197,13 @@ self.instance.resize(eSize(self.instance.size().width(), y + 12 + 12 + 12 + 48))
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="1097,39" size="144,69" zPosition="3"/>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,48" size="120,24" zPosition="5">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,48" size="138,24" zPosition="5">
       <convert type="ClockToText">Format:%A</convert>
     </widget>
-    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="968,75" size="120,24" zPosition="6">
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="950,75" size="138,24" zPosition="6">
       <convert type="ClockToText">Format:%e. %B</convert>
     </widget>
-    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="959,42" size="138,63" zPosition="4"/>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="941,42" size="156,63" zPosition="4"/>
     <eLabel backgroundColor="transparent" foregroundColor="foreground" position="849,39" size="392,69" zPosition="2"/>
     <widget backgroundColor="background" foregroundColor="foreground" font="Regular; 41" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="session.CurrentService" position="39,39" size="79,69" zPosition="5">
       <convert type="VWeather">currentWeatherTemp</convert>
@@ -2675,6 +2683,30 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,636" size="198,42" zPosition="10"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,636" size="810,36" zPosition="8"/>
   </screen>
+  <!-- EPGPanel -->
+  <screen name="EPGPanel" title="VTI EPGPanel" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+    <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" source="title" render="Label" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="top" noWrap="1" source="global.CurrentTime" transparent="1" position="867,48" size="356,24" zPosition="5">
+      <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 20" render="Label" halign="left" valign="bottom" noWrap="1" source="global.CurrentTime" transparent="1" position="867,75" size="356,24" zPosition="6">
+      <convert type="ClockToText">Format:%e. %B</convert>
+    </widget>
+    <eLabel backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" position="849,42" size="392,63" zPosition="3"/>
+    <widget backgroundColor="background" foregroundColor="foreground" itemHeight="30" name="config" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="scrollbarSecondaryFG" scrollbarSliderBorderColor="scrollbarSecondaryFG" scrollbarBackgroundPicture="TraxanosHD/images/scrollbar_bg.png" position="57,153" size="774,480" zPosition="-8"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" position="39,135" size="810,546" zPosition="-10"/>
+    <eLabel backgroundColor="red" foregroundColor="foreground" position="57,672" size="180,3" zPosition="4"/>
+    <eLabel backgroundColor="green" foregroundColor="foreground" position="255,672" size="180,3" zPosition="5"/>
+    <eLabel backgroundColor="yellow" foregroundColor="foreground" position="453,672" size="180,3" zPosition="6"/>
+    <eLabel backgroundColor="blue" foregroundColor="foreground" position="651,672" size="180,3" zPosition="7"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_red" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="48,636" size="198,42" zPosition="9"/>
+    <widget backgroundColor="background" foregroundColor="foreground" render="Label" source="key_green" font="Regular; 16" halign="center" valign="center" noWrap="1" transparent="1" position="246,636" size="198,42" zPosition="10"/>
+    <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,636" size="810,36" zPosition="8"/>
+  </screen>
   <!-- ScanSetup -->
   <screen name="ScanSetup" title="Manual Scan" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" text="Manual Scan" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
@@ -3271,7 +3303,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - outer_size_x)/2,orgpos.y())) 
     <eLabel backgroundColor="background" foregroundColor="foreground" transparent="1" position="39,636" size="810,36" zPosition="8"/>
   </screen>
   <!-- CamSelectMenu -->
-  <screen name="CamSelectMenu" title="VTI Cam Menu" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
+  <screen name="CamSelectMenu" title="Select Cam and press OK to activate" flags="wfNoBorder" backgroundColor="transparent" position="0,0" size="1280,720">
     <widget backgroundColor="background" foregroundColor="foreground" transparent="1" font="Regular; 34" noWrap="1" source="Title" render="Label" halign="left" valign="center" position="57,51" size="774,48" zPosition="3"/>
     <eLabel backgroundColor="background" foregroundColor="foreground" position="39,39" size="810,69" zPosition="2"/>
     <widget backgroundColor="backgroundAccent" foregroundColor="foregroundAccent" font="Regular; 50" render="Label" halign="right" valign="center" noWrap="1" source="global.CurrentTime" transparent="1" position="867,42" size="356,63" zPosition="4">

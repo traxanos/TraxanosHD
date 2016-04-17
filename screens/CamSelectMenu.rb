@@ -1,4 +1,4 @@
-TraxanosHD::Screen.new(@main, :CamSelectMenu, "VTI Cam Menu") do
+TraxanosHD::Screen.new(@main, :CamSelectMenu, "Select Cam and press OK to activate") do
   header do
     header_title :Title
   end

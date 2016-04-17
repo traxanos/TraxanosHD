@@ -5,7 +5,7 @@ class TraxanosHD::Element
       size TraxanosHD.right_width, TraxanosHD.header_height
       background :transparent
 
-      left = 46 * TraxanosHD.grid
+      left = 52 * TraxanosHD.grid
       right = 48 * TraxanosHD.grid
 
       label do
@@ -31,8 +31,8 @@ class TraxanosHD::Element
         accent
 
         widget do
-          position -(120+9), 6
-          size 120, 24
+          position -(147), 6
+          size 138, 24
           font "Regular", TraxanosHD.default_font_size
           render "Label"
           orientation :right, :center
@@ -44,8 +44,8 @@ class TraxanosHD::Element
         end
 
         widget do
-          position -(120+9), 6 + 27
-          size 120, 24
+          position -(147), 6 + 27
+          size 138, 24
           font "Regular", TraxanosHD.default_font_size
           render "Label"
           orientation :right, :center
